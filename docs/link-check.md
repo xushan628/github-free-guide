@@ -1,18 +1,10 @@
 # 外链体检报告
 
-- 生成时间：2026-11-19T04:33:12+00:00
+- 生成时间：2026-11-19T04:39:27+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **113** 个链接：✅ 正常 104 ／ ❌ 失效 0 ／ ⚠️ 未验证 3 ／ ⏭️ 跳过（本地服务）6
+- 总计 **113** 个链接：✅ 正常 107 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）6
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
-
-## ⚠️ 未验证
-
-| 链接 | 原因 |
-|---|---|
-| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
-| https://github.com/HKUDS/DeepTutor/releases/latest | TimeoutError: The read operation timed out |
-| https://ollama.com/install.sh | URLError: <urlopen error timed out> |
 
 ## ✅ 全部结果
 
@@ -42,6 +34,7 @@
 | ✅ | datasets.json | 存在 |
 | ✅ | docs/index.html | 存在 |
 | ✅ | https://agent-browser.dev/desktop | 200 |
+| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
 | ✅ | https://awesome-dsh-plugin.com | 200 |
 | ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
@@ -56,6 +49,7 @@
 | ✅ | https://github.com/CorentinTh/it-tools | 200 |
 | ✅ | https://github.com/D4Vinci/Scrapling | 200 |
 | ✅ | https://github.com/HKUDS/DeepTutor | 200 |
+| ✅ | https://github.com/HKUDS/DeepTutor/releases/latest | 200 |
 | ✅ | https://github.com/Open-Dev-Society/OpenStock | 200 |
 | ✅ | https://github.com/PolymathicAI/the_well | 200 |
 | ✅ | https://github.com/Renhuai123/ziwei-doushu | 200 |
@@ -111,6 +105,7 @@
 | ✅ | https://github.com/vercel-labs/agent-desktop | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas/blob/main/DATASETS.md | 200 |
+| ✅ | https://ollama.com/install.sh | 200 |
 | ✅ | https://v.douyin.com/0oBRAzfFBDI/ | 200 |
 | ✅ | https://v.douyin.com/74U3srU4JQ4/ | 200 |
 | ✅ | https://v.douyin.com/RQd4yLbc1fY/ | 200 |
@@ -128,6 +123,3 @@
 | ⏭️ | http://localhost:5678 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8080 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8081 | 本地服务示例，跳过 |
-| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
-| ⚠️ | https://github.com/HKUDS/DeepTutor/releases/latest | TimeoutError: The read operation timed out |
-| ⚠️ | https://ollama.com/install.sh | URLError: <urlopen error timed out> |
