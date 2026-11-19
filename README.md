@@ -23,7 +23,7 @@
 | 7 | Student Developer Pack | 学生认证后一大票商业工具免费用 | 需学生身份，有效期最长至毕业 | [07-student-pack](07-student-pack/README.md) |
 | 8 | 额度与避坑 | 免费额度的真实边界 + 4 个高频陷阱 | —— | [08-limits](08-limits/README.md) |
 | 9 | 开源数据集 | GitHub 上的免费数据：可直接下载、可查询 | 按各数据集许可证 | [09-datasets](09-datasets/README.md) |
-| 10 | 一周热点 | 每周追更：把热传视频里的项目落到具体仓库 | —— | [10-weekly](10-weekly/README.md) |
+| 10 | 一周热点 | 每周追更：把热传视频里的项目落到具体仓库（已收录 133 / 137 / 138 期） | —— | [10-weekly](10-weekly/README.md) |
 
 > 额度数字会变。**以 `08-limits` 里的官方文档链接为准**，本仓库的表格只做速查。
 
@@ -82,7 +82,7 @@ github-free-guide/
 ├─ 07-student-pack/  学生包申请与权益
 ├─ 08-limits/        免费额度速查 + 4 个坑
 ├─ 09-datasets/      开源数据集目录（自动同步姊妹项目 Open Data Atlas）
-├─ 10-weekly/        GitHub 一周热点（按期归档：137/ 含 5 个项目）
+├─ 10-weekly/        GitHub 一周热点（按期归档：133 / 137 / 138，每期 5 个项目）
 ├─ docs/             ← GitHub Pages 站点源（已部署）
 ├─ scripts/          fetch_assets / verify_links / deploy_github / check_site / sync_atlas
 ├─ .github/workflows 本仓库每周自动跑的外链体检 + 数据集同步

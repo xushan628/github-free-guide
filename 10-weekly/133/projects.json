@@ -1,0 +1,60 @@
+{
+  "issue": 133,
+  "title": "Github一周热点133期",
+  "theme": "给 AI Agent 开家公司",
+  "source": "https://v.douyin.com/0oBRAzfFBDI/",
+  "collected_at": "2026-11-19",
+  "note": "视频只给出项目名；仓库按『名字 + 描述 + 热度』匹配后核实，星数为 2026-11-19 抓取值。",
+  "projects": [
+    {
+      "no": 1,
+      "name": "Paperclip",
+      "repo": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "stars": 114849,
+      "license": "MIT",
+      "language": "TypeScript",
+      "summary": "管理 AI agent 团队的开源工作台（不是同名的 thoughtbot/paperclip 附件库）"
+    },
+    {
+      "no": 2,
+      "name": "video-use",
+      "repo": "browser-use/video-use",
+      "url": "https://github.com/browser-use/video-use",
+      "stars": 31272,
+      "license": "MIT",
+      "language": "Python",
+      "summary": "用 coding agent 剪视频"
+    },
+    {
+      "no": 3,
+      "name": "Octop",
+      "repo": "TencentCloud/Octop",
+      "url": "https://github.com/TencentCloud/Octop",
+      "stars": 12232,
+      "license": "MIT",
+      "language": "Python",
+      "summary": "腾讯云开源自托管 AI 助手：多用户、多 agent"
+    },
+    {
+      "no": 4,
+      "name": "OpenStock",
+      "repo": "Open-Dev-Society/OpenStock",
+      "url": "https://github.com/Open-Dev-Society/OpenStock",
+      "stars": 21751,
+      "license": "AGPL-3.0",
+      "language": "TypeScript",
+      "summary": "开源股票行情看板（AGPL：对外提供网络服务需开源修改）"
+    },
+    {
+      "no": 5,
+      "name": "DBX",
+      "repo": "t8y2/dbx",
+      "url": "https://github.com/t8y2/dbx",
+      "stars": 30816,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "summary": "25 MB 轻量跨平台数据库客户端，支持 100+ 数据库"
+    }
+  ]
+}
