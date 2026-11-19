@@ -1,14 +1,16 @@
-# GitHub 免费福利指南 · 8 个真正能白嫖的功能
+# GitHub 免费福利指南 · 9 类真正能白嫖的功能
 
-> 把"GitHub 只是下代码的地方"这个用法升级成：**免费素材库 + 免费云算力 + 免费定时任务 + 免费网站 + 免费 AI 工作台**。
+> 把"GitHub 只是下代码的地方"这个用法升级成：**免费素材库 + 免费云算力 + 免费定时任务 + 免费网站 + 免费 AI 工作台 + 免费数据**。
 > 本仓库既能当清单读，也是一个**可直接运行**的模板仓库：素材已下载入库，Actions 模板可直接复制，站点已用本仓库的 `docs/` 通过 GitHub Pages 部署。
+
+**姊妹项目**：[Open Data Atlas](https://xushan628.github.io/open-data-atlas/) —— 把本章第 9 类的 5 个开源数据集打成可查询的 SQLite 图鉴，本站第 9 张卡片直达。
 
 **来源说明（重要）**：本仓库的内容依据是抖音视频《GitHub 白嫖指南》的公开简介与章节索引（素材检索 / 在线工具 / 本地 AI / Actions / Pages / 学生包 / 避坑）。
 视频正文无法直接抓取解析，因此章节是对索引的**工程化重建**：不编造视频原话，每条资源都实测可达、许可证可查、额度以官方文档为准。
 
 ---
 
-## 8 个功能速览
+## 9 类功能速览
 
 | # | 功能 | 一句话价值 | 免费额度（个人账号） | 入口 |
 |---|------|-----------|---------------------|------|
@@ -20,6 +22,7 @@
 | 6 | GitHub Codespaces | 云端 VS Code，开箱即用的开发环境 | 120 core-hours/月 + 15 GB-month 存储 | [06-codespaces](06-codespaces/README.md) |
 | 7 | Student Developer Pack | 学生认证后一大票商业工具免费用 | 需学生身份，有效期最长至毕业 | [07-student-pack](07-student-pack/README.md) |
 | 8 | 额度与避坑 | 免费额度的真实边界 + 4 个高频陷阱 | —— | [08-limits](08-limits/README.md) |
+| 9 | 开源数据集 | GitHub 上的免费数据：可直接下载、可查询 | 按各数据集许可证 | [09-datasets](09-datasets/README.md) |
 
 > 额度数字会变。**以 `08-limits` 里的官方文档链接为准**，本仓库的表格只做速查。
 
@@ -77,9 +80,10 @@ github-free-guide/
 ├─ 06-codespaces/    免费云开发环境
 ├─ 07-student-pack/  学生包申请与权益
 ├─ 08-limits/        免费额度速查 + 4 个坑
+├─ 09-datasets/      开源数据集目录（自动同步姊妹项目 Open Data Atlas）
 ├─ docs/             ← GitHub Pages 站点源（已部署）
-├─ scripts/          fetch_assets / verify_links / deploy_github
-├─ .github/workflows 本仓库每周自动跑的外链体检 workflow
+├─ scripts/          fetch_assets / verify_links / deploy_github / check_site / sync_atlas
+├─ .github/workflows 本仓库每周自动跑的外链体检 + 数据集同步
 └─ MANIFEST.json     全部素材的来源 / 许可证 / SHA-256
 ```
 
@@ -107,6 +111,7 @@ github-free-guide/
 python scripts/verify_links.py     # 外链体检 → docs/link-check.md
 python scripts/fetch_assets.py     # 素材补齐
 python scripts/check_site.py       # 从你自己的网络体检线上站点（判断是挂了还是被缓存）
+python scripts/sync_atlas.py       # 同步 09-datasets/（数据源：Open Data Atlas 的 manifest）
 ```
 
 外链体检已配置为每周自动运行：见 [.github/workflows/link-check.yml](.github/workflows/link-check.yml)。

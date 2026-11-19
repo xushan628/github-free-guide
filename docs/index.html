@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GitHub 免费福利指南 · 8 个真正能白嫖的功能</title>
+<title>GitHub 免费福利指南 · 9 类真正能白嫖的功能</title>
 <meta name="description" content="GitHub 免费商用素材、在线工具、本地 AI、Actions 定时任务、Pages 建站、Codespaces、学生包与避坑指南。">
 <style>
   :root{
@@ -92,9 +92,9 @@
       每条资源都实测可达，每个素材都附许可证。
     </p>
     <div class="stats">
-      <span class="stat"><b>8</b> 类免费能力</span>
+      <span class="stat"><b>9</b> 类免费能力</span>
       <span class="stat"><b>200</b> 个图标已入库</span>
-      <span class="stat"><b>2</b> 套开源字体</span>
+      <span class="stat"><b>5</b> 个开源数据集</span>
       <span class="stat"><b>0</b> 元成本</span>
     </div>
   </div>
@@ -135,6 +135,7 @@
     <p>
       内容依据抖音视频《GitHub 白嫖指南》公开索引做工程化重建 · 素材许可：MIT / ISC / OFL-1.1<br>
       <a id="repo" href="https://github.com/xushan628/github-free-guide" target="_blank" rel="noopener">仓库源码</a> ·
+      <a href="https://xushan628.github.io/open-data-atlas/" target="_blank" rel="noopener">姊妹项目 · Open Data Atlas</a> ·
       <a href="https://github.com/xushan628/github-free-guide/blob/main/docs/link-check.md">外链体检报告</a>
     </p>
   </div>
@@ -176,7 +177,11 @@
 
     { no:"08", cat:"避坑", icon:"⚠️", title:"额度与 4 个坑",
       desc:"Actions 默认只读、cron 是 UTC、密钥泄露、许可证误用——白嫖前先看这一页。",
-      tags:["权限陷阱","额度边界","许可证"], links:[["目录", REPO+"/tree/main/08-limits"],["说明", REPO+"/blob/main/08-limits/README.md"],["官方计费", "https://docs.github.com/billing"]] }
+      tags:["权限陷阱","额度边界","许可证"], links:[["目录", REPO+"/tree/main/08-limits"],["说明", REPO+"/blob/main/08-limits/README.md"],["官方计费", "https://docs.github.com/billing"]] },
+
+    { no:"09", cat:"数据", icon:"🗂️", title:"开源数据集图鉴",
+      desc:"GitHub 也是免费数据仓库：5 个高质量数据集已打成 22 万行 SQLite，能在线查、也能本地跑 SQL。",
+      tags:["5 个数据集","在线查 SQL","已同步"], links:[["在线图鉴", "https://xushan628.github.io/open-data-atlas/"],["目录", REPO+"/tree/main/09-datasets"],["说明", REPO+"/blob/main/09-datasets/README.md"],["数据仓库", "https://github.com/xushan628/open-data-atlas"]] }
   ];
 
   const grid = document.getElementById("grid");

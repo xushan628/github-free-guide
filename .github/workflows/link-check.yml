@@ -1,4 +1,4 @@
-# 每周自动体检所有外链，把结果提交回 docs/link-check.md。
+# 每周自动体检所有外链 + 同步 09-datasets 的数据集目录，把结果提交回仓库。
 # 这是本仓库自己的"定时任务"示例：不需要服务器，GitHub 免费跑。
 name: 外链体检
 
@@ -36,14 +36,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/verify_links.py
 
+      - name: 同步开源数据集目录
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/sync_atlas.py
+
       - name: 提交报告
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/link-check.md
+          git add docs/link-check.md 09-datasets/
           if git diff --cached --quiet; then
-            echo "外链无变化"
+            echo "外链与数据集目录均无变化"
           else
-            git commit -m "chore(link-check): 更新外链体检报告 [skip ci]"
+            git commit -m "chore(link-check): 更新外链体检报告与数据集目录 [skip ci]"
             git push
           fi

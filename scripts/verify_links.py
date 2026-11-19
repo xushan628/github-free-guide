@@ -22,6 +22,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -40,16 +41,25 @@ TIMEOUT = 12
 MD_LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 BARE_URL = re.compile(r"(?<![(\[])\bhttps?://[^\s<>\"`)）]+")
 GH_REPO = re.compile(r"^https?://github\.com/([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+)/?(?:$|\?|#)")
+# github.com/<owner>/<repo>/blob/<branch>/<path> → 改走 contents API，避免直连 github.com 被重置
+GH_BLOB = re.compile(r"^https?://github\.com/([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+)/blob/([^/]+)/(.+)$")
 
 
 def http_status(url: str) -> tuple[str, str]:
     """返回 (状态, 说明)。状态取值：ok / dead / unverified / local。"""
     if url.startswith(LOCAL_HOSTS):
         return "local", "本地服务示例，跳过"
-    match = GH_REPO.match(url)
-    if match:
-        owner, repo = match.group(1), match.group(2).removesuffix(".git")
-        url = f"https://api.github.com/repos/{owner}/{repo}"
+    blob = GH_BLOB.match(url)
+    if blob:
+        owner, repo, branch, path = blob.group(1), blob.group(2), blob.group(3), blob.group(4)
+        path = path.split("?")[0].split("#")[0]
+        url = (f"https://api.github.com/repos/{owner}/{repo}/contents/"
+               f"{urllib.parse.quote(path, safe='/')}?ref={branch}")
+    else:
+        match = GH_REPO.match(url)
+        if match:
+            owner, repo = match.group(1), match.group(2).removesuffix(".git")
+            url = f"https://api.github.com/repos/{owner}/{repo}"
 
     for method in ("HEAD", "GET"):
         try:

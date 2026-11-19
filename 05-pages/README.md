@@ -3,6 +3,8 @@
 本仓库就是活例子：`docs/` 目录下的单文件站点，通过 Pages 部署后即可访问
 `https://<用户名>.github.io/github-free-guide/`。
 
+同账号下还有一个真实案例：[Open Data Atlas](https://xushan628.github.io/open-data-atlas/) —— 同样是 `main:/docs` + `.nojekyll` + 404 兜底，带二级页面（`licenses.html`、`sql-practice.html`）。想做一个多页站点可以对照它。
+
 ---
 
 ## 免费额度

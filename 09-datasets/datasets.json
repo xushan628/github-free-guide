@@ -1,0 +1,62 @@
+{
+  "source": "xushan628/open-data-atlas",
+  "source_path": "data/manifest.json",
+  "generated_at": "2026-11-19T02:36:41+00:00",
+  "datasets": [
+    {
+      "slug": "thewell",
+      "name": "The Well 物理模拟数据集",
+      "repo": "PolymathicAI/the_well",
+      "repo_url": "https://github.com/PolymathicAI/the_well",
+      "license": "BSD-3-Clause",
+      "files": 49,
+      "bytes": 39967,
+      "purpose": "科学计算与 ML 训练：15 TB 级物理模拟场",
+      "note": "仅收录元数据（README / YAML）；本体体量远超 git 上限，按上游说明另行下载"
+    },
+    {
+      "slug": "poetry",
+      "name": "chinese-poetry 中华古典诗歌",
+      "repo": "chinese-poetry/chinese-poetry",
+      "repo_url": "https://github.com/chinese-poetry/chinese-poetry",
+      "license": "MIT",
+      "files": 37,
+      "bytes": 15435766,
+      "purpose": "分词、词频、作者统计；做古典诗词检索或生成",
+      "note": ""
+    },
+    {
+      "slug": "geo",
+      "name": "countries-states-cities-database",
+      "repo": "dr5hn/countries-states-cities-database",
+      "repo_url": "https://github.com/dr5hn/countries-states-cities-database",
+      "license": "ODbL-1.0",
+      "files": 3,
+      "bytes": 11646242,
+      "purpose": "国家/州/城市数据：地图、时区、人口统计",
+      "note": ""
+    },
+    {
+      "slug": "exercises",
+      "name": "exercises-dataset 健身动作库",
+      "repo": "hasaneyldrm/exercises-dataset",
+      "repo_url": "https://github.com/hasaneyldrm/exercises-dataset",
+      "license": "NOASSERTION",
+      "files": 3,
+      "bytes": 17395118,
+      "purpose": "做健身计划工具：动作、部位、器械、图示",
+      "note": ""
+    },
+    {
+      "slug": "words",
+      "name": "word-atlas 词光·文字图集",
+      "repo": "designfuchen/word-atlas",
+      "repo_url": "https://github.com/designfuchen/word-atlas",
+      "license": "NOASSERTION",
+      "files": 3,
+      "bytes": 8103333,
+      "purpose": "词典/背单词应用：释义、例句、多语言对照",
+      "note": "manifest 标记 skipped：记录了校验和但未纳入本地库"
+    }
+  ]
+}
