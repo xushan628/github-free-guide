@@ -1,10 +1,18 @@
 # 外链体检报告
 
-- 生成时间：2026-11-19T15:04:51+00:00
+- 生成时间：2026-11-19T15:02:41+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **135** 个链接：✅ 正常 129 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）6
+- 总计 **139** 个链接：✅ 正常 130 ／ ❌ 失效 0 ／ ⚠️ 未验证 3 ／ ⏭️ 跳过（本地服务）6
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
+
+## ⚠️ 未验证
+
+| 链接 | 原因 |
+|---|---|
+| https://concat.standalones.org | URLError: <urlopen error _ssl.c:993: The handshake operation timed out |
+| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
+| https://deeptutor.info | URLError: <urlopen error _ssl.c:993: The handshake operation timed out |
 
 ## ✅ 全部结果
 
@@ -32,9 +40,6 @@
 | ✅ | codespaces/README.md | 存在 |
 | ✅ | datasets.json | 存在 |
 | ✅ | datasets/README.md | 存在 |
-| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
-| ✅ | https://concat.standalones.org | 200 |
-| ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-codespaces | 200 |
 | ✅ | https://docs.github.com/copilot/about-github-copilot/plans-for-github-copilot | 200 |
@@ -62,6 +67,7 @@
 | ✅ | https://github.com/ZhuLinsen/daily_stock_analysis | 200 |
 | ✅ | https://github.com/addyosmani/agent-skills | 200 |
 | ✅ | https://github.com/adobe-fonts/source-han-sans | 200 |
+| ✅ | https://github.com/agalwood/Motrix | 200 |
 | ✅ | https://github.com/alibaba/open-code-review | 200 |
 | ✅ | https://github.com/awesome-dsh-plugin/awesome-dsh-plugin | 200 |
 | ✅ | https://github.com/backnotprop/plannotator | 200 |
@@ -101,6 +107,7 @@
 | ✅ | https://github.com/langchain-ai/langchain | 200 |
 | ✅ | https://github.com/langflow-ai/langflow | 200 |
 | ✅ | https://github.com/langgenius/dify | 200 |
+| ✅ | https://github.com/localsend/localsend | 200 |
 | ✅ | https://github.com/lucide-icons/lucide | 200 |
 | ✅ | https://github.com/lxgw/LxgwWenKai | 200 |
 | ✅ | https://github.com/mattpocock/skills | 200 |
@@ -116,12 +123,14 @@
 | ✅ | https://github.com/paperclipai/paperclip | 200 |
 | ✅ | https://github.com/pingdotgg/t3code | 200 |
 | ✅ | https://github.com/public-apis/public-apis | 200 |
+| ✅ | https://github.com/rustdesk/rustdesk | 200 |
 | ✅ | https://github.com/shitagaki-lab/see-through | 200 |
 | ✅ | https://github.com/simple-icons/simple-icons | 200 |
 | ✅ | https://github.com/squidfunk/mkdocs-material | 200 |
 | ✅ | https://github.com/t8y2/dbx | 200 |
 | ✅ | https://github.com/tabler/tabler-icons | 200 |
 | ✅ | https://github.com/tt-a1i/archify | 200 |
+| ✅ | https://github.com/tw93/Mole | 200 |
 | ✅ | https://github.com/vercel-labs/agent-browser | 200 |
 | ✅ | https://github.com/vercel-labs/agent-desktop | 200 |
 | ✅ | https://github.com/we-promise/sure | 200 |
@@ -145,3 +154,6 @@
 | ⏭️ | http://localhost:5678 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8080 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8081 | 本地服务示例，跳过 |
+| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
+| ⚠️ | https://concat.standalones.org | URLError: <urlopen error _ssl.c:993: The handshake operation timed out |
+| ⚠️ | https://deeptutor.info | URLError: <urlopen error _ssl.c:993: The handshake operation timed out |

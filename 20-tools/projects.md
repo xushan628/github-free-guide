@@ -4,6 +4,10 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **RustDesk** | [rustdesk/rustdesk](https://github.com/rustdesk/rustdesk) | AGPL-3.0 | 开源远程桌面，可自建中继服务器，替代 TeamViewer/向日葵 | 小白神器 |
+| **LocalSend** | [localsend/localsend](https://github.com/localsend/localsend) | Apache-2.0 | 跨平台 AirDrop 替代：手机↔电脑互传，同一个局域网直连 | 小白神器 |
+| **Mole** | [tw93/Mole](https://github.com/tw93/Mole) | GPL-3.0 | 开源 Mac/PC 清理工具，命令行删缓存、找大文件 | 小白神器 |
+| **Motrix** | [agalwood/Motrix](https://github.com/agalwood/Motrix) | NOASSERTION | 全能下载器（HTTP/BT/磁力），替代迅雷 | 小白神器 |
 | **Univer** | [dream-num/univer](https://github.com/dream-num/univer) | Apache-2.0 | 开源 AI 办公套件：表格/文档/幻灯片的 SDK，AI 可直接调用 | 86 |
 | **Sure** | [we-promise/sure](https://github.com/we-promise/sure) | AGPL-3.0 | 开源个人记账理财 App，自带 AI 助手 | 86 |
 | **agent-browser** | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | Vercel 给 AI 做的浏览器自动化 CLI，能把跑通的网页流程存下来重放 | 73 |
@@ -16,8 +20,22 @@
 | **agent-desktop** | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | Apache-2.0 | 让 AI 通过 CLI 操作桌面应用的 computer-use 工具（走 macOS 无障碍 API + MCP） | 137 |
 | **gods-eye-view** | [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) | **NOASSERTION** | 浏览器里的 3D 地球观测台，数据来自真实公开源 | 130 |
 
+## 「会员能停了」这五个（本仓库的对应关系）
+
+| 你以前付的费用 | 开源替代 | 在这个仓库的哪 |
+|---|---|---|
+| TeamViewer / 向日葵会员 | **RustDesk** | 本页表格 |
+| 各种传输助手/网盘 | **LocalSend** | 本页表格 |
+| PDF 编辑/转换订阅 | **Stirling-PDF** | 本页表格 |
+| 清理软件订阅 | **Mole** | 本页表格 |
+| 迅雷会员 | **Motrix** | 本页表格 |
+
 ## 用之前要知道的
 
+- **RustDesk 是 AGPL-3.0**：自建服务器给自己用没问题，但对外提供远程桌面服务要按 AGPL 开源修改；没自建中继时走官方服务器，速度和稳定性受限。
+- **Motrix 的许可证 GitHub 识别不出（NOASSERTION）**：商用前自己读 LICENSE。
+- **Mole 是 GPL-3.0 的命令行工具**：删除类操作**先用 `--dry-run` 或预览模式**跑一遍，别一上来就清。
+- **LocalSend 只在同一局域网直连**：跨网段用不了，这是设计如此（不经服务器）。
 - **Concat 官网/下载**：<https://concat.standalones.org>
 - **Concat 是 AGPL-3.0**：自己剪片没事；但如果你把它包进产品、或对外提供剪辑服务，就要按 AGPL 开源你的修改。
 - **它自己标了 Beta**（README 第一行就是 `Beta:`）：重要项目别把素材库押在它上面，先把工程导出备份。
