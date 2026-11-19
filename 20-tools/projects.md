@@ -4,6 +4,8 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **ai-goofish-monitor** | [Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor) | MIT | 闲鱼多任务监控与智能分析：Playwright + AI 盯商品，带后台 UI（只读，不改平台操作） | 抖音 |
+| **闲鱼超级管家** | [23Star/xianyu-super-butler](https://github.com/23Star/xianyu-super-butler) | **AGPL-3.0** | 闲鱼自动发货平台：自动发货、评价、擦亮、过滑块，带 Web 后台 | 抖音 |
 | **RustDesk** | [rustdesk/rustdesk](https://github.com/rustdesk/rustdesk) | AGPL-3.0 | 开源远程桌面，可自建中继服务器，替代 TeamViewer/向日葵 | 小白神器 |
 | **LocalSend** | [localsend/localsend](https://github.com/localsend/localsend) | Apache-2.0 | 跨平台 AirDrop 替代：手机↔电脑互传，同一个局域网直连 | 小白神器 |
 | **Mole** | [tw93/Mole](https://github.com/tw93/Mole) | GPL-3.0 | 开源 Mac/PC 清理工具，命令行删缓存、找大文件 | 小白神器 |
@@ -29,6 +31,22 @@
 | PDF 编辑/转换订阅 | **Stirling-PDF** | 本页表格 |
 | 清理软件订阅 | **Mole** | 本页表格 |
 | 迅雷会员 | **Motrix** | 本页表格 |
+
+## 闲鱼/电商自动化：先看风险再动手
+
+| 项目 | 星 | 许可证 | 干什么 | 风险等级 |
+|---|---|---|---|---|
+| **闲鱼超级管家** | 1.5k | AGPL-3.0 | 自动发货、自动评价、擦亮、自动过滑块 | 🔴 高 |
+| **ai-goofish-monitor** | 20.3k | MIT | 只做**监控/选品**：Playwright + AI 盯商品，带后台 UI | 🟡 中（只读） |
+
+**为什么把「超级管家」标红（这几条比功能重要）**：
+
+- 它做的是**对抗平台风控**：自动过滑块（验证码）、自动评价、自动擦亮——违反闲鱼/淘宝用户协议，**账号被限流或封禁是常态**，不是意外；
+- 它自己在描述里推广「在线版托管账号」，**把闲鱼账号交给第三方登录** = 对方能看你所有订单和聊天，账号安全风险极高；
+- 自动发货+自动收款走第三方，**售后纠纷和资金风险**都在你这边；
+- AGPL-3.0：改完对外提供服务要开源。
+
+**更稳的做法**：要选品/盯价格就用只读的 `ai-goofish-monitor`；要发货就手动或用平台官方工具。自动化省下来的时间，可能不够处理一次封号。
 
 ## 用之前要知道的
 
