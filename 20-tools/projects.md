@@ -4,6 +4,9 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **Univer** | [dream-num/univer](https://github.com/dream-num/univer) | Apache-2.0 | 开源 AI 办公套件：表格/文档/幻灯片的 SDK，AI 可直接调用 | 86 |
+| **Sure** | [we-promise/sure](https://github.com/we-promise/sure) | AGPL-3.0 | 开源个人记账理财 App，自带 AI 助手 | 86 |
+| **agent-browser** | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | Vercel 给 AI 做的浏览器自动化 CLI，能把跑通的网页流程存下来重放 | 73 |
 | **Concat** | [jub0t/Concat](https://github.com/jub0t/Concat) | **AGPL-3.0** | 剪映的开源平替：本地优先的跨平台剪辑器，带 JSON-RPC + MCP，能被 AI agent 脚本化驱动 | 抖音 |
 | **IT-Tools** | [CorentinTh/it-tools](https://github.com/CorentinTh/it-tools) | GPL-3.0 | 80+ 个纯前端小工具：时间戳、Base64、JWT、二维码、正则…数据不出浏览器 | 本仓库 · 工具篇 |
 | **CyberChef** | [gchq/CyberChef](https://github.com/gchq/CyberChef) | Apache-2.0 | 英国 GCHQ 的数据瑞士军刀：编码解码、加解密、取证分析，可拖成流水线 | 本仓库 · 工具篇 |

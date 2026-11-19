@@ -4,6 +4,8 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **daily_stock_analysis** | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | MIT | LLM 驱动的股票智能分析：多源行情 + 新闻 + 决策看板 + 自动推送 | 73 |
+| **Disc Image Studio** | [JiaFeiMiao-K-Cat/DiscImageStudio](https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio) | GPL-3.0 | 用普通刻录光驱在光盘盘面上刻出图案 | 73 |
 | **OpenStock** | [Open-Dev-Society/OpenStock](https://github.com/Open-Dev-Society/OpenStock) | **AGPL-3.0** | 开源股票行情看板：自选股 + 实时图表，替代付费行情平台 | 133 |
 | **ziwei-doushu** | [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) | MIT | 紫微斗数开源排盘引擎：排盘算法、四化系统、格局知识库、古籍原文 | 138 |
 

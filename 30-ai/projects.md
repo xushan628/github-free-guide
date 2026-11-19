@@ -4,6 +4,18 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **Modern Web Guidance** | [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | Apache-2.0 | Google Chrome 团队：让 coding agent 先查最新的 Web 最佳实践再动手 | 86 |
+| **Chrome DevTools MCP** | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | 把 Chrome DevTools 交给 AI：自己查报错、看性能 | 86 |
+| **Open Code Review** | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | Apache-2.0 | 阿里开源的 AI 代码审查，主打 token 省、规模大 | 86 |
+| **Codex Security** | [openai/codex-security](https://github.com/openai/codex-security) | Apache-2.0 | OpenAI 官方安全 CLI + SDK：找漏洞、出补丁 | 86 |
+| **Addy Osmani 技能包** | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | 25 个资深工程师技能，直接喂给 coding agent | 86 |
+| **Plannotator** | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | Apache-2.0 | 像批改作业一样批注 AI 的执行计划，再让它动手 | 86 |
+| **Humanizer** | [blader/humanizer](https://github.com/blader/humanizer) | MIT | 去 AI 腔：识别 26 种 AI 写作特征并改写 | 86 |
+| **ffmpeg-skill** | [kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | MIT | 给编程 agent 配一个剪辑师：42 个 FFmpeg 工具 | 86 |
+| **Matt Pocock 技能包** | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT | 实打实的工程技能集（含 grill-me 先拷问需求） | 78 |
+| **Cloudflare Skills** | [cloudflare/skills](https://github.com/cloudflare/skills) | Apache-2.0 | Cloudflare 官方技能库：教 agent 在 Cloudflare 上建东西、做安全审计 | 78 |
+| **HyperFrames** | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | HeyGen 出品：写网页就能出可编辑的 AI 视频 | 78 |
+| **MoneyPrinterTurbo** | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | MIT | 给一个主题或关键词，自动生成高清短视频 | 73 |
 | **DeepTutor** | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Apache-2.0 | 港大私人 AI 家教：RAG 知识库、引导式学习、出题测评 | 专题 |
 | **Archify** | [tt-a1i/archify](https://github.com/tt-a1i/archify) | Apache-2.0 | 把想法/代码库变成可交互架构图（Claude Code / Codex 的 skill） | 130 |
 | **OpenMAIC** | [THU-MAIC/OpenMAIC](https://github.com/THU-MAIC/OpenMAIC) | MIT | 清华团队的多智能体交互式课堂，一键生成互动课 | 130 |
@@ -20,6 +32,12 @@
 | **T3 Code** | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | MIT | 从任意电脑/手机控制 Claude Code、Codex 等 agent | 138 |
 
 > 「专题」= 本仓库单独写过完整一节的项目，见 [README.md](README.md) 的 DeepTutor 部分。
+
+## 本期没收录的（没核实到唯一仓库）
+
+「本月十大」里还有 4 个没匹配到唯一的开源仓库，先不硬凑：
+`Orca`（AI 编程工作台）、`Impeccable`（一句话调设计强弱）、`Hallmark`（50 套设计主题）、`taste-skill`（按 Figma 水准检查官网）。
+这几个可能是产品名或用例名，等能确认仓库再补。
 
 ## 用之前要知道的
 
