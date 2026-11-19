@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GitHub 免费福利指南 · 9 类真正能白嫖的功能</title>
+<title>GitHub 免费福利指南 · 10 类真正能白嫖的功能</title>
 <meta name="description" content="GitHub 免费商用素材、在线工具、本地 AI、Actions 定时任务、Pages 建站、Codespaces、学生包与避坑指南。">
 <style>
   :root{
@@ -98,7 +98,7 @@
       每条资源都实测可达，每个素材都附许可证。
     </p>
     <div class="stats">
-      <span class="stat"><b>9</b> 类免费能力</span>
+      <span class="stat"><b>10</b> 类免费能力</span>
       <span class="stat"><b>200</b> 个图标已入库</span>
       <span class="stat"><b id="stat-datasets">5</b> 个开源数据集</span>
       <span class="stat"><b>0</b> 元成本</span>
@@ -196,6 +196,18 @@
       desc:"Actions 默认只读、cron 是 UTC、密钥泄露、许可证误用——白嫖前先看这一页。",
       tags:["权限陷阱","额度边界","许可证"], links:[["目录", REPO+"/tree/main/08-limits"],["说明", REPO+"/blob/main/08-limits/README.md"],["官方计费", "https://docs.github.com/billing"]] },
 
+    { no:"10", cat:"热点", icon:"🔥", title:"GitHub 一周热点",
+      desc:"「Github一周热点」第 137 期：5 个本周值得看的项目，从超级智能体到动漫角色分层拆解。",
+      tags:["137 期","5 个项目","追更收录"],
+      items:[
+        {name:"dsh-superagent-prototype · 超级智能体", license:"MIT", repo_url:"https://github.com/deepseek-ai/dsh-superagent-prototype"},
+        {name:"agent-desktop · AI 操作桌面", license:"Apache-2.0", repo_url:"https://github.com/vercel-labs/agent-desktop"},
+        {name:"claude-seo · 网站 SEO skill", license:"MIT", repo_url:"https://github.com/AgriciDaniel/claude-seo"},
+        {name:"awesome-dsh-plugin · 插件合集", license:"CC0-1.0", repo_url:"https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"},
+        {name:"see-through · 动漫角色分层", license:"Apache-2.0", repo_url:"https://github.com/shitagaki-lab/see-through"}
+      ],
+      links:[["目录", REPO+"/tree/main/10-weekly"],["说明", REPO+"/blob/main/10-weekly/README.md"],["本期详情", REPO+"/blob/main/10-weekly/137/README.md"]] },
+
     // 第 9 类由 scripts/sync_atlas.py 生成的数据块驱动（见下方 atlas-datasets）
   ];
 
@@ -260,6 +272,9 @@
         <div class="links">${d.links.map(([t,u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("")}</div>
       </article>`).join("");
   }
+
+  // 第 9 类由数据块生成、在第 10 类之后 push，这里按编号统一排序
+  DATA.sort((a, b) => Number(a.no) - Number(b.no));
 
   q.addEventListener("input", render);
   render();

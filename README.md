@@ -1,4 +1,4 @@
-# GitHub 免费福利指南 · 9 类真正能白嫖的功能
+# GitHub 免费福利指南 · 10 类真正能白嫖的功能
 
 > 把"GitHub 只是下代码的地方"这个用法升级成：**免费素材库 + 免费云算力 + 免费定时任务 + 免费网站 + 免费 AI 工作台 + 免费数据**。
 > 本仓库既能当清单读，也是一个**可直接运行**的模板仓库：素材已下载入库，Actions 模板可直接复制，站点已用本仓库的 `docs/` 通过 GitHub Pages 部署。
@@ -10,7 +10,7 @@
 
 ---
 
-## 9 类功能速览
+## 10 类功能速览
 
 | # | 功能 | 一句话价值 | 免费额度（个人账号） | 入口 |
 |---|------|-----------|---------------------|------|
@@ -23,6 +23,7 @@
 | 7 | Student Developer Pack | 学生认证后一大票商业工具免费用 | 需学生身份，有效期最长至毕业 | [07-student-pack](07-student-pack/README.md) |
 | 8 | 额度与避坑 | 免费额度的真实边界 + 4 个高频陷阱 | —— | [08-limits](08-limits/README.md) |
 | 9 | 开源数据集 | GitHub 上的免费数据：可直接下载、可查询 | 按各数据集许可证 | [09-datasets](09-datasets/README.md) |
+| 10 | 一周热点 | 每周追更：把热传视频里的项目落到具体仓库 | —— | [10-weekly](10-weekly/README.md) |
 
 > 额度数字会变。**以 `08-limits` 里的官方文档链接为准**，本仓库的表格只做速查。
 
@@ -81,6 +82,7 @@ github-free-guide/
 ├─ 07-student-pack/  学生包申请与权益
 ├─ 08-limits/        免费额度速查 + 4 个坑
 ├─ 09-datasets/      开源数据集目录（自动同步姊妹项目 Open Data Atlas）
+├─ 10-weekly/        GitHub 一周热点（按期归档：137/ 含 5 个项目）
 ├─ docs/             ← GitHub Pages 站点源（已部署）
 ├─ scripts/          fetch_assets / verify_links / deploy_github / check_site / sync_atlas
 ├─ .github/workflows 本仓库每周自动跑的外链体检 + 数据集同步
