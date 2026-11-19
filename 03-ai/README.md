@@ -73,7 +73,68 @@ docker run -d --name n8n -p 5678:5678 \
 
 ---
 
-## 三、GitHub 上的模型/数据集去哪找
+## 三、AI 应用案例：港大 DeepTutor · 私人 AI 家教
+
+> 抖音上热传的"港大开源私人 AI 家教"就是它：**[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)**，
+> HKUDS 团队出品，隶属于香港大学 **Data Intelligence Lab**。README 里的定位是 *Lifelong Personalized Tutoring*（终身个性化辅导）。
+
+| 项目 | 值 |
+|---|---|
+| 热度 | ★60,000+，fork 7,300+，仍在高频迭代（最新 v1.7.3，2026-11 发布） |
+| 许可证 | **Apache-2.0**（可商用、可改、可自部署） |
+| 技术栈 | Python 3.11–3.14 + Node.js 20.9+ |
+| 官网 / 论文 | <https://deeptutor.info> ／ [arXiv](https://arxiv.org/abs/2604.26962) |
+| 数据 | 知识库、聊天记录都存在**你自己的机器**上（`data/user/`），不上传云端 |
+
+论文标题是 *DeepTutor: Towards Agentic Personalized Tutoring*，核心是把**带引用的讲解**、**难度校准的出题**和**学习者记忆**拼成一个框架，并提出了评测基准 TutorBench（论文称个性化指标平均提升 10.8%）。看论文比看宣传语更能判断它适不适合你。
+
+### 它能做什么
+
+- **知识库问答（RAG）**：把 PDF / DOCX / PPTX / EPUB 丢进去，基于你自己的资料回答，带出处
+- **引导式学习**：不是直接给答案，而是按掌握度出题、追进度
+- **出题与测评**：选择题/填空/问答，可导出
+- **Book 引擎**：把一堆资料编译成一本可读的"活书"
+- **记忆与多智能体**：跨会话记住你学到哪，复杂任务拆给多个 agent
+- **多端**：桌面客户端（macOS / Windows 安装包）、Web 界面、CLI
+
+### 三种装法（按省事程度排序）
+
+**① 桌面版（最省事，连 Python 都不用装）**
+
+到 [Releases](https://github.com/HKUDS/DeepTutor/releases/latest) 下载对应安装包：
+
+| 你的电脑 | 下载 |
+|---|---|
+| Mac（Apple Silicon） | `Open-DeepTutor-MacOS-Apple-Silicon.dmg` |
+| Mac（Intel） | `Open-DeepTutor-MacOS-Intel.dmg` |
+| Windows x64 | `Open-DeepTutor-Windows-Setup.exe` |
+
+> Windows 预览版未签名，SmartScreen 会拦一下，选"仍要运行"。
+
+**② pip 安装（自己控制环境）**
+
+```bash
+python -m pip install -U "deeptutor[full]"   # 装 Web 应用 + CLI
+deeptutor start                              # 起服务，按提示配置模型
+```
+
+**③ Docker（部署到服务器/ NAS）**
+
+```bash
+docker run --rm --name deeptutor -p 8000:8000 \
+  -v deeptutor-data:/app/data \
+  ghcr.io/hkuds/deeptutor:latest
+```
+
+### 用之前必须知道的三件事
+
+1. **它本身不是模型**。DeepTutor 是"教学流程 + RAG + agent"的外壳，**要接自己的 LLM**（OpenAI/Claude/通义/本地 Ollama 都行）。没配模型 key 是跑不起来的。
+2. **想完全免费 → 接本地模型**：先用 [Ollama](#一本地跑模型选一个引擎) 起一个 `qwen2.5:7b` 或更大，再把 DeepTutor 指向 `http://localhost:11434/v1`。这样从数据到推理全在自己的机器上。
+3. **隐私边界**：资料存在本地，但**推理请求会发到你配置的模型服务商**。用云端 API 时，知识库检索出来的片段会随问题一起发出去；敏感材料请配本地模型。
+
+---
+
+## 四、GitHub 上的模型/数据集去哪找
 
 - [huggingface/transformers](https://github.com/huggingface/transformers) —— 模型事实标准库
 - [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) —— GGUF 量化模型生态入口
