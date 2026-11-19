@@ -63,6 +63,10 @@ IT-Tools 是纯静态应用，`npm run build` 后把 `dist/` 推到 `gh-pages` �
 
 ---
 
+## 想剪视频 / 做自媒体成片？
+
+看 [projects.md](projects.md) 里的 **Concat** —— 剪映的开源平替，本地优先、跨平台、AGPL-3.0，还带 JSON-RPC + MCP 能被 agent 驱动。注意它自己标了 Beta。
+
 ## 选型判断：三个问题
 
 1. **是纯前端吗？** 纯前端（IT-Tools、CyberChef）→ 数据不出本机，最安全。
