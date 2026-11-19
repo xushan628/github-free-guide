@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>页面不存在 · GitHub 免费福利指南</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://xushan628.github.io/github-free-guide/">
+<style>
+  :root { color-scheme: dark light; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    background: #0d1117; color: #e6edf3; padding: 24px;
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  .box { max-width: 520px; text-align: center; }
+  .code { font-size: 64px; font-weight: 800; letter-spacing: -2px; margin: 0 0 8px;
+          background: linear-gradient(90deg, #58a6ff, #3fb950); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  h1 { font-size: 20px; margin: 0 0 12px; }
+  p { color: #9198a1; font-size: 14px; margin: 0 0 8px; }
+  a.btn {
+    display: inline-block; margin-top: 20px; padding: 10px 22px; border-radius: 10px;
+    background: #238636; color: #fff; text-decoration: none; font-weight: 600;
+  }
+  a.btn:hover { background: #2ea043; }
+  code { background: #161b22; border: 1px solid #30363d; border-radius: 5px; padding: 1px 6px; font-size: 13px; }
+</style>
+<script>
+  // 自动返回站点首页。项目站点的根是 /<仓库名>/。
+  (function () {
+    var HOME = "/github-free-guide/";
+    if (location.pathname !== HOME && location.pathname !== HOME + "index.html") {
+      setTimeout(function () { location.replace(HOME); }, 800);
+    }
+  })();
+</script>
+</head>
+<body>
+  <div class="box">
+    <p class="code">404</p>
+    <h1>这个地址没有内容</h1>
+    <p>可能链接过期了，或者你刚打开时站点还在构建。</p>
+    <p>正在把你送回首页（约 1 秒）…</p>
+    <p style="margin-top:18px;font-size:13px;color:#6e7681">
+      如果一直跳不过去，说明浏览器缓存了一个旧的 404：按 <code>Ctrl + Shift + R</code> 强制刷新。
+    </p>
+    <a class="btn" href="/github-free-guide/">返回首页</a>
+  </div>
+</body>
+</html>

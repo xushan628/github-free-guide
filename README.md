@@ -106,6 +106,7 @@ github-free-guide/
 ```bash
 python scripts/verify_links.py     # 外链体检 → docs/link-check.md
 python scripts/fetch_assets.py     # 素材补齐
+python scripts/check_site.py       # 从你自己的网络体检线上站点（判断是挂了还是被缓存）
 ```
 
 外链体检已配置为每周自动运行：见 [.github/workflows/link-check.yml](.github/workflows/link-check.yml)。
