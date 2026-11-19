@@ -1,10 +1,16 @@
 # 外链体检报告
 
-- 生成时间：2026-11-19T04:54:50+00:00
+- 生成时间：2026-11-19T04:56:21+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **130** 个链接：✅ 正常 124 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）6
+- 总计 **115** 个链接：✅ 正常 108 ／ ❌ 失效 0 ／ ⚠️ 未验证 1 ／ ⏭️ 跳过（本地服务）6
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
+
+## ⚠️ 未验证
+
+| 链接 | 原因 |
+|---|---|
+| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
 
 ## ✅ 全部结果
 
@@ -19,25 +25,19 @@
 | ✅ | ../scripts/fetch_assets.py | 存在 |
 | ✅ | ../scripts/sync_atlas.py | 存在 |
 | ✅ | 10-resources/README.md | 存在 |
-| ✅ | 130/README.md | 存在 |
-| ✅ | 133/README.md | 存在 |
-| ✅ | 137/README.md | 存在 |
-| ✅ | 138/README.md | 存在 |
 | ✅ | 20-tools/README.md | 存在 |
 | ✅ | 30-ai/README.md | 存在 |
 | ✅ | 40-ship/README.md | 存在 |
 | ✅ | 50-benefits/README.md | 存在 |
 | ✅ | 50-benefits/limits/README.md | 存在 |
+| ✅ | 60-others/README.md | 存在 |
 | ✅ | LICENSE | 存在 |
+| ✅ | README.md | 存在 |
 | ✅ | actions/README.md | 存在 |
 | ✅ | assets/README.md | 存在 |
 | ✅ | codespaces/README.md | 存在 |
 | ✅ | datasets.json | 存在 |
 | ✅ | datasets/README.md | 存在 |
-| ✅ | https://agent-browser.dev/desktop | 200 |
-| ✅ | https://archify.si | 200 |
-| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
-| ✅ | https://awesome-dsh-plugin.com | 200 |
 | ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-codespaces | 200 |
@@ -112,31 +112,22 @@
 | ✅ | https://github.com/vercel-labs/agent-desktop | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas/blob/main/DATASETS.md | 200 |
-| ✅ | https://godseyeview.ai/ | 200 |
 | ✅ | https://ollama.com/install.sh | 200 |
-| ✅ | https://v.douyin.com/0oBRAzfFBDI/ | 200 |
-| ✅ | https://v.douyin.com/74U3srU4JQ4/ | 200 |
-| ✅ | https://v.douyin.com/L4GRFhPqXOo/ | 200 |
-| ✅ | https://v.douyin.com/RQd4yLbc1fY/ | 200 |
-| ✅ | https://voicestudio.sh | 200 |
 | ✅ | https://xushan628.github.io/open-data-atlas/ | 200 |
 | ✅ | https://xushan628.github.io/open-data-atlas/licenses.html | 200 |
 | ✅ | https://xushan628.github.io/open-data-atlas/sql-practice.html | 200 |
 | ✅ | install/install-ollama.sh | 存在 |
 | ✅ | limits/README.md | 存在 |
 | ✅ | pages/README.md | 存在 |
+| ✅ | projects.md | 存在 |
 | ✅ | student-pack/README.md | 存在 |
 | ✅ | templates/cron-job.yml | 存在 |
 | ✅ | templates/manual-run.yml | 存在 |
 | ✅ | templates/matrix.yml | 存在 |
-| ✅ | weekly/130/README.md | 存在 |
-| ✅ | weekly/133/README.md | 存在 |
-| ✅ | weekly/137/README.md | 存在 |
-| ✅ | weekly/138/README.md | 存在 |
-| ✅ | weekly/README.md | 存在 |
 | ⏭️ | http://127.0.0.1:8790 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:11434/v1 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:11434/v1/chat/completions | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:5678 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8080 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8081 | 本地服务示例，跳过 |
+| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |

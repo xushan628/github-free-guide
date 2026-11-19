@@ -4,6 +4,8 @@
 
 ---
 
+> **跨期精选 AI 项目**（Archify / OpenMAIC / Paperclip / T3 Code / VoiceStudio 等 13 个）见 [projects.md](projects.md)。
+
 ## 一、本地跑模型：选一个引擎
 
 | 引擎 | 适合谁 | 特点 | 许可证 |

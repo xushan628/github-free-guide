@@ -4,6 +4,8 @@
 
 ---
 
+> **跨期精选项目**（DBX / Scrapling / agent-desktop / gods-eye-view）见 [projects.md](projects.md)。
+
 ## 推荐清单
 
 ### 一站式工具箱（最推荐先试这两个）

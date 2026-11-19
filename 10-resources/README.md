@@ -22,6 +22,16 @@
 - 已打成可查询的 SQLite，在线图鉴：<https://xushan628.github.io/open-data-atlas/>
 - 目录由 [`scripts/sync_atlas.py`](../scripts/sync_atlas.py) 从上游 manifest 自动同步，每周跟着更新
 
+> 更多跨期收录的素材/设计类项目见 [assets/README.md](assets/README.md)，数据类见 [datasets/README.md](datasets/README.md)。
+
+## 设计系统（当资源库用）
+
+| 项目 | 仓库 | 许可证 | 说明 |
+|---|---|---|---|
+| **Astryx** | [meta/astryx](https://github.com/meta/astryx) | MIT | Meta 开源的设计系统：组件 + 设计 token，可定制、"agent ready"（配合 AI 生成界面时更容易对齐规范） | 
+
+> 收录的是**官方 `meta/astryx`**；网上有 Svelte / Flutter 的第三方移植版，用之前确认它跟进到哪个版本。
+
 ## 用之前先看许可证
 
 MIT / ISC / Apache-2.0 可商用；OFL 字体可嵌入但不可单卖；ODbL 有传染性；**没有 LICENSE 文件的默认不能商用**。

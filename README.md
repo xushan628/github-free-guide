@@ -1,7 +1,7 @@
 # GitHub 免费福利指南 · 按功能分类
 
 > 把 GitHub 当成：免费资源库 + 免费云算力 + 免费托管 + 免费 AI 工作台。
-> **分类轴只有一条：你想干什么。**
+> **分类轴只有一条：你想干什么。** 暂时归不了类的，统一放 [60-others](60-others/README.md)，不硬塞。
 
 **姊妹项目**：[Open Data Atlas](https://xushan628.github.io/open-data-atlas/) —— 本仓库「找资源」里的 5 个数据集，被打成了可在线查询的 SQLite 图鉴。
 
@@ -16,21 +16,7 @@
 | 🧠 **用 AI 干活** | [30-ai](30-ai/README.md) | Ollama 本地模型、n8n/Dify 工作流、港大 DeepTutor 私人 AI 家教 |
 | 🚀 **让它自动跑 / 上线** | [40-ship](40-ship/README.md) | Codespaces 写代码 → Actions 定时跑 → Pages 发布成网站 |
 | 💰 **少花钱、别犯规** | [50-benefits](50-benefits/README.md) | 学生开发者大礼包、免费额度速查、4 个高频陷阱 |
-
----
-
-## 更新日志（按时间，不属于功能分类）
-
-追更「Github一周热点」系列，把视频里的项目落到具体仓库并核实许可证：
-
-| 期号 | 主题 | 项目 |
-|---|---|---|
-| [138](weekly/138/README.md) | 开源版的 Grok Bot | OpenMausBot / T3 Code / ziwei-doushu / Scrapling / Astryx |
-| [137](weekly/137/README.md) | 读懂 superagent | dsh-superagent-prototype / agent-desktop / claude-seo / awesome-dsh-plugin / see-through |
-| [133](weekly/133/README.md) | 给 AI Agent 开家公司 | Paperclip / video-use / Octop / OpenStock / DBX |
-| [130](weekly/130/README.md) | Skill 与智能体专场 | archify / gods-eye-view / OpenMAIC / scientific-agent-skills / VoiceStudio |
-
-索引与收录标准见 [weekly/README.md](weekly/README.md)。
+| 🗃️ **其他** | [60-others](60-others/README.md) | 暂时没有功能归属的（OpenStock 行情看板、ziwei-doushu 命理排盘），攒够了再拆新组 |
 
 ---
 
@@ -41,8 +27,8 @@ github-free-guide/
 ├─ 10-resources/          找资源
 │  ├─ assets/             200 图标 + 2 套字体 + 原始许可证
 │  └─ datasets/           5 个开源数据集目录（自动同步上游）
-├─ 20-tools/              用工具
-├─ 30-ai/                 用 AI（含 DeepTutor 案例与 Ollama 安装脚本）
+├─ 20-tools/              用工具（projects.md：跨期精选）
+├─ 30-ai/                 用 AI（含 DeepTutor 案例、Ollama 安装脚本、projects.md 精选）
 ├─ 40-ship/               自动化与上线
 │  ├─ actions/            定时任务模板（3 个可直接复制）
 │  ├─ pages/              建站三种方式
@@ -50,7 +36,7 @@ github-free-guide/
 ├─ 50-benefits/           省钱与避坑
 │  ├─ student-pack/       学生包申请与权益
 │  └─ limits/             免费额度速查 + 4 个坑
-├─ weekly/                更新日志（133 / 137 / 138）
+├─ 60-others/             其他项目（暂未归类，后续再分）
 ├─ docs/                  ← GitHub Pages 站点源（已部署）
 ├─ scripts/               fetch_assets / verify_links / deploy_github / check_site / sync_atlas
 ├─ .github/workflows      每周外链体检 + 数据集同步
