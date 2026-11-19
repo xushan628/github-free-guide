@@ -20,7 +20,7 @@
 | **word-atlas 词光·文字图集**<br><sub>manifest 标记 skipped：记录了校验和但未纳入本地库</sub> | [designfuchen/word-atlas](https://github.com/designfuchen/word-atlas) | 见上游 LICENSE | 3 个文件 · 7.7 MB | 词典/背单词应用：释义、例句、多语言对照 |
 <!-- END GENERATED: datasets -->
 
-> 表格由 [`scripts/sync_atlas.py`](../scripts/sync_atlas.py) 从上游 manifest 生成，每周随外链体检一起自动同步；机器可读版本见 [`datasets.json`](datasets.json)。
+> 表格由 [`scripts/sync_atlas.py`](../../scripts/sync_atlas.py) 从上游 manifest 生成，每周随外链体检一起自动同步；机器可读版本见 [`datasets.json`](datasets.json)。
 > 想要 star 数、字段字典、取样策略，看 [Open Data Atlas 的数据集说明](https://github.com/xushan628/open-data-atlas/blob/main/DATASETS.md)。
 
 ---

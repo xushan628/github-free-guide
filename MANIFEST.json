@@ -3,7 +3,7 @@
   "generator": "scripts/fetch_assets.py",
   "files": [
     {
-      "path": "01-assets/LICENSES/Inter-OFL.txt",
+      "path": "10-resources/assets/LICENSES/Inter-OFL.txt",
       "repo": "google/fonts",
       "source_path": "ofl/inter/OFL.txt",
       "license": "OFL-1.1",
@@ -12,7 +12,7 @@
       "source_url": "https://github.com/google/fonts/blob/main/ofl/inter/OFL.txt"
     },
     {
-      "path": "01-assets/LICENSES/JetBrainsMono-OFL.txt",
+      "path": "10-resources/assets/LICENSES/JetBrainsMono-OFL.txt",
       "repo": "google/fonts",
       "source_path": "ofl/jetbrainsmono/OFL.txt",
       "license": "OFL-1.1",
@@ -21,7 +21,7 @@
       "source_url": "https://github.com/google/fonts/blob/main/ofl/jetbrainsmono/OFL.txt"
     },
     {
-      "path": "01-assets/LICENSES/lucide-ISC.txt",
+      "path": "10-resources/assets/LICENSES/lucide-ISC.txt",
       "repo": "lucide-icons/lucide",
       "source_path": "LICENSE",
       "license": "ISC",
@@ -30,7 +30,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/LICENSE"
     },
     {
-      "path": "01-assets/LICENSES/tabler-MIT.txt",
+      "path": "10-resources/assets/LICENSES/tabler-MIT.txt",
       "repo": "tabler/tabler-icons",
       "source_path": "LICENSE",
       "license": "MIT",
@@ -39,7 +39,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/LICENSE"
     },
     {
-      "path": "01-assets/fonts/Inter[opsz,wght].ttf",
+      "path": "10-resources/assets/fonts/Inter[opsz,wght].ttf",
       "repo": "google/fonts",
       "source_path": "ofl/inter/Inter[opsz,wght].ttf",
       "license": "OFL-1.1",
@@ -48,7 +48,7 @@
       "source_url": "https://github.com/google/fonts/blob/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf"
     },
     {
-      "path": "01-assets/fonts/JetBrainsMono[wght].ttf",
+      "path": "10-resources/assets/fonts/JetBrainsMono[wght].ttf",
       "repo": "google/fonts",
       "source_path": "ofl/jetbrainsmono/JetBrainsMono[wght].ttf",
       "license": "OFL-1.1",
@@ -57,7 +57,7 @@
       "source_url": "https://github.com/google/fonts/blob/main/ofl/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf"
     },
     {
-      "path": "01-assets/icons/lucide/arrow-down.svg",
+      "path": "10-resources/assets/icons/lucide/arrow-down.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/arrow-down.svg",
       "license": "ISC",
@@ -66,7 +66,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/arrow-down.svg"
     },
     {
-      "path": "01-assets/icons/lucide/arrow-left.svg",
+      "path": "10-resources/assets/icons/lucide/arrow-left.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/arrow-left.svg",
       "license": "ISC",
@@ -75,7 +75,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/arrow-left.svg"
     },
     {
-      "path": "01-assets/icons/lucide/arrow-right.svg",
+      "path": "10-resources/assets/icons/lucide/arrow-right.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/arrow-right.svg",
       "license": "ISC",
@@ -84,7 +84,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/arrow-right.svg"
     },
     {
-      "path": "01-assets/icons/lucide/arrow-up.svg",
+      "path": "10-resources/assets/icons/lucide/arrow-up.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/arrow-up.svg",
       "license": "ISC",
@@ -93,7 +93,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/arrow-up.svg"
     },
     {
-      "path": "01-assets/icons/lucide/bell.svg",
+      "path": "10-resources/assets/icons/lucide/bell.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/bell.svg",
       "license": "ISC",
@@ -102,7 +102,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/bell.svg"
     },
     {
-      "path": "01-assets/icons/lucide/bolt.svg",
+      "path": "10-resources/assets/icons/lucide/bolt.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/bolt.svg",
       "license": "ISC",
@@ -111,7 +111,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/bolt.svg"
     },
     {
-      "path": "01-assets/icons/lucide/bookmark.svg",
+      "path": "10-resources/assets/icons/lucide/bookmark.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/bookmark.svg",
       "license": "ISC",
@@ -120,7 +120,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/bookmark.svg"
     },
     {
-      "path": "01-assets/icons/lucide/calendar.svg",
+      "path": "10-resources/assets/icons/lucide/calendar.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/calendar.svg",
       "license": "ISC",
@@ -129,7 +129,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/calendar.svg"
     },
     {
-      "path": "01-assets/icons/lucide/camera-off.svg",
+      "path": "10-resources/assets/icons/lucide/camera-off.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/camera-off.svg",
       "license": "ISC",
@@ -138,7 +138,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/camera-off.svg"
     },
     {
-      "path": "01-assets/icons/lucide/camera.svg",
+      "path": "10-resources/assets/icons/lucide/camera.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/camera.svg",
       "license": "ISC",
@@ -147,7 +147,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/camera.svg"
     },
     {
-      "path": "01-assets/icons/lucide/chart-pie.svg",
+      "path": "10-resources/assets/icons/lucide/chart-pie.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/chart-pie.svg",
       "license": "ISC",
@@ -156,7 +156,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/chart-pie.svg"
     },
     {
-      "path": "01-assets/icons/lucide/check.svg",
+      "path": "10-resources/assets/icons/lucide/check.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/check.svg",
       "license": "ISC",
@@ -165,7 +165,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/check.svg"
     },
     {
-      "path": "01-assets/icons/lucide/chevron-down.svg",
+      "path": "10-resources/assets/icons/lucide/chevron-down.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/chevron-down.svg",
       "license": "ISC",
@@ -174,7 +174,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/chevron-down.svg"
     },
     {
-      "path": "01-assets/icons/lucide/chevron-left.svg",
+      "path": "10-resources/assets/icons/lucide/chevron-left.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/chevron-left.svg",
       "license": "ISC",
@@ -183,7 +183,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/chevron-left.svg"
     },
     {
-      "path": "01-assets/icons/lucide/chevron-right.svg",
+      "path": "10-resources/assets/icons/lucide/chevron-right.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/chevron-right.svg",
       "license": "ISC",
@@ -192,7 +192,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/chevron-right.svg"
     },
     {
-      "path": "01-assets/icons/lucide/chevron-up.svg",
+      "path": "10-resources/assets/icons/lucide/chevron-up.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/chevron-up.svg",
       "license": "ISC",
@@ -201,7 +201,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/chevron-up.svg"
     },
     {
-      "path": "01-assets/icons/lucide/clipboard.svg",
+      "path": "10-resources/assets/icons/lucide/clipboard.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/clipboard.svg",
       "license": "ISC",
@@ -210,7 +210,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/clipboard.svg"
     },
     {
-      "path": "01-assets/icons/lucide/clock.svg",
+      "path": "10-resources/assets/icons/lucide/clock.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/clock.svg",
       "license": "ISC",
@@ -219,7 +219,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/clock.svg"
     },
     {
-      "path": "01-assets/icons/lucide/cloud-upload.svg",
+      "path": "10-resources/assets/icons/lucide/cloud-upload.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/cloud-upload.svg",
       "license": "ISC",
@@ -228,7 +228,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/cloud-upload.svg"
     },
     {
-      "path": "01-assets/icons/lucide/cloud.svg",
+      "path": "10-resources/assets/icons/lucide/cloud.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/cloud.svg",
       "license": "ISC",
@@ -237,7 +237,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/cloud.svg"
     },
     {
-      "path": "01-assets/icons/lucide/code.svg",
+      "path": "10-resources/assets/icons/lucide/code.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/code.svg",
       "license": "ISC",
@@ -246,7 +246,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/code.svg"
     },
     {
-      "path": "01-assets/icons/lucide/copy.svg",
+      "path": "10-resources/assets/icons/lucide/copy.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/copy.svg",
       "license": "ISC",
@@ -255,7 +255,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/copy.svg"
     },
     {
-      "path": "01-assets/icons/lucide/cpu.svg",
+      "path": "10-resources/assets/icons/lucide/cpu.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/cpu.svg",
       "license": "ISC",
@@ -264,7 +264,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/cpu.svg"
     },
     {
-      "path": "01-assets/icons/lucide/database.svg",
+      "path": "10-resources/assets/icons/lucide/database.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/database.svg",
       "license": "ISC",
@@ -273,7 +273,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/database.svg"
     },
     {
-      "path": "01-assets/icons/lucide/download.svg",
+      "path": "10-resources/assets/icons/lucide/download.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/download.svg",
       "license": "ISC",
@@ -282,7 +282,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/download.svg"
     },
     {
-      "path": "01-assets/icons/lucide/external-link.svg",
+      "path": "10-resources/assets/icons/lucide/external-link.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/external-link.svg",
       "license": "ISC",
@@ -291,7 +291,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/external-link.svg"
     },
     {
-      "path": "01-assets/icons/lucide/eye-off.svg",
+      "path": "10-resources/assets/icons/lucide/eye-off.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/eye-off.svg",
       "license": "ISC",
@@ -300,7 +300,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/eye-off.svg"
     },
     {
-      "path": "01-assets/icons/lucide/eye.svg",
+      "path": "10-resources/assets/icons/lucide/eye.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/eye.svg",
       "license": "ISC",
@@ -309,7 +309,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/eye.svg"
     },
     {
-      "path": "01-assets/icons/lucide/file-text.svg",
+      "path": "10-resources/assets/icons/lucide/file-text.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/file-text.svg",
       "license": "ISC",
@@ -318,7 +318,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/file-text.svg"
     },
     {
-      "path": "01-assets/icons/lucide/file.svg",
+      "path": "10-resources/assets/icons/lucide/file.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/file.svg",
       "license": "ISC",
@@ -327,7 +327,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/file.svg"
     },
     {
-      "path": "01-assets/icons/lucide/folder.svg",
+      "path": "10-resources/assets/icons/lucide/folder.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/folder.svg",
       "license": "ISC",
@@ -336,7 +336,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/folder.svg"
     },
     {
-      "path": "01-assets/icons/lucide/git-branch.svg",
+      "path": "10-resources/assets/icons/lucide/git-branch.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/git-branch.svg",
       "license": "ISC",
@@ -345,7 +345,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/git-branch.svg"
     },
     {
-      "path": "01-assets/icons/lucide/git-pull-request.svg",
+      "path": "10-resources/assets/icons/lucide/git-pull-request.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/git-pull-request.svg",
       "license": "ISC",
@@ -354,7 +354,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/git-pull-request.svg"
     },
     {
-      "path": "01-assets/icons/lucide/globe.svg",
+      "path": "10-resources/assets/icons/lucide/globe.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/globe.svg",
       "license": "ISC",
@@ -363,7 +363,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/globe.svg"
     },
     {
-      "path": "01-assets/icons/lucide/headphones.svg",
+      "path": "10-resources/assets/icons/lucide/headphones.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/headphones.svg",
       "license": "ISC",
@@ -372,7 +372,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/headphones.svg"
     },
     {
-      "path": "01-assets/icons/lucide/heart.svg",
+      "path": "10-resources/assets/icons/lucide/heart.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/heart.svg",
       "license": "ISC",
@@ -381,7 +381,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/heart.svg"
     },
     {
-      "path": "01-assets/icons/lucide/image.svg",
+      "path": "10-resources/assets/icons/lucide/image.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/image.svg",
       "license": "ISC",
@@ -390,7 +390,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/image.svg"
     },
     {
-      "path": "01-assets/icons/lucide/key.svg",
+      "path": "10-resources/assets/icons/lucide/key.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/key.svg",
       "license": "ISC",
@@ -399,7 +399,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/key.svg"
     },
     {
-      "path": "01-assets/icons/lucide/layers.svg",
+      "path": "10-resources/assets/icons/lucide/layers.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/layers.svg",
       "license": "ISC",
@@ -408,7 +408,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/layers.svg"
     },
     {
-      "path": "01-assets/icons/lucide/link.svg",
+      "path": "10-resources/assets/icons/lucide/link.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/link.svg",
       "license": "ISC",
@@ -417,7 +417,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/link.svg"
     },
     {
-      "path": "01-assets/icons/lucide/list.svg",
+      "path": "10-resources/assets/icons/lucide/list.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/list.svg",
       "license": "ISC",
@@ -426,7 +426,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/list.svg"
     },
     {
-      "path": "01-assets/icons/lucide/loader.svg",
+      "path": "10-resources/assets/icons/lucide/loader.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/loader.svg",
       "license": "ISC",
@@ -435,7 +435,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/loader.svg"
     },
     {
-      "path": "01-assets/icons/lucide/lock.svg",
+      "path": "10-resources/assets/icons/lucide/lock.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/lock.svg",
       "license": "ISC",
@@ -444,7 +444,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/lock.svg"
     },
     {
-      "path": "01-assets/icons/lucide/mail.svg",
+      "path": "10-resources/assets/icons/lucide/mail.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/mail.svg",
       "license": "ISC",
@@ -453,7 +453,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/mail.svg"
     },
     {
-      "path": "01-assets/icons/lucide/map-pin.svg",
+      "path": "10-resources/assets/icons/lucide/map-pin.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/map-pin.svg",
       "license": "ISC",
@@ -462,7 +462,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/map-pin.svg"
     },
     {
-      "path": "01-assets/icons/lucide/menu.svg",
+      "path": "10-resources/assets/icons/lucide/menu.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/menu.svg",
       "license": "ISC",
@@ -471,7 +471,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/menu.svg"
     },
     {
-      "path": "01-assets/icons/lucide/message-circle.svg",
+      "path": "10-resources/assets/icons/lucide/message-circle.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/message-circle.svg",
       "license": "ISC",
@@ -480,7 +480,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/message-circle.svg"
     },
     {
-      "path": "01-assets/icons/lucide/message-square.svg",
+      "path": "10-resources/assets/icons/lucide/message-square.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/message-square.svg",
       "license": "ISC",
@@ -489,7 +489,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/message-square.svg"
     },
     {
-      "path": "01-assets/icons/lucide/minus.svg",
+      "path": "10-resources/assets/icons/lucide/minus.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/minus.svg",
       "license": "ISC",
@@ -498,7 +498,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/minus.svg"
     },
     {
-      "path": "01-assets/icons/lucide/monitor.svg",
+      "path": "10-resources/assets/icons/lucide/monitor.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/monitor.svg",
       "license": "ISC",
@@ -507,7 +507,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/monitor.svg"
     },
     {
-      "path": "01-assets/icons/lucide/moon.svg",
+      "path": "10-resources/assets/icons/lucide/moon.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/moon.svg",
       "license": "ISC",
@@ -516,7 +516,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/moon.svg"
     },
     {
-      "path": "01-assets/icons/lucide/package.svg",
+      "path": "10-resources/assets/icons/lucide/package.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/package.svg",
       "license": "ISC",
@@ -525,7 +525,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/package.svg"
     },
     {
-      "path": "01-assets/icons/lucide/paperclip.svg",
+      "path": "10-resources/assets/icons/lucide/paperclip.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/paperclip.svg",
       "license": "ISC",
@@ -534,7 +534,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/paperclip.svg"
     },
     {
-      "path": "01-assets/icons/lucide/pause.svg",
+      "path": "10-resources/assets/icons/lucide/pause.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/pause.svg",
       "license": "ISC",
@@ -543,7 +543,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/pause.svg"
     },
     {
-      "path": "01-assets/icons/lucide/phone.svg",
+      "path": "10-resources/assets/icons/lucide/phone.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/phone.svg",
       "license": "ISC",
@@ -552,7 +552,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/phone.svg"
     },
     {
-      "path": "01-assets/icons/lucide/pin.svg",
+      "path": "10-resources/assets/icons/lucide/pin.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/pin.svg",
       "license": "ISC",
@@ -561,7 +561,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/pin.svg"
     },
     {
-      "path": "01-assets/icons/lucide/play.svg",
+      "path": "10-resources/assets/icons/lucide/play.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/play.svg",
       "license": "ISC",
@@ -570,7 +570,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/play.svg"
     },
     {
-      "path": "01-assets/icons/lucide/plus.svg",
+      "path": "10-resources/assets/icons/lucide/plus.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/plus.svg",
       "license": "ISC",
@@ -579,7 +579,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/plus.svg"
     },
     {
-      "path": "01-assets/icons/lucide/power.svg",
+      "path": "10-resources/assets/icons/lucide/power.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/power.svg",
       "license": "ISC",
@@ -588,7 +588,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/power.svg"
     },
     {
-      "path": "01-assets/icons/lucide/printer.svg",
+      "path": "10-resources/assets/icons/lucide/printer.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/printer.svg",
       "license": "ISC",
@@ -597,7 +597,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/printer.svg"
     },
     {
-      "path": "01-assets/icons/lucide/puzzle.svg",
+      "path": "10-resources/assets/icons/lucide/puzzle.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/puzzle.svg",
       "license": "ISC",
@@ -606,7 +606,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/puzzle.svg"
     },
     {
-      "path": "01-assets/icons/lucide/repeat.svg",
+      "path": "10-resources/assets/icons/lucide/repeat.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/repeat.svg",
       "license": "ISC",
@@ -615,7 +615,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/repeat.svg"
     },
     {
-      "path": "01-assets/icons/lucide/rocket.svg",
+      "path": "10-resources/assets/icons/lucide/rocket.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/rocket.svg",
       "license": "ISC",
@@ -624,7 +624,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/rocket.svg"
     },
     {
-      "path": "01-assets/icons/lucide/save.svg",
+      "path": "10-resources/assets/icons/lucide/save.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/save.svg",
       "license": "ISC",
@@ -633,7 +633,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/save.svg"
     },
     {
-      "path": "01-assets/icons/lucide/school.svg",
+      "path": "10-resources/assets/icons/lucide/school.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/school.svg",
       "license": "ISC",
@@ -642,7 +642,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/school.svg"
     },
     {
-      "path": "01-assets/icons/lucide/scissors.svg",
+      "path": "10-resources/assets/icons/lucide/scissors.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/scissors.svg",
       "license": "ISC",
@@ -651,7 +651,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/scissors.svg"
     },
     {
-      "path": "01-assets/icons/lucide/search.svg",
+      "path": "10-resources/assets/icons/lucide/search.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/search.svg",
       "license": "ISC",
@@ -660,7 +660,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/search.svg"
     },
     {
-      "path": "01-assets/icons/lucide/send.svg",
+      "path": "10-resources/assets/icons/lucide/send.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/send.svg",
       "license": "ISC",
@@ -669,7 +669,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/send.svg"
     },
     {
-      "path": "01-assets/icons/lucide/server.svg",
+      "path": "10-resources/assets/icons/lucide/server.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/server.svg",
       "license": "ISC",
@@ -678,7 +678,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/server.svg"
     },
     {
-      "path": "01-assets/icons/lucide/settings.svg",
+      "path": "10-resources/assets/icons/lucide/settings.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/settings.svg",
       "license": "ISC",
@@ -687,7 +687,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/settings.svg"
     },
     {
-      "path": "01-assets/icons/lucide/share.svg",
+      "path": "10-resources/assets/icons/lucide/share.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/share.svg",
       "license": "ISC",
@@ -696,7 +696,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/share.svg"
     },
     {
-      "path": "01-assets/icons/lucide/shield.svg",
+      "path": "10-resources/assets/icons/lucide/shield.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/shield.svg",
       "license": "ISC",
@@ -705,7 +705,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/shield.svg"
     },
     {
-      "path": "01-assets/icons/lucide/shopping-cart.svg",
+      "path": "10-resources/assets/icons/lucide/shopping-cart.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/shopping-cart.svg",
       "license": "ISC",
@@ -714,7 +714,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/shopping-cart.svg"
     },
     {
-      "path": "01-assets/icons/lucide/star.svg",
+      "path": "10-resources/assets/icons/lucide/star.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/star.svg",
       "license": "ISC",
@@ -723,7 +723,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/star.svg"
     },
     {
-      "path": "01-assets/icons/lucide/sun.svg",
+      "path": "10-resources/assets/icons/lucide/sun.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/sun.svg",
       "license": "ISC",
@@ -732,7 +732,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/sun.svg"
     },
     {
-      "path": "01-assets/icons/lucide/table.svg",
+      "path": "10-resources/assets/icons/lucide/table.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/table.svg",
       "license": "ISC",
@@ -741,7 +741,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/table.svg"
     },
     {
-      "path": "01-assets/icons/lucide/tag.svg",
+      "path": "10-resources/assets/icons/lucide/tag.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/tag.svg",
       "license": "ISC",
@@ -750,7 +750,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/tag.svg"
     },
     {
-      "path": "01-assets/icons/lucide/terminal.svg",
+      "path": "10-resources/assets/icons/lucide/terminal.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/terminal.svg",
       "license": "ISC",
@@ -759,7 +759,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/terminal.svg"
     },
     {
-      "path": "01-assets/icons/lucide/trash.svg",
+      "path": "10-resources/assets/icons/lucide/trash.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/trash.svg",
       "license": "ISC",
@@ -768,7 +768,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/trash.svg"
     },
     {
-      "path": "01-assets/icons/lucide/trending-up.svg",
+      "path": "10-resources/assets/icons/lucide/trending-up.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/trending-up.svg",
       "license": "ISC",
@@ -777,7 +777,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/trending-up.svg"
     },
     {
-      "path": "01-assets/icons/lucide/trophy.svg",
+      "path": "10-resources/assets/icons/lucide/trophy.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/trophy.svg",
       "license": "ISC",
@@ -786,7 +786,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/trophy.svg"
     },
     {
-      "path": "01-assets/icons/lucide/truck.svg",
+      "path": "10-resources/assets/icons/lucide/truck.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/truck.svg",
       "license": "ISC",
@@ -795,7 +795,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/truck.svg"
     },
     {
-      "path": "01-assets/icons/lucide/upload.svg",
+      "path": "10-resources/assets/icons/lucide/upload.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/upload.svg",
       "license": "ISC",
@@ -804,7 +804,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/upload.svg"
     },
     {
-      "path": "01-assets/icons/lucide/user.svg",
+      "path": "10-resources/assets/icons/lucide/user.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/user.svg",
       "license": "ISC",
@@ -813,7 +813,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/user.svg"
     },
     {
-      "path": "01-assets/icons/lucide/users.svg",
+      "path": "10-resources/assets/icons/lucide/users.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/users.svg",
       "license": "ISC",
@@ -822,7 +822,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/users.svg"
     },
     {
-      "path": "01-assets/icons/lucide/video.svg",
+      "path": "10-resources/assets/icons/lucide/video.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/video.svg",
       "license": "ISC",
@@ -831,7 +831,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/video.svg"
     },
     {
-      "path": "01-assets/icons/lucide/volume.svg",
+      "path": "10-resources/assets/icons/lucide/volume.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/volume.svg",
       "license": "ISC",
@@ -840,7 +840,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/volume.svg"
     },
     {
-      "path": "01-assets/icons/lucide/wallet.svg",
+      "path": "10-resources/assets/icons/lucide/wallet.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/wallet.svg",
       "license": "ISC",
@@ -849,7 +849,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/wallet.svg"
     },
     {
-      "path": "01-assets/icons/lucide/wand.svg",
+      "path": "10-resources/assets/icons/lucide/wand.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/wand.svg",
       "license": "ISC",
@@ -858,7 +858,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/wand.svg"
     },
     {
-      "path": "01-assets/icons/lucide/wifi.svg",
+      "path": "10-resources/assets/icons/lucide/wifi.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/wifi.svg",
       "license": "ISC",
@@ -867,7 +867,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/wifi.svg"
     },
     {
-      "path": "01-assets/icons/lucide/x.svg",
+      "path": "10-resources/assets/icons/lucide/x.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/x.svg",
       "license": "ISC",
@@ -876,7 +876,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/x.svg"
     },
     {
-      "path": "01-assets/icons/lucide/zap.svg",
+      "path": "10-resources/assets/icons/lucide/zap.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/zap.svg",
       "license": "ISC",
@@ -885,7 +885,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/zap.svg"
     },
     {
-      "path": "01-assets/icons/lucide/zoom-in.svg",
+      "path": "10-resources/assets/icons/lucide/zoom-in.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/zoom-in.svg",
       "license": "ISC",
@@ -894,7 +894,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/zoom-in.svg"
     },
     {
-      "path": "01-assets/icons/lucide/zoom-out.svg",
+      "path": "10-resources/assets/icons/lucide/zoom-out.svg",
       "repo": "lucide-icons/lucide",
       "source_path": "icons/zoom-out.svg",
       "license": "ISC",
@@ -903,7 +903,7 @@
       "source_url": "https://github.com/lucide-icons/lucide/blob/main/icons/zoom-out.svg"
     },
     {
-      "path": "01-assets/icons/tabler/alert-circle.svg",
+      "path": "10-resources/assets/icons/tabler/alert-circle.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/alert-circle.svg",
       "license": "MIT",
@@ -912,7 +912,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/alert-circle.svg"
     },
     {
-      "path": "01-assets/icons/tabler/alert-triangle.svg",
+      "path": "10-resources/assets/icons/tabler/alert-triangle.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/alert-triangle.svg",
       "license": "MIT",
@@ -921,7 +921,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/alert-triangle.svg"
     },
     {
-      "path": "01-assets/icons/tabler/arrow-down.svg",
+      "path": "10-resources/assets/icons/tabler/arrow-down.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/arrow-down.svg",
       "license": "MIT",
@@ -930,7 +930,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/arrow-down.svg"
     },
     {
-      "path": "01-assets/icons/tabler/arrow-left.svg",
+      "path": "10-resources/assets/icons/tabler/arrow-left.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/arrow-left.svg",
       "license": "MIT",
@@ -939,7 +939,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/arrow-left.svg"
     },
     {
-      "path": "01-assets/icons/tabler/arrow-right.svg",
+      "path": "10-resources/assets/icons/tabler/arrow-right.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/arrow-right.svg",
       "license": "MIT",
@@ -948,7 +948,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/arrow-right.svg"
     },
     {
-      "path": "01-assets/icons/tabler/arrow-up.svg",
+      "path": "10-resources/assets/icons/tabler/arrow-up.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/arrow-up.svg",
       "license": "MIT",
@@ -957,7 +957,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/arrow-up.svg"
     },
     {
-      "path": "01-assets/icons/tabler/bell.svg",
+      "path": "10-resources/assets/icons/tabler/bell.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/bell.svg",
       "license": "MIT",
@@ -966,7 +966,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/bell.svg"
     },
     {
-      "path": "01-assets/icons/tabler/bolt.svg",
+      "path": "10-resources/assets/icons/tabler/bolt.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/bolt.svg",
       "license": "MIT",
@@ -975,7 +975,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/bolt.svg"
     },
     {
-      "path": "01-assets/icons/tabler/bookmark.svg",
+      "path": "10-resources/assets/icons/tabler/bookmark.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/bookmark.svg",
       "license": "MIT",
@@ -984,7 +984,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/bookmark.svg"
     },
     {
-      "path": "01-assets/icons/tabler/brand-github.svg",
+      "path": "10-resources/assets/icons/tabler/brand-github.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/brand-github.svg",
       "license": "MIT",
@@ -993,7 +993,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/brand-github.svg"
     },
     {
-      "path": "01-assets/icons/tabler/bulb.svg",
+      "path": "10-resources/assets/icons/tabler/bulb.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/bulb.svg",
       "license": "MIT",
@@ -1002,7 +1002,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/bulb.svg"
     },
     {
-      "path": "01-assets/icons/tabler/calendar.svg",
+      "path": "10-resources/assets/icons/tabler/calendar.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/calendar.svg",
       "license": "MIT",
@@ -1011,7 +1011,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/calendar.svg"
     },
     {
-      "path": "01-assets/icons/tabler/camera-off.svg",
+      "path": "10-resources/assets/icons/tabler/camera-off.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/camera-off.svg",
       "license": "MIT",
@@ -1020,7 +1020,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/camera-off.svg"
     },
     {
-      "path": "01-assets/icons/tabler/camera.svg",
+      "path": "10-resources/assets/icons/tabler/camera.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/camera.svg",
       "license": "MIT",
@@ -1029,7 +1029,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/camera.svg"
     },
     {
-      "path": "01-assets/icons/tabler/chart-pie.svg",
+      "path": "10-resources/assets/icons/tabler/chart-pie.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/chart-pie.svg",
       "license": "MIT",
@@ -1038,7 +1038,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/chart-pie.svg"
     },
     {
-      "path": "01-assets/icons/tabler/check.svg",
+      "path": "10-resources/assets/icons/tabler/check.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/check.svg",
       "license": "MIT",
@@ -1047,7 +1047,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/check.svg"
     },
     {
-      "path": "01-assets/icons/tabler/chevron-down.svg",
+      "path": "10-resources/assets/icons/tabler/chevron-down.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/chevron-down.svg",
       "license": "MIT",
@@ -1056,7 +1056,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/chevron-down.svg"
     },
     {
-      "path": "01-assets/icons/tabler/chevron-left.svg",
+      "path": "10-resources/assets/icons/tabler/chevron-left.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/chevron-left.svg",
       "license": "MIT",
@@ -1065,7 +1065,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/chevron-left.svg"
     },
     {
-      "path": "01-assets/icons/tabler/chevron-right.svg",
+      "path": "10-resources/assets/icons/tabler/chevron-right.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/chevron-right.svg",
       "license": "MIT",
@@ -1074,7 +1074,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/chevron-right.svg"
     },
     {
-      "path": "01-assets/icons/tabler/chevron-up.svg",
+      "path": "10-resources/assets/icons/tabler/chevron-up.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/chevron-up.svg",
       "license": "MIT",
@@ -1083,7 +1083,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/chevron-up.svg"
     },
     {
-      "path": "01-assets/icons/tabler/clipboard.svg",
+      "path": "10-resources/assets/icons/tabler/clipboard.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/clipboard.svg",
       "license": "MIT",
@@ -1092,7 +1092,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/clipboard.svg"
     },
     {
-      "path": "01-assets/icons/tabler/clock.svg",
+      "path": "10-resources/assets/icons/tabler/clock.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/clock.svg",
       "license": "MIT",
@@ -1101,7 +1101,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/clock.svg"
     },
     {
-      "path": "01-assets/icons/tabler/cloud-upload.svg",
+      "path": "10-resources/assets/icons/tabler/cloud-upload.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/cloud-upload.svg",
       "license": "MIT",
@@ -1110,7 +1110,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/cloud-upload.svg"
     },
     {
-      "path": "01-assets/icons/tabler/cloud.svg",
+      "path": "10-resources/assets/icons/tabler/cloud.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/cloud.svg",
       "license": "MIT",
@@ -1119,7 +1119,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/cloud.svg"
     },
     {
-      "path": "01-assets/icons/tabler/code.svg",
+      "path": "10-resources/assets/icons/tabler/code.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/code.svg",
       "license": "MIT",
@@ -1128,7 +1128,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/code.svg"
     },
     {
-      "path": "01-assets/icons/tabler/copy.svg",
+      "path": "10-resources/assets/icons/tabler/copy.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/copy.svg",
       "license": "MIT",
@@ -1137,7 +1137,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/copy.svg"
     },
     {
-      "path": "01-assets/icons/tabler/cpu.svg",
+      "path": "10-resources/assets/icons/tabler/cpu.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/cpu.svg",
       "license": "MIT",
@@ -1146,7 +1146,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/cpu.svg"
     },
     {
-      "path": "01-assets/icons/tabler/database.svg",
+      "path": "10-resources/assets/icons/tabler/database.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/database.svg",
       "license": "MIT",
@@ -1155,7 +1155,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/database.svg"
     },
     {
-      "path": "01-assets/icons/tabler/device-mobile.svg",
+      "path": "10-resources/assets/icons/tabler/device-mobile.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/device-mobile.svg",
       "license": "MIT",
@@ -1164,7 +1164,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/device-mobile.svg"
     },
     {
-      "path": "01-assets/icons/tabler/download.svg",
+      "path": "10-resources/assets/icons/tabler/download.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/download.svg",
       "license": "MIT",
@@ -1173,7 +1173,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/download.svg"
     },
     {
-      "path": "01-assets/icons/tabler/edit.svg",
+      "path": "10-resources/assets/icons/tabler/edit.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/edit.svg",
       "license": "MIT",
@@ -1182,7 +1182,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/edit.svg"
     },
     {
-      "path": "01-assets/icons/tabler/external-link.svg",
+      "path": "10-resources/assets/icons/tabler/external-link.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/external-link.svg",
       "license": "MIT",
@@ -1191,7 +1191,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/external-link.svg"
     },
     {
-      "path": "01-assets/icons/tabler/eye-off.svg",
+      "path": "10-resources/assets/icons/tabler/eye-off.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/eye-off.svg",
       "license": "MIT",
@@ -1200,7 +1200,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/eye-off.svg"
     },
     {
-      "path": "01-assets/icons/tabler/eye.svg",
+      "path": "10-resources/assets/icons/tabler/eye.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/eye.svg",
       "license": "MIT",
@@ -1209,7 +1209,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/eye.svg"
     },
     {
-      "path": "01-assets/icons/tabler/file-text.svg",
+      "path": "10-resources/assets/icons/tabler/file-text.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/file-text.svg",
       "license": "MIT",
@@ -1218,7 +1218,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/file-text.svg"
     },
     {
-      "path": "01-assets/icons/tabler/file.svg",
+      "path": "10-resources/assets/icons/tabler/file.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/file.svg",
       "license": "MIT",
@@ -1227,7 +1227,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/file.svg"
     },
     {
-      "path": "01-assets/icons/tabler/filter.svg",
+      "path": "10-resources/assets/icons/tabler/filter.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/filter.svg",
       "license": "MIT",
@@ -1236,7 +1236,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/filter.svg"
     },
     {
-      "path": "01-assets/icons/tabler/folder.svg",
+      "path": "10-resources/assets/icons/tabler/folder.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/folder.svg",
       "license": "MIT",
@@ -1245,7 +1245,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/folder.svg"
     },
     {
-      "path": "01-assets/icons/tabler/git-branch.svg",
+      "path": "10-resources/assets/icons/tabler/git-branch.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/git-branch.svg",
       "license": "MIT",
@@ -1254,7 +1254,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/git-branch.svg"
     },
     {
-      "path": "01-assets/icons/tabler/git-pull-request.svg",
+      "path": "10-resources/assets/icons/tabler/git-pull-request.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/git-pull-request.svg",
       "license": "MIT",
@@ -1263,7 +1263,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/git-pull-request.svg"
     },
     {
-      "path": "01-assets/icons/tabler/globe.svg",
+      "path": "10-resources/assets/icons/tabler/globe.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/globe.svg",
       "license": "MIT",
@@ -1272,7 +1272,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/globe.svg"
     },
     {
-      "path": "01-assets/icons/tabler/headphones.svg",
+      "path": "10-resources/assets/icons/tabler/headphones.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/headphones.svg",
       "license": "MIT",
@@ -1281,7 +1281,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/headphones.svg"
     },
     {
-      "path": "01-assets/icons/tabler/heart.svg",
+      "path": "10-resources/assets/icons/tabler/heart.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/heart.svg",
       "license": "MIT",
@@ -1290,7 +1290,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/heart.svg"
     },
     {
-      "path": "01-assets/icons/tabler/help-circle.svg",
+      "path": "10-resources/assets/icons/tabler/help-circle.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/help-circle.svg",
       "license": "MIT",
@@ -1299,7 +1299,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/help-circle.svg"
     },
     {
-      "path": "01-assets/icons/tabler/home.svg",
+      "path": "10-resources/assets/icons/tabler/home.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/home.svg",
       "license": "MIT",
@@ -1308,7 +1308,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/home.svg"
     },
     {
-      "path": "01-assets/icons/tabler/info-circle.svg",
+      "path": "10-resources/assets/icons/tabler/info-circle.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/info-circle.svg",
       "license": "MIT",
@@ -1317,7 +1317,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/info-circle.svg"
     },
     {
-      "path": "01-assets/icons/tabler/key.svg",
+      "path": "10-resources/assets/icons/tabler/key.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/key.svg",
       "license": "MIT",
@@ -1326,7 +1326,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/key.svg"
     },
     {
-      "path": "01-assets/icons/tabler/layout.svg",
+      "path": "10-resources/assets/icons/tabler/layout.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/layout.svg",
       "license": "MIT",
@@ -1335,7 +1335,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/layout.svg"
     },
     {
-      "path": "01-assets/icons/tabler/link.svg",
+      "path": "10-resources/assets/icons/tabler/link.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/link.svg",
       "license": "MIT",
@@ -1344,7 +1344,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/link.svg"
     },
     {
-      "path": "01-assets/icons/tabler/list.svg",
+      "path": "10-resources/assets/icons/tabler/list.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/list.svg",
       "license": "MIT",
@@ -1353,7 +1353,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/list.svg"
     },
     {
-      "path": "01-assets/icons/tabler/loader.svg",
+      "path": "10-resources/assets/icons/tabler/loader.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/loader.svg",
       "license": "MIT",
@@ -1362,7 +1362,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/loader.svg"
     },
     {
-      "path": "01-assets/icons/tabler/lock.svg",
+      "path": "10-resources/assets/icons/tabler/lock.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/lock.svg",
       "license": "MIT",
@@ -1371,7 +1371,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/lock.svg"
     },
     {
-      "path": "01-assets/icons/tabler/login.svg",
+      "path": "10-resources/assets/icons/tabler/login.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/login.svg",
       "license": "MIT",
@@ -1380,7 +1380,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/login.svg"
     },
     {
-      "path": "01-assets/icons/tabler/logout.svg",
+      "path": "10-resources/assets/icons/tabler/logout.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/logout.svg",
       "license": "MIT",
@@ -1389,7 +1389,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/logout.svg"
     },
     {
-      "path": "01-assets/icons/tabler/mail.svg",
+      "path": "10-resources/assets/icons/tabler/mail.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/mail.svg",
       "license": "MIT",
@@ -1398,7 +1398,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/mail.svg"
     },
     {
-      "path": "01-assets/icons/tabler/map-pin.svg",
+      "path": "10-resources/assets/icons/tabler/map-pin.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/map-pin.svg",
       "license": "MIT",
@@ -1407,7 +1407,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/map-pin.svg"
     },
     {
-      "path": "01-assets/icons/tabler/menu.svg",
+      "path": "10-resources/assets/icons/tabler/menu.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/menu.svg",
       "license": "MIT",
@@ -1416,7 +1416,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/menu.svg"
     },
     {
-      "path": "01-assets/icons/tabler/message-circle.svg",
+      "path": "10-resources/assets/icons/tabler/message-circle.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/message-circle.svg",
       "license": "MIT",
@@ -1425,7 +1425,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/message-circle.svg"
     },
     {
-      "path": "01-assets/icons/tabler/microphone.svg",
+      "path": "10-resources/assets/icons/tabler/microphone.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/microphone.svg",
       "license": "MIT",
@@ -1434,7 +1434,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/microphone.svg"
     },
     {
-      "path": "01-assets/icons/tabler/minus.svg",
+      "path": "10-resources/assets/icons/tabler/minus.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/minus.svg",
       "license": "MIT",
@@ -1443,7 +1443,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/minus.svg"
     },
     {
-      "path": "01-assets/icons/tabler/moon.svg",
+      "path": "10-resources/assets/icons/tabler/moon.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/moon.svg",
       "license": "MIT",
@@ -1452,7 +1452,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/moon.svg"
     },
     {
-      "path": "01-assets/icons/tabler/music.svg",
+      "path": "10-resources/assets/icons/tabler/music.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/music.svg",
       "license": "MIT",
@@ -1461,7 +1461,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/music.svg"
     },
     {
-      "path": "01-assets/icons/tabler/package.svg",
+      "path": "10-resources/assets/icons/tabler/package.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/package.svg",
       "license": "MIT",
@@ -1470,7 +1470,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/package.svg"
     },
     {
-      "path": "01-assets/icons/tabler/paperclip.svg",
+      "path": "10-resources/assets/icons/tabler/paperclip.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/paperclip.svg",
       "license": "MIT",
@@ -1479,7 +1479,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/paperclip.svg"
     },
     {
-      "path": "01-assets/icons/tabler/phone.svg",
+      "path": "10-resources/assets/icons/tabler/phone.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/phone.svg",
       "license": "MIT",
@@ -1488,7 +1488,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/phone.svg"
     },
     {
-      "path": "01-assets/icons/tabler/pin.svg",
+      "path": "10-resources/assets/icons/tabler/pin.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/pin.svg",
       "license": "MIT",
@@ -1497,7 +1497,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/pin.svg"
     },
     {
-      "path": "01-assets/icons/tabler/plus.svg",
+      "path": "10-resources/assets/icons/tabler/plus.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/plus.svg",
       "license": "MIT",
@@ -1506,7 +1506,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/plus.svg"
     },
     {
-      "path": "01-assets/icons/tabler/power.svg",
+      "path": "10-resources/assets/icons/tabler/power.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/power.svg",
       "license": "MIT",
@@ -1515,7 +1515,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/power.svg"
     },
     {
-      "path": "01-assets/icons/tabler/printer.svg",
+      "path": "10-resources/assets/icons/tabler/printer.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/printer.svg",
       "license": "MIT",
@@ -1524,7 +1524,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/printer.svg"
     },
     {
-      "path": "01-assets/icons/tabler/puzzle.svg",
+      "path": "10-resources/assets/icons/tabler/puzzle.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/puzzle.svg",
       "license": "MIT",
@@ -1533,7 +1533,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/puzzle.svg"
     },
     {
-      "path": "01-assets/icons/tabler/refresh.svg",
+      "path": "10-resources/assets/icons/tabler/refresh.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/refresh.svg",
       "license": "MIT",
@@ -1542,7 +1542,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/refresh.svg"
     },
     {
-      "path": "01-assets/icons/tabler/repeat.svg",
+      "path": "10-resources/assets/icons/tabler/repeat.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/repeat.svg",
       "license": "MIT",
@@ -1551,7 +1551,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/repeat.svg"
     },
     {
-      "path": "01-assets/icons/tabler/rocket.svg",
+      "path": "10-resources/assets/icons/tabler/rocket.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/rocket.svg",
       "license": "MIT",
@@ -1560,7 +1560,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/rocket.svg"
     },
     {
-      "path": "01-assets/icons/tabler/rotate.svg",
+      "path": "10-resources/assets/icons/tabler/rotate.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/rotate.svg",
       "license": "MIT",
@@ -1569,7 +1569,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/rotate.svg"
     },
     {
-      "path": "01-assets/icons/tabler/school.svg",
+      "path": "10-resources/assets/icons/tabler/school.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/school.svg",
       "license": "MIT",
@@ -1578,7 +1578,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/school.svg"
     },
     {
-      "path": "01-assets/icons/tabler/scissors.svg",
+      "path": "10-resources/assets/icons/tabler/scissors.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/scissors.svg",
       "license": "MIT",
@@ -1587,7 +1587,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/scissors.svg"
     },
     {
-      "path": "01-assets/icons/tabler/search.svg",
+      "path": "10-resources/assets/icons/tabler/search.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/search.svg",
       "license": "MIT",
@@ -1596,7 +1596,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/search.svg"
     },
     {
-      "path": "01-assets/icons/tabler/send.svg",
+      "path": "10-resources/assets/icons/tabler/send.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/send.svg",
       "license": "MIT",
@@ -1605,7 +1605,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/send.svg"
     },
     {
-      "path": "01-assets/icons/tabler/server.svg",
+      "path": "10-resources/assets/icons/tabler/server.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/server.svg",
       "license": "MIT",
@@ -1614,7 +1614,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/server.svg"
     },
     {
-      "path": "01-assets/icons/tabler/settings.svg",
+      "path": "10-resources/assets/icons/tabler/settings.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/settings.svg",
       "license": "MIT",
@@ -1623,7 +1623,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/settings.svg"
     },
     {
-      "path": "01-assets/icons/tabler/share.svg",
+      "path": "10-resources/assets/icons/tabler/share.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/share.svg",
       "license": "MIT",
@@ -1632,7 +1632,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/share.svg"
     },
     {
-      "path": "01-assets/icons/tabler/shield.svg",
+      "path": "10-resources/assets/icons/tabler/shield.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/shield.svg",
       "license": "MIT",
@@ -1641,7 +1641,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/shield.svg"
     },
     {
-      "path": "01-assets/icons/tabler/shopping-cart.svg",
+      "path": "10-resources/assets/icons/tabler/shopping-cart.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/shopping-cart.svg",
       "license": "MIT",
@@ -1650,7 +1650,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/shopping-cart.svg"
     },
     {
-      "path": "01-assets/icons/tabler/star.svg",
+      "path": "10-resources/assets/icons/tabler/star.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/star.svg",
       "license": "MIT",
@@ -1659,7 +1659,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/star.svg"
     },
     {
-      "path": "01-assets/icons/tabler/sun.svg",
+      "path": "10-resources/assets/icons/tabler/sun.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/sun.svg",
       "license": "MIT",
@@ -1668,7 +1668,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/sun.svg"
     },
     {
-      "path": "01-assets/icons/tabler/table.svg",
+      "path": "10-resources/assets/icons/tabler/table.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/table.svg",
       "license": "MIT",
@@ -1677,7 +1677,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/table.svg"
     },
     {
-      "path": "01-assets/icons/tabler/tag.svg",
+      "path": "10-resources/assets/icons/tabler/tag.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/tag.svg",
       "license": "MIT",
@@ -1686,7 +1686,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/tag.svg"
     },
     {
-      "path": "01-assets/icons/tabler/terminal.svg",
+      "path": "10-resources/assets/icons/tabler/terminal.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/terminal.svg",
       "license": "MIT",
@@ -1695,7 +1695,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/terminal.svg"
     },
     {
-      "path": "01-assets/icons/tabler/thumb-down.svg",
+      "path": "10-resources/assets/icons/tabler/thumb-down.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/thumb-down.svg",
       "license": "MIT",
@@ -1704,7 +1704,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/thumb-down.svg"
     },
     {
-      "path": "01-assets/icons/tabler/thumb-up.svg",
+      "path": "10-resources/assets/icons/tabler/thumb-up.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/thumb-up.svg",
       "license": "MIT",
@@ -1713,7 +1713,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/thumb-up.svg"
     },
     {
-      "path": "01-assets/icons/tabler/tool.svg",
+      "path": "10-resources/assets/icons/tabler/tool.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/tool.svg",
       "license": "MIT",
@@ -1722,7 +1722,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/tool.svg"
     },
     {
-      "path": "01-assets/icons/tabler/trash.svg",
+      "path": "10-resources/assets/icons/tabler/trash.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/trash.svg",
       "license": "MIT",
@@ -1731,7 +1731,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/trash.svg"
     },
     {
-      "path": "01-assets/icons/tabler/trending-up.svg",
+      "path": "10-resources/assets/icons/tabler/trending-up.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/trending-up.svg",
       "license": "MIT",
@@ -1740,7 +1740,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/trending-up.svg"
     },
     {
-      "path": "01-assets/icons/tabler/trophy.svg",
+      "path": "10-resources/assets/icons/tabler/trophy.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/trophy.svg",
       "license": "MIT",
@@ -1749,7 +1749,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/trophy.svg"
     },
     {
-      "path": "01-assets/icons/tabler/truck.svg",
+      "path": "10-resources/assets/icons/tabler/truck.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/truck.svg",
       "license": "MIT",
@@ -1758,7 +1758,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/truck.svg"
     },
     {
-      "path": "01-assets/icons/tabler/upload.svg",
+      "path": "10-resources/assets/icons/tabler/upload.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/upload.svg",
       "license": "MIT",
@@ -1767,7 +1767,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/upload.svg"
     },
     {
-      "path": "01-assets/icons/tabler/user.svg",
+      "path": "10-resources/assets/icons/tabler/user.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/user.svg",
       "license": "MIT",
@@ -1776,7 +1776,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/user.svg"
     },
     {
-      "path": "01-assets/icons/tabler/users.svg",
+      "path": "10-resources/assets/icons/tabler/users.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/users.svg",
       "license": "MIT",
@@ -1785,7 +1785,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/users.svg"
     },
     {
-      "path": "01-assets/icons/tabler/video.svg",
+      "path": "10-resources/assets/icons/tabler/video.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/video.svg",
       "license": "MIT",
@@ -1794,7 +1794,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/video.svg"
     },
     {
-      "path": "01-assets/icons/tabler/volume.svg",
+      "path": "10-resources/assets/icons/tabler/volume.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/volume.svg",
       "license": "MIT",
@@ -1803,7 +1803,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/volume.svg"
     },
     {
-      "path": "01-assets/icons/tabler/wallet.svg",
+      "path": "10-resources/assets/icons/tabler/wallet.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/wallet.svg",
       "license": "MIT",
@@ -1812,7 +1812,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/wallet.svg"
     },
     {
-      "path": "01-assets/icons/tabler/wand.svg",
+      "path": "10-resources/assets/icons/tabler/wand.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/wand.svg",
       "license": "MIT",
@@ -1821,7 +1821,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/wand.svg"
     },
     {
-      "path": "01-assets/icons/tabler/wifi.svg",
+      "path": "10-resources/assets/icons/tabler/wifi.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/wifi.svg",
       "license": "MIT",
@@ -1830,7 +1830,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/wifi.svg"
     },
     {
-      "path": "01-assets/icons/tabler/x.svg",
+      "path": "10-resources/assets/icons/tabler/x.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/x.svg",
       "license": "MIT",
@@ -1839,7 +1839,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/x.svg"
     },
     {
-      "path": "01-assets/icons/tabler/zoom-in.svg",
+      "path": "10-resources/assets/icons/tabler/zoom-in.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/zoom-in.svg",
       "license": "MIT",
@@ -1848,7 +1848,7 @@
       "source_url": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/zoom-in.svg"
     },
     {
-      "path": "01-assets/icons/tabler/zoom-out.svg",
+      "path": "10-resources/assets/icons/tabler/zoom-out.svg",
       "repo": "tabler/tabler-icons",
       "source_path": "icons/outline/zoom-out.svg",
       "license": "MIT",

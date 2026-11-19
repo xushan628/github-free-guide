@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""下载「免费商用」素材（图标 / 字体 / 许可证）到 01-assets/，并生成 MANIFEST.json。
+"""下载「免费商用」素材（图标 / 字体 / 许可证）到 10-resources/assets/，并生成 MANIFEST.json。
 
 为什么要用 API 而不是 raw.githubusercontent.com：
   本机 shell 出网受限，raw / github.com 直连会被重置，只有 api.github.com 可达。
@@ -31,7 +31,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-ASSETS = ROOT / "01-assets"
+ASSETS = ROOT / "10-resources/assets"
 MANIFEST = ROOT / "MANIFEST.json"
 API = "https://api.github.com"
 UA = "github-free-guide/1.0 (+https://github.com/xushan628)"
@@ -177,7 +177,7 @@ def download_icons(client: Client, entry: dict, name: str, wanted: list[str]) ->
         except Exception:
             return False
         write_bytes(dest_dir / f"{icon}.svg", data)
-        record(entry, repo, f"{prefix}{icon}.svg", f"01-assets/icons/{name}/{icon}.svg", license_id, data)
+        record(entry, repo, f"{prefix}{icon}.svg", f"10-resources/assets/icons/{name}/{icon}.svg", license_id, data)
         return True
 
     ok = 0
@@ -210,7 +210,7 @@ def main() -> int:
         for repo, src, fname, lic in FONTS:
             data = fetch_file(client, repo, src)
             write_bytes(ASSETS / "fonts" / fname, data)
-            record(entry, repo, src, f"01-assets/fonts/{fname}", lic, data)
+            record(entry, repo, src, f"10-resources/assets/fonts/{fname}", lic, data)
             print(f"  · {fname} {len(data)/1024:.0f} KB", flush=True)
 
     if do_all or args.only == "licenses":
@@ -218,7 +218,7 @@ def main() -> int:
         for repo, src, fname, lic in LICENSES:
             data = fetch_file(client, repo, src)
             write_bytes(ASSETS / "LICENSES" / fname, data)
-            record(entry, repo, src, f"01-assets/LICENSES/{fname}", lic, data)
+            record(entry, repo, src, f"10-resources/assets/LICENSES/{fname}", lic, data)
             print(f"  · {fname}", flush=True)
 
     entry["total_files"] = len(entry["files"])

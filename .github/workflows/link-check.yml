@@ -1,4 +1,4 @@
-# 每周自动体检所有外链 + 同步 09-datasets 的数据集目录，把结果提交回仓库。
+# 每周自动体检所有外链 + 同步 10-resources/datasets 的数据集目录，把结果提交回仓库。
 # 这是本仓库自己的"定时任务"示例：不需要服务器，GitHub 免费跑。
 name: 外链体检
 
@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/link-check.md 09-datasets/
+          git add docs/link-check.md 10-resources/datasets/
           if git diff --cached --quiet; then
             echo "外链与数据集目录均无变化"
           else

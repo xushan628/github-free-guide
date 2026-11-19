@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GitHub 免费福利指南 · 10 类真正能白嫖的功能</title>
+<title>GitHub 免费福利指南 · 按功能分类</title>
 <meta name="description" content="GitHub 免费商用素材、在线工具、本地 AI、Actions 定时任务、Pages 建站、Codespaces、学生包与避坑指南。">
 <style>
   :root{
@@ -74,6 +74,14 @@
   th{background:var(--bg2); font-weight:600; color:var(--fg2); font-size:13px}
   tr:last-child td{border-bottom:none}
 
+  .log{display:grid; gap:10px}
+  .log-item{display:block; background:var(--card); border:1px solid var(--line); border-radius:12px;
+            padding:14px 16px; text-decoration:none; color:var(--fg); transition:.15s}
+  .log-item:hover{border-color:var(--accent); transform:translateY(-1px)}
+  .log-item b{color:var(--accent); font-size:14px; margin-right:8px}
+  .log-item span{font-size:14px}
+  .log-item em{display:block; font-style:normal; color:var(--fg2); font-size:12px; margin-top:4px}
+
   .note{
     background:var(--bg2); border-left:3px solid var(--warn); border-radius:0 10px 10px 0;
     padding:14px 18px; font-size:14px; color:var(--fg2); margin:20px 0;
@@ -94,14 +102,14 @@
   <div class="wrap">
     <h1>GitHub <span class="grad">免费福利</span>指南</h1>
     <p class="sub">
-      把"下代码的地方"用成：免费素材库 + 免费云算力 + 免费定时任务 + 免费网站 + 免费 AI 工作台。<br>
-      每条资源都实测可达，每个素材都附许可证。
+      分五组，只回答一件事：<b>你想干什么</b>。<br>
+      找资源 · 用工具 · 用 AI · 自动化与上线 · 省钱避坑 —— 每条资源实测可达，每个素材附许可证。
     </p>
     <div class="stats">
-      <span class="stat"><b>10</b> 类免费能力</span>
+      <span class="stat"><b>5</b> 组功能</span>
       <span class="stat"><b>200</b> 个图标已入库</span>
       <span class="stat"><b id="stat-datasets">5</b> 个开源数据集</span>
-      <span class="stat"><b>0</b> 元成本</span>
+      <span class="stat"><b>3</b> 期热点已收录</span>
     </div>
   </div>
 </header>
@@ -113,6 +121,24 @@
   </div>
 
   <div class="grid" id="grid"></div>
+
+  <section class="table-wrap">
+    <h2>🗞 更新日志（按时间，不属于功能分类）</h2>
+    <div class="log">
+      <a class="log-item" href="https://github.com/xushan628/github-free-guide/blob/main/weekly/138/README.md">
+        <b>138 期</b><span>开源版的 Grok Bot</span>
+        <em>OpenMausBot · T3 Code · ziwei-doushu · Scrapling · Astryx</em>
+      </a>
+      <a class="log-item" href="https://github.com/xushan628/github-free-guide/blob/main/weekly/137/README.md">
+        <b>137 期</b><span>读懂 superagent</span>
+        <em>dsh-superagent-prototype · agent-desktop · claude-seo · awesome-dsh-plugin · see-through</em>
+      </a>
+      <a class="log-item" href="https://github.com/xushan628/github-free-guide/blob/main/weekly/133/README.md">
+        <b>133 期</b><span>给 AI Agent 开家公司</span>
+        <em>Paperclip · video-use · Octop · OpenStock · DBX</em>
+      </a>
+    </div>
+  </section>
 
   <section class="table-wrap">
     <h2>免费额度速查</h2>
@@ -142,6 +168,7 @@
       内容依据抖音视频《GitHub 白嫖指南》公开索引做工程化重建 · 素材许可：MIT / ISC / OFL-1.1<br>
       <a id="repo" href="https://github.com/xushan628/github-free-guide" target="_blank" rel="noopener">仓库源码</a> ·
       <a href="https://xushan628.github.io/open-data-atlas/" target="_blank" rel="noopener">姊妹项目 · Open Data Atlas</a> ·
+      <a href="https://github.com/xushan628/github-free-guide/tree/main/weekly">更新日志</a> ·
       <a href="https://github.com/xushan628/github-free-guide/blob/main/docs/link-check.md">外链体检报告</a>
     </p>
   </div>
@@ -157,78 +184,65 @@
   document.getElementById("repo").href = REPO;
 
   const DATA = [
-    { no:"01", cat:"素材", icon:"🎨", title:"免费商用素材",
-      desc:"200 个图标 + 2 套可变字体已下载入库，附原始许可证与 SHA-256 校验。",
-      tags:["MIT","ISC","OFL-1.1","已下载"], links:[["目录", REPO+"/tree/main/01-assets"],["说明", REPO+"/blob/main/01-assets/README.md"],["Tabler", "https://github.com/tabler/tabler-icons"],["Lucide", "https://github.com/lucide-icons/lucide"]] },
+    { no:"1", cat:"资源", icon:"🎨", title:"找现成的资源",
+      desc:"不想自己做的时候：图标、字体、数据集，都已下载进仓库，许可证逐条核实。",
+      tags:["200 图标","2 套字体","5 个数据集"],
+      items:[
+        {name:"Tabler + Lucide 图标（200 个）", license:"MIT / ISC", repo_url:REPO+"/blob/main/10-resources/assets/README.md"},
+        {name:"JetBrains Mono + Inter 字体", license:"OFL-1.1", repo_url:REPO+"/blob/main/10-resources/assets/README.md"},
+        {name:"开源数据集目录（5 个）", license:"见许可证", repo_url:REPO+"/blob/main/10-resources/datasets/README.md"}
+      ],
+      links:[["组目录", REPO+"/tree/main/10-resources"],["素材说明", REPO+"/blob/main/10-resources/assets/README.md"],["数据集", REPO+"/blob/main/10-resources/datasets/README.md"]] },
 
-    { no:"02", cat:"工具", icon:"🧰", title:"在线轻工具",
-      desc:"IT-Tools 80+ 前端小工具、CyberChef 数据流水线、Stirling-PDF 自托管 PDF 全家桶。",
-      tags:["纯前端","Docker","开源"], links:[["目录", REPO+"/tree/main/02-tools"],["说明", REPO+"/blob/main/02-tools/README.md"],["IT-Tools", "https://github.com/CorentinTh/it-tools"],["CyberChef", "https://github.com/gchq/CyberChef"]] },
+    { no:"2", cat:"工具", icon:"🧰", title:"用现成的工具",
+      desc:"不想装、不想买：浏览器能开的小工具，或一条 Docker 起一个只属于你的服务。",
+      tags:["纯前端","自托管","开源"],
+      items:[
+        {name:"IT-Tools · 80+ 前端小工具", license:"GPL-3.0", repo_url:"https://github.com/CorentinTh/it-tools"},
+        {name:"CyberChef · 数据流水线", license:"Apache-2.0", repo_url:"https://github.com/gchq/CyberChef"},
+        {name:"Stirling-PDF · 自托管 PDF", license:"MIT", repo_url:"https://github.com/Stirling-Tools/Stirling-PDF"},
+        {name:"DBX · 轻量数据库客户端", license:"Apache-2.0", repo_url:"https://github.com/t8y2/dbx"}
+      ],
+      links:[["组目录", REPO+"/tree/main/20-tools"],["说明", REPO+"/blob/main/20-tools/README.md"],["IT-Tools", "https://github.com/CorentinTh/it-tools"]] },
 
-    { no:"03", cat:"AI", icon:"🧠", title:"开源本地 AI",
-      desc:"Ollama 跑本地模型、n8n / Dify 搭免代码工作流；新收录港大 DeepTutor 私人 AI 家教。",
-      tags:["本地推理","无订阅","隐私","新收录"],
+    { no:"3", cat:"AI", icon:"🧠", title:"用 AI 干活",
+      desc:"从本地模型到 AI 家教：模型跑在自己机器上，工作流拖拽就能搭。",
+      tags:["本地推理","无订阅","新收录"],
       items:[
         {name:"DeepTutor · 私人 AI 家教（港大）", license:"Apache-2.0", repo_url:"https://github.com/HKUDS/DeepTutor"},
         {name:"Ollama · 本地跑模型", license:"MIT", repo_url:"https://github.com/ollama/ollama"},
         {name:"n8n · 自动化编排", license:"Sustainable Use", repo_url:"https://github.com/n8n-io/n8n"},
         {name:"Dify · LLM 应用", license:"Apache-2.0", repo_url:"https://github.com/langgenius/dify"}
       ],
-      links:[["目录", REPO+"/tree/main/03-ai"],["说明", REPO+"/blob/main/03-ai/README.md"],["DeepTutor", "https://github.com/HKUDS/DeepTutor"]] },
+      links:[["组目录", REPO+"/tree/main/30-ai"],["说明", REPO+"/blob/main/30-ai/README.md"],["DeepTutor", "https://github.com/HKUDS/DeepTutor"]] },
 
-    { no:"04", cat:"自动化", icon:"⏰", title:"Actions 免费云算力",
-      desc:"不用服务器、不用开电脑：定时跑脚本，跑完自动把结果提交回仓库。三个模板可直接复制。",
-      tags:["定时任务","免挂机","公开仓库不限时"], links:[["目录", REPO+"/tree/main/04-actions"],["说明", REPO+"/blob/main/04-actions/README.md"],["cron 模板", REPO+"/blob/main/04-actions/templates/cron-job.yml"]] },
-
-    { no:"05", cat:"建站", icon:"🌐", title:"Pages 免费建站",
-      desc:"本页就是活例子：一个 docs/index.html，零服务器、自动 HTTPS、支持自定义域名。",
-      tags:["零成本","静态托管","100 GB/月"], links:[["目录", REPO+"/tree/main/05-pages"],["说明", REPO+"/blob/main/05-pages/README.md"],["本站源码", REPO+"/blob/main/docs/index.html"]] },
-
-    { no:"06", cat:"云开发", icon:"💻", title:"Codespaces 云开发",
-      desc:"浏览器里的完整 Linux 环境，120 core-hours/月，devcontainer 自动装好依赖。",
-      tags:["免装环境","VS Code","120 核时/月"], links:[["目录", REPO+"/tree/main/06-codespaces"],["说明", REPO+"/blob/main/06-codespaces/README.md"],["模板库", "https://github.com/devcontainers/templates"]] },
-
-    { no:"07", cat:"福利", icon:"🎓", title:"学生开发者大礼包",
-      desc:"学生认证后：GitHub Pro、Copilot、JetBrains 全家桶、免费域名与云额度。附申请材料清单。",
-      tags:["学生","Copilot 免费用","JetBrains"], links:[["目录", REPO+"/tree/main/07-student-pack"],["说明", REPO+"/blob/main/07-student-pack/README.md"],["官方入口", "https://education.github.com/pack"]] },
-
-    { no:"08", cat:"避坑", icon:"⚠️", title:"额度与 4 个坑",
-      desc:"Actions 默认只读、cron 是 UTC、密钥泄露、许可证误用——白嫖前先看这一页。",
-      tags:["权限陷阱","额度边界","许可证"], links:[["目录", REPO+"/tree/main/08-limits"],["说明", REPO+"/blob/main/08-limits/README.md"],["官方计费", "https://docs.github.com/billing"]] },
-
-    { no:"10", cat:"热点", icon:"🔥", title:"GitHub 一周热点",
-      desc:"已收录 3 期（133 / 137 / 138）。最新 138 期：开源版 Grok Bot、跨设备 Agent 工作台、爬虫框架、设计系统……",
-      tags:["138 期","3 期已收录","每周追更"],
+    { no:"4", cat:"上线", icon:"🚀", title:"让它自动跑 / 上线",
+      desc:"不用买服务器：Codespaces 里写代码，Actions 定时跑，Pages 直接发成网站。",
+      tags:["免挂机","零成本","三件套"],
       items:[
-        {name:"OpenMausBot · 开源版 Grok Bot", license:"Apache-2.0", repo_url:"https://github.com/milind-soni/OpenMausBot"},
-        {name:"T3 Code · 跨设备 Agent 工作台", license:"MIT", repo_url:"https://github.com/pingdotgg/t3code"},
-        {name:"ziwei-doushu · 紫微斗数排盘", license:"MIT", repo_url:"https://github.com/Renhuai123/ziwei-doushu"},
-        {name:"Scrapling · 现代化爬虫框架", license:"BSD-3-Clause", repo_url:"https://github.com/D4Vinci/Scrapling"},
-        {name:"Astryx · Agent 友好设计系统", license:"MIT", repo_url:"https://github.com/meta/astryx"}
+        {name:"Codespaces · 云开发环境", license:"120 核时/月", repo_url:REPO+"/blob/main/40-ship/codespaces/README.md"},
+        {name:"Actions · 定时任务", license:"不限时长", repo_url:REPO+"/blob/main/40-ship/actions/README.md"},
+        {name:"Pages · 静态托管", license:"100 GB/月", repo_url:REPO+"/blob/main/40-ship/pages/README.md"}
       ],
-      links:[["138 本期", REPO+"/blob/main/10-weekly/138/README.md"],["133 期", REPO+"/blob/main/10-weekly/133/README.md"],["索引", REPO+"/blob/main/10-weekly/README.md"]] },
+      links:[["组目录", REPO+"/tree/main/40-ship"],["cron 模板", REPO+"/blob/main/40-ship/actions/templates/cron-job.yml"],["建站指南", REPO+"/blob/main/40-ship/pages/README.md"]] },
 
-    // 第 9 类由 scripts/sync_atlas.py 生成的数据块驱动（见下方 atlas-datasets）
+    { no:"5", cat:"权益", icon:"💰", title:"省钱与避坑",
+      desc:"学生能白拿的权益，和免费额度的真实边界 —— 先看边界，再薅。",
+      tags:["学生包","额度速查","4 个坑"],
+      items:[
+        {name:"学生开发者大礼包（Pro/Copilot/JetBrains）", license:"需认证", repo_url:REPO+"/blob/main/50-benefits/student-pack/README.md"},
+        {name:"免费额度速查（Actions/Pages/Codespaces）", license:"见官方", repo_url:REPO+"/blob/main/50-benefits/limits/README.md"},
+        {name:"4 个高频陷阱（权限/时区/密钥/许可）", license:"必读", repo_url:REPO+"/blob/main/50-benefits/limits/README.md"}
+      ],
+      links:[["组目录", REPO+"/tree/main/50-benefits"],["学生包", REPO+"/blob/main/50-benefits/student-pack/README.md"],["额度与坑", REPO+"/blob/main/50-benefits/limits/README.md"]] }
   ];
 
-  // ---- 开源数据集：卡片内容来自生成块，保证与 09-datasets/datasets.json 不漂移 ----
+  // ---- 数据集数量来自生成块（scripts/sync_atlas.py 写入），保证与 datasets.json 不漂移 ----
   (function () {
     let rows = [];
     try { rows = JSON.parse(document.getElementById("atlas-datasets").textContent.trim() || "[]"); } catch (e) { rows = []; }
-    if (!Array.isArray(rows) || !rows.length) return;
-    const n = rows.length;
-    document.getElementById("stat-datasets").textContent = n;
-    DATA.push({
-      no: "09", cat: "数据", icon: "🗂️", title: "开源数据集",
-      desc: "GitHub 也是免费数据仓库。下面 " + n + " 个数据集都能直接下载，已打成 22 万行 SQLite，能在线查、也能本地跑 SQL。",
-      tags: [n + " 个数据集", "在线查 SQL", "已同步"],
-      items: rows,
-      links: [
-        ["在线图鉴", "https://xushan628.github.io/open-data-atlas/"],
-        ["目录", REPO + "/tree/main/09-datasets"],
-        ["说明", REPO + "/blob/main/09-datasets/README.md"]
-      ]
-    });
+    const el = document.getElementById("stat-datasets");
+    if (el && Array.isArray(rows) && rows.length) el.textContent = rows.length;
   })();
 
   const grid = document.getElementById("grid");

@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""把姊妹项目 Open Data Atlas 的数据集目录同步进本仓库的 09-datasets/。
+"""把姊妹项目 Open Data Atlas 的数据集目录同步进本仓库的 10-resources/datasets/。
 
 数据源（唯一真相）：xushan628/open-data-atlas 的 data/manifest.json
 产物：
-  09-datasets/datasets.json   —— 精简机器可读目录（repo / license / 文件数 / 体积）
-  09-datasets/README.md       —— 只重写 <!-- BEGIN GENERATED --> 之间的表格
+  10-resources/datasets/datasets.json   —— 精简机器可读目录（repo / license / 文件数 / 体积）
+  10-resources/datasets/README.md       —— 只重写 <!-- BEGIN GENERATED --> 之间的表格
 
 设计取舍：
   * 不带 star 数：每周都会变，会制造无意义提交；需要看热度请点上游链接。
@@ -28,7 +28,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT_DIR = ROOT / "09-datasets"
+OUT_DIR = ROOT / "10-resources/datasets"
 JSON_OUT = OUT_DIR / "datasets.json"
 README = OUT_DIR / "README.md"
 MANIFEST_API = "https://api.github.com/repos/xushan628/open-data-atlas/contents/data/manifest.json"
