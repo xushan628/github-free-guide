@@ -28,6 +28,7 @@
 | [138](weekly/138/README.md) | 开源版的 Grok Bot | OpenMausBot / T3 Code / ziwei-doushu / Scrapling / Astryx |
 | [137](weekly/137/README.md) | 读懂 superagent | dsh-superagent-prototype / agent-desktop / claude-seo / awesome-dsh-plugin / see-through |
 | [133](weekly/133/README.md) | 给 AI Agent 开家公司 | Paperclip / video-use / Octop / OpenStock / DBX |
+| [130](weekly/130/README.md) | Skill 与智能体专场 | archify / gods-eye-view / OpenMAIC / scientific-agent-skills / VoiceStudio |
 
 索引与收录标准见 [weekly/README.md](weekly/README.md)。
 

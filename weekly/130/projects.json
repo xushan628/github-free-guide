@@ -1,0 +1,64 @@
+{
+  "issue": 130,
+  "title": "GitHub一周热点第130期",
+  "theme": "Skill 与智能体专场",
+  "source": "https://v.douyin.com/L4GRFhPqXOo/",
+  "collected_at": "2026-11-19",
+  "note": "视频只给出项目名；仓库按『名字 + 描述 + 热度』匹配后核实，星数为 2026-11-19 抓取值。",
+  "projects": [
+    {
+      "no": 1,
+      "name": "archify",
+      "repo": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "stars": 97813,
+      "license": "Apache-2.0",
+      "language": "JavaScript",
+      "summary": "把想法/方案/代码库变成可交互架构图，Claude Code / Codex 的 agent skill",
+      "homepage": "https://archify.si"
+    },
+    {
+      "no": 2,
+      "name": "gods-eye-view",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "stars": 65813,
+      "license": "NOASSERTION",
+      "language": "JavaScript",
+      "summary": "浏览器里的卫星观测模拟器，基于真实公开数据（许可证需自查）",
+      "homepage": "https://godseyeview.ai/"
+    },
+    {
+      "no": 3,
+      "name": "OpenMAIC",
+      "repo": "THU-MAIC/OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "stars": 43920,
+      "license": "MIT",
+      "language": "TypeScript",
+      "summary": "清华 MAIC 的多智能体交互式课堂，一键生成互动课"
+    },
+    {
+      "no": 4,
+      "name": "scientific-agent-skills",
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "stars": 57740,
+      "license": "MIT",
+      "language": "Python",
+      "summary": "面向科研的 Agent Skills 库，把任意 agent 变成 AI 科学家（附 arXiv 论文）",
+      "homepage": "https://arxiv.org/abs/2609.00065"
+    },
+    {
+      "no": 5,
+      "name": "VoiceStudio",
+      "repo": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "stars": 113637,
+      "license": "AGPL-3.0",
+      "language": "Python",
+      "summary": "完全本地的 ElevenLabs 替代品：语音克隆、配音、转写（AGPL）",
+      "homepage": "https://voicestudio.sh"
+    }
+  ]
+}
