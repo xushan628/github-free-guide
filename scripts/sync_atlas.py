@@ -32,9 +32,12 @@ OUT_DIR = ROOT / "09-datasets"
 JSON_OUT = OUT_DIR / "datasets.json"
 README = OUT_DIR / "README.md"
 MANIFEST_API = "https://api.github.com/repos/xushan628/open-data-atlas/contents/data/manifest.json"
+INDEX = ROOT / "docs" / "index.html"
 
 BEGIN = "<!-- BEGIN GENERATED: datasets -->"
 END = "<!-- END GENERATED: datasets -->"
+BEGIN_IDX = "<!-- BEGIN GENERATED: atlas-items -->"
+END_IDX = "<!-- END GENERATED: atlas-items -->"
 
 # 每个数据集"能拿来做什么"——人工判断，随数据集本身稳定，不随 manifest 变化
 PURPOSE = {
@@ -126,6 +129,17 @@ def render_table(catalog: dict) -> str:
     return "\n".join(lines)
 
 
+def render_index_block(catalog: dict) -> str:
+    """站点卡片用的数据块：只放卡片要展示的字段，顺序与 README 一致。"""
+    rows = [{
+        "name": d["name"],
+        "license": "见 LICENSE" if license_label(d["license"]) == "见上游 LICENSE" else d["license"],
+        "repo_url": d["repo_url"],
+    } for d in catalog["datasets"]]
+    payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    return f'<script id="atlas-datasets" type="application/json">{payload}</script>' 
+
+
 def sync(check_only: bool) -> int:
     manifest = fetch_manifest()
     catalog = build_catalog(manifest)
@@ -153,6 +167,22 @@ def sync(check_only: bool) -> int:
                 README.write_text(new_text, encoding="utf-8")
     else:
         print(f"· {README.relative_to(ROOT)} 不存在，跳过表格同步")
+
+    if INDEX.exists():
+        text = INDEX.read_text(encoding="utf-8")
+        if BEGIN_IDX in text and END_IDX in text:
+            head, rest = text.split(BEGIN_IDX, 1)
+            _, tail = rest.split(END_IDX, 1)
+            block = render_index_block(catalog)
+            new_text = f"{head}{BEGIN_IDX}\n{block}\n{END_IDX}{tail}"
+            if new_text != text:
+                changed.append("docs/index.html")
+                if not check_only:
+                    INDEX.write_text(new_text, encoding="utf-8")
+        else:
+            print("· docs/index.html 缺少生成区标记，跳过站点卡片同步")
+    else:
+        print("· docs/index.html 不存在，跳过站点卡片同步")
 
     if changed:
         verb = "需要更新" if check_only else "已更新"

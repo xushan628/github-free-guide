@@ -60,6 +60,12 @@
   .tag{font-size:11px; padding:2px 8px; border-radius:6px; background:var(--bg2); border:1px solid var(--line); color:var(--fg2)}
   .tag.free{color:var(--accent2); border-color:rgba(63,185,80,.4)}
   .card .links{display:flex; gap:14px; font-size:13px; flex-wrap:wrap}
+  .card ul.ds{list-style:none; margin:0 0 12px; padding:0; border-top:1px solid var(--line)}
+  .card ul.ds li{display:flex; justify-content:space-between; align-items:baseline; gap:10px;
+                 padding:6px 0; border-bottom:1px solid var(--line); font-size:13px}
+  .card ul.ds a{color:var(--fg); text-decoration:none}
+  .card ul.ds a:hover{color:var(--accent)}
+  .card ul.ds .lic{color:var(--fg2); font-size:11px; white-space:nowrap}
 
   section.table-wrap{padding:8px 0 40px}
   h2{font-size:22px; margin:36px 0 14px}
@@ -94,7 +100,7 @@
     <div class="stats">
       <span class="stat"><b>9</b> 类免费能力</span>
       <span class="stat"><b>200</b> 个图标已入库</span>
-      <span class="stat"><b>5</b> 个开源数据集</span>
+      <span class="stat"><b id="stat-datasets">5</b> 个开源数据集</span>
       <span class="stat"><b>0</b> 元成本</span>
     </div>
   </div>
@@ -141,6 +147,10 @@
   </div>
 </footer>
 
+<!-- BEGIN GENERATED: atlas-items -->
+<script id="atlas-datasets" type="application/json">[{"name":"The Well 物理模拟数据集","license":"BSD-3-Clause","repo_url":"https://github.com/PolymathicAI/the_well"},{"name":"chinese-poetry 中华古典诗歌","license":"MIT","repo_url":"https://github.com/chinese-poetry/chinese-poetry"},{"name":"countries-states-cities-database","license":"ODbL-1.0","repo_url":"https://github.com/dr5hn/countries-states-cities-database"},{"name":"exercises-dataset 健身动作库","license":"见 LICENSE","repo_url":"https://github.com/hasaneyldrm/exercises-dataset"},{"name":"word-atlas 词光·文字图集","license":"见 LICENSE","repo_url":"https://github.com/designfuchen/word-atlas"}]</script>
+<!-- END GENERATED: atlas-items -->
+
 <script>
 (function(){
   const REPO = "https://github.com/xushan628/github-free-guide";
@@ -179,10 +189,28 @@
       desc:"Actions 默认只读、cron 是 UTC、密钥泄露、许可证误用——白嫖前先看这一页。",
       tags:["权限陷阱","额度边界","许可证"], links:[["目录", REPO+"/tree/main/08-limits"],["说明", REPO+"/blob/main/08-limits/README.md"],["官方计费", "https://docs.github.com/billing"]] },
 
-    { no:"09", cat:"数据", icon:"🗂️", title:"开源数据集图鉴",
-      desc:"GitHub 也是免费数据仓库：5 个高质量数据集已打成 22 万行 SQLite，能在线查、也能本地跑 SQL。",
-      tags:["5 个数据集","在线查 SQL","已同步"], links:[["在线图鉴", "https://xushan628.github.io/open-data-atlas/"],["目录", REPO+"/tree/main/09-datasets"],["说明", REPO+"/blob/main/09-datasets/README.md"],["数据仓库", "https://github.com/xushan628/open-data-atlas"]] }
+    // 第 9 类由 scripts/sync_atlas.py 生成的数据块驱动（见下方 atlas-datasets）
   ];
+
+  // ---- 开源数据集：卡片内容来自生成块，保证与 09-datasets/datasets.json 不漂移 ----
+  (function () {
+    let rows = [];
+    try { rows = JSON.parse(document.getElementById("atlas-datasets").textContent.trim() || "[]"); } catch (e) { rows = []; }
+    if (!Array.isArray(rows) || !rows.length) return;
+    const n = rows.length;
+    document.getElementById("stat-datasets").textContent = n;
+    DATA.push({
+      no: "09", cat: "数据", icon: "🗂️", title: "开源数据集",
+      desc: "GitHub 也是免费数据仓库。下面 " + n + " 个数据集都能直接下载，已打成 22 万行 SQLite，能在线查、也能本地跑 SQL。",
+      tags: [n + " 个数据集", "在线查 SQL", "已同步"],
+      items: rows,
+      links: [
+        ["在线图鉴", "https://xushan628.github.io/open-data-atlas/"],
+        ["目录", REPO + "/tree/main/09-datasets"],
+        ["说明", REPO + "/blob/main/09-datasets/README.md"]
+      ]
+    });
+  })();
 
   const grid = document.getElementById("grid");
   const pills = document.getElementById("pills");
@@ -221,6 +249,7 @@
         <h3>${d.icon} ${esc(d.title)}</h3>
         <p>${esc(d.desc)}</p>
         <div class="tags">${d.tags.map(t => `<span class="tag${/MIT|ISC|OFL|免|0 元|已下载/.test(t) ? " free" : ""}">${esc(t)}</span>`).join("")}</div>
+        ${Array.isArray(d.items) && d.items.length ? `<ul class="ds">${d.items.map(it => `<li><a href="${esc(it.repo_url)}" target="_blank" rel="noopener">${esc(it.name)}</a><span class="lic">${esc(it.license)}</span></li>`).join("")}</ul>` : ""}
         <div class="links">${d.links.map(([t,u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("")}</div>
       </article>`).join("");
   }
