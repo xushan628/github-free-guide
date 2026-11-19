@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **闲鱼超级管家** | [23Star/xianyu-super-butler](https://github.com/23Star/xianyu-super-butler) | AGPL-3.0 | 闲鱼自动发货/自动擦亮/评价的运营工具，Python 写；★1.4k、830 fork | 抖音 |
 | **daily_stock_analysis** | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | MIT | LLM 驱动的股票智能分析：多源行情 + 新闻 + 决策看板 + 自动推送 | 73 |
 | **Disc Image Studio** | [JiaFeiMiao-K-Cat/DiscImageStudio](https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio) | GPL-3.0 | 用普通刻录光驱在光盘盘面上刻出图案 | 73 |
 | **OpenStock** | [Open-Dev-Society/OpenStock](https://github.com/Open-Dev-Society/OpenStock) | **AGPL-3.0** | 开源股票行情看板：自选股 + 实时图表，替代付费行情平台 | 133 |
@@ -15,6 +16,17 @@
 - **ziwei-doushu** 是传统文化/命理计算库，跟"GitHub 免费福利"这条主线不搭，但它确实是开源的、确实能跑。
 
 **同一个坑位满了（比如再攒到 4–5 个），就拆成独立分组。** 现在放这里，比硬塞进 AI 或工具更诚实。
+
+## 为什么「闲鱼自动化」只放其他、还单独警告
+
+| 风险 | 具体是什么 |
+|---|---|
+| **平台规则** | 闲鱼（阿里）用户协议禁止用脚本/外挂做自动化运营，这类工具本质是在和风控对抗，被判定后**限流、降权、封号**都是常见处理 |
+| **自动过滑块** | README 自己写着"自动过滑块"——这是绕过人机验证，属于明确的违规行为，不是"技术中性" |
+| **账号托管最危险** | 它主推"在线托管（xy.corleom.com）"，意思是**把闲鱼账号的 cookie 交给第三方服务器**。等于把账号控制权交出去，对方能读你的消息、发布商品、甚至清空店铺 |
+| **AGPL-3.0** | 自己改自己用没问题；对外提供服务要按 AGPL 开源你的修改 |
+
+**结论**：这类工具我不推荐当"副业神器"用——收益是卖货，成本可能是账号。真要运营二手生意，平台自带的"闲鱼卖家中心 + 自动回复模板"能覆盖 80% 的需求，而且是合规的。
 
 ## 用之前要知道的
 
