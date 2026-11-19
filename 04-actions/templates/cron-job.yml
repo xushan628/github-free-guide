@@ -1,0 +1,63 @@
+# 定时任务模板：每天跑一次脚本，并把结果提交回仓库。
+#
+# 用法：
+#   1. 复制到 .github/workflows/cron-job.yml
+#   2. 改 cron 时间（UTC！）
+#   3. 改 "TODO" 那几步
+#
+# 注意：cron 用的是 UTC。北京时间 08:00 = UTC 00:00。
+name: 定时任务
+
+on:
+  schedule:
+    - cron: "0 0 * * *"      # 每天 UTC 00:00（北京时间 08:00）
+  workflow_dispatch:          # 也允许手动点一次
+
+permissions:
+  contents: write             # 需要 push 就必须显式声明，否则默认只读
+
+concurrency:
+  group: cron-job
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          # TODO: 改成你的依赖文件
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: 执行脚本
+        env:
+          # 密钥统一从 Secrets 注入，绝不写死在 YAML 里
+          MY_API_KEY: ${{ secrets.MY_API_KEY }}
+          TZ: Asia/Shanghai
+        run: |
+          # TODO: 改成你的命令
+          python scripts/main.py
+
+      - name: 提交结果
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "本次没有变化，跳过提交"
+          else
+            git commit -m "chore: 自动更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

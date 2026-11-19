@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub 免费福利指南 · 8 个真正能白嫖的功能</title>
+<meta name="description" content="GitHub 免费商用素材、在线工具、本地 AI、Actions 定时任务、Pages 建站、Codespaces、学生包与避坑指南。">
+<style>
+  :root{
+    --bg:#0d1117; --bg2:#161b22; --card:#1c2128; --line:#30363d;
+    --fg:#e6edf3; --fg2:#9198a1; --accent:#58a6ff; --accent2:#3fb950;
+    --warn:#d29922; --radius:14px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f8fa; --bg2:#fff; --card:#fff; --line:#d0d7de;
+           --fg:#1f2328; --fg2:#59636e; --accent:#0969da; --accent2:#1a7f37; --warn:#9a6700; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 20px}
+
+  header{padding:56px 0 32px; text-align:center; border-bottom:1px solid var(--line)}
+  h1{font-size:clamp(26px,4vw,40px); line-height:1.25; margin:0 0 14px; letter-spacing:-.5px}
+  h1 .grad{background:linear-gradient(90deg,#58a6ff,#3fb950,#d29922); -webkit-background-clip:text; background-clip:text; color:transparent}
+  .sub{color:var(--fg2); max-width:640px; margin:0 auto 22px; font-size:15px}
+  .stats{display:flex; gap:10px; justify-content:center; flex-wrap:wrap}
+  .stat{background:var(--bg2); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font-size:13px; color:var(--fg2)}
+  .stat b{color:var(--fg)}
+
+  .toolbar{display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin:28px 0 22px}
+  #q{
+    flex:1; min-width:220px; padding:11px 14px; border-radius:10px; font-size:15px;
+    background:var(--bg2); border:1px solid var(--line); color:var(--fg); outline:none;
+  }
+  #q:focus{border-color:var(--accent); box-shadow:0 0 0 3px rgba(88,166,255,.15)}
+  .pills{display:flex; gap:8px; flex-wrap:wrap}
+  .pill{
+    padding:7px 13px; border-radius:999px; font-size:13px; cursor:pointer; user-select:none;
+    background:var(--bg2); border:1px solid var(--line); color:var(--fg2); transition:.15s;
+  }
+  .pill:hover{border-color:var(--accent); color:var(--fg)}
+  .pill.on{background:var(--accent); border-color:var(--accent); color:#fff}
+
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; padding-bottom:32px}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px; transition:.18s; position:relative; overflow:hidden;
+  }
+  .card:hover{transform:translateY(-2px); border-color:var(--accent); box-shadow:0 8px 24px rgba(0,0,0,.18)}
+  .card .no{position:absolute; right:14px; top:10px; font-size:34px; font-weight:800; color:var(--line); line-height:1}
+  .card h3{margin:0 0 8px; font-size:17px; display:flex; align-items:center; gap:8px}
+  .card p{margin:0 0 12px; font-size:14px; color:var(--fg2); min-height:44px}
+  .tags{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px}
+  .tag{font-size:11px; padding:2px 8px; border-radius:6px; background:var(--bg2); border:1px solid var(--line); color:var(--fg2)}
+  .tag.free{color:var(--accent2); border-color:rgba(63,185,80,.4)}
+  .card .links{display:flex; gap:14px; font-size:13px; flex-wrap:wrap}
+
+  section.table-wrap{padding:8px 0 40px}
+  h2{font-size:22px; margin:36px 0 14px}
+  table{width:100%; border-collapse:collapse; font-size:14px; background:var(--card); border-radius:10px; overflow:hidden}
+  th,td{padding:10px 12px; text-align:left; border-bottom:1px solid var(--line)}
+  th{background:var(--bg2); font-weight:600; color:var(--fg2); font-size:13px}
+  tr:last-child td{border-bottom:none}
+
+  .note{
+    background:var(--bg2); border-left:3px solid var(--warn); border-radius:0 10px 10px 0;
+    padding:14px 18px; font-size:14px; color:var(--fg2); margin:20px 0;
+  }
+  .note b{color:var(--fg)}
+
+  footer{border-top:1px solid var(--line); padding:28px 0 48px; color:var(--fg2); font-size:13px; text-align:center}
+  footer a{color:var(--fg2); text-decoration:underline}
+  .empty{grid-column:1/-1; text-align:center; color:var(--fg2); padding:40px 0}
+  @media (max-width:640px){
+    header{padding:36px 0 24px}
+    .card p{min-height:auto}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>GitHub <span class="grad">免费福利</span>指南</h1>
+    <p class="sub">
+      把"下代码的地方"用成：免费素材库 + 免费云算力 + 免费定时任务 + 免费网站 + 免费 AI 工作台。<br>
+      每条资源都实测可达，每个素材都附许可证。
+    </p>
+    <div class="stats">
+      <span class="stat"><b>8</b> 类免费能力</span>
+      <span class="stat"><b>200</b> 个图标已入库</span>
+      <span class="stat"><b>2</b> 套开源字体</span>
+      <span class="stat"><b>0</b> 元成本</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="搜索：图标 / 定时任务 / 建站 / 学生 / 额度 …" aria-label="搜索">
+    <div class="pills" id="pills"></div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <section class="table-wrap">
+    <h2>免费额度速查</h2>
+    <table>
+      <thead>
+        <tr><th>资源</th><th>免费额度</th><th>关键限制</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Actions（公开仓库）</td><td>不限时长</td><td>单 job ≤ 6 小时</td></tr>
+        <tr><td>Actions（私有仓库）</td><td>2,000 分钟/月</td><td>macOS 按 10× 计费</td></tr>
+        <tr><td>Pages</td><td>1 GB 站点 / 100 GB 流量月</td><td>10 次构建/小时，仅静态</td></tr>
+        <tr><td>Codespaces</td><td>120 core-hours + 15 GB-month</td><td>空闲 30 分钟自动停</td></tr>
+        <tr><td>仓库</td><td>无限</td><td>单文件 100 MB</td></tr>
+        <tr><td>Copilot</td><td>Free 档有限次数</td><td>学生/维护者可全免</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <b>数字会变。</b> 下单前请以 <a href="https://docs.github.com/billing" target="_blank" rel="noopener">GitHub 官方计费文档</a> 为准。
+      另外 <b>cron 一律是 UTC</b>，北京时间 08:00 要写 <code>0 0 * * *</code>。
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      内容依据抖音视频《GitHub 白嫖指南》公开索引做工程化重建 · 素材许可：MIT / ISC / OFL-1.1<br>
+      <a id="repo" href="https://github.com/xushan628/github-free-guide" target="_blank" rel="noopener">仓库源码</a> ·
+      <a href="https://github.com/xushan628/github-free-guide/blob/main/docs/link-check.md">外链体检报告</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const REPO = "https://github.com/xushan628/github-free-guide";
+  document.getElementById("repo").href = REPO;
+
+  const DATA = [
+    { no:"01", cat:"素材", icon:"🎨", title:"免费商用素材",
+      desc:"200 个图标 + 2 套可变字体已下载入库，附原始许可证与 SHA-256 校验。",
+      tags:["MIT","ISC","OFL-1.1","已下载"], links:[["目录", REPO+"/tree/main/01-assets"],["说明", REPO+"/blob/main/01-assets/README.md"],["Tabler", "https://github.com/tabler/tabler-icons"],["Lucide", "https://github.com/lucide-icons/lucide"]] },
+
+    { no:"02", cat:"工具", icon:"🧰", title:"在线轻工具",
+      desc:"IT-Tools 80+ 前端小工具、CyberChef 数据流水线、Stirling-PDF 自托管 PDF 全家桶。",
+      tags:["纯前端","Docker","开源"], links:[["目录", REPO+"/tree/main/02-tools"],["说明", REPO+"/blob/main/02-tools/README.md"],["IT-Tools", "https://github.com/CorentinTh/it-tools"],["CyberChef", "https://github.com/gchq/CyberChef"]] },
+
+    { no:"03", cat:"AI", icon:"🧠", title:"开源本地 AI",
+      desc:"Ollama 一条命令跑本地大模型，n8n / Dify 拖拽搭免代码 AI 工作流。",
+      tags:["本地推理","无订阅","隐私"], links:[["目录", REPO+"/tree/main/03-ai"],["说明", REPO+"/blob/main/03-ai/README.md"],["Ollama", "https://github.com/ollama/ollama"],["n8n", "https://github.com/n8n-io/n8n"]] },
+
+    { no:"04", cat:"自动化", icon:"⏰", title:"Actions 免费云算力",
+      desc:"不用服务器、不用开电脑：定时跑脚本，跑完自动把结果提交回仓库。三个模板可直接复制。",
+      tags:["定时任务","免挂机","公开仓库不限时"], links:[["目录", REPO+"/tree/main/04-actions"],["说明", REPO+"/blob/main/04-actions/README.md"],["cron 模板", REPO+"/blob/main/04-actions/templates/cron-job.yml"]] },
+
+    { no:"05", cat:"建站", icon:"🌐", title:"Pages 免费建站",
+      desc:"本页就是活例子：一个 docs/index.html，零服务器、自动 HTTPS、支持自定义域名。",
+      tags:["零成本","静态托管","100 GB/月"], links:[["目录", REPO+"/tree/main/05-pages"],["说明", REPO+"/blob/main/05-pages/README.md"],["本站源码", REPO+"/blob/main/docs/index.html"]] },
+
+    { no:"06", cat:"云开发", icon:"💻", title:"Codespaces 云开发",
+      desc:"浏览器里的完整 Linux 环境，120 core-hours/月，devcontainer 自动装好依赖。",
+      tags:["免装环境","VS Code","120 核时/月"], links:[["目录", REPO+"/tree/main/06-codespaces"],["说明", REPO+"/blob/main/06-codespaces/README.md"],["模板库", "https://github.com/devcontainers/templates"]] },
+
+    { no:"07", cat:"福利", icon:"🎓", title:"学生开发者大礼包",
+      desc:"学生认证后：GitHub Pro、Copilot、JetBrains 全家桶、免费域名与云额度。附申请材料清单。",
+      tags:["学生","Copilot 免费用","JetBrains"], links:[["目录", REPO+"/tree/main/07-student-pack"],["说明", REPO+"/blob/main/07-student-pack/README.md"],["官方入口", "https://education.github.com/pack"]] },
+
+    { no:"08", cat:"避坑", icon:"⚠️", title:"额度与 4 个坑",
+      desc:"Actions 默认只读、cron 是 UTC、密钥泄露、许可证误用——白嫖前先看这一页。",
+      tags:["权限陷阱","额度边界","许可证"], links:[["目录", REPO+"/tree/main/08-limits"],["说明", REPO+"/blob/main/08-limits/README.md"],["官方计费", "https://docs.github.com/billing"]] }
+  ];
+
+  const grid = document.getElementById("grid");
+  const pills = document.getElementById("pills");
+  const q = document.getElementById("q");
+  let activeCat = "全部";
+
+  const cats = ["全部", ...new Set(DATA.map(d => d.cat))];
+  cats.forEach(c => {
+    const b = document.createElement("button");
+    b.className = "pill" + (c === "全部" ? " on" : "");
+    b.textContent = c;
+    b.onclick = () => {
+      activeCat = c;
+      [...pills.children].forEach(x => x.classList.toggle("on", x.textContent === c));
+      render();
+    };
+    pills.appendChild(b);
+  });
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m])); }
+
+  function render(){
+    const kw = q.value.trim().toLowerCase();
+    const rows = DATA.filter(d => {
+      if (activeCat !== "全部" && d.cat !== activeCat) return false;
+      if (!kw) return true;
+      return (d.title + d.desc + d.cat + d.tags.join(" ")).toLowerCase().includes(kw);
+    });
+    if (!rows.length){
+      grid.innerHTML = '<div class="empty">没有匹配的结果，换个关键词试试。</div>';
+      return;
+    }
+    grid.innerHTML = rows.map(d => `
+      <article class="card">
+        <span class="no">${d.no}</span>
+        <h3>${d.icon} ${esc(d.title)}</h3>
+        <p>${esc(d.desc)}</p>
+        <div class="tags">${d.tags.map(t => `<span class="tag${/MIT|ISC|OFL|免|0 元|已下载/.test(t) ? " free" : ""}">${esc(t)}</span>`).join("")}</div>
+        <div class="links">${d.links.map(([t,u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("")}</div>
+      </article>`).join("");
+  }
+
+  q.addEventListener("input", render);
+  render();
+})();
+</script>
+</body>
+</html>

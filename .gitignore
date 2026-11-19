@@ -1,0 +1,37 @@
+# 依赖
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 本地模型 / 大文件（别提交进 git）
+models/
+*.gguf
+*.safetensors
+*.bin
+*.onnx
+
+# 密钥 —— 这条最重要
+.env
+.env.*
+*.pem
+*.key
+*.p12
+github_token*
+secrets.*
+id_rsa*
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时产物
+tmp/
+temp/
+*.log
+dist/
+build/

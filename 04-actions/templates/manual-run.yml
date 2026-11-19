@@ -1,0 +1,50 @@
+# 手动触发模板：在 Actions 页面（或手机上）填参数跑一次，产物自动归档。
+name: 手动任务
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "处理目标（例如仓库全名 owner/repo）"
+        required: true
+        default: "ollama/ollama"
+      dry_run:
+        description: "只演练，不真正执行"
+        type: boolean
+        default: true
+      level:
+        description: "强度"
+        type: choice
+        options: [low, normal, high]
+        default: normal
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 打印参数（不含任何密钥）
+        run: |
+          echo "target = ${{ inputs.target }}"
+          echo "dry_run = ${{ inputs.dry_run }}"
+          echo "level   = ${{ inputs.level }}"
+
+      - name: 执行
+        env:
+          TARGET: ${{ inputs.target }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          echo "TODO: 用 \$TARGET / \$DRY_RUN 做你要做的事"
+
+      - name: 上传产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: output-${{ github.run_number }}
+          path: |
+            output/
+          if-no-files-found: ignore
+          retention-days: 7
