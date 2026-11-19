@@ -31,6 +31,9 @@ jobs:
           python-version: "3.12"
 
       - name: 体检
+        env:
+          # 用内置 token 提升 API 速率上限（未认证 60 次/小时，认证 5000 次/小时）
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/verify_links.py
 
       - name: 提交报告
