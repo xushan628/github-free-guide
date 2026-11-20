@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **Hypit** | [hypit-ai/hypit](https://github.com/hypit-ai/hypit) | **NOASSERTION** | 丢一条参考视频给 AI agent，拆解镜头/字幕/节奏后批量复刻不同版本 | 抖音 |
 | **DS Bot** | [Fei2411/DS-Bot](https://github.com/Fei2411/DS-Bot) | Apache-2.0 | DeepSeek Harness 的长驻多 bot 团队：总管调度、bot 接力交付、各自记忆与模型、可定时开工 | 抖音 |
 | **AiToEarn** | [yikart/AiToEarn](https://github.com/yikart/AiToEarn) | MIT | 自媒体 AI 内容工作台：图文/视频创作、多平台发布排期、AI 评论互动 | 抖音 |
 | **OmniRoute** | [cheaper-inference/OmniRoute](https://github.com/cheaper-inference/OmniRoute) | MIT | 免费 AI 网关：一个地址接多家模型商，带自动兜底 | 抖音 |
@@ -61,6 +62,7 @@
 
 ## 这批的三个边界
 
+- **Hypit 这类"复刻爆款"工具**：本质是拆解他人视频再生成同构内容，**素材版权与平台原创判定都在灰色地带**（用了别人的镜头/文案可能被判搬运）；许可证是 NOASSERTION，商用前自己读 LICENSE。
 - **OmniRoute 这类"免费额度聚合"**：本质是替你轮询多家免费额度，**各家条款与风控各不相同**，账号可能因为异常调用被限；模型质量也参差，别把生产任务压上去。
 - **DS Bot 是社区项目，非 DeepSeek 官方**（视频里也这么写）：跑在你本机、花自己的额度，多 bot 协作会显著放大 token 消耗。
 - **career-ops / promptfoo 都 MIT**，但 career-ops 自动投递同样踩招聘平台协议；promptfoo 的红队功能只对自己的系统用。

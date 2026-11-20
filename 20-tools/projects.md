@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **Buzz** | [chidiwilliams/buzz](https://github.com/chidiwilliams/buzz) | MIT | 离线语音转文字：口播/会议转字幕，免上传云端 | 抖音 |
 | **SingleFile** | [gildas-lormeau/SingleFile](https://github.com/gildas-lormeau/SingleFile) | AGPL-3.0 | 把整个网页（含图片/样式）存成单个 HTML 文件，离线可读 | 抖音 |
 | **Beekeeper Studio** | [beekeeper-studio/beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio) | **NOASSERTION** | 数据库 GUI/SQL 客户端：MySQL、Postgres、SQLite 等点两下就连上 | 抖音 |
 | **CopyQ** | [hluk/CopyQ](https://github.com/hluk/CopyQ) | GPL-3.0 | 跨平台剪贴板历史：文字图片全收、可搜可贴、能排除指定窗口 | 抖音 |
