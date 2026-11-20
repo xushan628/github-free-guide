@@ -6,9 +6,18 @@ on:
   schedule:
     - cron: "0 1 * * 1"   # 每周一 UTC 01:00（北京时间 09:00）
   workflow_dispatch:
+  # 注意：这里只监听"内容目录"的 md，不能再写 **/*.md。
+  # 因为本任务会把结果提交回 docs/link-check.md（也是 md），
+  # 写成 **/*.md 会自触发成死循环，进而不断产生新提交，
+  # 把紧跟着的 Pages 构建一个个取消掉（表现为站点忽新忽旧）。
   push:
     paths:
-      - "**/*.md"
+      - "10-resources/**/*.md"
+      - "20-tools/**/*.md"
+      - "30-ai/**/*.md"
+      - "40-ship/**/*.md"
+      - "50-benefits/**/*.md"
+      - "60-others/**/*.md"
       - "scripts/verify_links.py"
       - ".github/workflows/link-check.yml"
 
