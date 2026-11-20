@@ -54,6 +54,15 @@
 
 > 判决标准很简单：**能自己动手复现的才是方法，要你先交钱的都是生意。**
 
+## 数据与可视化（自己起服务，不依赖第三方）
+
+| 项目 | 仓库 | 许可证 | 说明 |
+|---|---|---|---|
+| **诗泉 chinese-poetry-api** | [palemoky/chinese-poetry-api](https://github.com/palemoky/chinese-poetry-api) | GPL-3.0 | 把近 40 万首唐诗宋词做成现成 API：REST + GraphQL 双接口，按作者/朝代/诗体/飞花令取诗，简繁切换，一条 Docker 起服务；也能当大模型的 RAG 知识库 |
+| **江山时序** | [DeanChensj/jiangshan-map](https://github.com/DeanChensj/jiangshan-map) | GPL-3.0 | 中国历史交互地图时间轴（前 403 年至今），适合历史/古诗文群文教学 |
+
+> 两个都是**自己跑、不上传数据**的项目；诗泉的数据底座就是本页 [datasets](datasets/README.md) 里的 chinese-poetry。
+
 ## 设计系统（当资源库用）
 
 | 项目 | 仓库 | 许可证 | 说明 |
