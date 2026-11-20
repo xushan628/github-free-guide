@@ -38,6 +38,7 @@
 
 | 项目 | 仓库 | 许可证 | 内容 |
 |---|---|---|---|
+| **高性价比人生指南** | [cdyforever/how-to-live-better](https://github.com/cdyforever/how-to-live-better) | **无 LICENSE** | 33 个主题的人生建议合集，在线单页阅读版（仓库写 528 条；网传 601 条，存在版本差异） |
 | **AI 赚钱手册** | [XiaomingX/ai-money-maker-handbook](https://github.com/XiaomingX/ai-money-maker-handbook) | Apache-2.0 | 530 个文件、521 篇 Markdown，分《程序员的副业赚钱宝典》和《创业者早期的烦恼树洞》两大目录；投稿制合集，持续更新 |
 
 **怎么用**：`git clone` 后用 Obsidian 把整个目录当 vault 打开，就是一本能全局搜索的副业笔记库。

@@ -4,6 +4,10 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **TypeWords** | [zyronon/TypeWords](https://github.com/zyronon/TypeWords) | GPL-3.0 | 背单词：递进式练习，主打"一次一击、逐步推进"的肌肉记忆路径 | 抖音 |
+| **android-ad-cleaner** | [rddmwmddr/android-ad-cleaner](https://github.com/rddmwmddr/android-ad-cleaner) | MIT | 关掉国产安卓的开屏广告、热搜、资讯推送；不 root、可还原、支持 AI 智能体执行 | 抖音 |
+| **DiPlay** | [shihabal3amri/DiPlay](https://github.com/shihabal3amri/DiPlay) | GPL-3.0 | 让兼容的安卓车机当 CarPlay 接收屏，有线无线都支持 | 抖音 |
+| **OldAlmanac（电子老黄历）** | [jingguanzhang/OldAlmanac](https://github.com/jingguanzhang/OldAlmanac) | **无 LICENSE** | 手撕质感电子老黄历，公历农历对照、0–9999 年、可导出高清图/ PDF | 抖音 |
 | **Gopeed** | [GopeedLab/gopeed](https://github.com/GopeedLab/gopeed) | GPL-3.0 | 现代下载器：HTTP / BitTorrent / 磁力 / ed2k，Go + Flutter，跨平台带浏览器扩展 | 抖音 |
 | **ai-goofish-monitor** | [Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor) | MIT | 闲鱼多任务监控与智能分析：Playwright + AI 盯商品，带后台 UI（只读，不改平台操作） | 抖音 |
 | **RustDesk** | [rustdesk/rustdesk](https://github.com/rustdesk/rustdesk) | AGPL-3.0 | 开源远程桌面，可自建中继服务器，替代 TeamViewer/向日葵 | 小白神器 |
@@ -53,6 +57,13 @@
 - 那个"百度网盘扩展"是**第三方**的，不在这两个下载器仓库里；这类扩展里最有名的 `acgotaku/BaiduExporter` **2021 年就停更了**（★214），网盘接口早变过，能不能用要自己试；
 - 绕过限速通常违反网盘用户协议，**限速/封禁风险自担**；
 - 别把"能下网盘"当成选择下载器的理由。
+
+## 这四个的边界（都挺实用，但别踩线）
+
+- **android-ad-cleaner**：走的是系统/App 自带开关 + 组件挂起，**不 root、可还原**，这点比破解类干净；但**厂商 OTA 一升级就可能失效**，别指望一劳永逸，也别拿它当"绕过一切广告"的承诺。
+- **DiPlay**：本质是把 iPhone 的 CarPlay 协议在安卓车机上实现，**涉及车机安装与授权**；行车中操作有安全风险，CarPlay 授权本身存在灰色地带，自用自行评估。
+- **OldAlmanac**：仓库**没有 LICENSE 文件** → 按默认版权规则，**不能商用、不能二次分发**，自己看、自己打印可以。
+- **TypeWords**：GPL-3.0，自己用没问题，改了分发要开源。
 
 ## 用之前要知道的
 
