@@ -24,6 +24,16 @@
 
 > 更多跨期收录的素材/设计类项目见 [assets/README.md](assets/README.md)，数据类见 [datasets/README.md](datasets/README.md)。
 
+## 项目发现：用排行榜代替一页页翻
+
+| 榜单 | 仓库 | 许可证 | 说明 |
+|---|---|---|---|
+| **GitHub 中文排行榜** | [ChHsiching/GitHub-Chinese-Top-Charts](https://github.com/ChHsiching/GitHub-Chinese-Top-Charts) | GPL-3.0 | 1 个总榜 + 18 个语言分榜，每周自动同步；入选要求项目近半年有活跃，把停更的挡在门外 |
+
+**怎么用**：想找某语言的优质中文项目，直接看对应分榜；比在 GitHub 搜索里按 star 排更干净，因为它把长期不更新的过滤掉了。
+
+**一个要说明的坑**：视频里说的很可能是原作者 `kon9chunkit/GitHub-Chinese-Top-Charts`，但**那个仓库现在 404 了**。这里收录的是仍在维护、可访问的版本（★3k）。榜单口径与同步频率以仓库自己的说明为准，别当"权威排名"。
+
 ## 知识手册（Markdown，可直接用 Obsidian 打开）
 
 | 项目 | 仓库 | 许可证 | 内容 |

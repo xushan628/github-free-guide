@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **Gopeed** | [GopeedLab/gopeed](https://github.com/GopeedLab/gopeed) | GPL-3.0 | 现代下载器：HTTP / BitTorrent / 磁力 / ed2k，Go + Flutter，跨平台带浏览器扩展 | 抖音 |
 | **ai-goofish-monitor** | [Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor) | MIT | 闲鱼多任务监控与智能分析：Playwright + AI 盯商品，带后台 UI（只读，不改平台操作） | 抖音 |
 | **RustDesk** | [rustdesk/rustdesk](https://github.com/rustdesk/rustdesk) | AGPL-3.0 | 开源远程桌面，可自建中继服务器，替代 TeamViewer/向日葵 | 小白神器 |
 | **LocalSend** | [localsend/localsend](https://github.com/localsend/localsend) | Apache-2.0 | 跨平台 AirDrop 替代：手机↔电脑互传，同一个局域网直连 | 小白神器 |
@@ -36,6 +37,22 @@
 同类的「闲鱼超级管家」（自动发货/评价/擦亮/过滑块）**放在 [60-others](../60-others/README.md)**，那里写了完整的风险拆解——它对抗平台风控，封号是常态，不适合和常规工具并列推荐。
 
 本页只留只读的 **ai-goofish-monitor**（监控/选品，不改平台操作）。
+
+## 下载器怎么选：Gopeed vs Motrix
+
+| | Gopeed | Motrix |
+|---|---|---|
+| 许可证 | GPL-3.0 | NOASSERTION（识别不出） |
+| 技术栈 | Go + Flutter | Electron |
+| 协议 | HTTP / BT / 磁力 / **ed2k** | HTTP / BT / 磁力 |
+| 浏览器扩展 | 有 | 有 |
+
+两个都能接磁力和种子；要 ed2k 选 Gopeed，要界面简单选 Motrix。
+
+**关于"网盘提速"（视频里最吸引人的那句，得说清楚）**：
+- 那个"百度网盘扩展"是**第三方**的，不在这两个下载器仓库里；这类扩展里最有名的 `acgotaku/BaiduExporter` **2021 年就停更了**（★214），网盘接口早变过，能不能用要自己试；
+- 绕过限速通常违反网盘用户协议，**限速/封禁风险自担**；
+- 别把"能下网盘"当成选择下载器的理由。
 
 ## 用之前要知道的
 
