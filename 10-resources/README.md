@@ -38,7 +38,9 @@
 
 | 项目 | 仓库 | 许可证 | 内容 |
 |---|---|---|---|
-| **高性价比人生指南** | [cdyforever/how-to-live-better](https://github.com/cdyforever/how-to-live-better) | **无 LICENSE** | 33 个主题的人生建议合集，在线单页阅读版（仓库写 528 条；网传 601 条，存在版本差异） |
+| **高性价比人生指南（官方）** | [eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter) | **CC-BY-4.0** | 34 章节、数百条循证建议：金银钱、法律、健康、婚育、创业，每条标成本/收益/证据等级；有 PDF、电子书、HTML 三种版本，附生活自查页 |
+> 《人生指南》另有一个第三方做的[在线阅读单页版](https://github.com/cdyforever/how-to-live-better)（★14.9k、528 条），版本落后于官方仓库，**优先看官方版**。
+
 | **AI 赚钱手册** | [XiaomingX/ai-money-maker-handbook](https://github.com/XiaomingX/ai-money-maker-handbook) | Apache-2.0 | 530 个文件、521 篇 Markdown，分《程序员的副业赚钱宝典》和《创业者早期的烦恼树洞》两大目录；投稿制合集，持续更新 |
 
 **怎么用**：`git clone` 后用 Obsidian 把整个目录当 vault 打开，就是一本能全局搜索的副业笔记库。

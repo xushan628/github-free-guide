@@ -1,10 +1,16 @@
 # 外链体检报告
 
-- 生成时间：2026-11-20T04:54:49+00:00
+- 生成时间：2026-11-20T04:59:05+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **149** 个链接：✅ 正常 143 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）6
+- 总计 **157** 个链接：✅ 正常 150 ／ ❌ 失效 0 ／ ⚠️ 未验证 1 ／ ⏭️ 跳过（本地服务）6
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
+
+## ⚠️ 未验证
+
+| 链接 | 原因 |
+|---|---|
+| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
 
 ## ✅ 全部结果
 
@@ -33,7 +39,6 @@
 | ✅ | codespaces/README.md | 存在 |
 | ✅ | datasets.json | 存在 |
 | ✅ | datasets/README.md | 存在 |
-| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
 | ✅ | https://concat.standalones.org | 200 |
 | ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
@@ -56,19 +61,23 @@
 | ✅ | https://github.com/HKUDS/DeepTutor/releases/latest | 200 |
 | ✅ | https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio | 200 |
 | ✅ | https://github.com/K-Dense-AI/scientific-agent-skills | 200 |
+| ✅ | https://github.com/MoeKoeMusic/MoeKoeMusic | 200 |
 | ✅ | https://github.com/Open-Dev-Society/OpenStock | 200 |
 | ✅ | https://github.com/PolymathicAI/the_well | 200 |
 | ✅ | https://github.com/Renhuai123/ziwei-doushu | 200 |
 | ✅ | https://github.com/Stirling-Tools/Stirling-PDF | 200 |
 | ✅ | https://github.com/THU-MAIC/OpenMAIC | 200 |
+| ✅ | https://github.com/TNTcraftHIM/Piik | 200 |
 | ✅ | https://github.com/TencentCloud/Octop | 200 |
 | ✅ | https://github.com/Usagi-org/ai-goofish-monitor | 200 |
 | ✅ | https://github.com/XiaomingX/ai-money-maker-handbook | 200 |
+| ✅ | https://github.com/ZToolsCenter/ZTools | 200 |
 | ✅ | https://github.com/ZhuLinsen/daily_stock_analysis | 200 |
 | ✅ | https://github.com/addyosmani/agent-skills | 200 |
 | ✅ | https://github.com/adobe-fonts/source-han-sans | 200 |
 | ✅ | https://github.com/agalwood/Motrix | 200 |
 | ✅ | https://github.com/alibaba/open-code-review | 200 |
+| ✅ | https://github.com/awangwang123/jianhao-travel-planner | 200 |
 | ✅ | https://github.com/awesome-dsh-plugin/awesome-dsh-plugin | 200 |
 | ✅ | https://github.com/backnotprop/plannotator | 200 |
 | ✅ | https://github.com/bilawalsidhu/gods-eye-view | 200 |
@@ -87,6 +96,7 @@
 | ✅ | https://github.com/docsifyjs/docsify | 200 |
 | ✅ | https://github.com/dr5hn/countries-states-cities-database | 200 |
 | ✅ | https://github.com/dream-num/univer | 200 |
+| ✅ | https://github.com/eternity4719/HowToLiveBetter | 200 |
 | ✅ | https://github.com/feathericons/feather | 200 |
 | ✅ | https://github.com/gchq/CyberChef | 200 |
 | ✅ | https://github.com/ggml-org/llama.cpp | 200 |
@@ -94,6 +104,7 @@
 | ✅ | https://github.com/harry0703/MoneyPrinterTurbo | 200 |
 | ✅ | https://github.com/hasaneyldrm/exercises-dataset | 200 |
 | ✅ | https://github.com/heygen-com/hyperframes | 200 |
+| ✅ | https://github.com/hmjz100/LinkSwift | 200 |
 | ✅ | https://github.com/hoppscotch/hoppscotch | 200 |
 | ✅ | https://github.com/httpie/cli | 200 |
 | ✅ | https://github.com/huggingface/transformers | 200 |
@@ -102,6 +113,7 @@
 | ✅ | https://github.com/ionic-team/ionicons | 200 |
 | ✅ | https://github.com/jdecked/twemoji | 200 |
 | ✅ | https://github.com/jekyll/jekyll | 200 |
+| ✅ | https://github.com/jev-chat/jev-chat-jarvis | 200 |
 | ✅ | https://github.com/jgraph/drawio | 200 |
 | ✅ | https://github.com/jingguanzhang/OldAlmanac | 200 |
 | ✅ | https://github.com/jub0t/Concat | 200 |
@@ -137,6 +149,7 @@
 | ✅ | https://github.com/tw93/Mole | 200 |
 | ✅ | https://github.com/vercel-labs/agent-browser | 200 |
 | ✅ | https://github.com/vercel-labs/agent-desktop | 200 |
+| ✅ | https://github.com/virgiliojr94/book-to-skill | 200 |
 | ✅ | https://github.com/we-promise/sure | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas/blob/main/DATASETS.md | 200 |
@@ -159,3 +172,4 @@
 | ⏭️ | http://localhost:5678 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8080 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8081 | 本地服务示例，跳过 |
+| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |

@@ -4,6 +4,10 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **LinkSwift** | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | AGPL-3.0 | 网盘直链获取油猴脚本：把各家网盘链接推给 IDM / Aria2（含 Motrix、AriaNg）等下载器 | 抖音 |
+| **MoeKoeMusic** | [MoeKoeMusic/MoeKoeMusic](https://github.com/MoeKoeMusic/MoeKoeMusic) | GPL-2.0 | 酷狗第三方客户端：Windows/macOS/Linux/Web 四端，账号同步、无社交 | 抖音 |
+| **Piik** | [TNTcraftHIM/Piik](https://github.com/TNTcraftHIM/Piik) | MIT | 屏幕共享：对方装浏览器就能看，P2P 优先，可自建服务端 | 抖音 |
+| **ZTools** | [ZToolsCenter/ZTools](https://github.com/ZToolsCenter/ZTools) | MIT | uTools 的开源实现：首字母启动应用、剪贴板历史、插件系统 | 抖音 |
 | **TypeWords** | [zyronon/TypeWords](https://github.com/zyronon/TypeWords) | GPL-3.0 | 背单词：递进式练习，主打"一次一击、逐步推进"的肌肉记忆路径 | 抖音 |
 | **android-ad-cleaner** | [rddmwmddr/android-ad-cleaner](https://github.com/rddmwmddr/android-ad-cleaner) | MIT | 关掉国产安卓的开屏广告、热搜、资讯推送；不 root、可还原、支持 AI 智能体执行 | 抖音 |
 | **DiPlay** | [shihabal3amri/DiPlay](https://github.com/shihabal3amri/DiPlay) | GPL-3.0 | 让兼容的安卓车机当 CarPlay 接收屏，有线无线都支持 | 抖音 |
@@ -64,6 +68,13 @@
 - **DiPlay**：本质是把 iPhone 的 CarPlay 协议在安卓车机上实现，**涉及车机安装与授权**；行车中操作有安全风险，CarPlay 授权本身存在灰色地带，自用自行评估。
 - **OldAlmanac**：仓库**没有 LICENSE 文件** → 按默认版权规则，**不能商用、不能二次分发**，自己看、自己打印可以。
 - **TypeWords**：GPL-3.0，自己用没问题，改了分发要开源。
+
+## 这四个的边界
+
+- **LinkSwift 是"打补丁"类工具**：靠匹配网盘页面结构取直链，**网盘一改接口就失效**，作者更新跟不上时别惊讶；AGPL-3.0，改了分发要开源。
+- **MoeKoeMusic 是第三方客户端**：用的是非官方接口，**账号被风控/封禁的风险自担**，重要账号别登。
+- **Piik** 走 P2P + 可选自建服务端，邀请链接谁拿到谁能进，**别把链接发到公开群**。
+- **ZTools** 是 uTools 的开源替代，插件生态比原版小，迁移前先确认你要的插件有没有。
 
 ## 用之前要知道的
 

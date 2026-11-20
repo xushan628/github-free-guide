@@ -4,6 +4,9 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **jev-chat-jarvis** | [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | MIT | 聊天决策助手：回复前先读出对方意图与风险，给 3 条候选回复 | 抖音 |
+| **book-to-skill** | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill) | MIT | 把技术书 PDF 转成可复用的 agent skill，让 AI 按书里的体系干活 | 抖音 |
+| **jianhao-travel-planner** | [awangwang123/jianhao-travel-planner](https://github.com/awangwang123/jianhao-travel-planner) | MIT | 旅行路书 skill：联网实查 + 多源交叉验证，输出可执行攻略 | 抖音 |
 | **Modern Web Guidance** | [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | Apache-2.0 | Google Chrome 团队：让 coding agent 先查最新的 Web 最佳实践再动手 | 86 |
 | **Chrome DevTools MCP** | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | 把 Chrome DevTools 交给 AI：自己查报错、看性能 | 86 |
 | **Open Code Review** | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | Apache-2.0 | 阿里开源的 AI 代码审查，主打 token 省、规模大 | 86 |
@@ -38,6 +41,13 @@
 「本月十大」里还有 4 个没匹配到唯一的开源仓库，先不硬凑：
 `Orca`（AI 编程工作台）、`Impeccable`（一句话调设计强弱）、`Hallmark`（50 套设计主题）、`taste-skill`（按 Figma 水准检查官网）。
 这几个可能是产品名或用例名，等能确认仓库再补。
+
+## 这三个 skill 的边界
+
+- **都要接自己的模型**：skill 只是提示词与流程，没有模型跑不起来。
+- **book-to-skill 处理书籍要看版权**：把整本 PDF 喂进去做 skill，自己用可以，**对外分发就是侵权**；商业书籍尤其别碰。
+- **jev 这类"读意图"的助手**：输出是概率判断，别拿它当读心术；涉及重要沟通（谈判、职场）仍要自己判断。
+- **旅行路书** 依赖实时联网查询，节假日信息变化快，出发前复核订票/营业时间。
 
 ## 用之前要知道的
 
