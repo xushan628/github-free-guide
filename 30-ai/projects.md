@@ -42,6 +42,7 @@
 | **gongkao-zhenti-knowledge** | [36hxqw/gongkao-zhenti-knowledge](https://github.com/36hxqw/gongkao-zhenti-knowledge) | MIT | 公考真题知识库 skill：行测 11,393 题 + 申论 419 题，每题带考点编码、原解析与来源文件，可按考点检索 | 抖音 · 考公脑库 |
 | **jev-chat-jarvis** | [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | MIT | 聊天决策助手：回复前先读出对方意图与风险，给 3 条候选回复 | 抖音 |
 | **book-to-skill** | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill) | MIT | 把技术书 PDF 转成可复用的 agent skill，让 AI 按书里的体系干活 | 抖音 |
+| **仓颉 cangjie-skill** | [kangarooking/cangjie-skill](https://github.com/kangarooking/cangjie-skill) | MIT | 把书/长视频/播客蒸馏成可执行的 Agent Skills：RIA-TV++ 七阶段流水线，输出多 skill 仓库（含 DIGEST/GLOSSARY/测试用例） | 抖音 |
 | **jianhao-travel-planner** | [awangwang123/jianhao-travel-planner](https://github.com/awangwang123/jianhao-travel-planner) | MIT | 旅行路书 skill：联网实查 + 多源交叉验证，输出可执行攻略 | 抖音 |
 | **Modern Web Guidance** | [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | Apache-2.0 | Google Chrome 团队：让 coding agent 先查最新的 Web 最佳实践再动手 | 86 |
 | **Chrome DevTools MCP** | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | 把 Chrome DevTools 交给 AI：自己查报错、看性能 | 86 |
