@@ -25,7 +25,6 @@
 | 本周 GitHub 热榜 | 泛榜单单期，未逐一给仓库名 | 未知期 | 未定位 |
 | 选题 skill | 一分钟找选题的 skill，未给仓库 | 未知期 | 未定位 |
 | livebook 活页课本 | 3D 交互式活页课本（物理/化学/地理），可导入 PDF 课本 | 未知期 | 未定位 |
-| 小说 10 个 Skill 合集 | 视频列了 story-long-scan / story-long-analyze / novel-creator-skill / character-designer / webnovel-writer / story-deslop / story-review / story-cover 等 10 个名字，未说明出自哪个仓库 | 未知期 | 部分已单收（webnovel-writer），合集未定位 |
 | Content Strategy / Content Creation | 自媒体 8 skill 里的两个，只说"账号定位/文案生成"，未给仓库 | 未知期 | 未定位 |
 | ad-creative | 内容表现分析与复盘 skill，同名项目多个（superCMO 等），无法确认 | 未知期 | 未定位 |
 | REA | "AI Agent 辅助逆向分析软件与二进制"，一周 +65.7K；搜到的多为 awesome 列表与非同名项目 | 未知期 | 未定位 |

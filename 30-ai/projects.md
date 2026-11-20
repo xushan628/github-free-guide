@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **oh-story-claudecode** | [zenstory-ai/oh-story-claudecode](https://github.com/zenstory-ai/oh-story-claudecode) | MIT | 网文写作 skill 全包（14 个 skill）：扫榜 → 拆文 → 大纲细纲 → 长短篇连载 → 去 AI 味 → 封面；日常只要 5 个命令 `setup`/`long-write`/`short-write`/`deslop`/`review` | 抖音 |
 | **Agent-Reach** | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | 给 agent 装上"看全网"的能力：热点搜索、选题灵感 | 抖音 |
 | **Auto-Redbook-Skills** | [comeonzhj/Auto-Redbook-Skills](https://github.com/comeonzhj/Auto-Redbook-Skills) | **无 LICENSE** | 小红书笔记自动撰写、配图生成与发布流程 | 抖音 |
 | **guizang-social-card-skill** | [op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill) | AGPL-3.0 | 生成小红书封面、知识卡片、公众号配图 | 抖音 |
@@ -113,6 +114,21 @@
 - **ChatTTS 是 AGPL-3.0**：生成的音频商用前看清条款；做口播时**别克隆他人音色**。
 - **whisper 转写**：上传前想清楚素材是否含他人隐私/未授权内容。
 - **webnovel-writer 只是辅助**：长篇的质量取决于设定与结构，AI 负责"不忘"，不负责"好看"。
+
+## 小说 skill 只需装一个全包
+
+那套「小说 10 个 Skill」其实来自同一个仓库 —— **`zenstory-ai/oh-story-claudecode`**（★8.8k · MIT · 14 个 skill）。
+不用逐个装：`npx skills add zenstory-ai/oh-story-claudecode -y -g` 一次性装全，日常写书 5 个命令足够：
+
+| 命令 | 干什么 |
+|---|---|
+| `setup` | 初始化项目（设定、大纲、追踪目录） |
+| `long-write` | 长篇连载推进 |
+| `short-write` | 短篇成稿 |
+| `deslop` | 去 AI 味 |
+| `review` | 审核一致性 / 逻辑 / 断章 |
+
+它用**文件系统当记忆**（追踪数据在 `追踪/_tracking-state.json`），所以长篇不容易"忘设定"；适配 Claude Code、Codex CLI、OpenCode 等 7 款 agent。
 
 ## 用之前要知道的
 
