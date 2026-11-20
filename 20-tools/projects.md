@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **ung220z-tool** | [Hut-hzf/ung220z-tool](https://github.com/Hut-hzf/ung220z-tool) | MIT | 针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取，用于查超管账号、宽带账号与 WiFi 密钥 | 抖音 |
 | **LinkSwift** | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | AGPL-3.0 | 网盘直链获取油猴脚本：把各家网盘链接推给 IDM / Aria2（含 Motrix、AriaNg）等下载器 | 抖音 |
 | **MoeKoeMusic** | [MoeKoeMusic/MoeKoeMusic](https://github.com/MoeKoeMusic/MoeKoeMusic) | GPL-2.0 | 酷狗第三方客户端：Windows/macOS/Linux/Web 四端，账号同步、无社交 | 抖音 |
 | **Piik** | [TNTcraftHIM/Piik](https://github.com/TNTcraftHIM/Piik) | MIT | 屏幕共享：对方装浏览器就能看，P2P 优先，可自建服务端 | 抖音 |
@@ -75,6 +76,14 @@
 - **MoeKoeMusic 是第三方客户端**：用的是非官方接口，**账号被风控/封禁的风险自担**，重要账号别登。
 - **Piik** 走 P2P + 可选自建服务端，邀请链接谁拿到谁能进，**别把链接发到公开群**。
 - **ZTools** 是 uTools 的开源替代，插件生态比原版小，迁移前先确认你要的插件有没有。
+
+## 光猫工具只对自有设备用
+
+`ung220z-tool` 的边界必须先讲清楚：
+- **只用于你自己名下的光猫**——对运营商或他人设备做同样操作属于入侵；
+- 提取超管、改桥接会**触碰运营商服务条款**，部分省份会远程下发配置覆盖你的设置，甚至影响保修与报障；
+- 属提权类工具，**固件一升级就可能失效**；操作前把原配置截图存好，改坏了能回退。
+- MIT 许可，代码可读，建议先看源码再跑。
 
 ## 用之前要知道的
 
