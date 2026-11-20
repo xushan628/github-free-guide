@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **TVBox Desktop** | [hgtuj5688/tvbox-desktop](https://github.com/hgtuj5688/tvbox-desktop) | MIT | Windows 影视聚合客户端（Electron + React），内置播放源、装完即用 | 抖音 |
 | **ung220z-tool** | [Hut-hzf/ung220z-tool](https://github.com/Hut-hzf/ung220z-tool) | MIT | 针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取，用于查超管账号、宽带账号与 WiFi 密钥 | 抖音 |
 | **LinkSwift** | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | AGPL-3.0 | 网盘直链获取油猴脚本：把各家网盘链接推给 IDM / Aria2（含 Motrix、AriaNg）等下载器 | 抖音 |
 | **MoeKoeMusic** | [MoeKoeMusic/MoeKoeMusic](https://github.com/MoeKoeMusic/MoeKoeMusic) | GPL-2.0 | 酷狗第三方客户端：Windows/macOS/Linux/Web 四端，账号同步、无社交 | 抖音 |
@@ -84,6 +85,16 @@
 - 提取超管、改桥接会**触碰运营商服务条款**，部分省份会远程下发配置覆盖你的设置，甚至影响保修与报障；
 - 属提权类工具，**固件一升级就可能失效**；操作前把原配置截图存好，改坏了能回退。
 - MIT 许可，代码可读，建议先看源码再跑。
+
+## TVBox 类项目的版权红线（比功能重要）
+
+`TVBox Desktop` 这类客户端的"内置播放源"，绝大多数是**未经授权的影视聚合源**：
+
+- 项目本身是 MIT、代码干净，但**播放源不是项目提供的**，是第三方接口；
+- 在国内，**提供或使用盗版影视聚合源属于著作权侵权**，近年已有大量判例（含使用者被诉的案例）；
+- 所以：**可以当技术项目研究，不建议作为日常观影主力**。想合法看片，还是走正版平台。
+
+同理，仓库里有多个同名分支（`tengdechun/tvbox-desktop` ★16、`LanLanff/FlyTV` ★34），收录的是 ★811 那个；换分支前先看它的源从哪来。
 
 ## 用之前要知道的
 

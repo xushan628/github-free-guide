@@ -6,6 +6,14 @@
 |---|---|---|---|---|
 | **闲鱼超级管家** | [23Star/xianyu-super-butler](https://github.com/23Star/xianyu-super-butler) | AGPL-3.0 | 闲鱼自动发货/自动擦亮/评价的运营工具，Python 写；★1.4k、830 fork | 抖音 |
 | **daily_stock_analysis** | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | MIT | LLM 驱动的股票智能分析：多源行情 + 新闻 + 决策看板 + 自动推送 | 73 |
+
+**三步装法（视频给的，实测路径合理）**：
+1. **Fork** 仓库到你自己的 GitHub；
+2. 在 `Settings → Secrets and variables → Actions` 里填**模型 Key**（DeepSeek 也能接）和**自选股代码**；
+3. 打开 **Actions** 开关，工作日收盘后自动跑，报告推到飞书或邮箱。
+
+> 零成本的关键：跑在 GitHub Actions 上，公开仓库不收时长费。
+> **它自己写着"不构成任何投资建议"** —— 别把自动报告当买卖信号。
 | **Disc Image Studio** | [JiaFeiMiao-K-Cat/DiscImageStudio](https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio) | GPL-3.0 | 用普通刻录光驱在光盘盘面上刻出图案 | 73 |
 | **OpenStock** | [Open-Dev-Society/OpenStock](https://github.com/Open-Dev-Society/OpenStock) | **AGPL-3.0** | 开源股票行情看板：自选股 + 实时图表，替代付费行情平台 | 133 |
 | **ziwei-doushu** | [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) | MIT | 紫微斗数开源排盘引擎：排盘算法、四化系统、格局知识库、古籍原文 | 138 |
