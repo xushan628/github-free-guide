@@ -98,10 +98,10 @@
       找资源 · 用工具 · 用 AI · 自动化与上线 · 省钱避坑 · 其他（暂时归不了类的）—— 每条资源实测可达，每个素材附许可证。
     </p>
     <div class="stats">
-      <span class="stat"><b>6</b> 组分类</span>
+      <span class="stat"><b>14</b> 组分类</span>
       <span class="stat"><b>200</b> 个图标已入库</span>
       <span class="stat"><b id="stat-datasets">5</b> 个开源数据集</span>
-      <span class="stat"><b>130+</b> 个精选项目</span>
+      <span class="stat"><b>134</b> 个精选项目</span>
     </div>
   </div>
 </header>
@@ -157,81 +157,237 @@
   document.getElementById("repo").href = REPO;
 
   const DATA = [
-    { no:"1", cat:"资源", icon:"🎨", title:"找现成的资源",
-      desc:"不想自己做的时候：图标、字体、数据集，还有能直接 Obsidian 打开的 Markdown 手册。",
-      tags:["200 图标","2 套字体","5 个数据集"],
+    { no:"1", cat:"发现", icon:"🔍", title:"找项目 / 资源导航",
+      desc:"不知道装什么的时候，先从这几张单子里挑。",
+      tags:["10 个","榜单","合集"],
       items:[
-        {name:"Tabler + Lucide 图标（200 个）", license:"MIT / ISC", repo_url:REPO+"/blob/main/10-resources/assets/README.md"},
-        {name:"JetBrains Mono + Inter 字体", license:"OFL-1.1", repo_url:REPO+"/blob/main/10-resources/assets/README.md"},
-        {name:"开源数据集目录（5 个）", license:"见许可证", repo_url:REPO+"/blob/main/10-resources/datasets/README.md"},
-        {name:"Astryx · Meta 设计系统", license:"MIT", repo_url:"https://github.com/meta/astryx"},
-        {name:"AI 赚钱手册 · 521 篇副业笔记", license:"Apache-2.0", repo_url:"https://github.com/XiaomingX/ai-money-maker-handbook"},
-        {name:"GitHub 中文排行榜 · 总榜+18 语言分榜", license:"GPL-3.0", repo_url:"https://github.com/ChHsiching/GitHub-Chinese-Top-Charts"},
-        {name:"高性价比人生指南 · 34 章循证建议", license:"CC-BY-4.0", repo_url:"https://github.com/eternity4719/HowToLiveBetter"}
+        {name:"GitHub 中文排行榜", license:"GPL-3.0", repo_url:"https://github.com/ChHsiching/GitHub-Chinese-Top-Charts"},
+        {name:"HelloGitHub", license:"无 LICENSE", repo_url:"https://github.com/521xueweihan/HelloGitHub"},
+        {name:"public-apis", license:"MIT", repo_url:"https://github.com/public-apis/public-apis"},
+        {name:"Astryx", license:"MIT", repo_url:"https://github.com/meta/astryx"},
+        {name:"AI 赚钱手册", license:"Apache-2.0", repo_url:"https://github.com/XiaomingX/ai-money-maker-handbook"},
+        {name:"高性价比人生指南（官方）", license:"CC-BY-4.0", repo_url:"https://github.com/eternity4719/HowToLiveBetter"},
+        {name:"awesome-dsh-plugin", license:"CC0-1.0", repo_url:"https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"},
+        {name:"anthropics/skills", license:"NOASSERTION", repo_url:"https://github.com/anthropics/skills"},
+        {name:"Matt Pocock 技能包", license:"MIT", repo_url:"https://github.com/mattpocock/skills"},
+        {name:"Addy Osmani 技能包", license:"MIT", repo_url:"https://github.com/addyosmani/agent-skills"}
       ],
-      links:[["组目录", REPO+"/tree/main/10-resources"],["素材说明", REPO+"/blob/main/10-resources/assets/README.md"],["数据集", REPO+"/blob/main/10-resources/datasets/README.md"]] },
+      links:[["仓库根目录", REPO+"/tree/main"]] },
 
-    { no:"2", cat:"工具", icon:"🧰", title:"用现成的工具",
-      desc:"不想装、不想买：浏览器能开的小工具、一条 Docker 起的服务，还有剪映的开源平替 Concat。",
-      tags:["纯前端","自托管","开源"],
+    { no:"2", cat:"学习", icon:"📚", title:"学习 / 教材 / 知识库",
+      desc:"从零学 AI、找教材、背古诗、刷考公 —— 都是能离线跑的资料。",
+      tags:["10 个","离线可用","教材"],
       items:[
-        {name:"Concat · 剪映开源平替（本地剪辑）", license:"AGPL-3.0", repo_url:"https://github.com/jub0t/Concat"},
-        {name:"IT-Tools · 80+ 前端小工具", license:"GPL-3.0", repo_url:"https://github.com/CorentinTh/it-tools"},
-        {name:"CyberChef · 数据流水线", license:"Apache-2.0", repo_url:"https://github.com/gchq/CyberChef"},
-        {name:"Stirling-PDF · 自托管 PDF", license:"MIT", repo_url:"https://github.com/Stirling-Tools/Stirling-PDF"},
-        {name:"DBX · 轻量数据库客户端", license:"Apache-2.0", repo_url:"https://github.com/t8y2/dbx"},
-        {name:"Scrapling · 爬虫框架", license:"BSD-3-Clause", repo_url:"https://github.com/D4Vinci/Scrapling"},
-        {name:"RustDesk · 自建远程桌面", license:"AGPL-3.0", repo_url:"https://github.com/rustdesk/rustdesk"},
-        {name:"LocalSend · 局域网互传", license:"Apache-2.0", repo_url:"https://github.com/localsend/localsend"},
-        {name:"LinkSwift · 网盘直链给 IDM/Aria2", license:"AGPL-3.0", repo_url:"https://github.com/hmjz100/LinkSwift"},
-        {name:"MoeKoeMusic · 酷狗第三方客户端", license:"GPL-2.0", repo_url:"https://github.com/MoeKoeMusic/MoeKoeMusic"}
+        {name:"microsoft/AI-For-Beginners", license:"MIT", repo_url:"https://github.com/microsoft/AI-For-Beginners"},
+        {name:"ChinaTextbook", license:"无 LICENSE", repo_url:"https://github.com/TapXWorld/ChinaTextbook"},
+        {name:"cn-math-taxonomy", license:"NOASSERTION", repo_url:"https://github.com/xiaoyang111222/cn-math-taxonomy"},
+        {name:"DeepTutor", license:"Apache-2.0", repo_url:"https://github.com/HKUDS/DeepTutor"},
+        {name:"scientific-agent-skills", license:"MIT", repo_url:"https://github.com/K-Dense-AI/scientific-agent-skills"},
+        {name:"book-to-skill", license:"MIT", repo_url:"https://github.com/virgiliojr94/book-to-skill"},
+        {name:"minimind", license:"Apache-2.0", repo_url:"https://github.com/jingyaogong/minimind"},
+        {name:"江山时序", license:"GPL-3.0", repo_url:"https://github.com/DeanChensj/jiangshan-map"},
+        {name:"诗泉 chinese-poetry-api", license:"GPL-3.0", repo_url:"https://github.com/palemoky/chinese-poetry-api"},
+        {name:"gongkao-zhenti-knowledge", license:"MIT", repo_url:"https://github.com/36hxqw/gongkao-zhenti-knowledge"}
       ],
-      links:[["组目录", REPO+"/tree/main/20-tools"],["全部 52 个工具", REPO+"/blob/main/20-tools/projects.md"],["IT-Tools", "https://github.com/CorentinTh/it-tools"]] },
+      links:[["仓库根目录", REPO+"/tree/main"]] },
 
-    { no:"3", cat:"AI", icon:"🧠", title:"用 AI 干活",
-      desc:"从本地模型到 AI 家教：模型跑在自己机器上，工作流拖拽就能搭。",
-      tags:["本地推理","无订阅","新收录"],
+    { no:"3", cat:"下载", icon:"⬇️", title:"下载 / 传文件 / 远控",
+      desc:"扒素材、传手机、远程控制，全部不经过第三方服务器。",
+      tags:["10 个","BT","局域网"],
       items:[
-        {name:"DeepTutor · 私人 AI 家教（港大）", license:"Apache-2.0", repo_url:"https://github.com/HKUDS/DeepTutor"},
-        {name:"Ollama · 本地跑模型", license:"MIT", repo_url:"https://github.com/ollama/ollama"},
-        {name:"n8n · 自动化编排", license:"Sustainable Use", repo_url:"https://github.com/n8n-io/n8n"},
-        {name:"T3 Code · 跨设备 Agent 工作台", license:"MIT", repo_url:"https://github.com/pingdotgg/t3code"},
-        {name:"VoiceStudio · 本地语音工作台", license:"AGPL-3.0", repo_url:"https://github.com/debpalash/VoiceStudio"},
-        {name:"jev · 聊天决策助手", license:"MIT", repo_url:"https://github.com/jev-chat/jev-chat-jarvis"}
+        {name:"yt-dlp", license:"Unlicense", repo_url:"https://github.com/yt-dlp/yt-dlp"},
+        {name:"Gopeed", license:"GPL-3.0", repo_url:"https://github.com/GopeedLab/gopeed"},
+        {name:"Motrix", license:"NOASSERTION", repo_url:"https://github.com/agalwood/Motrix"},
+        {name:"Ghost-Downloader-3", license:"GPL-3.0", repo_url:"https://github.com/XiaoYouChR/Ghost-Downloader-3"},
+        {name:"LocalSend", license:"Apache-2.0", repo_url:"https://github.com/localsend/localsend"},
+        {name:"Oink", license:"GPL-3.0", repo_url:"https://github.com/oinkvm/oink"},
+        {name:"RustDesk", license:"AGPL-3.0", repo_url:"https://github.com/rustdesk/rustdesk"},
+        {name:"SingleFile", license:"AGPL-3.0", repo_url:"https://github.com/gildas-lormeau/SingleFile"},
+        {name:"LinkSwift", license:"AGPL-3.0", repo_url:"https://github.com/hmjz100/LinkSwift"},
+        {name:"Cap", license:"NOASSERTION", repo_url:"https://github.com/CapSoftware/Cap"}
       ],
-      links:[["组目录", REPO+"/tree/main/30-ai"],["全部 65 个 AI 项目", REPO+"/blob/main/30-ai/projects.md"],["DeepTutor", "https://github.com/HKUDS/DeepTutor"]] },
+      links:[["仓库根目录", REPO+"/tree/main"],["全部清单", REPO+"/blob/main/20-tools/projects.md"]] },
 
-    { no:"4", cat:"上线", icon:"🚀", title:"让它自动跑 / 上线",
-      desc:"不用买服务器：Codespaces 里写代码，Actions 定时跑，Pages 直接发成网站。",
-      tags:["免挂机","零成本","三件套"],
+    { no:"4", cat:"文档", icon:"📄", title:"文档 / 办公 / 数据",
+      desc:"PDF、表格、数据库、OCR：文件不出本机就能处理完。",
+      tags:["10 个","PDF","数据库"],
       items:[
-        {name:"Codespaces · 云开发环境", license:"120 核时/月", repo_url:REPO+"/blob/main/40-ship/codespaces/README.md"},
-        {name:"Actions · 定时任务", license:"不限时长", repo_url:REPO+"/blob/main/40-ship/actions/README.md"},
-        {name:"Pages · 静态托管", license:"100 GB/月", repo_url:REPO+"/blob/main/40-ship/pages/README.md"}
+        {name:"OfficeCLI", license:"Apache-2.0", repo_url:"https://github.com/iOfficeAI/OfficeCLI"},
+        {name:"IT-Tools", license:"GPL-3.0", repo_url:"https://github.com/CorentinTh/it-tools"},
+        {name:"CyberChef", license:"Apache-2.0", repo_url:"https://github.com/gchq/CyberChef"},
+        {name:"Stirling-PDF", license:"MIT", repo_url:"https://github.com/Stirling-Tools/Stirling-PDF"},
+        {name:"Univer", license:"Apache-2.0", repo_url:"https://github.com/dream-num/univer"},
+        {name:"Beekeeper Studio", license:"NOASSERTION", repo_url:"https://github.com/beekeeper-studio/beekeeper-studio"},
+        {name:"pdf-inspector", license:"MIT", repo_url:"https://github.com/firecrawl/pdf-inspector"},
+        {name:"Umi-OCR", license:"MIT", repo_url:"https://github.com/hiroi-sora/Umi-OCR"},
+        {name:"markmap", license:"MIT", repo_url:"https://github.com/markmap/markmap"},
+        {name:"Buzz", license:"MIT", repo_url:"https://github.com/chidiwilliams/buzz"}
       ],
-      links:[["组目录", REPO+"/tree/main/40-ship"],["cron 模板", REPO+"/blob/main/40-ship/actions/templates/cron-job.yml"],["建站指南", REPO+"/blob/main/40-ship/pages/README.md"]] },
+      links:[["仓库根目录", REPO+"/tree/main"]] },
 
-    { no:"5", cat:"权益", icon:"💰", title:"省钱与避坑",
-      desc:"学生能白拿的权益，和免费额度的真实边界 —— 先看边界，再薅。",
-      tags:["学生包","额度速查","4 个坑"],
+    { no:"5", cat:"图像", icon:"🖼️", title:"图像 / 设计 / 视觉",
+      desc:"修图、放大、生成封面、做架构图，还有自托管相册。",
+      tags:["10 个","设计","相册"],
       items:[
-        {name:"学生开发者大礼包（Pro/Copilot/JetBrains）", license:"需认证", repo_url:REPO+"/blob/main/50-benefits/student-pack/README.md"},
-        {name:"免费额度速查（Actions/Pages/Codespaces）", license:"见官方", repo_url:REPO+"/blob/main/50-benefits/limits/README.md"},
-        {name:"4 个高频陷阱（权限/时区/密钥/许可）", license:"必读", repo_url:REPO+"/blob/main/50-benefits/limits/README.md"}
+        {name:"Immich", license:"AGPL-3.0", repo_url:"https://github.com/immich-app/immich"},
+        {name:"Upscayl", license:"AGPL-3.0", repo_url:"https://github.com/upscayl/upscayl"},
+        {name:"PixelFX", license:"MIT", repo_url:"https://github.com/patch-gg/pixelfx"},
+        {name:"Disc Image Studio", license:"GPL-3.0", repo_url:"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio"},
+        {name:"diagram-design", license:"MIT", repo_url:"https://github.com/cathrynlavery/diagram-design"},
+        {name:"ArtCraft", license:"Apache-2.0", repo_url:"https://github.com/storytold/artcraft"},
+        {name:"Deep-Live-Cam", license:"AGPL-3.0", repo_url:"https://github.com/hacksider/Deep-Live-Cam"},
+        {name:"see-through", license:"Apache-2.0", repo_url:"https://github.com/shitagaki-lab/see-through"},
+        {name:"OpenMAIC", license:"MIT", repo_url:"https://github.com/THU-MAIC/OpenMAIC"},
+        {name:"Archify", license:"Apache-2.0", repo_url:"https://github.com/tt-a1i/archify"}
       ],
-      links:[["组目录", REPO+"/tree/main/50-benefits"],["学生包", REPO+"/blob/main/50-benefits/student-pack/README.md"],["额度与坑", REPO+"/blob/main/50-benefits/limits/README.md"]] },
+      links:[["仓库根目录", REPO+"/tree/main"]] },
 
-    { no:"6", cat:"其他", icon:"🗃️", title:"其他项目",
-      desc:"暂时没有功能归属的项目：股票分析、命理排盘、光驱刻盘、闲鱼自动化 —— 攒够同类再拆新组。",
-      tags:["暂未归类","后续再分","2 个"],
+    { no:"6", cat:"视听", icon:"🎬", title:"视频 / 音频",
+      desc:"录屏、剪辑、转字幕、配音、自动合成短视频。",
+      tags:["10 个","录屏","配音"],
       items:[
-        {name:"OpenStock · 开源股票看板", license:"AGPL-3.0", repo_url:"https://github.com/Open-Dev-Society/OpenStock"},
-        {name:"ziwei-doushu · 紫微斗数排盘", license:"MIT", repo_url:"https://github.com/Renhuai123/ziwei-doushu"},
-        {name:"daily_stock_analysis · 股票智能分析", license:"MIT", repo_url:"https://github.com/ZhuLinsen/daily_stock_analysis"},
-        {name:"Disc Image Studio · 光驱刻盘", license:"GPL-3.0", repo_url:"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio"},
-        {name:"闲鱼超级管家 · 闲鱼自动化（有封号风险）", license:"AGPL-3.0", repo_url:"https://github.com/23Star/xianyu-super-butler"}
+        {name:"OBS Studio", license:"GPL-2.0", repo_url:"https://github.com/obsproject/obs-studio"},
+        {name:"LosslessCut", license:"GPL-2.0", repo_url:"https://github.com/mifi/lossless-cut"},
+        {name:"whisper", license:"MIT", repo_url:"https://github.com/openai/whisper"},
+        {name:"ChatTTS", license:"AGPL-3.0", repo_url:"https://github.com/2noise/ChatTTS"},
+        {name:"voicebox", license:"MIT", repo_url:"https://github.com/jamiepine/voicebox"},
+        {name:"VoiceStudio", license:"AGPL-3.0", repo_url:"https://github.com/debpalash/VoiceStudio"},
+        {name:"MoneyPrinterTurbo", license:"MIT", repo_url:"https://github.com/harry0703/MoneyPrinterTurbo"},
+        {name:"HyperFrames", license:"Apache-2.0", repo_url:"https://github.com/heygen-com/hyperframes"},
+        {name:"video-use", license:"MIT", repo_url:"https://github.com/browser-use/video-use"},
+        {name:"Hypit", license:"NOASSERTION", repo_url:"https://github.com/hypit-ai/hypit"}
       ],
-      links:[["组目录", REPO+"/tree/main/60-others"],["说明", REPO+"/blob/main/60-others/README.md"]] }
+      links:[["仓库根目录", REPO+"/tree/main"]] },
+
+    { no:"7", cat:"桌面", icon:"🖥️", title:"桌面 / 输入 / 系统",
+      desc:"输入法、剪贴板、窗口管理、下载器之外的系统级小工具。",
+      tags:["10 个","输入法","剪贴板"],
+      items:[
+        {name:"Hyprland", license:"BSD-3-Clause", repo_url:"https://github.com/hyprwm/Hyprland"},
+        {name:"Worktrunk", license:"Apache-2.0", repo_url:"https://github.com/max-sixty/worktrunk"},
+        {name:"Mole", license:"GPL-3.0", repo_url:"https://github.com/tw93/Mole"},
+        {name:"CopyQ", license:"GPL-3.0", repo_url:"https://github.com/hluk/CopyQ"},
+        {name:"TypeWords", license:"GPL-3.0", repo_url:"https://github.com/zyronon/TypeWords"},
+        {name:"青简 Qingjian", license:"GPL-3.0", repo_url:"https://github.com/qingjian-team/qingjian"},
+        {name:"rime-ice 雾凇拼音", license:"GPL-3.0", repo_url:"https://github.com/iDvel/rime-ice"},
+        {name:"OldAlmanac（电子老黄历）", license:"无 LICENSE", repo_url:"https://github.com/jingguanzhang/OldAlmanac"},
+        {name:"ZTools", license:"MIT", repo_url:"https://github.com/ZToolsCenter/ZTools"},
+        {name:"Piik", license:"MIT", repo_url:"https://github.com/TNTcraftHIM/Piik"}
+      ],
+      links:[["仓库根目录", REPO+"/tree/main"],["全部清单", REPO+"/blob/main/20-tools/projects.md"]] },
+
+    { no:"8", cat:"手机", icon:"📱", title:"手机 / 端侧",
+      desc:"在手机上跑 agent、去广告、改光猫、装 TVBox。",
+      tags:["5 个","安卓","端侧"],
+      items:[
+        {name:"Mika", license:"Apache-2.0", repo_url:"https://github.com/wangzan101/Mika"},
+        {name:"Cactus", license:"Apache-2.0", repo_url:"https://github.com/cactus-compute/cactus"},
+        {name:"android-ad-cleaner", license:"MIT", repo_url:"https://github.com/rddmwmddr/android-ad-cleaner"},
+        {name:"TVBox Desktop", license:"MIT", repo_url:"https://github.com/hgtuj5688/tvbox-desktop"},
+        {name:"ung220z-tool", license:"MIT", repo_url:"https://github.com/Hut-hzf/ung220z-tool"}
+      ],
+      links:[["仓库根目录", REPO+"/tree/main"]] },
+
+    { no:"9", cat:"采集", icon:"🕷️", title:"采集 / 求职 / 安全",
+      desc:"爬数据、投简历、查用户名、做逆向 —— 都要注意条款与授权。",
+      tags:["10 个","爬虫","求职"],
+      items:[
+        {name:"MediaCrawler", license:"NOASSERTION", repo_url:"https://github.com/NanmiCoder/MediaCrawler"},
+        {name:"Crawl4AI", license:"Apache-2.0", repo_url:"https://github.com/unclecode/crawl4ai"},
+        {name:"Scrapling", license:"BSD-3-Clause", repo_url:"https://github.com/D4Vinci/Scrapling"},
+        {name:"ai-goofish-monitor", license:"MIT", repo_url:"https://github.com/Usagi-org/ai-goofish-monitor"},
+        {name:"get_jobs", license:"NOASSERTION", repo_url:"https://github.com/loks666/get_jobs"},
+        {name:"career-ops", license:"MIT", repo_url:"https://github.com/career-ops-hq/career-ops"},
+        {name:"sherlock", license:"MIT", repo_url:"https://github.com/sherlock-project/sherlock"},
+        {name:"reverse-skill", license:"MIT", repo_url:"https://github.com/zhaoxuya520/reverse-skill"},
+        {name:"promptfoo", license:"MIT", repo_url:"https://github.com/promptfoo/promptfoo"},
+        {name:"Folo", license:"AGPL-3.0", repo_url:"https://github.com/RSSNext/Folo"}
+      ],
+      links:[["仓库根目录", REPO+"/tree/main"]] },
+
+    { no:"10", cat:"Agent", icon:"🤖", title:"Agent 框架 / 插件",
+      desc:"让 agent 真正干活的底座：工作台、浏览器、插件生态。",
+      tags:["10 个","框架","插件"],
+      items:[
+        {name:"DeepSeek Harness", license:"MIT", repo_url:"https://github.com/deepseek-ai/deepseek-harness"},
+        {name:"DS Bot", license:"Apache-2.0", repo_url:"https://github.com/Fei2411/DS-Bot"},
+        {name:"Orca", license:"MIT", repo_url:"https://github.com/stablyai/orca"},
+        {name:"moli", license:"Apache-2.0", repo_url:"https://github.com/lexmount/moli"},
+        {name:"Agent-Reach", license:"MIT", repo_url:"https://github.com/Panniantong/Agent-Reach"},
+        {name:"dsh-superagent-prototype", license:"MIT", repo_url:"https://github.com/deepseek-ai/dsh-superagent-prototype"},
+        {name:"OpenMausBot", license:"Apache-2.0", repo_url:"https://github.com/milind-soni/OpenMausBot"},
+        {name:"T3 Code", license:"MIT", repo_url:"https://github.com/pingdotgg/t3code"},
+        {name:"Cloudflare computer", license:"MIT", repo_url:"https://github.com/cloudflare/computer"},
+        {name:"Semantica", license:"MIT", repo_url:"https://github.com/semantica-agi/semantica"}
+      ],
+      links:[["仓库根目录", REPO+"/tree/main"],["全部清单", REPO+"/blob/main/30-ai/projects.md"]] },
+
+    { no:"11", cat:"内容", icon:"✍️", title:"AI 内容 / 自媒体 / 写作",
+      desc:"写小说、做小红书、生成封面卡片、去 AI 味。",
+      tags:["10 个","写作","自媒体"],
+      items:[
+        {name:"oh-story-claudecode", license:"MIT", repo_url:"https://github.com/zenstory-ai/oh-story-claudecode"},
+        {name:"webnovel-writer", license:"GPL-3.0", repo_url:"https://github.com/lingfengQAQ/webnovel-writer"},
+        {name:"Auto-Redbook-Skills", license:"无 LICENSE", repo_url:"https://github.com/comeonzhj/Auto-Redbook-Skills"},
+        {name:"guizang-social-card-skill", license:"AGPL-3.0", repo_url:"https://github.com/op7418/guizang-social-card-skill"},
+        {name:"Pexo Skills", license:"MIT", repo_url:"https://github.com/pexoai/pexo-skills"},
+        {name:"AiToEarn", license:"MIT", repo_url:"https://github.com/yikart/AiToEarn"},
+        {name:"狗头军师", license:"MIT", repo_url:"https://github.com/shengjidaguai-china/goutoujunshi"},
+        {name:"jev-chat-jarvis", license:"MIT", repo_url:"https://github.com/jev-chat/jev-chat-jarvis"},
+        {name:"Plannotator", license:"Apache-2.0", repo_url:"https://github.com/backnotprop/plannotator"},
+        {name:"Humanizer", license:"MIT", repo_url:"https://github.com/blader/humanizer"}
+      ],
+      links:[["仓库根目录", REPO+"/tree/main"],["全部清单", REPO+"/blob/main/30-ai/projects.md"]] },
+
+    { no:"12", cat:"模型", icon:"⚙️", title:"模型 / 网关 / 开发规范",
+      desc:"免费额度聚合、本地训练、官方技能库、代码审查。",
+      tags:["10 个","网关","训练"],
+      items:[
+        {name:"OmniRoute", license:"MIT", repo_url:"https://github.com/cheaper-inference/OmniRoute"},
+        {name:"Unsloth", license:"Apache-2.0", repo_url:"https://github.com/unslothai/unsloth"},
+        {name:"TencentDB Agent Memory", license:"NOASSERTION", repo_url:"https://github.com/TencentCloud/TencentDB-Agent-Memory"},
+        {name:"elephant-goldfish-model", license:"Apache-2.0", repo_url:"https://github.com/google/elephant-goldfish-model"},
+        {name:"Cloudflare Skills", license:"Apache-2.0", repo_url:"https://github.com/cloudflare/skills"},
+        {name:"Modern Web Guidance", license:"Apache-2.0", repo_url:"https://github.com/GoogleChrome/modern-web-guidance"},
+        {name:"Chrome DevTools MCP", license:"Apache-2.0", repo_url:"https://github.com/ChromeDevTools/chrome-devtools-mcp"},
+        {name:"Open Code Review", license:"Apache-2.0", repo_url:"https://github.com/alibaba/open-code-review"},
+        {name:"Codex Security", license:"Apache-2.0", repo_url:"https://github.com/openai/codex-security"},
+        {name:"ffmpeg-skill", license:"MIT", repo_url:"https://github.com/kajisho5/ffmpeg-skill"}
+      ],
+      links:[["仓库根目录", REPO+"/tree/main"],["全部清单", REPO+"/blob/main/30-ai/projects.md"]] },
+
+    { no:"13", cat:"自托管", icon:"🏠", title:"其他项目 / 自托管",
+      desc:"一时归不了类的：ERP、股票、命盘、闲鱼自动化。",
+      tags:["10 个","自托管","待归类"],
+      items:[
+        {name:"Octop", license:"MIT", repo_url:"https://github.com/TencentCloud/Octop"},
+        {name:"OpenStock", license:"AGPL-3.0", repo_url:"https://github.com/Open-Dev-Society/OpenStock"},
+        {name:"ziwei-doushu", license:"MIT", repo_url:"https://github.com/Renhuai123/ziwei-doushu"},
+        {name:"daily_stock_analysis", license:"MIT", repo_url:"https://github.com/ZhuLinsen/daily_stock_analysis"},
+        {name:"闲鱼超级管家", license:"AGPL-3.0", repo_url:"https://github.com/23Star/xianyu-super-butler"},
+        {name:"Odoo", license:"NOASSERTION", repo_url:"https://github.com/odoo/odoo"},
+        {name:"Sure", license:"AGPL-3.0", repo_url:"https://github.com/we-promise/sure"},
+        {name:"Concat", license:"AGPL-3.0", repo_url:"https://github.com/jub0t/Concat"},
+        {name:"agent-browser", license:"Apache-2.0", repo_url:"https://github.com/vercel-labs/agent-browser"},
+        {name:"agent-desktop", license:"Apache-2.0", repo_url:"https://github.com/vercel-labs/agent-desktop"}
+      ],
+      links:[["仓库根目录", REPO+"/tree/main"]] },
+
+    { no:"14", cat:"收口", icon:"📦", title:"剩余收口",
+      desc:"前面 13 类装不下的，都在这里。",
+      tags:["9 个","零散","补充"],
+      items:[
+        {name:"gods-eye-view", license:"NOASSERTION", repo_url:"https://github.com/bilawalsidhu/gods-eye-view"},
+        {name:"Uptime Kuma", license:"MIT", repo_url:"https://github.com/louislam/uptime-kuma"},
+        {name:"MoeKoeMusic", license:"GPL-2.0", repo_url:"https://github.com/MoeKoeMusic/MoeKoeMusic"},
+        {name:"DiPlay", license:"GPL-3.0", repo_url:"https://github.com/shihabal3amri/DiPlay"},
+        {name:"claude-seo", license:"MIT", repo_url:"https://github.com/AgriciDaniel/claude-seo"},
+        {name:"Paperclip", license:"MIT", repo_url:"https://github.com/paperclipai/paperclip"},
+        {name:"i-have-adhd", license:"MIT", repo_url:"https://github.com/ayghri/i-have-adhd"},
+        {name:"DBX", license:"Apache-2.0", repo_url:"https://github.com/t8y2/dbx"},
+        {name:"jianhao-travel-planner", license:"MIT", repo_url:"https://github.com/awangwang123/jianhao-travel-planner"}
+      ],
+      links:[["仓库根目录", REPO+"/tree/main"]] },
   ];
 
   // ---- 数据集数量来自生成块（scripts/sync_atlas.py 写入），保证与 datasets.json 不漂移 ----
