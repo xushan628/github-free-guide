@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **狗头军师** | [shengjidaguai-china/goutoujunshi](https://github.com/shengjidaguai-china/goutoujunshi) | MIT | 恋爱/关系决策军师：先接情绪、再分析关系，给出可执行策略，内置心理、法律、社会、婚姻家庭知识 | 抖音 · 324 期 |
 | **gongkao-zhenti-knowledge** | [36hxqw/gongkao-zhenti-knowledge](https://github.com/36hxqw/gongkao-zhenti-knowledge) | MIT | 公考真题知识库 skill：行测 11,393 题 + 申论 419 题，每题带考点编码、原解析与来源文件，可按考点检索 | 抖音 · 考公脑库 |
 | **jev-chat-jarvis** | [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | MIT | 聊天决策助手：回复前先读出对方意图与风险，给 3 条候选回复 | 抖音 |
 | **book-to-skill** | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill) | MIT | 把技术书 PDF 转成可复用的 agent skill，让 AI 按书里的体系干活 | 抖音 |
@@ -48,6 +49,7 @@
 - **都要接自己的模型**：skill 只是提示词与流程，没有模型跑不起来。
 - **book-to-skill 处理书籍要看版权**：把整本 PDF 喂进去做 skill，自己用可以，**对外分发就是侵权**；商业书籍尤其别碰。
 - **jev 这类"读意图"的助手**：输出是概率判断，别拿它当读心术；涉及重要沟通（谈判、职场）仍要自己判断。
+- **狗头军师是决策辅助，不是专业意见**：它内置的心理/法律内容来自社区整理，**不构成心理咨询或法律建议**；亲密关系、婚姻财产这类问题别把 AI 输出当定论。
 - **公考真题库是 skill，不是题库网站**：装进支持 `SKILL.md` 的宿主（如豆包工作模式）才能用；考点体系**沿用「花生十三」课程**，那部分内容的版权归原作者，**自用可以、别二次分发**。
 - **旅行路书** 依赖实时联网查询，节假日信息变化快，出发前复核订票/营业时间。
 

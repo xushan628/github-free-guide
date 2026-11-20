@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **get_jobs** | [loks666/get_jobs](https://github.com/loks666/get_jobs) | **NOASSERTION** | AI 找工作助手：全平台自动投简历脚本（BOSS / 前程无忧 / 猎聘 / 智联） | 抖音 |
 | **TVBox Desktop** | [hgtuj5688/tvbox-desktop](https://github.com/hgtuj5688/tvbox-desktop) | MIT | Windows 影视聚合客户端（Electron + React），内置播放源、装完即用 | 抖音 |
 | **ung220z-tool** | [Hut-hzf/ung220z-tool](https://github.com/Hut-hzf/ung220z-tool) | MIT | 针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取，用于查超管账号、宽带账号与 WiFi 密钥 | 抖音 |
 | **LinkSwift** | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | AGPL-3.0 | 网盘直链获取油猴脚本：把各家网盘链接推给 IDM / Aria2（含 Motrix、AriaNg）等下载器 | 抖音 |
@@ -95,6 +96,17 @@
 - 所以：**可以当技术项目研究，不建议作为日常观影主力**。想合法看片，还是走正版平台。
 
 同理，仓库里有多个同名分支（`tengdechun/tvbox-desktop` ★16、`LanLanff/FlyTV` ★34），收录的是 ★811 那个；换分支前先看它的源从哪来。
+
+## 自动投简历：风险比效率大
+
+`get_jobs` 这类工具**明确违反招聘平台的用户协议**，用之前必须知道：
+
+- **封号是常态不是意外**：BOSS / 猎聘 / 智联都禁止脚本自动化，被判定后账号会被限制甚至封停，影响后续正常求职；
+- **许可证是 NOASSERTION**（GitHub 识别不出）→ 商用前自己读 LICENSE；
+- **海投反而降低命中率**：同一份简历投 500 家，不如按 JD 精投 20 家；自动投递只解决"投得多"，不解决"匹配"；
+- 平台一旦升级风控（验证码、行为检测），脚本会立刻失效。
+
+**国际同类可作参照**（英文岗位更适用）：[career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops)（MIT · ★83.8k）、[feder-cr/Jobs_Applier_AI_Agent](https://github.com/feder-cr/Jobs_Applier_AI_Agent)（MIT · ★32.6k）。
 
 ## 用之前要知道的
 
