@@ -4,6 +4,11 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **Crawl4AI** | [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Apache-2.0 | 为 LLM 设计的爬虫：渲染动态页、清广告噪音、输出干净 Markdown，适合 RAG 采集 | 抖音 |
+| **Deep-Live-Cam** | [hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) | AGPL-3.0 | 单张照片实时换脸，支持摄像头/视频/图片，保留口型、自动修画质 | 抖音 |
+| **minimind** | [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | Apache-2.0 | 从 0 训练 64M 小语言模型：PyTorch 原生实现，单卡可跑完 SFT | 抖音 |
+| **elephant-goldfish-model** | [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | Apache-2.0 | Google 的设计/评审双角色插件：大象攥上下文起草，金鱼凭文档挑毛病 | 抖音 |
+| **anthropics/skills** | [anthropics/skills](https://github.com/anthropics/skills) | **NOASSERTION** | Anthropic 官方 Agent Skills 仓库，含 docx/pdf/pptx/xlsx 等文档技能 | 抖音 |
 | **Hypit** | [hypit-ai/hypit](https://github.com/hypit-ai/hypit) | **NOASSERTION** | 丢一条参考视频给 AI agent，拆解镜头/字幕/节奏后批量复刻不同版本 | 抖音 |
 | **DS Bot** | [Fei2411/DS-Bot](https://github.com/Fei2411/DS-Bot) | Apache-2.0 | DeepSeek Harness 的长驻多 bot 团队：总管调度、bot 接力交付、各自记忆与模型、可定时开工 | 抖音 |
 | **AiToEarn** | [yikart/AiToEarn](https://github.com/yikart/AiToEarn) | MIT | 自媒体 AI 内容工作台：图文/视频创作、多平台发布排期、AI 评论互动 | 抖音 |
@@ -66,6 +71,12 @@
 - **OmniRoute 这类"免费额度聚合"**：本质是替你轮询多家免费额度，**各家条款与风控各不相同**，账号可能因为异常调用被限；模型质量也参差，别把生产任务压上去。
 - **DS Bot 是社区项目，非 DeepSeek 官方**（视频里也这么写）：跑在你本机、花自己的额度，多 bot 协作会显著放大 token 消耗。
 - **career-ops / promptfoo 都 MIT**，但 career-ops 自动投递同样踩招聘平台协议；promptfoo 的红队功能只对自己的系统用。
+
+## 这批的边界
+
+- **Deep-Live-Cam 是换脸工具**：AGPL-3.0，技术本身开源，但**未授权使用他人肖像制作用于冒充、诈骗或色情内容，可能构成违法**；它的 README 也写了使用须获同意。别拿它做"虚拟主播"以外的事。
+- **elephant-goldfish-model**：Google 的设计/评审"双角色"思路，适合让 AI 自己挑自己的毛病，但不是"评审一定更对"。
+- **anthropics/skills** 是官方技能集合，GitHub 标 NOASSERTION，**引用到商业产品前逐个看子目录的许可**。
 
 ## 用之前要知道的
 

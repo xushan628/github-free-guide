@@ -4,6 +4,15 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **青简 Qingjian** | [qingjian-team/qingjian](https://github.com/qingjian-team/qingjian) | GPL-3.0 | Rust 写的拼音输入法：候选词旁显示正在学的外语译词，词库与模型全本地 | 抖音 |
+| **Oink** | [oinkvm/oink](https://github.com/oinkvm/oink) | GPL-3.0 | 跨平台键鼠共享 + 拖拽传文件，去中心化无主机单点，支持音频 | 抖音 |
+| **Umi-OCR** | [hiroi-sora/Umi-OCR](https://github.com/hiroi-sora/Umi-OCR) | MIT | 离线 OCR：截图识字、批量识别、PDF、公式 LaTeX、多语种，自带 HTTP 接口 | 抖音 |
+| **OBS Studio** | [obsproject/obs-studio](https://github.com/obsproject/obs-studio) | GPL-2.0 | 全平台录屏/直播：画面叠加、绿幕抠像、独立音轨、RTMP 推流 | 抖音 |
+| **Immich** | [immich-app/immich](https://github.com/immich-app/immich) | AGPL-3.0 | 自托管相册：AI 搜图、人脸分组、OCR、原图备份、多用户共享 | 抖音 |
+| **markmap** | [markmap/markmap](https://github.com/markmap/markmap) | MIT | 用 Markdown 一键生成可交互思维导图，导出 HTML/SVG，有 VSCode 插件 | 抖音 |
+| **Ghost-Downloader-3** | [XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3) | GPL-3.0 | 全协议下载器：HTTP / 磁力 BT / M3U8，四端可用 | 抖音 |
+| **rime-ice 雾凇拼音** | [iDvel/rime-ice](https://github.com/iDvel/rime-ice) | GPL-3.0 | 开箱即用的 Rime 配置：全拼与多种双拼，词库长期维护，全离线 | 抖音 |
+| **Odoo** | [odoo/odoo](https://github.com/odoo/odoo) | **NOASSERTION** | 开源 ERP：销售、生产、库存、收银、财务，模块化按需选用，可私有化部署 | 抖音 |
 | **Buzz** | [chidiwilliams/buzz](https://github.com/chidiwilliams/buzz) | MIT | 离线语音转文字：口播/会议转字幕，免上传云端 | 抖音 |
 | **SingleFile** | [gildas-lormeau/SingleFile](https://github.com/gildas-lormeau/SingleFile) | AGPL-3.0 | 把整个网页（含图片/样式）存成单个 HTML 文件，离线可读 | 抖音 |
 | **Beekeeper Studio** | [beekeeper-studio/beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio) | **NOASSERTION** | 数据库 GUI/SQL 客户端：MySQL、Postgres、SQLite 等点两下就连上 | 抖音 |
@@ -113,6 +122,12 @@
 - 平台一旦升级风控（验证码、行为检测），脚本会立刻失效。
 
 **国际同类可作参照**（英文岗位更适用）：[career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops)（MIT · ★83.8k）、[feder-cr/Jobs_Applier_AI_Agent](https://github.com/feder-cr/Jobs_Applier_AI_Agent)（MIT · ★32.6k）。
+
+## 这批的边界
+
+- **Immich / Odoo 是"自己管数据"的重型服务**：部署前先想清楚备份与权限，Immich 的相册一旦暴露公网就是全家照片；Odoo 的社区版与商业版功能/许可不同，商用前看官网条款（GitHub 上识别为 NOASSERTION）。
+- **Umi-OCR / OBS 都 MIT/GPL**：自己用没问题；OBS 是 GPL-2.0，二次分发要遵守。
+- **Oink 走局域网直连**：默认信任同网段设备，公共 Wi-Fi 下建议关掉自动配对。
 
 ## 用之前要知道的
 

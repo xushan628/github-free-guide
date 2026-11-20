@@ -29,6 +29,8 @@
 | 榜单 | 仓库 | 许可证 | 说明 |
 |---|---|---|---|
 | **GitHub 中文排行榜** | [ChHsiching/GitHub-Chinese-Top-Charts](https://github.com/ChHsiching/GitHub-Chinese-Top-Charts) | GPL-3.0 | 1 个总榜 + 18 个语言分榜，每周自动同步；入选要求项目近半年有活跃，把停更的挡在门外 |
+| **HelloGitHub** | [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | **无 LICENSE** | 每月 28 号更新的开源项目月刊，专收有趣、入门级项目——找项目练手的固定入口 |
+| **cn-math-taxonomy** | [xiaoyang111222/cn-math-taxonomy](https://github.com/xiaoyang111222/cn-math-taxonomy) | **NOASSERTION** | 中小学知识图谱：1644 个知识点、2403 条先修依赖、6720 道题，支持自适应诊断与静态离线运行 |
 
 **怎么用**：想找某语言的优质中文项目，直接看对应分榜；比在 GitHub 搜索里按 star 排更干净，因为它把长期不更新的过滤掉了。
 

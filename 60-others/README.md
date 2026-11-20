@@ -5,6 +5,7 @@
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
 | **闲鱼超级管家** | [23Star/xianyu-super-butler](https://github.com/23Star/xianyu-super-butler) | AGPL-3.0 | 闲鱼自动发货/自动擦亮/评价的运营工具，Python 写；★1.4k、830 fork | 抖音 |
+| **sherlock** | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | MIT | 输入一个用户名，查它在 400+ 社交平台是否注册过（OSINT 取证常用） | 抖音 |
 | **daily_stock_analysis** | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | MIT | LLM 驱动的股票智能分析：多源行情 + 新闻 + 决策看板 + 自动推送 | 73 |
 
 **三步装法（视频给的，实测路径合理）**：

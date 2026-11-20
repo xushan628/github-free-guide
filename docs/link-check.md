@@ -1,10 +1,16 @@
 # 外链体检报告
 
-- 生成时间：2026-11-20T05:58:39+00:00
+- 生成时间：2026-11-20T10:36:37+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **176** 个链接：✅ 正常 170 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）6
+- 总计 **193** 个链接：✅ 正常 186 ／ ❌ 失效 0 ／ ⚠️ 未验证 1 ／ ⏭️ 跳过（本地服务）6
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
+
+## ⚠️ 未验证
+
+| 链接 | 原因 |
+|---|---|
+| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
 
 ## ✅ 全部结果
 
@@ -33,7 +39,6 @@
 | ✅ | codespaces/README.md | 存在 |
 | ✅ | datasets.json | 存在 |
 | ✅ | datasets/README.md | 存在 |
-| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
 | ✅ | https://concat.standalones.org | 200 |
 | ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
@@ -45,6 +50,7 @@
 | ✅ | https://education.github.com/pack | 200 |
 | ✅ | https://github.com/23Star/xianyu-super-butler | 200 |
 | ✅ | https://github.com/36hxqw/gongkao-zhenti-knowledge | 200 |
+| ✅ | https://github.com/521xueweihan/HelloGitHub | 200 |
 | ✅ | https://github.com/AUTOMATIC1111/stable-diffusion-webui | 200 |
 | ✅ | https://github.com/AgriciDaniel/claude-seo | 200 |
 | ✅ | https://github.com/CapSoftware/Cap | 200 |
@@ -69,6 +75,7 @@
 | ✅ | https://github.com/TNTcraftHIM/Piik | 200 |
 | ✅ | https://github.com/TencentCloud/Octop | 200 |
 | ✅ | https://github.com/Usagi-org/ai-goofish-monitor | 200 |
+| ✅ | https://github.com/XiaoYouChR/Ghost-Downloader-3 | 200 |
 | ✅ | https://github.com/XiaomingX/ai-money-maker-handbook | 200 |
 | ✅ | https://github.com/ZToolsCenter/ZTools | 200 |
 | ✅ | https://github.com/ZhuLinsen/daily_stock_analysis | 200 |
@@ -76,6 +83,7 @@
 | ✅ | https://github.com/adobe-fonts/source-han-sans | 200 |
 | ✅ | https://github.com/agalwood/Motrix | 200 |
 | ✅ | https://github.com/alibaba/open-code-review | 200 |
+| ✅ | https://github.com/anthropics/skills | 200 |
 | ✅ | https://github.com/awangwang123/jianhao-travel-planner | 200 |
 | ✅ | https://github.com/awesome-dsh-plugin/awesome-dsh-plugin | 200 |
 | ✅ | https://github.com/backnotprop/plannotator | 200 |
@@ -105,19 +113,24 @@
 | ✅ | https://github.com/gchq/CyberChef | 200 |
 | ✅ | https://github.com/ggml-org/llama.cpp | 200 |
 | ✅ | https://github.com/gildas-lormeau/SingleFile | 200 |
+| ✅ | https://github.com/google/elephant-goldfish-model | 200 |
 | ✅ | https://github.com/google/fonts | 200 |
+| ✅ | https://github.com/hacksider/Deep-Live-Cam | 200 |
 | ✅ | https://github.com/harry0703/MoneyPrinterTurbo | 200 |
 | ✅ | https://github.com/hasaneyldrm/exercises-dataset | 200 |
 | ✅ | https://github.com/heygen-com/hyperframes | 200 |
 | ✅ | https://github.com/hgtuj5688/tvbox-desktop | 200 |
+| ✅ | https://github.com/hiroi-sora/Umi-OCR | 200 |
 | ✅ | https://github.com/hluk/CopyQ | 200 |
 | ✅ | https://github.com/hmjz100/LinkSwift | 200 |
 | ✅ | https://github.com/hoppscotch/hoppscotch | 200 |
 | ✅ | https://github.com/httpie/cli | 200 |
 | ✅ | https://github.com/huggingface/transformers | 200 |
 | ✅ | https://github.com/hypit-ai/hypit | 200 |
+| ✅ | https://github.com/iDvel/rime-ice | 200 |
 | ✅ | https://github.com/iconify/iconify | 200 |
 | ✅ | https://github.com/image-rs/image | 200 |
+| ✅ | https://github.com/immich-app/immich | 200 |
 | ✅ | https://github.com/ionic-team/ionicons | 200 |
 | ✅ | https://github.com/jamiepine/voicebox | 200 |
 | ✅ | https://github.com/jdecked/twemoji | 200 |
@@ -125,6 +138,7 @@
 | ✅ | https://github.com/jev-chat/jev-chat-jarvis | 200 |
 | ✅ | https://github.com/jgraph/drawio | 200 |
 | ✅ | https://github.com/jingguanzhang/OldAlmanac | 200 |
+| ✅ | https://github.com/jingyaogong/minimind | 200 |
 | ✅ | https://github.com/jub0t/Concat | 200 |
 | ✅ | https://github.com/kajisho5/ffmpeg-skill | 200 |
 | ✅ | https://github.com/langchain-ai/langchain | 200 |
@@ -135,6 +149,7 @@
 | ✅ | https://github.com/louislam/uptime-kuma | 200 |
 | ✅ | https://github.com/lucide-icons/lucide | 200 |
 | ✅ | https://github.com/lxgw/LxgwWenKai | 200 |
+| ✅ | https://github.com/markmap/markmap | 200 |
 | ✅ | https://github.com/mattpocock/skills | 200 |
 | ✅ | https://github.com/mermaid-js/mermaid | 200 |
 | ✅ | https://github.com/meta/astryx | 200 |
@@ -142,6 +157,9 @@
 | ✅ | https://github.com/milind-soni/OpenMausBot | 200 |
 | ✅ | https://github.com/mozilla/pdf.js | 200 |
 | ✅ | https://github.com/n8n-io/n8n | 200 |
+| ✅ | https://github.com/obsproject/obs-studio | 200 |
+| ✅ | https://github.com/odoo/odoo | 200 |
+| ✅ | https://github.com/oinkvm/oink | 200 |
 | ✅ | https://github.com/ollama/ollama | 200 |
 | ✅ | https://github.com/open-webui/open-webui | 200 |
 | ✅ | https://github.com/openai/codex-security | 200 |
@@ -149,9 +167,11 @@
 | ✅ | https://github.com/pingdotgg/t3code | 200 |
 | ✅ | https://github.com/promptfoo/promptfoo | 200 |
 | ✅ | https://github.com/public-apis/public-apis | 200 |
+| ✅ | https://github.com/qingjian-team/qingjian | 200 |
 | ✅ | https://github.com/rddmwmddr/android-ad-cleaner | 200 |
 | ✅ | https://github.com/rustdesk/rustdesk | 200 |
 | ✅ | https://github.com/shengjidaguai-china/goutoujunshi | 200 |
+| ✅ | https://github.com/sherlock-project/sherlock | 200 |
 | ✅ | https://github.com/shihabal3amri/DiPlay | 200 |
 | ✅ | https://github.com/shitagaki-lab/see-through | 200 |
 | ✅ | https://github.com/simple-icons/simple-icons | 200 |
@@ -160,10 +180,12 @@
 | ✅ | https://github.com/tabler/tabler-icons | 200 |
 | ✅ | https://github.com/tt-a1i/archify | 200 |
 | ✅ | https://github.com/tw93/Mole | 200 |
+| ✅ | https://github.com/unclecode/crawl4ai | 200 |
 | ✅ | https://github.com/vercel-labs/agent-browser | 200 |
 | ✅ | https://github.com/vercel-labs/agent-desktop | 200 |
 | ✅ | https://github.com/virgiliojr94/book-to-skill | 200 |
 | ✅ | https://github.com/we-promise/sure | 200 |
+| ✅ | https://github.com/xiaoyang111222/cn-math-taxonomy | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas/blob/main/DATASETS.md | 200 |
 | ✅ | https://github.com/yikart/AiToEarn | 200 |
@@ -186,3 +208,4 @@
 | ⏭️ | http://localhost:5678 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8080 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8081 | 本地服务示例，跳过 |
+| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
