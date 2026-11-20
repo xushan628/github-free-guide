@@ -4,6 +4,11 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **SingleFile** | [gildas-lormeau/SingleFile](https://github.com/gildas-lormeau/SingleFile) | AGPL-3.0 | 把整个网页（含图片/样式）存成单个 HTML 文件，离线可读 | 抖音 |
+| **Beekeeper Studio** | [beekeeper-studio/beekeeper-studio](https://github.com/beekeeper-studio/beekeeper-studio) | **NOASSERTION** | 数据库 GUI/SQL 客户端：MySQL、Postgres、SQLite 等点两下就连上 | 抖音 |
+| **CopyQ** | [hluk/CopyQ](https://github.com/hluk/CopyQ) | GPL-3.0 | 跨平台剪贴板历史：文字图片全收、可搜可贴、能排除指定窗口 | 抖音 |
+| **Cap** | [CapSoftware/Cap](https://github.com/CapSoftware/Cap) | **NOASSERTION** | 开源版 Loom：录屏 + 分享链接 | 抖音 |
+| **Uptime Kuma** | [louislam/uptime-kuma](https://github.com/louislam/uptime-kuma) | MIT | 自托管网站监控：HTTP、证书、容器全能盯，挂了秒通知 | 抖音 |
 | **get_jobs** | [loks666/get_jobs](https://github.com/loks666/get_jobs) | **NOASSERTION** | AI 找工作助手：全平台自动投简历脚本（BOSS / 前程无忧 / 猎聘 / 智联） | 抖音 |
 | **TVBox Desktop** | [hgtuj5688/tvbox-desktop](https://github.com/hgtuj5688/tvbox-desktop) | MIT | Windows 影视聚合客户端（Electron + React），内置播放源、装完即用 | 抖音 |
 | **ung220z-tool** | [Hut-hzf/ung220z-tool](https://github.com/Hut-hzf/ung220z-tool) | MIT | 针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取，用于查超管账号、宽带账号与 WiFi 密钥 | 抖音 |

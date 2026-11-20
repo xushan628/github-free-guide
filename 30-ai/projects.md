@@ -4,6 +4,12 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **DS Bot** | [Fei2411/DS-Bot](https://github.com/Fei2411/DS-Bot) | Apache-2.0 | DeepSeek Harness 的长驻多 bot 团队：总管调度、bot 接力交付、各自记忆与模型、可定时开工 | 抖音 |
+| **AiToEarn** | [yikart/AiToEarn](https://github.com/yikart/AiToEarn) | MIT | 自媒体 AI 内容工作台：图文/视频创作、多平台发布排期、AI 评论互动 | 抖音 |
+| **OmniRoute** | [cheaper-inference/OmniRoute](https://github.com/cheaper-inference/OmniRoute) | MIT | 免费 AI 网关：一个地址接多家模型商，带自动兜底 | 抖音 |
+| **voicebox** | [jamiepine/voicebox](https://github.com/jamiepine/voicebox) | MIT | 本地 AI 语音工作室：克隆音色、全局听写、给 agent 开口 | 抖音 |
+| **promptfoo** | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | MIT | 给提示词出考卷：测试用例、回归对比、红队攻击你的 AI | 抖音 |
+| **career-ops** | [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | MIT | 开源 AI 求职 agent：扫岗位、匹配、辅助投递（英文岗位更适用） | 抖音 |
 | **狗头军师** | [shengjidaguai-china/goutoujunshi](https://github.com/shengjidaguai-china/goutoujunshi) | MIT | 恋爱/关系决策军师：先接情绪、再分析关系，给出可执行策略，内置心理、法律、社会、婚姻家庭知识 | 抖音 · 324 期 |
 | **gongkao-zhenti-knowledge** | [36hxqw/gongkao-zhenti-knowledge](https://github.com/36hxqw/gongkao-zhenti-knowledge) | MIT | 公考真题知识库 skill：行测 11,393 题 + 申论 419 题，每题带考点编码、原解析与来源文件，可按考点检索 | 抖音 · 考公脑库 |
 | **jev-chat-jarvis** | [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | MIT | 聊天决策助手：回复前先读出对方意图与风险，给 3 条候选回复 | 抖音 |
@@ -52,6 +58,12 @@
 - **狗头军师是决策辅助，不是专业意见**：它内置的心理/法律内容来自社区整理，**不构成心理咨询或法律建议**；亲密关系、婚姻财产这类问题别把 AI 输出当定论。
 - **公考真题库是 skill，不是题库网站**：装进支持 `SKILL.md` 的宿主（如豆包工作模式）才能用；考点体系**沿用「花生十三」课程**，那部分内容的版权归原作者，**自用可以、别二次分发**。
 - **旅行路书** 依赖实时联网查询，节假日信息变化快，出发前复核订票/营业时间。
+
+## 这批的三个边界
+
+- **OmniRoute 这类"免费额度聚合"**：本质是替你轮询多家免费额度，**各家条款与风控各不相同**，账号可能因为异常调用被限；模型质量也参差，别把生产任务压上去。
+- **DS Bot 是社区项目，非 DeepSeek 官方**（视频里也这么写）：跑在你本机、花自己的额度，多 bot 协作会显著放大 token 消耗。
+- **career-ops / promptfoo 都 MIT**，但 career-ops 自动投递同样踩招聘平台协议；promptfoo 的红队功能只对自己的系统用。
 
 ## 用之前要知道的
 

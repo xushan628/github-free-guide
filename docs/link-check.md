@@ -1,10 +1,16 @@
 # 外链体检报告
 
-- 生成时间：2026-11-20T05:37:13+00:00
+- 生成时间：2026-11-20T05:49:12+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **164** 个链接：✅ 正常 158 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）6
+- 总计 **174** 个链接：✅ 正常 167 ／ ❌ 失效 0 ／ ⚠️ 未验证 1 ／ ⏭️ 跳过（本地服务）6
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
+
+## ⚠️ 未验证
+
+| 链接 | 原因 |
+|---|---|
+| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
 
 ## ✅ 全部结果
 
@@ -33,7 +39,6 @@
 | ✅ | codespaces/README.md | 存在 |
 | ✅ | datasets.json | 存在 |
 | ✅ | datasets/README.md | 存在 |
-| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
 | ✅ | https://concat.standalones.org | 200 |
 | ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
@@ -47,10 +52,12 @@
 | ✅ | https://github.com/36hxqw/gongkao-zhenti-knowledge | 200 |
 | ✅ | https://github.com/AUTOMATIC1111/stable-diffusion-webui | 200 |
 | ✅ | https://github.com/AgriciDaniel/claude-seo | 200 |
+| ✅ | https://github.com/CapSoftware/Cap | 200 |
 | ✅ | https://github.com/ChHsiching/GitHub-Chinese-Top-Charts | 200 |
 | ✅ | https://github.com/ChromeDevTools/chrome-devtools-mcp | 200 |
 | ✅ | https://github.com/CorentinTh/it-tools | 200 |
 | ✅ | https://github.com/D4Vinci/Scrapling | 200 |
+| ✅ | https://github.com/Fei2411/DS-Bot | 200 |
 | ✅ | https://github.com/GoogleChrome/modern-web-guidance | 200 |
 | ✅ | https://github.com/GopeedLab/gopeed | 200 |
 | ✅ | https://github.com/HKUDS/DeepTutor | 200 |
@@ -77,11 +84,13 @@
 | ✅ | https://github.com/awangwang123/jianhao-travel-planner | 200 |
 | ✅ | https://github.com/awesome-dsh-plugin/awesome-dsh-plugin | 200 |
 | ✅ | https://github.com/backnotprop/plannotator | 200 |
+| ✅ | https://github.com/beekeeper-studio/beekeeper-studio | 200 |
 | ✅ | https://github.com/bilawalsidhu/gods-eye-view | 200 |
 | ✅ | https://github.com/blader/humanizer | 200 |
 | ✅ | https://github.com/browser-use/video-use | 200 |
 | ✅ | https://github.com/career-ops-hq/career-ops | 200 |
 | ✅ | https://github.com/cdyforever/how-to-live-better | 200 |
+| ✅ | https://github.com/cheaper-inference/OmniRoute | 200 |
 | ✅ | https://github.com/chinese-poetry/chinese-poetry | 200 |
 | ✅ | https://github.com/cloudflare/skills | 200 |
 | ✅ | https://github.com/comfyanonymous/ComfyUI | 200 |
@@ -99,11 +108,13 @@
 | ✅ | https://github.com/feder-cr/Jobs_Applier_AI_Agent | 200 |
 | ✅ | https://github.com/gchq/CyberChef | 200 |
 | ✅ | https://github.com/ggml-org/llama.cpp | 200 |
+| ✅ | https://github.com/gildas-lormeau/SingleFile | 200 |
 | ✅ | https://github.com/google/fonts | 200 |
 | ✅ | https://github.com/harry0703/MoneyPrinterTurbo | 200 |
 | ✅ | https://github.com/hasaneyldrm/exercises-dataset | 200 |
 | ✅ | https://github.com/heygen-com/hyperframes | 200 |
 | ✅ | https://github.com/hgtuj5688/tvbox-desktop | 200 |
+| ✅ | https://github.com/hluk/CopyQ | 200 |
 | ✅ | https://github.com/hmjz100/LinkSwift | 200 |
 | ✅ | https://github.com/hoppscotch/hoppscotch | 200 |
 | ✅ | https://github.com/httpie/cli | 200 |
@@ -111,6 +122,7 @@
 | ✅ | https://github.com/iconify/iconify | 200 |
 | ✅ | https://github.com/image-rs/image | 200 |
 | ✅ | https://github.com/ionic-team/ionicons | 200 |
+| ✅ | https://github.com/jamiepine/voicebox | 200 |
 | ✅ | https://github.com/jdecked/twemoji | 200 |
 | ✅ | https://github.com/jekyll/jekyll | 200 |
 | ✅ | https://github.com/jev-chat/jev-chat-jarvis | 200 |
@@ -123,6 +135,7 @@
 | ✅ | https://github.com/langgenius/dify | 200 |
 | ✅ | https://github.com/localsend/localsend | 200 |
 | ✅ | https://github.com/loks666/get_jobs | 200 |
+| ✅ | https://github.com/louislam/uptime-kuma | 200 |
 | ✅ | https://github.com/lucide-icons/lucide | 200 |
 | ✅ | https://github.com/lxgw/LxgwWenKai | 200 |
 | ✅ | https://github.com/mattpocock/skills | 200 |
@@ -137,6 +150,7 @@
 | ✅ | https://github.com/openai/codex-security | 200 |
 | ✅ | https://github.com/paperclipai/paperclip | 200 |
 | ✅ | https://github.com/pingdotgg/t3code | 200 |
+| ✅ | https://github.com/promptfoo/promptfoo | 200 |
 | ✅ | https://github.com/public-apis/public-apis | 200 |
 | ✅ | https://github.com/rddmwmddr/android-ad-cleaner | 200 |
 | ✅ | https://github.com/rustdesk/rustdesk | 200 |
@@ -155,6 +169,7 @@
 | ✅ | https://github.com/we-promise/sure | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas/blob/main/DATASETS.md | 200 |
+| ✅ | https://github.com/yikart/AiToEarn | 200 |
 | ✅ | https://github.com/zyronon/TypeWords | 200 |
 | ✅ | https://ollama.com/install.sh | 200 |
 | ✅ | https://xushan628.github.io/open-data-atlas/ | 200 |
@@ -174,3 +189,4 @@
 | ⏭️ | http://localhost:5678 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8080 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8081 | 本地服务示例，跳过 |
+| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
