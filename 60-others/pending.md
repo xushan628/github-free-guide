@@ -26,6 +26,10 @@
 | 选题 skill | 一分钟找选题的 skill，未给仓库 | 未知期 | 未定位 |
 | livebook 活页课本 | 3D 交互式活页课本（物理/化学/地理），可导入 PDF 课本 | 未知期 | 未定位 |
 | 小说 10 个 Skill 合集 | 视频列了 story-long-scan / story-long-analyze / novel-creator-skill / character-designer / webnovel-writer / story-deslop / story-review / story-cover 等 10 个名字，未说明出自哪个仓库 | 未知期 | 部分已单收（webnovel-writer），合集未定位 |
+| Content Strategy / Content Creation | 自媒体 8 skill 里的两个，只说"账号定位/文案生成"，未给仓库 | 未知期 | 未定位 |
+| ad-creative | 内容表现分析与复盘 skill，同名项目多个（superCMO 等），无法确认 | 未知期 | 未定位 |
+| REA | "AI Agent 辅助逆向分析软件与二进制"，一周 +65.7K；搜到的多为 awesome 列表与非同名项目 | 未知期 | 未定位 |
+| Compositor | Mac 上支持 agent 操作图层的图像编辑工具 | 未知期 | 未定位 |
 | 指间文库 | 轻小说阅读器，手机/平板，UI 干净、支持听书与导入语音包 | 351 期 | 未定位（近似的 `niuhuan/wild` 是另一个文库客户端） |
 
 ## 规则

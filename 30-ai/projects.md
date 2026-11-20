@@ -4,6 +4,13 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **Agent-Reach** | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | 给 agent 装上"看全网"的能力：热点搜索、选题灵感 | 抖音 |
+| **Auto-Redbook-Skills** | [comeonzhj/Auto-Redbook-Skills](https://github.com/comeonzhj/Auto-Redbook-Skills) | **无 LICENSE** | 小红书笔记自动撰写、配图生成与发布流程 | 抖音 |
+| **guizang-social-card-skill** | [op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill) | AGPL-3.0 | 生成小红书封面、知识卡片、公众号配图 | 抖音 |
+| **Pexo Skills** | [pexoai/pexo-skills](https://github.com/pexoai/pexo-skills) | MIT | 内容创作类 agent skills 合集：短视频、配音、字幕、剪辑 | 抖音 |
+| **ArtCraft** | [storytold/artcraft](https://github.com/storytold/artcraft) | Apache-2.0 | 创作者的 AI 图像/视频/3D 内容制作引擎 | 抖音 |
+| **moli** | [lexmount/moli](https://github.com/lexmount/moli) | Apache-2.0 | 为 AI agent 设计的轻量级无头浏览器 | 抖音 |
+| **Orca** | [stablyai/orca](https://github.com/stablyai/orca) | MIT | 同时管理一队 coding agent 的并行工作台 | 抖音 |
 | **whisper** | [openai/whisper](https://github.com/openai/whisper) | MIT | OpenAI 语音识别：长视频转文字稿，多语种，本地可跑 | 抖音 |
 | **ChatTTS** | [2noise/ChatTTS](https://github.com/2noise/ChatTTS) | AGPL-3.0 | 生成带换气停顿的对话式语音，做口播配音 | 抖音 |
 | **webnovel-writer** | [lingfengQAQ/webnovel-writer](https://github.com/lingfengQAQ/webnovel-writer) | GPL-3.0 | 基于 Claude Code 的长篇网文辅助系统：解决 AI 写作的"遗忘"与"幻觉" | 抖音 |
@@ -66,9 +73,11 @@
 
 ## 本期没收录的（没核实到唯一仓库）
 
-「本月十大」里还有 4 个没匹配到唯一的开源仓库，先不硬凑：
-`Orca`（AI 编程工作台）、`Impeccable`（一句话调设计强弱）、`Hallmark`（50 套设计主题）、`taste-skill`（按 Figma 水准检查官网）。
+「本月十大」里还有 3 个没匹配到唯一的开源仓库，先不硬凑：
+`Impeccable`（一句话调设计强弱）、`Hallmark`（50 套设计主题）、`taste-skill`（按 Figma 水准检查官网）。
 这几个可能是产品名或用例名，等能确认仓库再补。
+
+（`Orca` 已核实为 [stablyai/orca](https://github.com/stablyai/orca)，收在本表里。）
 
 ## 这三个 skill 的边界
 

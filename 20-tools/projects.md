@@ -4,6 +4,7 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **MediaCrawler** | [NanmiCoder/MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) | **NOASSERTION** | 多平台内容与评论采集：小红书/抖音/快手/B站/微博/贴吧/知乎 | 抖音 |
 | **yt-dlp** | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | Unlicense | 命令行音视频下载器：支持上千站点，自媒体扒素材的标配 | 抖音 |
 | **LosslessCut** | [mifi/lossless-cut](https://github.com/mifi/lossless-cut) | GPL-2.0 | 免重编码的音视频剪辑：1 秒切掉废片，不损画质 | 抖音 |
 | **Folo** | [RSSNext/Folo](https://github.com/RSSNext/Folo) | AGPL-3.0 | AI RSS 阅读器：一屏盯住全网热榜与订阅源，找选题用 | 抖音 |
@@ -136,6 +137,13 @@
 - **Immich / Odoo 是"自己管数据"的重型服务**：部署前先想清楚备份与权限，Immich 的相册一旦暴露公网就是全家照片；Odoo 的社区版与商业版功能/许可不同，商用前看官网条款（GitHub 上识别为 NOASSERTION）。
 - **Umi-OCR / OBS 都 MIT/GPL**：自己用没问题；OBS 是 GPL-2.0，二次分发要遵守。
 - **Oink 走局域网直连**：默认信任同网段设备，公共 Wi-Fi 下建议关掉自动配对。
+
+## 采集类工具的边界（MediaCrawler）
+
+- **平台条款**几乎都禁止自动化采集，被封 IP/账号很常见；
+- 采集到的**用户评论属于个人信息**，二次使用/公开要过《个人信息保护法》；
+- 它的许可证是 **NOASSERTION**，商用前自己读 LICENSE；
+- 只采公开内容、控制频率、不存个人身份信息，是三条基本底线。
 
 ## 用之前要知道的
 
