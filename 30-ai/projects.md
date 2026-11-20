@@ -4,6 +4,17 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **DeepSeek Harness** | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | MIT | DSH 本体：模型、工具、文件系统、子智能体、工作流都做成可组合插件 | 抖音 |
+| **diagram-design** | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | MIT | 让 agent 生成更好看的架构图/流程图/序列图（编辑向设计语言） | 抖音 |
+| **Cloudflare computer** | [cloudflare/computer](https://github.com/cloudflare/computer) | MIT | 给 agent 的云端工作电脑：文件系统、容器、Worker 执行环境 | 抖音 |
+| **pdf-inspector** | [firecrawl/pdf-inspector](https://github.com/firecrawl/pdf-inspector) | MIT | Rust 写的 PDF 分类与提取：先判断是否需要 OCR，再转 Markdown | 抖音 |
+| **Unsloth** | [unslothai/unsloth](https://github.com/unslothai/unsloth) | Apache-2.0 | 本地 AI 训练入口：跑模型、训练、导出部署放一起，省环境配置 | 抖音 |
+| **Semantica** | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | MIT | 企业 Agent 决策溯源：实体/关系/因果链/来源证据放进上下文图 | 抖音 |
+| **TencentDB Agent Memory** | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | **NOASSERTION** | 团队级 Agent 记忆中心：沉淀对话、文档与代码图谱 | 抖音 |
+| **reverse-skill** | [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) | MIT | 面向安全学习与**授权**测试的 AI 逆向工具箱 | 抖音 |
+| **Mika** | [wangzan101/Mika](https://github.com/wangzan101/Mika) | Apache-2.0 | Android 上的端侧 AI agent：在后台操作 App、读群聊、整理信息 | 抖音 |
+| **Cactus** | [cactus-compute/cactus](https://github.com/cactus-compute/cactus) | Apache-2.0 | 手机/穿戴/机器人用的端侧模型：选函数、填参数、吐 JSON | 抖音 |
+| **i-have-adhd** | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | MIT | 让 agent 少废话的 skill：先说下一步怎么做，再展开细节 | 抖音 |
 | **Crawl4AI** | [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Apache-2.0 | 为 LLM 设计的爬虫：渲染动态页、清广告噪音、输出干净 Markdown，适合 RAG 采集 | 抖音 |
 | **Deep-Live-Cam** | [hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) | AGPL-3.0 | 单张照片实时换脸，支持摄像头/视频/图片，保留口型、自动修画质 | 抖音 |
 | **minimind** | [jingyaogong/minimind](https://github.com/jingyaogong/minimind) | Apache-2.0 | 从 0 训练 64M 小语言模型：PyTorch 原生实现，单卡可跑完 SFT | 抖音 |
@@ -77,6 +88,13 @@
 - **Deep-Live-Cam 是换脸工具**：AGPL-3.0，技术本身开源，但**未授权使用他人肖像制作用于冒充、诈骗或色情内容，可能构成违法**；它的 README 也写了使用须获同意。别拿它做"虚拟主播"以外的事。
 - **elephant-goldfish-model**：Google 的设计/评审"双角色"思路，适合让 AI 自己挑自己的毛病，但不是"评审一定更对"。
 - **anthropics/skills** 是官方技能集合，GitHub 标 NOASSERTION，**引用到商业产品前逐个看子目录的许可**。
+
+## 这批的边界
+
+- **Mika / Cactus 是端侧 agent**：要在手机上开无障碍/后台权限，等于把手机操作权交给模型，先在小号设备上试。
+- **reverse-skill 只写"授权测试"**：未授权对他人系统做逆向/渗透是违法的，这条底线不能模糊。
+- **TencentDB Agent Memory** 是团队级记忆，会把对话/代码图谱集中存储，**权限与脱敏**要提前设计。
+- **Unsloth 要显卡**：本地训练省的是云费，不是不花钱（电费 + 显卡）。
 
 ## 用之前要知道的
 
