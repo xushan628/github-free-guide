@@ -4,6 +4,9 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **whisper** | [openai/whisper](https://github.com/openai/whisper) | MIT | OpenAI 语音识别：长视频转文字稿，多语种，本地可跑 | 抖音 |
+| **ChatTTS** | [2noise/ChatTTS](https://github.com/2noise/ChatTTS) | AGPL-3.0 | 生成带换气停顿的对话式语音，做口播配音 | 抖音 |
+| **webnovel-writer** | [lingfengQAQ/webnovel-writer](https://github.com/lingfengQAQ/webnovel-writer) | GPL-3.0 | 基于 Claude Code 的长篇网文辅助系统：解决 AI 写作的"遗忘"与"幻觉" | 抖音 |
 | **DeepSeek Harness** | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | MIT | DSH 本体：模型、工具、文件系统、子智能体、工作流都做成可组合插件 | 抖音 |
 | **diagram-design** | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | MIT | 让 agent 生成更好看的架构图/流程图/序列图（编辑向设计语言） | 抖音 |
 | **Cloudflare computer** | [cloudflare/computer](https://github.com/cloudflare/computer) | MIT | 给 agent 的云端工作电脑：文件系统、容器、Worker 执行环境 | 抖音 |
@@ -95,6 +98,12 @@
 - **reverse-skill 只写"授权测试"**：未授权对他人系统做逆向/渗透是违法的，这条底线不能模糊。
 - **TencentDB Agent Memory** 是团队级记忆，会把对话/代码图谱集中存储，**权限与脱敏**要提前设计。
 - **Unsloth 要显卡**：本地训练省的是云费，不是不花钱（电费 + 显卡）。
+
+## 配音/写作类的边界
+
+- **ChatTTS 是 AGPL-3.0**：生成的音频商用前看清条款；做口播时**别克隆他人音色**。
+- **whisper 转写**：上传前想清楚素材是否含他人隐私/未授权内容。
+- **webnovel-writer 只是辅助**：长篇的质量取决于设定与结构，AI 负责"不忘"，不负责"好看"。
 
 ## 用之前要知道的
 

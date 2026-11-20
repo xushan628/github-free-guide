@@ -1,10 +1,18 @@
 # 外链体检报告
 
-- 生成时间：2026-11-20T10:52:57+00:00
+- 生成时间：2026-11-20T10:59:40+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **212** 个链接：✅ 正常 206 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）6
+- 总计 **219** 个链接：✅ 正常 210 ／ ❌ 失效 0 ／ ⚠️ 未验证 3 ／ ⏭️ 跳过（本地服务）6
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
+
+## ⚠️ 未验证
+
+| 链接 | 原因 |
+|---|---|
+| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
+| https://github.com/HKUDS/DeepTutor/releases/latest | URLError: <urlopen error timed out> |
+| https://ollama.com/install.sh | URLError: <urlopen error timed out> |
 
 ## ✅ 全部结果
 
@@ -33,7 +41,6 @@
 | ✅ | codespaces/README.md | 存在 |
 | ✅ | datasets.json | 存在 |
 | ✅ | datasets/README.md | 存在 |
-| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
 | ✅ | https://concat.standalones.org | 200 |
 | ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
@@ -44,6 +51,7 @@
 | ✅ | https://docs.github.com/repositories/creating-and-managing-repositories/about-repositories | 200 |
 | ✅ | https://education.github.com/pack | 200 |
 | ✅ | https://github.com/23Star/xianyu-super-butler | 200 |
+| ✅ | https://github.com/2noise/ChatTTS | 200 |
 | ✅ | https://github.com/36hxqw/gongkao-zhenti-knowledge | 200 |
 | ✅ | https://github.com/521xueweihan/HelloGitHub | 200 |
 | ✅ | https://github.com/AUTOMATIC1111/stable-diffusion-webui | 200 |
@@ -58,13 +66,13 @@
 | ✅ | https://github.com/GoogleChrome/modern-web-guidance | 200 |
 | ✅ | https://github.com/GopeedLab/gopeed | 200 |
 | ✅ | https://github.com/HKUDS/DeepTutor | 200 |
-| ✅ | https://github.com/HKUDS/DeepTutor/releases/latest | 200 |
 | ✅ | https://github.com/Hut-hzf/ung220z-tool | 200 |
 | ✅ | https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio | 200 |
 | ✅ | https://github.com/K-Dense-AI/scientific-agent-skills | 200 |
 | ✅ | https://github.com/MoeKoeMusic/MoeKoeMusic | 200 |
 | ✅ | https://github.com/Open-Dev-Society/OpenStock | 200 |
 | ✅ | https://github.com/PolymathicAI/the_well | 200 |
+| ✅ | https://github.com/RSSNext/Folo | 200 |
 | ✅ | https://github.com/Renhuai123/ziwei-doushu | 200 |
 | ✅ | https://github.com/Stirling-Tools/Stirling-PDF | 200 |
 | ✅ | https://github.com/THU-MAIC/OpenMAIC | 200 |
@@ -150,6 +158,7 @@
 | ✅ | https://github.com/langchain-ai/langchain | 200 |
 | ✅ | https://github.com/langflow-ai/langflow | 200 |
 | ✅ | https://github.com/langgenius/dify | 200 |
+| ✅ | https://github.com/lingfengQAQ/webnovel-writer | 200 |
 | ✅ | https://github.com/localsend/localsend | 200 |
 | ✅ | https://github.com/loks666/get_jobs | 200 |
 | ✅ | https://github.com/louislam/uptime-kuma | 200 |
@@ -162,6 +171,7 @@
 | ✅ | https://github.com/meta/astryx | 200 |
 | ✅ | https://github.com/microsoft/AI-For-Beginners | 200 |
 | ✅ | https://github.com/microsoft/fluentui-emoji | 200 |
+| ✅ | https://github.com/mifi/lossless-cut | 200 |
 | ✅ | https://github.com/milind-soni/OpenMausBot | 200 |
 | ✅ | https://github.com/mozilla/pdf.js | 200 |
 | ✅ | https://github.com/n8n-io/n8n | 200 |
@@ -171,6 +181,7 @@
 | ✅ | https://github.com/ollama/ollama | 200 |
 | ✅ | https://github.com/open-webui/open-webui | 200 |
 | ✅ | https://github.com/openai/codex-security | 200 |
+| ✅ | https://github.com/openai/whisper | 200 |
 | ✅ | https://github.com/palemoky/chinese-poetry-api | 200 |
 | ✅ | https://github.com/paperclipai/paperclip | 200 |
 | ✅ | https://github.com/patch-gg/pixelfx | 200 |
@@ -193,6 +204,7 @@
 | ✅ | https://github.com/tw93/Mole | 200 |
 | ✅ | https://github.com/unclecode/crawl4ai | 200 |
 | ✅ | https://github.com/unslothai/unsloth | 200 |
+| ✅ | https://github.com/upscayl/upscayl | 200 |
 | ✅ | https://github.com/vercel-labs/agent-browser | 200 |
 | ✅ | https://github.com/vercel-labs/agent-desktop | 200 |
 | ✅ | https://github.com/virgiliojr94/book-to-skill | 200 |
@@ -202,9 +214,9 @@
 | ✅ | https://github.com/xushan628/open-data-atlas | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas/blob/main/DATASETS.md | 200 |
 | ✅ | https://github.com/yikart/AiToEarn | 200 |
+| ✅ | https://github.com/yt-dlp/yt-dlp | 200 |
 | ✅ | https://github.com/zhaoxuya520/reverse-skill | 200 |
 | ✅ | https://github.com/zyronon/TypeWords | 200 |
-| ✅ | https://ollama.com/install.sh | 200 |
 | ✅ | https://xushan628.github.io/open-data-atlas/ | 200 |
 | ✅ | https://xushan628.github.io/open-data-atlas/licenses.html | 200 |
 | ✅ | https://xushan628.github.io/open-data-atlas/sql-practice.html | 200 |
@@ -222,3 +234,6 @@
 | ⏭️ | http://localhost:5678 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8080 | 本地服务示例，跳过 |
 | ⏭️ | http://localhost:8081 | 本地服务示例，跳过 |
+| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
+| ⚠️ | https://github.com/HKUDS/DeepTutor/releases/latest | URLError: <urlopen error timed out> |
+| ⚠️ | https://ollama.com/install.sh | URLError: <urlopen error timed out> |

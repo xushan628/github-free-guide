@@ -4,6 +4,10 @@
 
 | 项目 | 仓库 | 许可证 | 干什么 | 来源 |
 |---|---|---|---|---|
+| **yt-dlp** | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | Unlicense | 命令行音视频下载器：支持上千站点，自媒体扒素材的标配 | 抖音 |
+| **LosslessCut** | [mifi/lossless-cut](https://github.com/mifi/lossless-cut) | GPL-2.0 | 免重编码的音视频剪辑：1 秒切掉废片，不损画质 | 抖音 |
+| **Folo** | [RSSNext/Folo](https://github.com/RSSNext/Folo) | AGPL-3.0 | AI RSS 阅读器：一屏盯住全网热榜与订阅源，找选题用 | 抖音 |
+| **Upscayl** | [upscayl/upscayl](https://github.com/upscayl/upscayl) | AGPL-3.0 | 免费开源 AI 图像放大：做高清封面/老图修复 | 抖音 |
 | **Hyprland** | [hyprwm/Hyprland](https://github.com/hyprwm/Hyprland) | BSD-3-Clause | 高度可定制的平铺式 Wayland 桌面：自动排版、布局/快捷键/动画全可调 | 抖音 |
 | **Worktrunk** | [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) | Apache-2.0 | Git worktree 管理 CLI：给每个编码任务一个独立工作目录，几路代码并行互不干扰 | 抖音 |
 | **PixelFX** | [patch-gg/pixelfx](https://github.com/patch-gg/pixelfx) | MIT | 244 种像素特效：火焰/爆炸/攻击动画可预览调色，导出精灵表接进游戏 | 抖音 |

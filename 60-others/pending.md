@@ -25,6 +25,7 @@
 | 本周 GitHub 热榜 | 泛榜单单期，未逐一给仓库名 | 未知期 | 未定位 |
 | 选题 skill | 一分钟找选题的 skill，未给仓库 | 未知期 | 未定位 |
 | livebook 活页课本 | 3D 交互式活页课本（物理/化学/地理），可导入 PDF 课本 | 未知期 | 未定位 |
+| 小说 10 个 Skill 合集 | 视频列了 story-long-scan / story-long-analyze / novel-creator-skill / character-designer / webnovel-writer / story-deslop / story-review / story-cover 等 10 个名字，未说明出自哪个仓库 | 未知期 | 部分已单收（webnovel-writer），合集未定位 |
 | 指间文库 | 轻小说阅读器，手机/平板，UI 干净、支持听书与导入语音包 | 351 期 | 未定位（近似的 `niuhuan/wild` 是另一个文库客户端） |
 
 ## 规则
