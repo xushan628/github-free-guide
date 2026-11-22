@@ -7,7 +7,6 @@
 | 项目 | 已知线索 | 来源 | 状态 |
 |---|---|---|---|
 | Harness Anything | 一句话生成 PPT / PDF / 数据图表，调用 WPS 完成，全程可视化 | 323 期 | 搜索无结果 |
-| Windows / Office 一键部署 | Win10/11 版本可选，可取消录音机、闹钟、画图等预装组件，Office 同样可选组件 | 296 期 | 候选太多，未锁定 |
 | 桌面运维助手 | 硬盘/CPU/显卡/内存检测、系统修复、启动管理、进程管理，内置 Everything | 292 期 | 未定位 |
 | 古籍离线阅读器 | 30 亿字、经史子集/二十四史/四大名著、断网可用、粤语朗读 | 286 期 | 未定位 |
 | 开源教育模型 | AI 资讯类视频里提到"开源教育模型"，无具体名称 | 未知期 | 未定位 |
@@ -29,14 +28,10 @@
 | REA | "AI Agent 辅助逆向分析软件与二进制"，一周 +65.7K；搜到的多为 awesome 列表与非同名项目 | 未知期 | 未定位 |
 | Compositor | Mac 上支持 agent 操作图层的图像编辑工具 | 未知期 | 未定位 |
 | filee 格式转换器 | 244 种格式互转、拖放转换、可集成右键菜单；搜到的 `filee-android`（★1）、`filee-web`（★0，"Inspired by Filee"）都是复刻，非原作 | 未知期 | 未定位 |
-| 开源 ERP（对标用友/金蝶） | 视频只喊"开源 ERP 掀桌"，未给仓库；库里已有 Odoo，是否会再收取决于具体项目（如 ERPNext） | 未知期 | 未定位 |
 | Token 压缩 62% 的 7 个项目 | "测了 7 个开源项目，平均 Token 消耗减少 62%"，一个名字都没给 | 未知期 | 未定位 |
 | 57GB 古籍数据集 | "57GB 纯手工古籍数据开源"，无仓库名；搜「古籍 数据集 / ancient chinese books dataset」无对应大仓 | 未知期 | 未定位 |
 | 可穿戴 AI 硬件（上千固件） | 开源可穿戴硬件 + 社区上千种固件，未点名 | 未知期 | 未定位 |
-| 视觉定位/分割工具 | "再小再挤也能圈出来"，未点名 | 未知期 | 未定位 |
 | 前端一键生成大厂同款界面 | 未点名；同类候选多（21st.dev / shadcn 主题 / v0 类）无法锁定 | 未知期 | 未定位 |
-| 民法典 Skill | 视频称"把民法典做成 Skill"未点名。候选：`xtgmf/minfadian`（★3，"民法典 Skills-数字法务专家"）、`Youchu-lawhub/gutachten-civil-case`（★88，请求权基础案例）、`The-Star-World/china-civil-code-skill`（★1） | 未知期 | 候选待你确认 |
-| 设计师审美 Skill | 视频称"给 AI 装上设计师审美"未点名。候选：`madebymustafa/design-taste`（★230，24 个"把审美变成指令"的技能）、`arjunkshah/design-skill`（★21）、`DonkeyKing01/tasteful-ui-skill`（★26）；也可能是已挂的 Impeccable / Hallmark / taste-skill | 未知期 | 候选待你确认 |
 | 指间文库 | 轻小说阅读器，手机/平板，UI 干净、支持听书与导入语音包 | 351 期 | 未定位（近似的 `niuhuan/wild` 是另一个文库客户端） |
 
 ## 规则

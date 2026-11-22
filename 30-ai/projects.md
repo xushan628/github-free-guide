@@ -6,11 +6,15 @@
 |---|---|---|---|---|
 | **oh-story-claudecode** | [zenstory-ai/oh-story-claudecode](https://github.com/zenstory-ai/oh-story-claudecode) | MIT | 网文写作 skill 全包（14 个 skill）：扫榜 → 拆文 → 大纲细纲 → 长短篇连载 → 去 AI 味 → 封面；日常只要 5 个命令 `setup`/`long-write`/`short-write`/`deslop`/`review` | 抖音 |
 | **Agent-Reach** | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | 给 agent 装上"看全网"的能力：热点搜索、选题灵感 | 抖音 |
+| **WechatVibe** | [tswawa/WechatVibe](https://github.com/tswawa/WechatVibe) | Apache-2.0 | 微信聊天分析：意图识别、情绪感知、人物画像、好感度与 MBTI 性格分析，支持本地模型 | 抖音 |
+| **WeSight** | [freestylefly/wesight](https://github.com/freestylefly/wesight) | MIT | 微信群聊 AI 工作台（桌面端 + CLI）：自动读群、生成日报 | 抖音 |
 | **Auto-Redbook-Skills** | [comeonzhj/Auto-Redbook-Skills](https://github.com/comeonzhj/Auto-Redbook-Skills) | **无 LICENSE** | 小红书笔记自动撰写、配图生成与发布流程 | 抖音 |
 | **guizang-social-card-skill** | [op7418/guizang-social-card-skill](https://github.com/op7418/guizang-social-card-skill) | AGPL-3.0 | 生成小红书封面、知识卡片、公众号配图 | 抖音 |
 | **Pexo Skills** | [pexoai/pexo-skills](https://github.com/pexoai/pexo-skills) | MIT | 内容创作类 agent skills 合集：短视频、配音、字幕、剪辑 | 抖音 |
 | **ArtCraft** | [storytold/artcraft](https://github.com/storytold/artcraft) | Apache-2.0 | 创作者的 AI 图像/视频/3D 内容制作引擎 | 抖音 |
 | **moli** | [lexmount/moli](https://github.com/lexmount/moli) | Apache-2.0 | 为 AI agent 设计的轻量级无头浏览器 | 抖音 |
+| **UI-TARS Desktop** | [bytedance/UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) | Apache-2.0 | 字节开源的多模态桌面 agent：一句话让它接管电脑操作本地应用 | 抖音 |
+| **PageAgent** | [alibaba/page-agent](https://github.com/alibaba/page-agent) | MIT | 阿里开源：一行 JS 把网页变成可被自然语言操控的 AI 应用 | 抖音 |
 | **Orca** | [stablyai/orca](https://github.com/stablyai/orca) | MIT | 同时管理一队 coding agent 的并行工作台 | 抖音 |
 | **Claude Code Game Studios** | [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | MIT | 把 Claude Code 变成 49 个 AI agent 组成的游戏工作室，按岗位分工产出游戏 | 抖音 |
 | **whisper** | [openai/whisper](https://github.com/openai/whisper) | MIT | OpenAI 语音识别：长视频转文字稿，多语种，本地可跑 | 抖音 |
@@ -22,6 +26,8 @@
 | **pdf-inspector** | [firecrawl/pdf-inspector](https://github.com/firecrawl/pdf-inspector) | MIT | Rust 写的 PDF 分类与提取：先判断是否需要 OCR，再转 Markdown | 抖音 |
 | **Unsloth** | [unslothai/unsloth](https://github.com/unslothai/unsloth) | Apache-2.0 | 本地 AI 训练入口：跑模型、训练、导出部署放一起，省环境配置 | 抖音 |
 | **Semantica** | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | MIT | 企业 Agent 决策溯源：实体/关系/因果链/来源证据放进上下文图 | 抖音 |
+| **Headroom** | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Apache-2.0 | 上下文压缩：把工具输出/日志/文件/RAG 片段压到模型前，省大量 token（有 Netflix 基准） | 抖音 |
+| **Segment Anything** | [facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything) | Apache-2.0 | Meta 的图像分割模型：点一下就把任意物体圈出来，小目标和拥挤场景也稳 | 抖音 |
 | **TencentDB Agent Memory** | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | **NOASSERTION** | 团队级 Agent 记忆中心：沉淀对话、文档与代码图谱 | 抖音 |
 | **reverse-skill** | [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) | MIT | 面向安全学习与**授权**测试的 AI 逆向工具箱 | 抖音 |
 | **Mika** | [wangzan101/Mika](https://github.com/wangzan101/Mika) | Apache-2.0 | Android 上的端侧 AI agent：在后台操作 App、读群聊、整理信息 | 抖音 |
@@ -48,12 +54,15 @@
 | **仓颉 cangjie-skill** | [kangarooking/cangjie-skill](https://github.com/kangarooking/cangjie-skill) | MIT | 把书/长视频/播客蒸馏成可执行的 Agent Skills：RIA-TV++ 七阶段流水线，输出多 skill 仓库（含 DIGEST/GLOSSARY/测试用例） | 抖音 |
 | **宝玉技能包 baoyu-skills** | [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills) | MIT | 22 个内容创作 skill 合集，含 `baoyu-xhs-images`（小红书图文卡片）、封面图、信息图、PPT 幻灯、发布到微信/微博/X | 抖音 |
 | **PPT-Master** | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) | MIT | 把文档或一个主题直接生成原生可编辑的 PowerPoint（不是截图拼图） | 抖音 · 009 期 |
+| **design-taste** | [madebymustafa/design-taste](https://github.com/madebymustafa/design-taste) | MIT | 24 个"把审美变成指令"的 agent skills，让 AI 生成的界面不再千篇一律 | 抖音 |
+| **民法典 Skill** | [xtgmf/minfadian](https://github.com/xtgmf/minfadian) | MIT | 把《民法典》做成 Skill，让 AI 直接按法条回答（★ 很低，谨慎使用） | 抖音 |
 | **jianhao-travel-planner** | [awangwang123/jianhao-travel-planner](https://github.com/awangwang123/jianhao-travel-planner) | MIT | 旅行路书 skill：联网实查 + 多源交叉验证，输出可执行攻略 | 抖音 |
 | **Modern Web Guidance** | [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | Apache-2.0 | Google Chrome 团队：让 coding agent 先查最新的 Web 最佳实践再动手 | 86 |
 | **Chrome DevTools MCP** | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | 把 Chrome DevTools 交给 AI：自己查报错、看性能 | 86 |
 | **Open Code Review** | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | Apache-2.0 | 阿里开源的 AI 代码审查，主打 token 省、规模大 | 86 |
 | **Codex Security** | [openai/codex-security](https://github.com/openai/codex-security) | Apache-2.0 | OpenAI 官方安全 CLI + SDK：找漏洞、出补丁 | 86 |
 | **SkillSpector** | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Apache-2.0 | 英伟达开源的 AI agent 技能安全扫描器：检测技能包里的漏洞与危险指令 | 抖音 |
+| **zero-width-watermark** | [redshoga/zero-width-watermark](https://github.com/redshoga/zero-width-watermark) | **无 LICENSE** | 零宽字符隐形水印：把信息藏进看不见的字符里，也可用于检测 | 抖音 |
 | **Addy Osmani 技能包** | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | 25 个资深工程师技能，直接喂给 coding agent | 86 |
 | **Plannotator** | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | Apache-2.0 | 像批改作业一样批注 AI 的执行计划，再让它动手 | 86 |
 | **Humanizer** | [blader/humanizer](https://github.com/blader/humanizer) | MIT | 去 AI 腔：识别 26 种 AI 写作特征并改写 | 86 |

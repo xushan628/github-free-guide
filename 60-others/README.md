@@ -17,6 +17,7 @@
 > **它自己写着"不构成任何投资建议"** —— 别把自动报告当买卖信号。
 | **Disc Image Studio** | [JiaFeiMiao-K-Cat/DiscImageStudio](https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio) | GPL-3.0 | 用普通刻录光驱在光盘盘面上刻出图案 | 73 |
 | **OpenStock** | [Open-Dev-Society/OpenStock](https://github.com/Open-Dev-Society/OpenStock) | **AGPL-3.0** | 开源股票行情看板：自选股 + 实时图表，替代付费行情平台 | 133 |
+| **ERPNext** | [frappe/erpnext](https://github.com/frappe/erpnext) | GPL-3.0 | 开源 ERP：进销存、财务、制造、CRM 一套带走，可私有化部署（对标用友/金蝶的另一选择，Odoo 已在库） | 抖音 |
 | **ziwei-doushu** | [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) | MIT | 紫微斗数开源排盘引擎：排盘算法、四化系统、格局知识库、古籍原文 | 138 |
 
 ## 为什么放这里

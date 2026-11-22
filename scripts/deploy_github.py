@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import json
 import sys
 import time
@@ -155,19 +156,54 @@ def main() -> int:
                 description=args.description, homepage=homepage)
     ensure_initial_commit(gh, owner, args.repo, args.branch)
 
-    print("· 上传 blob …")
+    # ---- 增量上传：只推变了的内容 ----
+    # 以前每次都把全部文件重新上传成 blob（约 290 次 API 调用 / 次部署），
+    # 连着几次就会撞上 GitHub 每小时 5000 次的限额，表现为部署随机失败。
+    # 这里先读远端 tree，用 git blob sha（sha1("blob <len>\0"+内容)）比对，
+    # 没变的直接复用远端 sha，只上传改过的文件。
+    def blob_sha(data: bytes) -> str:
+        return hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest()
+
+    remote: dict[str, str] = {}
+    try:
+        ref0 = gh.call("GET", f"/repos/{owner}/{args.repo}/git/ref/heads/{args.branch}")
+        tree0 = gh.call("GET", f"/repos/{owner}/{args.repo}/git/commits/{ref0['object']['sha']}")["tree"]["sha"]
+        listing = gh.call("GET", f"/repos/{owner}/{args.repo}/git/trees/{tree0}?recursive=1")
+        remote = {e["path"]: e["sha"] for e in listing.get("tree", []) if e.get("type") == "blob"}
+        print(f"  远端现有文件 {len(remote)} 个（用于增量比对）")
+    except RuntimeError as exc:
+        if "HTTP 404" not in str(exc):
+            raise
+
+    reuse, changed = [], []
+    for path, rel in files:
+        data = path.read_bytes()
+        sha = blob_sha(data)
+        entry = {"path": rel, "mode": "100644", "type": "blob", "sha": sha}
+        if remote.get(rel) == sha:
+            reuse.append(entry)
+        else:
+            changed.append((path, rel, entry))
+
+    print(f"  未变 {len(reuse)} 个 · 需上传 {len(changed)} 个")
+
     def upload(item):
-        path, rel = item
+        path, rel, entry = item
         data = path.read_bytes()
         res = gh.call("POST", f"/repos/{owner}/{args.repo}/git/blobs", {
             "content": base64.b64encode(data).decode(),
             "encoding": "base64",
         })
-        return {"path": rel, "mode": "100644", "type": "blob", "sha": res["sha"]}
+        entry["sha"] = res["sha"]
+        return entry
 
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        tree = list(pool.map(upload, files))
-    print(f"  完成 {len(tree)} 个")
+    if changed:
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            uploaded = list(pool.map(upload, changed))
+    else:
+        uploaded = []
+    tree = reuse + uploaded
+    print(f"  完成 {len(uploaded)} 次上传（省下 {len(reuse)} 次）")
 
     print("· 创建 tree / commit …")
     new_tree = gh.call("POST", f"/repos/{owner}/{args.repo}/git/trees", {"tree": tree})

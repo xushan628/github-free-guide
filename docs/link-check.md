@@ -1,10 +1,17 @@
 # 外链体检报告
 
-- 生成时间：2026-11-22T14:15:44+00:00
+- 生成时间：2026-11-22T14:36:41+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **239** 个链接：✅ 正常 239 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）0
+- 总计 **251** 个链接：✅ 正常 249 ／ ❌ 失效 0 ／ ⚠️ 未验证 2 ／ ⏭️ 跳过（本地服务）0
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
+
+## ⚠️ 未验证
+
+| 链接 | 原因 |
+|---|---|
+| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
+| https://github.com/HKUDS/DeepTutor/releases/latest | URLError: <urlopen error timed out> |
 
 ## ✅ 全部结果
 
@@ -33,7 +40,6 @@
 | ✅ | codespaces/README.md | 存在 |
 | ✅ | datasets.json | 存在 |
 | ✅ | datasets/README.md | 存在 |
-| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
 | ✅ | https://concat.standalones.org | 200 |
 | ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
@@ -51,6 +57,7 @@
 | ✅ | https://github.com/AgriciDaniel/claude-seo | 200 |
 | ✅ | https://github.com/CapSoftware/Cap | 200 |
 | ✅ | https://github.com/ChHsiching/GitHub-Chinese-Top-Charts | 200 |
+| ✅ | https://github.com/ChrisTitusTech/winutil | 200 |
 | ✅ | https://github.com/ChromeDevTools/chrome-devtools-mcp | 200 |
 | ✅ | https://github.com/CorentinTh/it-tools | 200 |
 | ✅ | https://github.com/D4Vinci/Scrapling | 200 |
@@ -62,7 +69,6 @@
 | ✅ | https://github.com/GoogleChrome/modern-web-guidance | 200 |
 | ✅ | https://github.com/GopeedLab/gopeed | 200 |
 | ✅ | https://github.com/HKUDS/DeepTutor | 200 |
-| ✅ | https://github.com/HKUDS/DeepTutor/releases/latest | 200 |
 | ✅ | https://github.com/HeyPuter/everything | 200 |
 | ✅ | https://github.com/Hut-hzf/ung220z-tool | 200 |
 | ✅ | https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio | 200 |
@@ -93,6 +99,7 @@
 | ✅ | https://github.com/adobe-fonts/source-han-sans | 200 |
 | ✅ | https://github.com/agalwood/Motrix | 200 |
 | ✅ | https://github.com/alibaba/open-code-review | 200 |
+| ✅ | https://github.com/alibaba/page-agent | 200 |
 | ✅ | https://github.com/anthropics/skills | 200 |
 | ✅ | https://github.com/awangwang123/jianhao-travel-planner | 200 |
 | ✅ | https://github.com/awesome-dsh-plugin/awesome-dsh-plugin | 200 |
@@ -103,6 +110,7 @@
 | ✅ | https://github.com/bilawalsidhu/gods-eye-view | 200 |
 | ✅ | https://github.com/blader/humanizer | 200 |
 | ✅ | https://github.com/browser-use/video-use | 200 |
+| ✅ | https://github.com/bytedance/UI-TARS-desktop | 200 |
 | ✅ | https://github.com/cactus-compute/cactus | 200 |
 | ✅ | https://github.com/career-ops-hq/career-ops | 200 |
 | ✅ | https://github.com/cathrynlavery/diagram-design | 200 |
@@ -126,9 +134,12 @@
 | ✅ | https://github.com/dr5hn/countries-states-cities-database | 200 |
 | ✅ | https://github.com/dream-num/univer | 200 |
 | ✅ | https://github.com/eternity4719/HowToLiveBetter | 200 |
+| ✅ | https://github.com/facebookresearch/segment-anything | 200 |
 | ✅ | https://github.com/feathericons/feather | 200 |
 | ✅ | https://github.com/feder-cr/Jobs_Applier_AI_Agent | 200 |
 | ✅ | https://github.com/firecrawl/pdf-inspector | 200 |
+| ✅ | https://github.com/frappe/erpnext | 200 |
+| ✅ | https://github.com/freestylefly/wesight | 200 |
 | ✅ | https://github.com/gchq/CyberChef | 200 |
 | ✅ | https://github.com/ggml-org/llama.cpp | 200 |
 | ✅ | https://github.com/gildas-lormeau/SingleFile | 200 |
@@ -137,6 +148,7 @@
 | ✅ | https://github.com/hacksider/Deep-Live-Cam | 200 |
 | ✅ | https://github.com/harry0703/MoneyPrinterTurbo | 200 |
 | ✅ | https://github.com/hasaneyldrm/exercises-dataset | 200 |
+| ✅ | https://github.com/headroomlabs-ai/headroom | 200 |
 | ✅ | https://github.com/heygen-com/hyperframes | 200 |
 | ✅ | https://github.com/hgtuj5688/tvbox-desktop | 200 |
 | ✅ | https://github.com/hiroi-sora/Umi-OCR | 200 |
@@ -177,6 +189,7 @@
 | ✅ | https://github.com/louislam/uptime-kuma | 200 |
 | ✅ | https://github.com/lucide-icons/lucide | 200 |
 | ✅ | https://github.com/lxgw/LxgwWenKai | 200 |
+| ✅ | https://github.com/madebymustafa/design-taste | 200 |
 | ✅ | https://github.com/markmap/markmap | 200 |
 | ✅ | https://github.com/mattpocock/skills | 200 |
 | ✅ | https://github.com/max-sixty/worktrunk | 200 |
@@ -205,8 +218,10 @@
 | ✅ | https://github.com/pingdotgg/t3code | 200 |
 | ✅ | https://github.com/promptfoo/promptfoo | 200 |
 | ✅ | https://github.com/public-apis/public-apis | 200 |
+| ✅ | https://github.com/qaz812345/TrackNetV3 | 200 |
 | ✅ | https://github.com/qingjian-team/qingjian | 200 |
 | ✅ | https://github.com/rddmwmddr/android-ad-cleaner | 200 |
+| ✅ | https://github.com/redshoga/zero-width-watermark | 200 |
 | ✅ | https://github.com/rustdesk/rustdesk | 200 |
 | ✅ | https://github.com/semantica-agi/semantica | 200 |
 | ✅ | https://github.com/shengjidaguai-china/goutoujunshi | 200 |
@@ -220,6 +235,7 @@
 | ✅ | https://github.com/t8y2/dbx | 200 |
 | ✅ | https://github.com/tabler/tabler-icons | 200 |
 | ✅ | https://github.com/tashfeenahmed/freellmapi | 200 |
+| ✅ | https://github.com/tswawa/WechatVibe | 200 |
 | ✅ | https://github.com/tt-a1i/archify | 200 |
 | ✅ | https://github.com/tw93/Mole | 200 |
 | ✅ | https://github.com/unclecode/crawl4ai | 200 |
@@ -231,6 +247,7 @@
 | ✅ | https://github.com/wangzan101/Mika | 200 |
 | ✅ | https://github.com/we-promise/sure | 200 |
 | ✅ | https://github.com/xiaoyang111222/cn-math-taxonomy | 200 |
+| ✅ | https://github.com/xtgmf/minfadian | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas | 200 |
 | ✅ | https://github.com/xushan628/open-data-atlas/blob/main/DATASETS.md | 200 |
 | ✅ | https://github.com/yikart/AiToEarn | 200 |
@@ -249,3 +266,5 @@
 | ✅ | templates/cron-job.yml | 存在 |
 | ✅ | templates/manual-run.yml | 存在 |
 | ✅ | templates/matrix.yml | 存在 |
+| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
+| ⚠️ | https://github.com/HKUDS/DeepTutor/releases/latest | URLError: <urlopen error timed out> |

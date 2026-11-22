@@ -53,6 +53,8 @@
 | **RustDesk** | [rustdesk/rustdesk](https://github.com/rustdesk/rustdesk) | AGPL-3.0 | 开源远程桌面，可自建中继服务器，替代 TeamViewer/向日葵 | 小白神器 |
 | **LocalSend** | [localsend/localsend](https://github.com/localsend/localsend) | Apache-2.0 | 跨平台 AirDrop 替代：手机↔电脑互传，同一个局域网直连 | 小白神器 |
 | **Mole** | [tw93/Mole](https://github.com/tw93/Mole) | GPL-3.0 | 开源 Mac/PC 清理工具，命令行删缓存、找大文件 | 小白神器 |
+| **WinUtil** | [ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil) | MIT | Windows 一键部署/精简：装软件、去预装组件、改系统设置，Office 同样可选组件 | 抖音 |
+| **TrackNetV3** | [qaz812345/TrackNetV3](https://github.com/qaz812345/TrackNetV3) | NOASSERTION | 羽毛球鹰眼：追踪球路与落点，本地可跑 | 抖音 |
 | **Motrix** | [agalwood/Motrix](https://github.com/agalwood/Motrix) | NOASSERTION | 全能下载器（HTTP/BT/磁力），替代迅雷 | 小白神器 |
 | **Univer** | [dream-num/univer](https://github.com/dream-num/univer) | Apache-2.0 | 开源 AI 办公套件：表格/文档/幻灯片的 SDK，AI 可直接调用 | 86 |
 | **Sure** | [we-promise/sure](https://github.com/we-promise/sure) | AGPL-3.0 | 开源个人记账理财 App，自带 AI 助手 | 86 |
