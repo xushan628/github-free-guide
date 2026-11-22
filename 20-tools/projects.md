@@ -36,6 +36,8 @@
 | **LinkSwift** | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | AGPL-3.0 | 网盘直链获取油猴脚本：把各家网盘链接推给 IDM / Aria2（含 Motrix、AriaNg）等下载器 | 抖音 |
 | **MoeKoeMusic** | [MoeKoeMusic/MoeKoeMusic](https://github.com/MoeKoeMusic/MoeKoeMusic) | GPL-2.0 | 酷狗第三方客户端：Windows/macOS/Linux/Web 四端，账号同步、无社交 | 抖音 |
 | **Piik** | [TNTcraftHIM/Piik](https://github.com/TNTcraftHIM/Piik) | MIT | 屏幕共享：对方装浏览器就能看，P2P 优先，可自建服务端 | 抖音 |
+| **BetterGI** | [babalae/better-genshin-impact](https://github.com/babalae/better-genshin-impact) | GPL-3.0 | 《原神》自动化助手：自动拾取、自动剧情、全自动钓鱼（AI）、七圣召唤、自动伐木 | 抖音 |
+| **March7thAssistant** | [moesnow/March7thAssistant](https://github.com/moesnow/March7thAssistant) | GPL-3.0 | 《崩坏：星穹铁道》自动化助手：日常清体力、模拟宇宙、周本，一键挂机 | 抖音 |
 | **ZTools** | [ZToolsCenter/ZTools](https://github.com/ZToolsCenter/ZTools) | MIT | uTools 的开源实现：首字母启动应用、剪贴板历史、插件系统 | 抖音 |
 | **TypeWords** | [zyronon/TypeWords](https://github.com/zyronon/TypeWords) | GPL-3.0 | 背单词：递进式练习，主打"一次一击、逐步推进"的肌肉记忆路径 | 抖音 |
 | **android-ad-cleaner** | [rddmwmddr/android-ad-cleaner](https://github.com/rddmwmddr/android-ad-cleaner) | MIT | 关掉国产安卓的开屏广告、热搜、资讯推送；不 root、可还原、支持 AI 智能体执行 | 抖音 |
@@ -146,6 +148,15 @@
 - 采集到的**用户评论属于个人信息**，二次使用/公开要过《个人信息保护法》；
 - 它的许可证是 **NOASSERTION**，商用前自己读 LICENSE；
 - 只采公开内容、控制频率、不存个人身份信息，是三条基本底线。
+
+## 游戏自动化：能做，但会封号
+
+`BetterGI`（原神）和 `March7thAssistant`（崩铁）都是**模拟键鼠+图像识别**的全自动挂机工具：
+
+- **明确违反游戏用户协议**，米哈游对第三方自动化有封号先例（尤其长时间挂机、异常操作特征）；
+- 用**小号**试，别拿主号；
+- 它们需要屏幕常亮 + 前台权限，笔记本长期跑注意散热；
+- 两款都 GPL-3.0，代码可读，但"开源"不等于"官方允许"。
 
 ## 用之前要知道的
 
