@@ -35,6 +35,8 @@
 | 可穿戴 AI 硬件（上千固件） | 开源可穿戴硬件 + 社区上千种固件，未点名 | 未知期 | 未定位 |
 | 视觉定位/分割工具 | "再小再挤也能圈出来"，未点名 | 未知期 | 未定位 |
 | 前端一键生成大厂同款界面 | 未点名；同类候选多（21st.dev / shadcn 主题 / v0 类）无法锁定 | 未知期 | 未定位 |
+| 民法典 Skill | 视频称"把民法典做成 Skill"未点名。候选：`xtgmf/minfadian`（★3，"民法典 Skills-数字法务专家"）、`Youchu-lawhub/gutachten-civil-case`（★88，请求权基础案例）、`The-Star-World/china-civil-code-skill`（★1） | 未知期 | 候选待你确认 |
+| 设计师审美 Skill | 视频称"给 AI 装上设计师审美"未点名。候选：`madebymustafa/design-taste`（★230，24 个"把审美变成指令"的技能）、`arjunkshah/design-skill`（★21）、`DonkeyKing01/tasteful-ui-skill`（★26）；也可能是已挂的 Impeccable / Hallmark / taste-skill | 未知期 | 候选待你确认 |
 | 指间文库 | 轻小说阅读器，手机/平板，UI 干净、支持听书与导入语音包 | 351 期 | 未定位（近似的 `niuhuan/wild` 是另一个文库客户端） |
 
 ## 规则
