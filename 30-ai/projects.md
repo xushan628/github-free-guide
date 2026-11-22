@@ -12,6 +12,7 @@
 | **ArtCraft** | [storytold/artcraft](https://github.com/storytold/artcraft) | Apache-2.0 | 创作者的 AI 图像/视频/3D 内容制作引擎 | 抖音 |
 | **moli** | [lexmount/moli](https://github.com/lexmount/moli) | Apache-2.0 | 为 AI agent 设计的轻量级无头浏览器 | 抖音 |
 | **Orca** | [stablyai/orca](https://github.com/stablyai/orca) | MIT | 同时管理一队 coding agent 的并行工作台 | 抖音 |
+| **Claude Code Game Studios** | [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | MIT | 把 Claude Code 变成 49 个 AI agent 组成的游戏工作室，按岗位分工产出游戏 | 抖音 |
 | **whisper** | [openai/whisper](https://github.com/openai/whisper) | MIT | OpenAI 语音识别：长视频转文字稿，多语种，本地可跑 | 抖音 |
 | **ChatTTS** | [2noise/ChatTTS](https://github.com/2noise/ChatTTS) | AGPL-3.0 | 生成带换气停顿的对话式语音，做口播配音 | 抖音 |
 | **webnovel-writer** | [lingfengQAQ/webnovel-writer](https://github.com/lingfengQAQ/webnovel-writer) | GPL-3.0 | 基于 Claude Code 的长篇网文辅助系统：解决 AI 写作的"遗忘"与"幻觉" | 抖音 |
@@ -25,6 +26,7 @@
 | **reverse-skill** | [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) | MIT | 面向安全学习与**授权**测试的 AI 逆向工具箱 | 抖音 |
 | **Mika** | [wangzan101/Mika](https://github.com/wangzan101/Mika) | Apache-2.0 | Android 上的端侧 AI agent：在后台操作 App、读群聊、整理信息 | 抖音 |
 | **Cactus** | [cactus-compute/cactus](https://github.com/cactus-compute/cactus) | Apache-2.0 | 手机/穿戴/机器人用的端侧模型：选函数、填参数、吐 JSON | 抖音 |
+| **Andee** | [kuafuai/andee](https://github.com/kuafuai/andee) | **NOASSERTION** | 住在手机或 Mac 上的个人 AI：像你一样操作任意 App | 抖音 |
 | **i-have-adhd** | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | MIT | 让 agent 少废话的 skill：先说下一步怎么做，再展开细节 | 抖音 |
 | **Crawl4AI** | [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Apache-2.0 | 为 LLM 设计的爬虫：渲染动态页、清广告噪音、输出干净 Markdown，适合 RAG 采集 | 抖音 |
 | **Deep-Live-Cam** | [hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) | AGPL-3.0 | 单张照片实时换脸，支持摄像头/视频/图片，保留口型、自动修画质 | 抖音 |
@@ -35,6 +37,7 @@
 | **DS Bot** | [Fei2411/DS-Bot](https://github.com/Fei2411/DS-Bot) | Apache-2.0 | DeepSeek Harness 的长驻多 bot 团队：总管调度、bot 接力交付、各自记忆与模型、可定时开工 | 抖音 |
 | **AiToEarn** | [yikart/AiToEarn](https://github.com/yikart/AiToEarn) | MIT | 自媒体 AI 内容工作台：图文/视频创作、多平台发布排期、AI 评论互动 | 抖音 |
 | **OmniRoute** | [cheaper-inference/OmniRoute](https://github.com/cheaper-inference/OmniRoute) | MIT | 免费 AI 网关：一个地址接多家模型商，带自动兜底 | 抖音 |
+| **FreeLLMAPI** | [tashfeenahmed/freellmapi](https://github.com/tashfeenahmed/freellmapi) | MIT | 一个地址聚合 87 家免费大模型接口，按月额度自动兜底 | 抖音 |
 | **voicebox** | [jamiepine/voicebox](https://github.com/jamiepine/voicebox) | MIT | 本地 AI 语音工作室：克隆音色、全局听写、给 agent 开口 | 抖音 |
 | **promptfoo** | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | MIT | 给提示词出考卷：测试用例、回归对比、红队攻击你的 AI | 抖音 |
 | **career-ops** | [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | MIT | 开源 AI 求职 agent：扫岗位、匹配、辅助投递（英文岗位更适用） | 抖音 |
@@ -49,6 +52,7 @@
 | **Chrome DevTools MCP** | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | 把 Chrome DevTools 交给 AI：自己查报错、看性能 | 86 |
 | **Open Code Review** | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | Apache-2.0 | 阿里开源的 AI 代码审查，主打 token 省、规模大 | 86 |
 | **Codex Security** | [openai/codex-security](https://github.com/openai/codex-security) | Apache-2.0 | OpenAI 官方安全 CLI + SDK：找漏洞、出补丁 | 86 |
+| **SkillSpector** | [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector) | Apache-2.0 | 英伟达开源的 AI agent 技能安全扫描器：检测技能包里的漏洞与危险指令 | 抖音 |
 | **Addy Osmani 技能包** | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | 25 个资深工程师技能，直接喂给 coding agent | 86 |
 | **Plannotator** | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | Apache-2.0 | 像批改作业一样批注 AI 的执行计划，再让它动手 | 86 |
 | **Humanizer** | [blader/humanizer](https://github.com/blader/humanizer) | MIT | 去 AI 腔：识别 26 种 AI 写作特征并改写 | 86 |
@@ -62,6 +66,7 @@
 | **OpenMAIC** | [THU-MAIC/OpenMAIC](https://github.com/THU-MAIC/OpenMAIC) | MIT | 清华团队的多智能体交互式课堂，一键生成互动课 | 130 |
 | **scientific-agent-skills** | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | MIT | 给 agent 装科研技能：综述、实验设计、数据分析 | 130 |
 | **VoiceStudio** | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | **AGPL-3.0** | 完全本地的 ElevenLabs 替代品：语音克隆、配音、转写 | 130 |
+| **OmniVoice** | [k2-fsa/OmniVoice](https://github.com/k2-fsa/OmniVoice) | Apache-2.0 | 声音克隆 TTS：3–10 秒参考音频即可跨 600+ 语言生成同一音色旁白，可保存音色与批量推理 | 抖音 |
 | **Paperclip** | [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | MIT | 管理 AI agent 团队的工作台（不是同名 Rails 附件库） | 133 |
 | **video-use** | [browser-use/video-use](https://github.com/browser-use/video-use) | MIT | 让 coding agent 直接剪视频 | 133 |
 | **Octop** | [TencentCloud/Octop](https://github.com/TencentCloud/Octop) | MIT | 腾讯云开源自托管 AI 助手：多用户、多 agent | 133 |

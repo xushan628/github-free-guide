@@ -7,6 +7,7 @@
 | **MediaCrawler** | [NanmiCoder/MediaCrawler](https://github.com/NanmiCoder/MediaCrawler) | **NOASSERTION** | 多平台内容与评论采集：小红书/抖音/快手/B站/微博/贴吧/知乎 | 抖音 |
 | **yt-dlp** | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | Unlicense | 命令行音视频下载器：支持上千站点，自媒体扒素材的标配 | 抖音 |
 | **pyvideotrans** | [jianchang512/pyvideotrans](https://github.com/jianchang512/pyvideotrans) | GPL-3.0 | 本地视频翻译/配音工具：自动识别字幕 → 翻译 → AI 配音，可接音色克隆；桌面端离线跑，无水印 | 抖音 · 剪映平替 |
+| **OCS 网课助手** | [ocsjs/ocsjs](https://github.com/ocsjs/ocsjs) | MIT | 网课自动播放脚本：倍速最高 16x、窗口最小化照跑，支持学习通/智慧树/职教云等，中文界面 | 抖音 · 380 期 |
 | **LosslessCut** | [mifi/lossless-cut](https://github.com/mifi/lossless-cut) | GPL-2.0 | 免重编码的音视频剪辑：1 秒切掉废片，不损画质 | 抖音 |
 | **Folo** | [RSSNext/Folo](https://github.com/RSSNext/Folo) | AGPL-3.0 | AI RSS 阅读器：一屏盯住全网热榜与订阅源，找选题用 | 抖音 |
 | **Upscayl** | [upscayl/upscayl](https://github.com/upscayl/upscayl) | AGPL-3.0 | 免费开源 AI 图像放大：做高清封面/老图修复 | 抖音 |

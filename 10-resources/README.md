@@ -61,6 +61,7 @@
 | **microsoft/AI-For-Beginners** | [microsoft/AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners) | MIT | 微软 AI 入门课：12 周 24 课，有官方中文翻译 |
 | **ChinaTextbook** | [TapXWorld/ChinaTextbook](https://github.com/TapXWorld/ChinaTextbook) | **无 LICENSE** | 小初高到大学的 PDF 教材合集；**教材版权归原出版方，仅供个人学习，别商用/二次分发** |
 | **public-apis** | [public-apis/public-apis](https://github.com/public-apis/public-apis) | MIT | 50 万星免费 API 集合：开发、金融、安全、天气、加密货币等入口；**列表 MIT，各 API 有自己的条款** |
+| **everything** | [HeyPuter/everything](https://github.com/HeyPuter/everything) | MIT | 重新实现并开源全世界的软件：办公、设计、财务、开发、CRM、游戏，付费工具的免费替代清单 | 抖音 |
 
 ## 数据与可视化（自己起服务，不依赖第三方）
 
