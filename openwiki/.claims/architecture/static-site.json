@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:14cac8ad0c7e4f5d269a65eefc3367f8b3b39d353d3755750d5319b0522d4597",
+  "claims": [
+    {
+      "id": "claim_875727fd5da04e249e4188de5faf3a6f",
+      "statement": "docs/ 站点由三个手写页面（index.html、404.html、disclaimer.html）加一个空标记文件 .nojekyll 组成，通过 GitHub Pages 的「Deploy from a branch / main / /docs」直出，仓库里没有任何 Pages 构建工作流，因此文件内容即发布内容，没有编译步骤。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/pages/README.md#L27-L33",
+          "version": "repo-lines-v1:sha256:9d89bbc36544b054fa3bac7b0b4c5db1238311dfb91fabece8a5589833c50610:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzU5YWQyZWQ5MjUyYTgyMDc2NzBhNGZjYmIwMTg3ZTlmNjg0MTg5MjYzMTI2Y2JiYWQ2ZDE3MTdkN2RkM2YyOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGI5ZmM1NTcxM2RmMGZhOGU3MmI5ZDdmM2RjOGZkMDAzODFjOTFkODRkOTZiNTA1NTVjM2MyODUwY2E5ZjQxZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTNjMDdkM2UyY2MxNjg3YWY3YzBlN2NkOWU1MmRiYTU0OGFhYmNjYjljOWEyNzU2YmNlZTE3ODBhZmMyY2FmNCJ9"
+        },
+        {
+          "resource": "repo://docs/.nojekyll",
+          "version": "repo-file-v1:sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "resource": "repo://docs/404.html",
+          "version": "repo-file-v1:sha256:c2ffd04102b0e1cb12bffc664ff487991ebeef9099edbc886a825a547f64dea3"
+        },
+        {
+          "resource": "repo://docs/disclaimer.html",
+          "version": "repo-file-v1:sha256:ee77a0dcd45b6599be7f267f4374179757905c38f04583ebdb62780cd736ea6f"
+        },
+        {
+          "resource": "repo://docs/index.html",
+          "version": "repo-file-v1:sha256:0dedbe0cfc4d8f8d86eaf01ba2cdb8f16d17e1b764e6879ad4df216188c637d1"
+        }
+      ]
+    },
+    {
+      "id": "claim_19995219a1fa49e183616676885bdb9b",
+      "statement": "docs/index.html 是完全自包含的单文件：样式与脚本都内联，不请求任何外部资源；HTML 只提供骨架（页头统计、搜索框、空的 #pills 与 #grid、额度速查表、页脚），pill 与卡片在脚本运行时才写入 DOM，且没有 <noscript> 兜底，所以 JS 被禁用或抛错时搜索、分类与卡片全部消失。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L113-L119",
+          "version": "repo-lines-v1:sha256:ca310a25b5835cbdcedae4cc23cb53031c885dfcbee3b4ab3928e33fd8c345a9:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNlZmQ0NDRkODAxN2RlMGIxMjY1ZGJlNWI2NzAzODNkZGYzZjAwMWMyYWFmMjJmN2I2NGVhNzJlOTgzNDUxNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmJiNDFiMzExZDdkNGJkZTBkYmI4ODU5M2JkYjYxYjE1NjhlMmQwOThlZDY0ZDQzODBlOWRhNjdmNmUxMDc1YiJ9"
+        },
+        {
+          "resource": "repo://docs/index.html#L161-L464",
+          "version": "repo-lines-v1:sha256:2237df87ad445762ab05b598fec0265be765e34e3b589901412546163fb40fbc:eyJzZWxlY3RlZExpbmVDb3VudCI6MzA0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJkNzdkMDA5YjljZDM1NTQ1OTY5YTM1M2RmOWExOWQwOTUzZmQwMDJkOGFkYWJmYmE2ZGM1MzRhZjk3ODk4NTBiIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI4ZjkwMzU1NTVmZGEzZGFjNTFjNDBiMTJkYjZhZGYwZjYzMWM1MDQ2NjllNjU3ZjM0M2VhODk1OTMxMzA4YzAxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJmOGNiYTljOTc2ZmExZjkxYWU5ZTgxNTFkZjJmYjNhZTgwNmMzMmFiZTZhNmU1MzhlOWJlMGRmNDM0OGNmMTMxIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiIwNDJiYzA1Mjk5NjU0ZDE2ZGE5NGM1OTRlMTk4ZmM0ZGNkN2EyNmJkYjE4ZTA3YWM5ZWJmYzZlNWZhOThiMTczIn0"
+        },
+        {
+          "resource": "repo://docs/index.html#L7-L96",
+          "version": "repo-lines-v1:sha256:39ada81b3c77ba8717e470c68953a21c2efb7e09264981b540dbd0de1ecb7ce2:eyJzZWxlY3RlZExpbmVDb3VudCI6OTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiYjZhZDVjMmU0MTNjZGE4NGI1ZDBhNGM0ZTdiYTBmMDk1OTUxYTNiOGQwNDFjMzNiNDFlZDlkZDI4YzBmNjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjMzBkM2FlMjVhM2U0ODA3OThlYTUyNTdmNmY3ODg5OTg4NTk1NjY0ZjEzNDBhYTlhNDc1YTAxMWJjYjI4NDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRiZGQ3ZDcwMzVlNjY5Y2RjZWQ3OTI2YTVlNDFmNTI3N2RkNjdlNzUxMjlhZDE4ODg1MTJhOGY5NzI0YmQ2ZDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlNmZhZGNmNmE4MzRhZTExNjU0YTIzYThiMmU4MWE2M2NlOWJiYjY1ZmM2Mjk0MzA2MDcxMTVlOTYzY2FkNzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_924542f12f4e4bdc8d642a877918a8ee",
+      "statement": "页头四枚统计中只有数据集计数 #stat-datasets 由脚本驱动，其余（15 组分类、200 个图标、136 个精选项目）是手写常量；其中 136 恰好等于 DATA 中所有 items 条目之和，每张卡片 tags 里的「N 个」也是手写值，这三处是彼此独立、无代码校验的重复计数，增删项目后必须人工同步。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L105-L110",
+          "version": "repo-lines-v1:sha256:e4f2d64d5a289bec425302a76cf31122334aacca7c45d9c5fd35c79e3b8c1e96:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWY4NjFlYzAxN2EwZTM5MmQ0MzliY2JjMjZhOTkxYjNmOTRiNjQ3Y2FlMzU1NTViNzllMmMzYjA3NTBmZjdhMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGNmYzQ5ZGZkMjI2ZDkxMThkY2E5MzVkMDJlNTRiYjgyMjZmM2IzZDQ0NWUzOTAwZDlkZjUzY2E5ZTg3ZjU3YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDFiNDMzODA5ZDJmNjI4MmM1NmQyY2ZkMzdiM2I5NDllNjY5NmMxY2RiODQwZmEyOWIxZTEyNWJkNDMxZjAxYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2Q5NjM2MTQ0MGNhZDQ0YTUyYzQxNDE3YTMxZGM3YTA2NWMwYzY0YjE2ZDZlMTc0YmQ3OWVhOTkxZTMyMjMwZiJ9"
+        },
+        {
+          "resource": "repo://docs/index.html#L166-L407",
+          "version": "repo-lines-v1:sha256:742e9e5ca44cf498e124f8dad80293a8df143bcea4b593f9866a48d1c8735e71:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMDk5YzNjODUzMTc0MTkxYzcxNmM3OGQ4ZjM1ZjIxYjQyOWZiY2Y5NTk3NTU5OWY2MzYzNjc3ZjkzYTdiZDNkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMjAwNWY4MWViNTRmZWFjZWU2NjYxYTE2MzcyNTQ3ZGY5OWQwODI0YTk1OTAzYTUyNTIxODQ5OGE1ZTNkOWVhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjYjRhODQwNDc2MWQ5YjZmNDcyOThlMmFiOTBlNzJiODRiYzg3NjlmMGJhOGZmYjJkZWRjZjFhOWMzMTBiOTYyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2NGJmNDU2YTA1MGNiYTEzYzU2ZDQ0NTEzNWRhYjViYTM3NGU5ZjQ4YmQ4NDllZTk5YTFmMzJjYzA4ZmNmYjI1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_7397edadb5fe4fcdb1f222c9329af979",
+      "statement": "DATA 是站点唯一的卡片数据源，包含 15 个分类对象，字段形状为 no/cat/icon/title/desc/tags/items/links；条目层字段形状为 name/cn/license/repo_url/dl/ver，其中 name、license、repo_url 必需，cn、dl、ver 可选；新增条目必须沿用同一字段形状。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L166-L407",
+          "version": "repo-lines-v1:sha256:742e9e5ca44cf498e124f8dad80293a8df143bcea4b593f9866a48d1c8735e71:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQyLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwMDk5YzNjODUzMTc0MTkxYzcxNmM3OGQ4ZjM1ZjIxYjQyOWZiY2Y5NTk3NTU5OWY2MzYzNjc3ZjkzYTdiZDNkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIwMjAwNWY4MWViNTRmZWFjZWU2NjYxYTE2MzcyNTQ3ZGY5OWQwODI0YTk1OTAzYTUyNTIxODQ5OGE1ZTNkOWVhIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJjYjRhODQwNDc2MWQ5YjZmNDcyOThlMmFiOTBlNzJiODRiYzg3NjlmMGJhOGZmYjJkZWRjZjFhOWMzMTBiOTYyIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI2NGJmNDU2YTA1MGNiYTEzYzU2ZDQ0NTEzNWRhYjViYTM3NGU5ZjQ4YmQ4NDllZTk5YTFmMzJjYzA4ZmNmYjI1In0"
+        },
+        {
+          "resource": "repo://docs/index.html#L449-L456",
+          "version": "repo-lines-v1:sha256:34e631352c71ccfffa643ef2eeeed508c2d2d54b991dc9d9dee3f49e35bb9941:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzVmNTM5Y2Q0NjRjN2M2NDBlMDU4ZDQwZTAwZTkwOTA4N2U2OTYxYTVlNDkyMzY5MDk5ZTU5N2U4ZTYzNDM2YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzdlNGUyYzQ4NjIwOGE2ZDNhYjI1YTZkMDAwNTQ0MTlkOGZjYWY3OWRlNGQ5NmRiNzdmNDE5ZWVlZmNmNGIzNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzA5NTRiNjAwZDY1Mzg0OTczNjA2NGRjNjE4OWE0NTI3ZTliYWE4MjI1YjE5OGEzMDA0M2M0MTI5MDBlMzg1YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTc1MDc5YzgzNTlmYjJlMGUxMWYzYWZjNGZkZjFmN2VjMDdmNjRhMDY5Y2Y3MDRlMzBjOWJiZTY3YTM1OWM0YSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_0ec104c86cf0497f9e2552abd4c6bd7d",
+      "statement": "render() 用 filter + map + 模板字符串一次性重写 #grid 的 innerHTML，没有逐条目容错：任一 DATA 条目缺 tags 或 links 会在 d.tags.join/d.links.map 上抛 TypeError，导致整个卡片网格保持初始空白；零匹配时则写入单个 div.empty 提示。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L437-L458",
+          "version": "repo-lines-v1:sha256:612c2ba90f6d3dd6567a796d1e2e1a0bda5a23733e3c74c799f75b5c234d16cb:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4NjEyZjlhYWI0M2IzZGU1MDUzMmJhOWViYWRiOGI4MmQyNmQ1Y2RjODJmMzI4NmQ2NTFiNjQ2NzM1NTYyOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwNjcyOGE2NTAxMzg4MWY5ZDFlN2Q3MDdkMGE1ZjJmNjgxOGI4MGE1OTg5MTczZTM4YzcwY2Y5MzY3ODNiODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJlN2RhOTY0NTQ4YzRiN2M0M2Y0M2ViOGEyMDQ0YzY3OGFjMzZmY2FkYjNkMTRlY2IxNDQyM2NkNmUxOGJiYTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8720b2b4dbb1472c91fcaa8375c330b6",
+      "statement": "esc() 只把 & < > \" 四个字符转义为 HTML 实体（不转义单引号），被应用到所有插值字段的文本与双引号属性值上，唯一不过 esc() 的是 DATA 的 no 与 icon；它只做 HTML 转义、不校验 URL scheme，条目链接必须依赖人工保证是 https://github.com/... 形式。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L435-L435",
+          "version": "repo-lines-v1:sha256:52e103cce76cae241a645ccba82533cb2c601bf2648c60c00454992b08916337:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTJlMTAzY2NlNzZjYWUyNDFhNjQ1Y2NiYTgyNTMzY2IyYzYwMWJmMjY0OGM2MGMwMDQ1NDk5MmIwODkxNjMzNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTJlMTAzY2NlNzZjYWUyNDFhNjQ1Y2NiYTgyNTMzY2IyYzYwMWJmMjY0OGM2MGMwMDQ1NDk5MmIwODkxNjMzNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWM0ZjU5ZjgzMDhmZmM5MDFjOGYxZmUyNjkxZWJkYjQ0YzVkM2RmOWJmYjAwMGE3ODNhYjRhNjM3Yjg3ZDdmOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzhjYjBhMzBjMWQyNGUyNzllYzRlYjFlNzQ0ZmZkMjhjMTdlNDMzZDkwYWMxOTE4OTEyMDE4NDhmYjhhNWE0YiJ9"
+        },
+        {
+          "resource": "repo://docs/index.html#L449-L454",
+          "version": "repo-lines-v1:sha256:8ebef2af136459e7e6ab17f98be669d4a30963a8782f4840343e8870e1791f5b:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzVmNTM5Y2Q0NjRjN2M2NDBlMDU4ZDQwZTAwZTkwOTA4N2U2OTYxYTVlNDkyMzY5MDk5ZTU5N2U4ZTYzNDM2YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzEwYmM5ZDc5NDk1NzNhNDZkYmQxNjJmOTc4YzdmOWI5NTZlNmViZDNmMzNjNjFkODc2OTI2Yjc0ZWVlZjE2MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzA5NTRiNjAwZDY1Mzg0OTczNjA2NGRjNjE4OWE0NTI3ZTliYWE4MjI1YjE5OGEzMDA0M2M0MTI5MDBlMzg1YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGQ3NGY1ZmI0OGZhZTg2ZTQ1NDYwZmNhOWFhNzJhYzNlOWI3NDQxNjM5MGQzYjQ4N2QxNzNlMTNiZmVlZDg1MCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_4f7259bb6f3d4e24aa8cf0a14894416f",
+      "statement": "条目下载入口的拼接规则是 it.dl || it.repo_url + '/releases'，ver 不参与 href、只用于「下载」链接的 title 提示（有 ver 显示「下载 <ver>」，否则「去 Releases 页」），cn 仅在存在时渲染，license 缺失会渲染出字面量 undefined。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L453-L453",
+          "version": "repo-lines-v1:sha256:beb4d9c4ab03a7459cb8b3dcc69ab932836440178f583f84488c1155ff1b3668:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmViNGQ5YzRhYjAzYTc0NTljYjhiM2RjYzY5YWI5MzI4MzY0NDAxNzhmNTgzZjg0NDg4YzExNTVmZjFiMzY2OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmViNGQ5YzRhYjAzYTc0NTljYjhiM2RjYzY5YWI5MzI4MzY0NDAxNzhmNTgzZjg0NDg4YzExNTVmZjFiMzY2OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDUzZDFjYzJkNzc5ZjlhYjVmYzBjYTIxM2Y2M2ViOWIzYWVhM2NiYWFjMTZjMjc1NWNkMDk2NTZlMDNjZDI3NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2YwNDYzMjFhOWY2NjFkOWI4ZTg5ZGRmODVlMzg0ZDAyNGRjMzk1MDgyYjg3YjVhZTYzYWIwNDg4YzQ1YjJlMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2c136196b9c74f9db5834915414dcf0e",
+      "statement": "搜索与分类过滤是两个 AND 条件：activeCat 为硬过滤（等于「全部」时跳过），关键词为软过滤且为空时直接通过；关键词取 #q 的值 trim + toLowerCase 后子串匹配 title + desc + cat + tags.join(\" \")，不含 items 里的项目名，因此按工具名搜索无结果；每次 input 同步重渲染且无防抖。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L437-L447",
+          "version": "repo-lines-v1:sha256:15c9e3b9ca0b82406e50ddecbabf18a8c7a5d4fca3060cce243a848937ef99a2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA4NjEyZjlhYWI0M2IzZGU1MDUzMmJhOWViYWRiOGI4MmQyNmQ1Y2RjODJmMzI4NmQ2NTFiNjQ2NzM1NTYyOGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwNjcyOGE2NTAxMzg4MWY5ZDFlN2Q3MDdkMGE1ZjJmNjgxOGI4MGE1OTg5MTczZTM4YzcwY2Y5MzY3ODNiODUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUxOTg0YjViMDYxZjcyNjczZWYzY2MyMjFhZWRlNjkwZmRiOTY0ZTRkZDc4M2MyOGQ5NjJlYmRiMThiODUzNGQifQ"
+        },
+        {
+          "resource": "repo://docs/index.html#L462-L462",
+          "version": "repo-lines-v1:sha256:7e7f30886a6fd107ce76c388c20dae30a8d3dd0acd2555edb2dca57a2650564d:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2U3ZjMwODg2YTZmZDEwN2NlNzZjMzg4YzIwZGFlMzBhOGQzZGQwYWNkMjU1NWVkYjJkY2E1N2EyNjUwNTY0ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2U3ZjMwODg2YTZmZDEwN2NlNzZjMzg4YzIwZGFlMzBhOGQzZGQwYWNkMjU1NWVkYjJkY2E1N2EyNjUwNTY0ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmU3ZGE5NjQ1NDhjNGI3YzQzZjQzZWI4YTIwNDRjNjc4YWMzNmZjYWRiM2QxNGVjYjE0NDIzY2Q2ZTE4YmJhNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzQ0MjA1YjQ3ODY4ZTJlNzI1YjU0NWY2MzQ1NmMzZDk5NzFlYzcwMzI5MjMyMDNmMGI5NGUxMWZjOGU3NWFhMiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3ee46c6e91474c4f83e744b87cd7bebd",
+      "statement": "过滤状态只存在于闭包变量 activeCat，不写入 URL、history 或 localStorage，刷新后回到「全部」，因此搜索结果不可分享、不可回退。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L420-L433",
+          "version": "repo-lines-v1:sha256:c43673338ccc0c750634c56f96d8af12df61516bf635754b8c0b96e4b755f0e1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViN2ZjNTdlZjE5ZTk1OTk1N2ZiODczODRiNmQxYjlmMDY4ZjcyZmFmNmQyNDZmMTVlZjQxMzc2MWE2NGU3YTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYwOGI2OWIxMjMxZTc1MDMzNWQ5ZGQxZjc5ZDc4NmVjOGQzMjEzZTQ2MDRmMzRhMGExMmRjZTRjMDM0ZTBlYTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQyOGU5MWFlZTk3YzZiODg5OTk1OGI5MmU0OTg5M2I5YzJlZjVlNGJjYmIxNmFlNDJmZmQ3MDQyYTZiODg2YTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwNjcyOGE2NTAxMzg4MWY5ZDFlN2Q3MDdkMGE1ZjJmNjgxOGI4MGE1OTg5MTczZTM4YzcwY2Y5MzY3ODNiODUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_250d6b19f88d433c8225f60451df0604",
+      "statement": "pill 列表由 [\"全部\", ...new Set(DATA.map(d => d.cat))] 按 DATA 的源码出现顺序生成，且这一步发生在 DATA.sort((a,b) => Number(a.no) - Number(b.no)) 之前，而卡片按 no 升序渲染；因此若新分类被追加到数组末尾却使用中间编号，pill 顺序会与卡片顺序分叉。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L422-L433",
+          "version": "repo-lines-v1:sha256:34f49921405ca8f931c1b24c19e74fb9d55d8ecc4be99b50ae027f305a92a3fb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUxYzBhM2NhY2MyM2Y4YjY0YWQyNjY5Njc5OGY4ZGNmMzU0ZGVmOTk2ZmM1ZTUwODhhNTE5YWNiMWZjM2IyM2IiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYwOGI2OWIxMjMxZTc1MDMzNWQ5ZGQxZjc5ZDc4NmVjOGQzMjEzZTQ2MDRmMzRhMGExMmRjZTRjMDM0ZTBlYTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMyZGFiNzU0NmM0ODdkNGE4NjExMWU4Mzc4ZjA3MGVjZWRkNjUzYWJlZDVlYmZmYWY2Yjc3YjRlYjllYTE5YjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwNjcyOGE2NTAxMzg4MWY5ZDFlN2Q3MDdkMGE1ZjJmNjgxOGI4MGE1OTg5MTczZTM4YzcwY2Y5MzY3ODNiODUifQ"
+        },
+        {
+          "resource": "repo://docs/index.html#L459-L460",
+          "version": "repo-lines-v1:sha256:4ee67d6418a467dce5d859b642ad73d00c821f1b7f0a4d72b0b51cdce01bc5af:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDEyNjllZjU2MWJjNTg1YThjODJkM2Y2YWJkMjhlYjMwZTc3NjE0YzI5ZTcyZTg4OTE4NzcyOGY1MzdlZTJhYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjc1ZmYxNWVjNmJkMmIwODA5ZjNkNTU0OWVlYjhkOGU5YmFlNTA1ZjRiYjczMDE4MGE3ZDZjODFiMDk5NTQ1MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODAyMTI2MzZkYmY4M2IxMmU0YTlkMjlmY2IyYzc1ZTgyMTQzMzgxOGQ5YjI0OTBmODg3YThhMzdkMjdjMDY5MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGJhNWRjYjNhNzQ5YzRmZWE5ZTExMWEzZjFkYTI3YTYzNjUxOTFmZjAxYTE2NjZhOTg0YjNjODM0ZmFmZGJkMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2634c3228b8c4108a7ebecb67766f138",
+      "statement": "BEGIN/END GENERATED: atlas-items 之间只有一行 <script id=\"atlas-datasets\" type=\"application/json\">，由 scripts/sync_atlas.py 以注释为界切分 head/tail 后整块覆写，标记缺失时脚本只打印提示并跳过站点同步而不覆盖；render_index_block() 只写 name/license/repo_url 三个字段（上游 NOASSERTION 改写为「见 LICENSE」），并把 </ 转义成 <\\/ 防止提前闭合标签。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L157-L159",
+          "version": "repo-lines-v1:sha256:acc9933c33f2f0a885e019b2180bf850aa2e160254d4cc9cb38dd3cf9620cfcf:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDU5ODRhOGNlYzhiNzRhZmE0NjRmNjY0Zjc5OWRlNjk5NWFmMTUxM2YyMzEyZjhiNmY0Y2UwM2U1OGVmYWRiMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDA5OTFlYTc2MTEyZjUwNGQ4NzQyYWY4ZmI0YmMyMzE4MGI3NWVjNzliZDg0YTA0NmZlM2UxNzc2YzJkY2IyYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTVkMzEyZGE4M2ZmZWE3Y2Q5NDk4ZTM0NzZiMzQ3ZWI1NGJlYTY5NWEzYzc0MDk3NDFkYWM5ZGM0OTFiZmE5NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzIyNDdmYWViYzhiNjRlYzhmZmI5MjE1YmIyMTQyZjFmZjA5ODVmODlmMzA4N2U2ZTViNGM0YWIxNDhiYjYzNiJ9"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L132-L140",
+          "version": "repo-lines-v1:sha256:f932a8963b16d19f898c0efb21a033e06c9b416733709b3a90fd2993f6f06ff9:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDY2Mzc5ZTBlYjNlMWJjMTU0NjU3ZjkwMDdkMzc0NGE1NjhiY2FjNzljM2RhOTcyY2VlNjc5MzAzOWQzNmIxOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDY0OWVlMGY5MjgzYjg5MDA1YWViMWY5OWY0NGVkM2VlOTdmZTNhZWY0YTQxYTA5MDljMGY2NjlmYTk3ZGYwMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTdmMjQyNzllN2Y5NmYxMjgzZGU3Y2RlNjlmMzVmNDJiNGNiMGQ2ODcyMGM3NThjOTEyYzg1NDFlNzdjMjU4NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTliZDU5ZWEyNWU4Nzg5MTNmMTkxYTg1MzdkNjVkZDFiM2E4NWQ0ZmRlY2U4N2UyMTZlYTgxNzJhOWYzM2MyMiJ9"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L171-L186",
+          "version": "repo-lines-v1:sha256:0f227be8c5f566f9d5754709f116b7288a74d861e1bbe932cb547e6c3ba62447:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhOTBhNjJkOGZiNDQ5MGU0ZDA1NDliMTE4MzcyYzAwMzFkN2I0Zjc5NTliMTk5OWI5MjBhYzM0NjBiOTI2NWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4YzA3M2UwOTljMDk4NjQxNmQ5ZjI0ZTRhOGViZDRkODc2YmRhYTQ4MDdkNGM5NzM0ZWI5NDcwOTdjNWMzZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2YjNlNzVkM2ZlNjQ2Y2E5MmJlNDQxNzMyNWY3M2Y0ODk2Yzc1MTM3YTcwYjE2MDFlZDZhZDBjMWIzNThkZDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fa1104e545a34da2b5eea951aeab470d",
+      "statement": "由生成块注入的 atlas-datasets JSON 在当前版本只驱动页头 #stat-datasets 计数、不生成任何卡片（DATA.sort 上方「第 9 类由数据块生成」的注释已与实现不符）；消费端把 textContent 包在 try/catch 里 JSON.parse，解析失败退化为空数组，且只有解析出非空数组时才覆盖数字，空数组会保留 HTML 里硬编码的 5，从而掩盖上游清空数据集的情况。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L108-L108",
+          "version": "repo-lines-v1:sha256:a7e0a0bbd69ea4f3068c7cc31c2c1e3074af1878f9ecb434be296fdc0f61332f:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTdlMGEwYmJkNjllYTRmMzA2OGM3Y2MzMWMyYzFlMzA3NGFmMTg3OGY5ZWNiNDM0YmUyOTZmZGMwZjYxMzMyZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTdlMGEwYmJkNjllYTRmMzA2OGM3Y2MzMWMyYzFlMzA3NGFmMTg3OGY5ZWNiNDM0YmUyOTZmZGMwZjYxMzMyZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDczZGUwZTc3MzdiZGU5YWFlM2E3ZmE2MTliOTkxOTY2MWM3YjQ3MzI2Zjg1YzY3YzFmOTQzODA1NTE1YjhjMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTk2ODEwZTYxMDQxMzM1NzJmYjVkZGQyOWJkZTMyNTI2MWEwNzMzODdmY2QzNzE4YTI3Y2Q3N2M4ZWZkMWMwOSJ9"
+        },
+        {
+          "resource": "repo://docs/index.html#L409-L415",
+          "version": "repo-lines-v1:sha256:7c4f0181fa728de166097a16eb9f2e8644fb45d62b19293965154175d72f31bc:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODY0Mzc4ZDFhYmZmMTljM2Q5ZGYzNGY1MjFmNDY5M2RmZjA1MmQxMDY2ZTk4ZDUzM2I4MTkxMmVhNWYxYmM2ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjE1NTkxYjAyYzY2NWYwM2FhMjNjNjYzZjRmMzc2OTA4ODFhZTkzZGQ5ODE4MmU1Y2E1ZGEzZGM5ZTRhMDFkZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGVkZjUyZDM0YjUzODM0YzkxYjM0ZmRjYjg4MWU5ZDQ0NTNhNTliMmQ1NWI2YmYwMmMzNzcxN2M1ZDI5ZDlkOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2QxMjcyMTkzYzU5MzhiODVmMGZkNDU0Y2Y2ZmM1MzQ2MWU5NDE3ZTQ4YTE3MWZmMzQ1OTIwYjQyZGJlNTgxOSJ9"
+        },
+        {
+          "resource": "repo://docs/index.html#L459-L460",
+          "version": "repo-lines-v1:sha256:4ee67d6418a467dce5d859b642ad73d00c821f1b7f0a4d72b0b51cdce01bc5af:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDEyNjllZjU2MWJjNTg1YThjODJkM2Y2YWJkMjhlYjMwZTc3NjE0YzI5ZTcyZTg4OTE4NzcyOGY1MzdlZTJhYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjc1ZmYxNWVjNmJkMmIwODA5ZjNkNTU0OWVlYjhkOGU5YmFlNTA1ZjRiYjczMDE4MGE3ZDZjODFiMDk5NTQ1MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODAyMTI2MzZkYmY4M2IxMmU0YTlkMjlmY2IyYzc1ZTgyMTQzMzgxOGQ5YjI0OTBmODg3YThhMzdkMjdjMDY5MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGJhNWRjYjNhNzQ5YzRmZWE5ZTExMWEzZjFkYTI3YTYzNjUxOTFmZjAxYTE2NjZhOTg0YjNjODM0ZmFmZGJkMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_395874243de342c98d271131647bb4d3",
+      "statement": "docs/404.html 用客户端脚本把访问者送回硬编码的首页常量 HOME = \"/github-free-guide/\"（setTimeout 800ms 后 location.replace），并用 pathname 不等于 HOME 或 HOME + \"index.html\" 的守卫避免首页自跳循环，同时提供手动返回按钮与强制刷新提示；正因为 404 可能在任何深度路径上被返回，这里必须是绝对路径。",
+      "evidence": [
+        {
+          "resource": "repo://docs/404.html#L28-L36",
+          "version": "repo-lines-v1:sha256:9c8acbc3773436ad7e91946786d871fdcd9913c3513bcad6030c23cce9f95278:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiY2YxNGEzMjEyMGMwMzRlYWZjNzZkNDEzODE2NmJlYjhjN2E5NjhhMzYzM2EwMDA4ZTc0ZjQwNmRkOWQyMTI2ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmYzNThmMDM3MWE2ZTczMmM0MzQwMzMyMjM1MTk5ZGNkOTFlYmM0NjIzOWE1ZGRjZmU2ZjlhNjNlNmViZWNmZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWJjNDUyM2VhMzNmNmE0NGIzZTA5ZDM2YzU5ZTljMzcwMzUwOTMwYTJjZGE1N2E4YzEyYzhjMjQwMDFkYjQ0MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiN2U0NzJkYWI2Nzk2NDNiMTZkZTE1MDE3MDQxNmU4YzZlZDViOTk2ZDY2ZjI1ZjE1NDE3MTIyMjRkNTM5MjAzMyJ9"
+        },
+        {
+          "resource": "repo://docs/404.html#L42-L47",
+          "version": "repo-lines-v1:sha256:b02b44c0b1c4d172b8d3f37b685bc9be063900d748e9c5693fda365903d773b2:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTMyMDY5Y2RmYTljMjYyMWRmOTA5MGE4ZTE2ZTIxOGZlMmNiYjEzNzU4NTk5ZjgwOTI5NzJkZDNiNWM3MjY0MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTMzMGJkZTdiNWQyNGUyNTVhMTFjN2Y0ZjZhZDQzMjhkZWZkZjkwZWRjMDNjMTE4Y2Q5Y2M0ZjA0OGFmMjEyMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmMzMTUzOWIyMTY0NGQyN2M1YjZlYzM0ZjRlZTk1NzgyYWQwMjFjYTE5ZjZhMDk0ZDM3ODlhMWI4NjRjOWY1YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzA2ZmFmYTAzNDQ1NGNlMDljZTYwNGM3MzE3NThlMmMzOGNiNWM4MDYxN2ZhNmUwNWU2M2EwYTE1NGFkMzE1YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a8a79773e1fd4dbf9a213990b808c88a",
+      "statement": "仓库改名、迁到用户站点或绑定自定义域名后，404.html 中硬编码的 /github-free-guide/ 前缀（HOME 常量、按钮 href、canonical）不再存在，兜底会把人送到同样 404 的地址，这三处必须一起改。",
+      "evidence": [
+        {
+          "resource": "repo://docs/404.html#L31-L31",
+          "version": "repo-lines-v1:sha256:6f8c9550cc842c79b49c6042e3437e0ef708a32484b9df29f079a9eb46316000:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmY4Yzk1NTBjYzg0MmM3OWI0OWM2MDQyZTM0MzdlMGVmNzA4YTMyNDg0YjlkZjI5ZjA3OWE5ZWI0NjMxNjAwMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmY4Yzk1NTBjYzg0MmM3OWI0OWM2MDQyZTM0MzdlMGVmNzA4YTMyNDg0YjlkZjI5ZjA3OWE5ZWI0NjMxNjAwMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDAwM2Q0YzgxODI3ZGQxNDk4YjY4Y2JlODlkMDdmZTMzNWZlNzE3MTk3MTg0NzcyMjJmMTE4NDQwMjVkNWNlNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWZmYmYyNGY2YTk0YTljNmMzMWMxY2ZiYmI2OWNlYmMxOTFjYTFhMzE4N2YzNmYyZDc2ZTQ4NDg5ZWViMjA3OCJ9"
+        },
+        {
+          "resource": "repo://docs/404.html#L47-L47",
+          "version": "repo-lines-v1:sha256:a330bde7b5d24e255a11c7f4f6ad4328defdf90edc03c118cd9cc4f048af2123:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTMzMGJkZTdiNWQyNGUyNTVhMTFjN2Y0ZjZhZDQzMjhkZWZkZjkwZWRjMDNjMTE4Y2Q5Y2M0ZjA0OGFmMjEyMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTMzMGJkZTdiNWQyNGUyNTVhMTFjN2Y0ZjZhZDQzMjhkZWZkZjkwZWRjMDNjMTE4Y2Q5Y2M0ZjA0OGFmMjEyMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWI3OTZiOTE3MmUwZjI5MTBmMDY2MjZkOGEzNTNmZjU3ZWI0NWQ5Y2ZiYmE4MWFhMWMwNjU3NWJjNDU0ZDhjOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzA2ZmFmYTAzNDQ1NGNlMDljZTYwNGM3MzE3NThlMmMzOGNiNWM4MDYxN2ZhNmUwNWU2M2EwYTE1NGFkMzE1YyJ9"
+        },
+        {
+          "resource": "repo://docs/404.html#L8-L8",
+          "version": "repo-lines-v1:sha256:b92931e1744ae7305d0295e193bbe894b896819c07831af624294b2c70c19f7c:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjkyOTMxZTE3NDRhZTczMDVkMDI5NWUxOTNiYmU4OTRiODk2ODE5YzA3ODMxYWY2MjQyOTRiMmM3MGMxOWY3YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjkyOTMxZTE3NDRhZTczMDVkMDI5NWUxOTNiYmU4OTRiODk2ODE5YzA3ODMxYWY2MjQyOTRiMmM3MGMxOWY3YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWNhMjVmNDg1MWNjNzI2MWZhMTNlYjhjNTBhNTViZDc1OWYzN2EwZTAwOTY2YmU4OWE1MTBiYzRhMGU1NGUxMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTQ0NjNjOGZjNDdjNDQ1ZTY2ZjkwYTY5NzE0NTU3NDNlNDc5Mjc2MjY2Njc3NWE4ODg3MTg4NDE5OTBlMzFjNyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c351d44b405a47a2a4b56d57b6a2b4ac",
+      "statement": ".nojekyll 是内容为空的标记文件，作用单一：让 GitHub Pages 跳过 Jekyll 构建，使 docs/ 下的文件按字节原样发布，避免下划线前缀文件被排除或内联脚本被 Liquid 解析改写。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/pages/README.md#L6-L6",
+          "version": "repo-lines-v1:sha256:a60765794d9a7422edaca69044c3242fcac4e42d2617320112bc8c33e85f367f:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTYwNzY1Nzk0ZDlhNzQyMmVkYWNhNjkwNDRjMzI0MmZjYWM0ZTQyZDI2MTczMjAxMTJiYzhjMzNlODVmMzY3ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTYwNzY1Nzk0ZDlhNzQyMmVkYWNhNjkwNDRjMzI0MmZjYWM0ZTQyZDI2MTczMjAxMTJiYzhjMzNlODVmMzY3ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmNkMjVlOTNiNDA3NzcwM2MzMDg0NzM0YzEzOTgxNjY0NTdlZDU1NGFiYWI5OTI0YmJmNzhjYjY1ZTdkZWY0YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDAxZjJlYzE3NTkzYzEwNTRlYjQ2MzY3ZDg0NTNlZjI0YTE3M2NlOTZiNzExN2Q5MWY5YTY4ZDQ0ZmVmOGIwMSJ9"
+        },
+        {
+          "resource": "repo://docs/.nojekyll",
+          "version": "repo-file-v1:sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ]
+    },
+    {
+      "id": "claim_9b1b706d8c8f4a9494b439ddfb7e52b2",
+      "statement": "项目站点的根是 /<仓库名>/（即 https://xushan628.github.io/github-free-guide/）而不是域名根 /，所以站内链接使用相对路径（页脚用 ./disclaimer.html），写死以 / 开头的绝对路径会 404；页脚的 #repo 链接虽有硬编码 href，但加载时会被脚本用 REPO 常量覆写，脚本失效时仍保留可用的兜底地址。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/pages/README.md#L96-L96",
+          "version": "repo-lines-v1:sha256:7b9967675aaaeb4c14546c663ebe89ef38704ad8fc0db3e6842f8669f03cf25b:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2I5OTY3Njc1YWFhZWI0YzE0NTQ2YzY2M2ViZTg5ZWYzODcwNGFkOGZjMGRiM2U2ODQyZjg2NjlmMDNjZjI1YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2I5OTY3Njc1YWFhZWI0YzE0NTQ2YzY2M2ViZTg5ZWYzODcwNGFkOGZjMGRiM2U2ODQyZjg2NjlmMDNjZjI1YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYThhNTYwMmM5YTg0YjY4OWM0MmE4ZWQ2ZDk0ZGZkNDNlZGFhMDI5M2I4MDMzY2Y1NGY2MzZkNzMwZWE0Yzk2ZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTY5NDdhMWNkNjE1ZmJmMmUyM2FkNWY1NmQ2YTEyMTgxNmVkYzE2MWZiMDI1ZDFhYTJjNmE2N2VlNzMwYzNlNyJ9"
+        },
+        {
+          "resource": "repo://docs/index.html#L144-L154",
+          "version": "repo-lines-v1:sha256:0f07ca1a83e0dc32870311a93244f3ec53483342965c71342d4914b3749f7973:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNhMmI3N2M0MmQ4YjUyZTk1MjU2YmJiNWFjMjA2NWQzMmZhMTE2ZDM0NDFhZGZjYTk5NmQxMDlmZDZiYjJkNjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFjZmUwNDI3MTk3N2U5ZGZkNWI4M2Q3ZmZhNTBiYTFkNWFhZTlhZmQ0N2ZkZDBhMmExNWE4ZGQzYmJmY2Q2OWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRkNWYzNjFjYWI3NDQzYzFjZjU1ODZhNDcxZjg4MDEyYTljNGEwMzlhNjNmZmY2MjMwOWQ4YzVkOTY2ODRhNTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRhNmFlYjc3NjcwNzhjNTc3OTllNjYzNzVhNTE1MWQwNzY2NmViZTE3M2U5YWE5ZWM4MGVjZTNjMGUyMTBmOGIifQ"
+        },
+        {
+          "resource": "repo://docs/index.html#L161-L163",
+          "version": "repo-lines-v1:sha256:20308e568072f45fe16a90f596bc16555dced70c40ad18bb57e811ed6f66479c:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDc3ZDAwOWI5Y2QzNTU0NTk2OWEzNTNkZjlhMTlkMDk1M2ZkMDAyZDhhZGFiZmJhNmRjNTM0YWY5Nzg5ODUwYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZWFiYmJmN2ZhMmFmYTIyNzNkZjQ2NjQxMmU5YjVjYTRkMzhhZDVlMWE5OTMyOWZjOWRhODZmYTMyNWNiNzM2MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjhjYmE5Yzk3NmZhMWY5MWFlOWU4MTUxZGYyZmIzYWU4MDZjMzJhYmU2YTZlNTM4ZTliZTBkZjQzNDhjZjEzMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTc3ZTJmZDE0YmM1NDU2NGUyYTUxNzFkYTk5MzllMGFmOTk1NzM0ZmEzYjg5OTJhNWE1NTc2MjQzNTg2YmYxNiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_eb65213de0044f60b7b322ec3bad1143",
+      "statement": "线上站点的自检入口是 python scripts/check_site.py，默认请求 https://xushan628.github.io/github-free-guide/，对同一 URL 发两次请求（普通 + Cache-Control: no-cache 并附时间戳参数）并以退出码表达结论（0 正常、1 站点不存在或异常、2 连不上）。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/check_site.py#L7-L20",
+          "version": "repo-lines-v1:sha256:6a05fd685f0bcd4a80617bd984991208ee46bcf8121c28d7d5d612313eb3eada:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIzZjEzZjMyYThjY2YzYzUwYWEyMjNjZDE0Y2Y2ZWFmYjlkZGM3Zjg5NDE5NmE0ZWI4MTk1NTNhY2Q3OWUxZjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE4MDliZmFkYmQ3ZWY0NmQ0NWM5ZDhhOTJkOTg5N2YwODMxZWJlZDZmYjFhZjg4NTNjMmEwMGUxNDUxNjFmZTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ4M2RlNTVkNGU4YTZiNjZmOWZhYjg2MjhiMWM2OTQ4MzVkNTc5ZjJkOGI2ODM5OTQzYTM0YzZkNTRhNTMxODIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzZjA3MDJmNmIzODFiZmMxYTU0NjFlMWQ5ZjlhYjFlZjhkYzY1Zjg4ZGI5ZWJlMjc5ZTZmYjBkMjQ1NDk4Y2EifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_68110cb205c94aecad76a8da5a2f1a4a",
+      "statement": "docs/disclaimer.html 是纯静态免责声明页（无脚本），声明站点只做索引不托管代码、按许可证类型给出使用边界、对灰色地带项目做风险提示，并承诺收到作者 issue 后 48 小时内移除或修改；页内维护手写的「最后更新」日期，返回首页用相对链接 ./。",
+      "evidence": [
+        {
+          "resource": "repo://docs/disclaimer.html#L29-L29",
+          "version": "repo-lines-v1:sha256:ed66c1d456ec0b7f1f60f79f1b35fe509e697f7be5d815a723b746fe147727cd:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWQ2NmMxZDQ1NmVjMGI3ZjFmNjBmNzlmMWIzNWZlNTA5ZTY5N2Y3YmU1ZDgxNWE3MjNiNzQ2ZmUxNDc3MjdjZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZWQ2NmMxZDQ1NmVjMGI3ZjFmNjBmNzlmMWIzNWZlNTA5ZTY5N2Y3YmU1ZDgxNWE3MjNiNzQ2ZmUxNDc3MjdjZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzIzZWMwZGNlMjJjMTRlZTcxOWM2ZWNhNDU0MTViMGNkMjc5YTEyMWRhOTY5Nzk1MWU3MDkwMGMwNDU4OTUzMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGE2MWVjZjdkNzhlYWNhNTZiY2ZkMTU4NmE0ZWUwMmMzMTkyNzczNjZmZTY4YTQ2NDk3NTljNGJkNzQwN2NhYiJ9"
+        },
+        {
+          "resource": "repo://docs/disclaimer.html#L69-L79",
+          "version": "repo-lines-v1:sha256:ac223c61e07ad153e946822df26dbde29ca3fd37334013f78bfe99061e773b84:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3ZjY0Yzc2ZTY5NDI1YzhhMzViMWE4NThiZTczMjE3NGUzNGE3YmNkMTJiZmQ5YzIxMWJkOGIxZmE5MjM4MDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ2MGNhMGI1MDg3YWZiMGQ5ZDBlMGYzNGYxMTE2OGM1Y2MxZjA3YzU1MzUyNjhkN2VhYjY4M2EyMTczNzdlNzkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJjYWZmOGJjOTg4NWEyY2RlMjg3ZWZiYTcxMmFhOWEzYjAwN2Q2ZDY1YTg5YWUwMTE5OGU1MzVlMDVmODI3NDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjVjYmIyZDg2ZjQ2N2EwMmY1ZjNkMjE2NDNmNzZlNjhlNmI3OGM5OThkMmRkNmViNjM4M2U3NDczNzgxYzU4ZmEifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-21T01:55:26.634Z"
+  }
+}

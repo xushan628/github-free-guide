@@ -34,6 +34,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from gh_auth import resolve_token  # noqa: E402  同目录共享模块
 
 TOKEN = resolve_token("xushan628", required=False)
+SKIP_DIRS = ("openwiki",)  # 生成的知识库，含示例链接
 LOCAL_HOSTS = ("http://localhost", "http://127.0.0.1", "https://localhost", "https://127.0.0.1")
 UA = "Mozilla/5.0 (compatible; github-free-guide-link-check/1.0)"
 TIMEOUT = 12
@@ -89,7 +90,14 @@ def collect() -> dict[str, dict]:
         if md.name == REPORT.name:
             continue
         rel = md.relative_to(ROOT).as_posix()
+        # openwiki/ 是自动生成的知识库，正文里有大量“示例链接”（如 [<repo>](<repo_url>)），
+        # 它们不是真实链接，检查它们只会制造假警报。
+        if rel.split("/")[0] in SKIP_DIRS:
+            continue
         text = md.read_text(encoding="utf-8", errors="replace")
+        # 去掉围栏代码块与行内代码：里面的链接是示例，不是要访问的资源
+        text = re.sub(r"```.*?```", "", text, flags=re.S)
+        text = re.sub(r"`[^`\n]*`", "", text)
         for label, target in MD_LINK.findall(text):
             if target.startswith(("http://", "https://")):
                 found.setdefault(target, {"kind": "external", "refs": []})["refs"].append(f"{rel} → {label or target}")

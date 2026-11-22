@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:76ef121351d505e22b0421bc4d19caf18168e2210b540bc895d13d1945f78efb",
+  "claims": [
+    {
+      "id": "claim_1e1621ab253247c09162c75e0062e5a9",
+      "statement": "scripts/fetch_assets.py 把「抓哪些素材」完全写成三张模块常量：ICON_NAMES（图标名）、FONTS 与 LICENSES（repo、上游路径、本地文件名、许可证 id 四元组）；脚本不枚举上游目录、不读 README、不解析许可文本，因此扩充素材的唯一做法是改常量后重跑，许可证结论也只能改常量而不能改清单。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/assets/README.md#L86-L96",
+          "version": "repo-lines-v1:sha256:eb60daaa9e5fc0db97e096e926bc3bc5eb40009187da3bcaf245968b7ec65dfc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNkM2E3YTZlNTFhZGE4NmQ3ZWQxZTg3MDRlMWQ0ZTg3NDM0NjQ1MTA0MTAwOTkwNGQ3YTllY2YyYjhlZTQ0OGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU2MWUyMzQyNTYyNmY1MDdiYTAyYzEyYzM3NGNhOWUwMTQxOTQxZTdkMWMxMjEzZGZlZThiMDkyYTFhMTdjNDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L168-L172",
+          "version": "repo-lines-v1:sha256:b229063d6277a2417abd8b556866a012a24ebb6cbedca5d8df3366ba75a3e8f5:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTI2YTUyNTE1YWJmMmMyNzZjZjgzMTNhMzU0OWYzZTYwMzVhZDVlNWMyZDFmY2Y2NWQ1ZDdhZTczNzExM2MyZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEwMzBiODY2MjAxMTA3YTVhMzRkZTAyZjM4YjQ3YzRkODU1MzUxZjk1NDI0YTc3OWUyNzc5YzA2MzI4NDNmOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTg3ZDI1NzU0MzZkMjlkMGJkZjc1YTU1MDg1OTIwODg1OGRkZjYwZmM0ZjEzMGMzNTM4MmEyYmY5OGY2YzM4YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWVhNThkMjJkZGE4Y2Q5YTA4NTYwZGQ2YmJhY2QwOTI5MzMzNDcxOTAxYWU3YzIyMWYyYTQ5NGRjOTMwNzM3MyJ9"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L40-L73",
+          "version": "repo-lines-v1:sha256:d1a2458f248f32caaada3b571e2f6b1a12de63d3c39e96f1bfc7201c32229772:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4OGM3ZTMxYWQ1N2Q2M2ZmNTE1OWJhYmMwNTMyZDk5NWQyNmE5N2E5ZGYyZDUyMmE3NmM5MDc3NmEzOTk2YTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkM2I2YzViOTQ0MjJhN2MwNGYwMDkzMzgxYmY4ZDE3MDdlNmVjY2E2Zjc4NzMyMWE2Nzk0ZWEzZGYxNjQ1MmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYyNWZiMjYwOGU3OThlODg1M2QxMGI4MDBkZDljMmMyYzhkOWMxMmZjZDM2ZjBjOTI1NGYwZmU2MzAyODM4MDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk1OWMzNzJhYzAwZmYzMWM5OWU0MDgzY2JiMmQxOWZkZTA2YWRhODE5NTJhMWZiNTM5YTE2YTg3M2ZiMTIwNmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_56fdf21297b14aa98ca39f0da5b9c821",
+      "statement": "ICON_NAMES 是一份 118 项的 kebab-case 名单，同时喂 tabler（上游前缀 icons/outline/、许可证 MIT）与 lucide（上游前缀 icons/、许可证 ISC）；download_icons 里每个图标失败都被 except Exception 吞掉只返回 False，所以实际命中 Tabler 106 个、Lucide 94 个，落空的名字在磁盘与 MANIFEST 中都不留任何记录，脚本依然退出 0。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/assets/README.md#L11-L16",
+          "version": "repo-lines-v1:sha256:4634afa81e5a5898a0456c0dcbeb867641fe8977061b8fbd6b394919da09aa20:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTZjY2NiNDY3ZDQwMDRjMzY1MzA3NDM3MjM2N2UwZmI3N2I0ZWIzZTQ2Nzk4OWVmNzUwN2E5MGE2YzhjNzcyYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiY2M4ZDFhZmE2ZjFmNmVjMTM1NDFjZGVjNWMyN2M4Y2M4YjcwNjllMTc3MGJlYjhiMzFhMTI1YTMxYmE4ZWMwYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTBkYjBhMjk4NGM5YWYyYzllNDEzYWIxY2QyNGIyYTYyYzY3YTUyZmUzZjMyNjkwMzE3Y2NmODIxMTA5MWQ2MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODZkMTg3YTFiMTk4MTJhNGU0NTdhZDg1NmE4OTI4ZTE3MzViZGNiYTdkM2ZjMmYxMDQ2ZjEyNTgxYjRiN2E3NiJ9"
+        },
+        {
+          "resource": "repo://MANIFEST.json#L1860-L1861",
+          "version": "repo-lines-v1:sha256:e19fbe154efcaff557fbc6ca23f7d30452f845fc88bde2d4233deb37aceef95c:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGYzNzkwOTBiZTVkMzI4NDE0NDI5YmIyMjQyYzBkM2U2NDJiMmU4YWVkNWU2NWFmYzhmMWVkOGY2OWZkMzYwYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTljN2Q2MWJjNmNlYTY1NGYxZDA5MzYxMzBjNTJiN2VlYjQxODQ3YjU2YmE3MDMyZTQ5YzNlNzVkMjVlNDE0MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDk2ZWEwNTAwMWI0YjgwYWY3NDE2NDU3OGUwZDM4MTFlNDM0MmE0ZTNjNDdhZTJmMGFlZWJkYWQ5NTBiYzcyOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTIyZmFhNTM1YmQyZWEzZDUyZTc0MWVkNDU0NDM1YjdmZTQ5ZTgzNTg2ZTk0M2Q5OGQ4MmJiZmIyNGQxZjVjNSJ9"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L168-L189",
+          "version": "repo-lines-v1:sha256:0b74a6c781690343c463329ff630987c7ba526480de50e020c85700283f4ba59:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUyNmE1MjUxNWFiZjJjMjc2Y2Y4MzEzYTM1NDlmM2U2MDM1YWQ1ZTVjMmQxZmNmNjVkNWQ3YWU3MzcxMTNjMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk4N2QyNTc1NDM2ZDI5ZDBiZGY3NWE1NTA4NTkyMDg4NThkZGY2MGZjNGYxMzBjMzUzODJhMmJmOThmNmMzOGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU2ZmY3NTlmNTg1ZGM0MTliNDVhNDgyZWY5YzhhYTAwZWFmNzY0Yjg3YTM5MTQzMWE2ZDRiYzRiYzhiYmQwZjkifQ"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L40-L60",
+          "version": "repo-lines-v1:sha256:c41ffb78fa0e323e5f0f3efb2c002e093cea7cc97437a6b872844126305eb4b1:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4OGM3ZTMxYWQ1N2Q2M2ZmNTE1OWJhYmMwNTMyZDk5NWQyNmE5N2E5ZGYyZDUyMmE3NmM5MDc3NmEzOTk2YTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkM2I2YzViOTQ0MjJhN2MwNGYwMDkzMzgxYmY4ZDE3MDdlNmVjY2E2Zjc4NzMyMWE2Nzk0ZWEzZGYxNjQ1MmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYyNWZiMjYwOGU3OThlODg1M2QxMGI4MDBkZDljMmMyYzhkOWMxMmZjZDM2ZjBjOTI1NGYwZmU2MzAyODM4MDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjZkYTJkZWMzZjVlZWJjMmE3NWZkMDZlM2I0YTAxNDZhNWE1ZjE3M2NlYjY5MGY2YmIwNjBlOWRhZDcyMGEyMjcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d8ec4262fd8b4d338813cdb3e768094a",
+      "statement": "fetch_file 先用 contents 端点取文件（路径按 quote(path, safe=\"/\") 编码），响应带内联 base64 content 就直接解码，content 为空时用响应里的 sha 再打 git/blobs 兜底；响应是数组则显式抛 ValueError 表示路径是目录。当前素材集中最大的文件是 876 KB 的 Inter 字体，仍在内联范围内，所以 git/blobs 兜底分支在现有清单下不会被触发。",
+      "evidence": [
+        {
+          "resource": "repo://MANIFEST.json#L41-L49",
+          "version": "repo-lines-v1:sha256:d95a7292f07a1c3322317119ff5e760af862db150592dee02392725eee824ff3:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTExNTg5ODk5OGQwYzYwMzg3MmIxYzMyMzVmZDQwMGU5M2ZlMDExMDcyYzg1OTdkOGU2NDI5Zjk5MDRjZGUzYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTg3NGYwNTUyZTg2ZjM3MmNmMjczNGU5ODFhMzRlZTNkZDVlODI1NzdlNzc2ZDc1YmQ3ZDQzYTkzNGU2NDdjZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTRiNjMwMjA3ZTI0MWNkYWYwNTM3YjFjNDQ3Y2M1OTAyODc5NzBlZWMzYjBiNTRmODU5ZjU1ZjQwNWIxYzkwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDNkYjhjOTcxNmFmMTRiOTZjNGExMWJmOTRiZmFiZTgxMmYxMWVlZjU3NGEzYzY2MWY3Mzc5ODg5OTVmMTU2OCJ9"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L126-L143",
+          "version": "repo-lines-v1:sha256:b10834b2e1203d34ef41f4cbeb13dfc57626e4ea642d793c545236c1ffebd13c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY5NTEzOGZkYjFkYTc4MmQzNDlmYmJlNjNkYzI0OTllNmViZGRmOWZmZWNkMWU5ZDRmMTQwOTQzNGQzNmUyNWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg0N2U2YmNkYmRmZWMyNWY2ZGJkYTcwYmQ1YTg5OWJmYmZjNjY5MDFmNjliYTg5MDgyNDM4MTRhODlkOTEzZWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJjYjEzYmM0NjhiNzg5OTNjZTZiM2EzYWU1MWQwMzU4YjhkMmJjZThjYmVlYWM4MTRlNzM3MGZiMDQ2MmZlNWYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_408b2e150709447bb3137f5d529e16d0",
+      "statement": "图标下载用两个串行的 ThreadPoolExecutor（每个库各 max_workers=8），字体与许可证是普通循环；record() 由 8 个线程并发 append 到 entry[\"files\"]，写盘前无条件按 path 升序排序，使并发完成顺序不影响 MANIFEST 的内容。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L168-L189",
+          "version": "repo-lines-v1:sha256:0b74a6c781690343c463329ff630987c7ba526480de50e020c85700283f4ba59:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUyNmE1MjUxNWFiZjJjMjc2Y2Y4MzEzYTM1NDlmM2U2MDM1YWQ1ZTVjMmQxZmNmNjVkNWQ3YWU3MzcxMTNjMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk4N2QyNTc1NDM2ZDI5ZDBiZGY3NWE1NTA4NTkyMDg4NThkZGY2MGZjNGYxMzBjMzUzODJhMmJmOThmNmMzOGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU2ZmY3NTlmNTg1ZGM0MTliNDVhNDgyZWY5YzhhYTAwZWFmNzY0Yjg3YTM5MTQzMWE2ZDRiYzRiYzhiYmQwZjkifQ"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L202-L235",
+          "version": "repo-lines-v1:sha256:ba936b2cc6c4a34b6a1218d8a899518d55e0597e250e320182115e63fcd24b82:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjMDU0YjY2MjI3MmJmNzliNmY5MTk0NGQ0NDc1MDAyYzk4YmZjZDZlYTdiZjUxYTdjZjZjNWQzY2ZhZjBkOGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjODU4MjIyMjdlYzRiYjNiM2E0NTc0OWQ3NjM2OWNmYzcxMThmN2RjN2IzODY4NzNlMjI4OWFmYTZlYTE0NDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRiYWNiMDczOTBmYzUyYzk2MGYwOTU4NThmNjQ3NDViM2E5ZGFjOGFlZDkyOGQ2ZjQ1MzQ5MGNkMzY1NWJmNmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUzNTNhNjEwYjQwM2Q1NTI3NjllOTkzMGIzZGU0YWM0ZGMwZGNhMzE5NjNjMjgyZmQ4ZTRmY2EyMGU1ODhkOTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_570c82945b6d404893d8d05181de2f7f",
+      "statement": "Client.json 默认 3 次尝试：403/429 按 3s、6s 退避，其他网络异常按 1.5s、3s 退避，成功响应后读 x-ratelimit-remaining，剩余低于 20 且 reset 落在未来 900 秒内就主动 sleep 到 reset——一轮全量约两百多次成功读取，是四个 GitHub 调用方中唯一做主动限流等待的。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L95-L124",
+          "version": "repo-lines-v1:sha256:e27811c5488d08f6e3d2c78fdd8ffd73dcdfc400e6ac8a7eb842316761256bb0:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAzNDRhZGQwMTk2ZDM3NWJlMGRiY2UwMzJiYWNmNDY0MTg5NmRkZWM1YTQ4N2NmMjJjNzYxZDk5OWEwNzcwZDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzODRlZjE0MmNlZDQ0M2U4MGM0YTY4NWI4NjJmMGQxODJlMjE3MTlhNmRmNGVkM2UyNTc5MzBiNTc3YmViZjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg3MTNkZGNiYzMzZjZiODY1MWIyNTY5Yzk0NTQ1ODIxMDIxZGUxNDEzMGJiYWVjNjVjZjQ4ZWE3YjRjZTQ1NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc5NDYxODY4OWZjZmY3NGYwNGY2YjVhMzRmYzg3YmRhZGIyYTk5MTY1NGZiOWNiNmFiODMyOGUzMGMwODYxYjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8149cc2a689d423e96f374597ab04ee0",
+      "statement": "record() 是唯一往清单追加条目的地方，每条写 path（仓库相对路径）、repo、source_path、license（常量里的声明）、bytes、sha256、source_url 七个字段；bytes 与 sha256 取自刚写盘的同一份内存字节，source_url 硬编码 https://github.com/<repo>/blob/main/ 前缀并对上游路径做 URL 编码（如 Inter%5Bopsz%2Cwght%5D.ttf）。",
+      "evidence": [
+        {
+          "resource": "repo://MANIFEST.json#L41-L49",
+          "version": "repo-lines-v1:sha256:d95a7292f07a1c3322317119ff5e760af862db150592dee02392725eee824ff3:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTExNTg5ODk5OGQwYzYwMzg3MmIxYzMyMzVmZDQwMGU5M2ZlMDExMDcyYzg1OTdkOGU2NDI5Zjk5MDRjZGUzYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTg3NGYwNTUyZTg2ZjM3MmNmMjczNGU5ODFhMzRlZTNkZDVlODI1NzdlNzc2ZDc1YmQ3ZDQzYTkzNGU2NDdjZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTRiNjMwMjA3ZTI0MWNkYWYwNTM3YjFjNDQ3Y2M1OTAyODc5NzBlZWMzYjBiNTRmODU5ZjU1ZjQwNWIxYzkwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDNkYjhjOTcxNmFmMTRiOTZjNGExMWJmOTRiZmFiZTgxMmYxMWVlZjU3NGEzYzY2MWY3Mzc5ODg5OTVmMTU2OCJ9"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L145-L166",
+          "version": "repo-lines-v1:sha256:3e57f217e0110052e0b17706d8bed895e915c30dee6ac78e458c1679b7188a7a:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiNWM2ZjI3ZThlNmEzMDE4YTliNGRlZmQzZjdiYTJkMWY1OTA0YmI4OTcxYTIwZTEzNzdiNTc4ZDUxNzM3MzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYxYTNkNTM4NDkzOWQ2NTY4NGNhN2VkMTlhMmM0OWUzNzdkMWM0MGRkZDBhYjI5ZjRlNWM1OGVjMTc3NDRlNTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEwYTY3MTFhOGM0ZGUzYjZkZmRiOWRhNDFiZGM5NWQ1OGQ4MTFkY2RlMTZhNTBlZDNkMjY1ZDZmNjM4MGY1YTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3987fd4283284162bb7b6d15b9f686ed",
+      "statement": "三类任务的失败语义不同：图标逐条吞异常、跳过该条继续跑并正常退出；字体与许可证循环没有异常保护，抓取失败直接带 traceback 退出。由于 MANIFEST.json 在全部下载之后才单次写入，硬失败会留下「磁盘文件已更新、清单仍是上一版」的漂移，但不会出现写了一半的清单。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L174-L189",
+          "version": "repo-lines-v1:sha256:b6aa5f1e1f3ec29a7b849288bd7f53e1c536a24cf4ffbe33e169f1211b05a7ee:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFlZDc5YTE5YzMzYmM5YTI0NTExODQ2ZTY4YWU3YjkzMmQ1NTQ0MjUxZTAxNzY5NGJmOTk2NjVkYTU2MmQzZjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk5YzMwMDZiNDU0ZGM5YWMzYzA2NjQ0YzZhYTUxNjRkNDk0ZmZiZGRhOWQzZmVmNjM4M2MxY2M1NjE1MTdjZGUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU2ZmY3NTlmNTg1ZGM0MTliNDVhNDgyZWY5YzhhYTAwZWFmNzY0Yjg3YTM5MTQzMWE2ZDRiYzRiYzhiYmQwZjkifQ"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L205-L233",
+          "version": "repo-lines-v1:sha256:283af0c9b91d4b04081565b7b8556043bd5d4c9497ccecfd174834c2ddfbaaeb:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNlNWVlMDliMzMxM2RmZmQ0YzQwYzVkNTEyY2QwZWVkOWFjNGZhOWQzYzIzY2RjM2U3ODJkMjQxODgyOTBkYjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0ZmQ4YzU3Mjg4NjJhZDA3NmUzZTZlMDJmNDBmOTljZjFmN2UyOTAyZjVkZjRkZjk0M2ZjN2ZkN2E0NWRjNTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI2YzhhNzM2YjMxNDQ3NzFjYmMwMjkwNjMyMTFiN2JkMzhlOGM4MTVhM2M1N2UxNGQ5YWI3MzBiNzEzODNiMzUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1YWUxOTU5Y2VkZTdkMDc5YzkyMzgxMjM2MTM3MGM3MjFkMWVkZTU1MTAyODFlODY3OTViNGVkZGMwNzQzZjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7f12179937ec4a089148c6f63e0f46ca",
+      "statement": "带 --only 且 MANIFEST.json 已存在时，脚本把旧 files 中 path 未出现在本次结果里的条目保留下来，与本次条目合并后按 path 去重排序并重算 total_files / total_bytes；因此未涉及的类别一律保留，且 --only 永不缩小清单——本次抓取失败的同类条目、以及已从常量删除的条目都会继续留在清单里，删记录只能靠全量运行。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L226-L235",
+          "version": "repo-lines-v1:sha256:a743ae354944de677102373f64eef4709e41bf9d538bda65cb770c0f598ef53f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNlNWExMjQ4ZmNhMWE5ZjkzNjJmNTBlNGU1NDM2MDg1YmEzN2JkZmY4NDI2NWNjNjdjZjIzZDdmMzRiZmQ0MjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjODU4MjIyMjdlYzRiYjNiM2E0NTc0OWQ3NjM2OWNmYzcxMThmN2RjN2IzODY4NzNlMjI4OWFmYTZlYTE0NDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU0YzlkNjM2MWY0ZWZlOGVlYmNhYmVmMDkyYzAzNDUzMzY1M2ZiYWQxOWQ4NDdjZTY1NzFmY2I0ZGU1ODBhMGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUzNTNhNjEwYjQwM2Q1NTI3NjllOTkzMGIzZGU0YWM0ZGMwZGNhMzE5NjNjMjgyZmQ4ZTRmY2EyMGU1ODhkOTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3bb1028f573a4abaa8222d1f1cc0399c",
+      "statement": "不带 --only 的全量运行整份重建 files：清单里只有本次成功下载并记账的条目，某个上游文件这次 404 时，磁盘上的旧文件仍在、对应记录从 MANIFEST.json 消失且 total_files 缩水。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L202-L235",
+          "version": "repo-lines-v1:sha256:ba936b2cc6c4a34b6a1218d8a899518d55e0597e250e320182115e63fcd24b82:eyJzZWxlY3RlZExpbmVDb3VudCI6MzQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjMDU0YjY2MjI3MmJmNzliNmY5MTk0NGQ0NDc1MDAyYzk4YmZjZDZlYTdiZjUxYTdjZjZjNWQzY2ZhZjBkOGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBjODU4MjIyMjdlYzRiYjNiM2E0NTc0OWQ3NjM2OWNmYzcxMThmN2RjN2IzODY4NzNlMjI4OWFmYTZlYTE0NDUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRiYWNiMDczOTBmYzUyYzk2MGYwOTU4NThmNjQ3NDViM2E5ZGFjOGFlZDkyOGQ2ZjQ1MzQ5MGNkMzY1NWJmNmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUzNTNhNjEwYjQwM2Q1NTI3NjllOTkzMGIzZGU0YWM0ZGMwZGNhMzE5NjNjMjgyZmQ4ZTRmY2EyMGU1ODhkOTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9cc529c23c464a0d8ec9503cf46ff58a",
+      "statement": "脚本非幂等：每次运行都把 generated_at 重置为当前 UTC 时间、重写 generator，并无条件 write_text 整份清单，所以即使素材字节全部未变，--only 空跑也会在 MANIFEST.json 里产生至少一行 diff。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L199-L200",
+          "version": "repo-lines-v1:sha256:f943701a6880c2481833357863055414fc2b1ee430979fab7d246bd2cc82c5f4:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTFjNWM4ODdjODlmM2JhYzM5ODIwN2JmYWQxOGQ0ZGYwZDQ1OGU5OThlODBmOWE0YzhlM2Q2OWU5YTgxNmRjMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDc3YmVhN2I5ZTI2YTRiOWFhOTVjOTViMWZkNmE0ODgwZTEzNzU3MzQ1MmU2MzkyN2U5Yzk5ZTE0MTg4ODg0MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmY0ZDQ5ODU3NWM4YmVhMmJhODQ4MDRiYTlkZjAxOWVhNDNiYmVhOTYxYzdjYmNjNTJkNzUyZDJmMjdiYWE1MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzgzZWFkZWQ2N2ExMzcyNTE5OWM3YzBiMTQ1OGNkOTc3MjkxOGUwMjBlZGY0Y2Y4MDE5OTA4Yjc2NWE0Yjk2YiJ9"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L224-L234",
+          "version": "repo-lines-v1:sha256:69b2df0ab4aa34d8494ba8456ab2b6b8cedb218da9d8793fdd98fbb4c763ab63:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYzMmQ0NzdmOGQyNWY4MjVkMzQ3OWY4NmQyOTNkZTM5ODM5ZjFjMzJiMjdiODgzM2NkNTE0ZGJjMzE0OWEwM2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhiMTA3NDViYWFmNDI1MTBmYTkzYjk4ZjBmMzE2ODIzNDg2ZDUyMDg0ZTBkMjhkZGIwYTM4NmE4NTliY2FjMzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk3NmUxMmZkYjNkNWI3OGQ0ZjFiMTIzNDhlMTcwOTM5NDFlNjc0NDNhYTlmM2VmNzM4Nzc0NDliOTA0MmRlYzMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dc8067d0828f4d70b9af895e8861d864",
+      "statement": "凭据经 gh_auth.resolve_token(args.login)，默认 required=True，因此在发出第一个请求之前就会因缺少 GITHUB_TOKEN/GH_TOKEN 与 Windows 凭据条目而 SystemExit；--login 只影响 Windows 凭据管理器里查找的 target 名，不改变请求身份。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L191-L198",
+          "version": "repo-lines-v1:sha256:e71d8cb25e46e70e5b312cf67ca7865ebf3b64685426669d63bfb612e1c76b69:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTAzYWMwOGQyNDJhOWQ4MmU5Njg4M2M0NGQ1ZTcwNTMzZDVmYTYyZjI0MmM1MzEzYzVmZjZkOWU2YTBjMDNjYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGVmMTc2NWVmZTcwMjA2OTg5OTRjNWI4MGQxZGM1NTlkNjRiMDk0MWQ2NzVhMGIzODExODljYTIzM2RlYzMwYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODFjMjM3ZWJmZDMxOTk5MmYyZjZlMjA2MjczMTc3ZDU3NzNmODYxNjMyYWU0M2RiYTlkNmQ2YTUzZWNkZGIyMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGJhY2IwNzM5MGZjNTJjOTYwZjA5NTg1OGY2NDc0NWIzYTlkYWM4YWVkOTI4ZDZmNDUzNDkwY2QzNjU1YmY2ZCJ9"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L78-L80",
+          "version": "repo-lines-v1:sha256:31da0f0107ec7b1930ebf9a0c60598a1ce44e33dd53cd1e1dfe8fde989f03a85:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmY0MGM3YzAyMjNlMDQ2N2MwMTU5MzNhMjA5NDZjZTJkYzM0YWM5MDVjNTE0MzNjN2VkNjFmYjI5NmM3NjQ5MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTM0ZWZiZDcyZmIxYzllY2JiMGQ4YWY0Y2Y3N2M5MDczZTU5NjJjMzA5YWZhYWMxM2QyMzkwMTc5NmQwMGZhZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWE3ZDUwMTM0Y2YzMDFmODJjYzMzYmZjNDAzZGQxMjVmY2EzNTU0NDhkYjgzMjkyMTZiODMwNGM2NzkwMTczNiJ9"
+        },
+        {
+          "resource": "repo://scripts/gh_auth.py#L53-L65",
+          "version": "repo-lines-v1:sha256:83ae4c782b20f84e834c8ba117e29c8e4893a425a9ba8434d6afeafbd4784242:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwZWVmNDc0ZTUyODViOTVjNTY0ZDE4MjVjYjVkZGUwYjRkZDk5M2U3NzEzZjViMTc5ODhlNjBmMDMyYzQ2ZDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTYwMGE3M2QyZTAyZjM1MmI5MGZlZjFkOGQ2MzgxMWJhNGE4ZWUwYzFiZWFhN2FlNDY1OGYzNmFhMmUxOTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ3MDE0OWUwNjlhZDY3ZWNjZjQ3MzY0NmZmMWM3NTAwNTBkMzI5ZDExMDAxOGRjNTc2Njg3OGVhZmExZDYwN2QiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ca9f028966514243ba1c33d3aac9e967",
+      "statement": "脚本只写文件、从不删除：write_bytes 只建目录并写字节，因此从常量里移除条目后，全量运行会让清单记录消失但 10-resources/assets/ 下的旧文件成为孤儿，仓库里也没有任何读回校验去比对磁盘字节与清单 sha256。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L145-L152",
+          "version": "repo-lines-v1:sha256:90abc052bb680755cb938415f52a9aaea90f80068a4b296d032e76fc110359dd:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGI1YzZmMjdlOGU2YTMwMThhOWI0ZGVmZDNmN2JhMmQxZjU5MDRiYjg5NzFhMjBlMTM3N2I1NzhkNTE3MzczMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjFhM2Q1Mzg0OTM5ZDY1Njg0Y2E3ZWQxOWEyYzQ5ZTM3N2QxYzQwZGRkMGFiMjlmNGU1YzU4ZWMxNzc0NGU1MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMmQ3MWQ1MDcyMDlmNTEzMjNkZDkzYzg5MzUxZDE5MmI2MjE2MmRlMTFkNDZiYTc0MzIxOGY1ZDdlOTlhNGFhMyJ9"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L202-L223",
+          "version": "repo-lines-v1:sha256:cf61d537cea15978a04a8e1ddaa1b7b8862aa0788d8e173ac27dae5232d7d484:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjMDU0YjY2MjI3MmJmNzliNmY5MTk0NGQ0NDc1MDAyYzk4YmZjZDZlYTdiZjUxYTdjZjZjNWQzY2ZhZjBkOGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRiYWNiMDczOTBmYzUyYzk2MGYwOTU4NThmNjQ3NDViM2E5ZGFjOGFlZDkyOGQ2ZjQ1MzQ5MGNkMzY1NWJmNmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA2MmYwYTA4NmRkMjliYTJlOTk0ZTg0ZWVlOWVhNzExOTg1ZGJhNzVlNzc0Y2MwMjk1YWY5MmFjZjFlMjk1NzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6e206c49f44247b3b32c9cc30a55f71f",
+      "statement": "素材数量口径不由脚本维护：扩容后必须手工同步 10-resources/assets/README.md 的素材表、10-resources/README.md 的「200 个 SVG + 2 套可变字体」与许可证列表、docs/index.html 页头的 200 图标统计，并与 MANIFEST.json 的 total_files 对齐；没有任何测试会因数字不一致报警。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/README.md#L7-L17",
+          "version": "repo-lines-v1:sha256:e251fa6f7212638c8301c46eafabd58efdabc297d72bcb5f0d2514da2744731d:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2Y2I2ZjZjOWI5ZTc2ZmU3MDhjMDZlNWQzNmMyMWUyNmIwZTBmMmY4YjExM2NkOGVlZmMzMzgxNGNmMTQxYjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2NzZkOGYzZTY3YWYyYzEwOTJlMzIxODRiZmQ5MzNkNzViZGEzYmUzYzBiMzBkNGVlODdmYTM3YThkYTQxMDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZlNGJlZWYwYWU4MTc1OTJlN2Q5YzJhNTBiYWE4ZmYzNDMyZjEyNzAzZmMwYjc3Yzg4YzBkOGFhMGJjMzljYmQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMxMDIzMDZiNGM0YTZkNzM0NDFjN2VkOTMyNWU3MTZhMzAyY2M1MzM4MjE1ZGUyM2ZiNDAzMWFiYjEwZmY1NzkifQ"
+        },
+        {
+          "resource": "repo://10-resources/assets/README.md#L11-L16",
+          "version": "repo-lines-v1:sha256:4634afa81e5a5898a0456c0dcbeb867641fe8977061b8fbd6b394919da09aa20:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTZjY2NiNDY3ZDQwMDRjMzY1MzA3NDM3MjM2N2UwZmI3N2I0ZWIzZTQ2Nzk4OWVmNzUwN2E5MGE2YzhjNzcyYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiY2M4ZDFhZmE2ZjFmNmVjMTM1NDFjZGVjNWMyN2M4Y2M4YjcwNjllMTc3MGJlYjhiMzFhMTI1YTMxYmE4ZWMwYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTBkYjBhMjk4NGM5YWYyYzllNDEzYWIxY2QyNGIyYTYyYzY3YTUyZmUzZjMyNjkwMzE3Y2NmODIxMTA5MWQ2MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODZkMTg3YTFiMTk4MTJhNGU0NTdhZDg1NmE4OTI4ZTE3MzViZGNiYTdkM2ZjMmYxMDQ2ZjEyNTgxYjRiN2E3NiJ9"
+        },
+        {
+          "resource": "repo://docs/index.html#L107-L107",
+          "version": "repo-lines-v1:sha256:6884402f3684488a32232f0faac86a79b99739993e294d37743717cebc804ebe:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg4NDQwMmYzNjg0NDg4YTMyMjMyZjBmYWFjODZhNzliOTk3Mzk5OTNlMjk0ZDM3NzQzNzE3Y2ViYzgwNGViZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg4NDQwMmYzNjg0NDg4YTMyMjMyZjBmYWFjODZhNzliOTk3Mzk5OTNlMjk0ZDM3NzQzNzE3Y2ViYzgwNGViZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTdjMTUyNjk1NGE4YTdmZmVkZmE2YzQ4YTkyMDE2M2U5YWQ4YmRmZmFiM2Q3NDY0MmVhZWZmMTZmNzcyYzI0NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzdkM2YzOWNhMDJiODNjZThiMTBjNDBjOGU3ZDYyZDgxNzZmOTgzMzJkMGQ3MGRlYmVkNmQ2MDgxNjdjMWFlMSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_06b733106ae24028ad54d595d8de6066",
+      "statement": "素材入库是全仓唯一没有 CI 参与的生成物管道：唯一 workflow 只跑 python scripts/verify_links.py 与 python scripts/sync_atlas.py，推送触发路径包含 10-resources/**/*.md 与 scripts/verify_links.py 但不含 scripts/fetch_assets.py，因此改常量不会触发任何 CI，改 README 数字反而会触发一次外链体检与数据集同步。",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L16-L24",
+          "version": "repo-lines-v1:sha256:5f5744926b8f4b27d90d98a3b9c6273428cf8a4ece0566bbda289ecfbbcaf61a:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjUwZjczZGRhMzhmNzAyYTI2YjYzZjE5OTIwYWZmMjRhMDQ3MzAyZTM4YzQ3NTNjNDViMDc1NWYyYWFhMjczMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDdiZDNhNmUxZWYwMDExNWIxYTkyYTFkZTJlNmM3NWMwOWRjYzcwMTA4ZDkyMzNhNjFiYjFhNWU4OTFkYzVlOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzA3ODlhOGIxYjcwNTBlYjIzMDkwN2IwN2U3NDcyYzljNmYyMGExOGFlYjlkYmY2N2U3ZWI4MDkyZGViNDY1NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGJmOWRhYmVlZWFjYTA2NDMxOWFhMTA3ODA5N2ZkNTE3YWIzYjQ0YjEwNDFjOGEzOGE5NTllY2Q4ODE2NDYzZCJ9"
+        },
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L44-L51",
+          "version": "repo-lines-v1:sha256:de31174d512d4de387f3185120647ee34bf8f9a6e62ade0df5071d9d50939fa1:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiY2UyNDYxZGJjNDczYzdjZjk5OTVkNjc0MThlNTE4ODEzOWFhZjM5MDgwOTMwNWE0ODIxOWJlZDMwYzlmOTJkZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU2YzEyNWNlOTk4MWYxYTUxOTdlZDJiMTk3ZTMyZjMyZmYzYzIyODdlZjIxMjVmODlhMGU3NjRiYmFjNDhkMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWI2NGY5ZTg1ZWU5YjYyODQ2MWRiZTIzMGE4MzMxM2E4NmRmMzU0NzJjNGFmOWRlNzEzMzYzZWFlMGJlMGIzYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWY2Yjg1YmUzMzExYTc2MGRkMDg5OTA3NzkxOTFlYjVhZjY1NzRhNzY3MjlhYmMyYTk0OGRhYzkxNDNiZjRmMyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-21T01:55:26.634Z"
+  }
+}

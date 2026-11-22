@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:dcef1735eaadb46c0159eccb053f26d496c7d42a6e172df0f68bed3ecfd104ff",
+  "claims": [
+    {
+      "id": "claim_897f3a5995b241bab57e15d650fff24d",
+      "statement": "仓库里存在一类「读者会直接复制走」的可执行示例——40-ship/actions/templates 下的三个 workflow、30-ai/install/install-ollama.sh，以及正文内嵌的 Pages 部署 workflow 与 devcontainer.json 片段；这些示例都不在 .github/workflows/ 下，GitHub 从不解析它们，第一次被解析发生在读者把它们放进自己仓库并 push 之后。",
+      "evidence": [
+        {
+          "resource": "repo://30-ai/install/install-ollama.sh#L1-L4",
+          "version": "repo-lines-v1:sha256:a28155697d0bef72294ad13e3ea6f048ee30b083aab64e00feacbd8f871d1d39:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWQ5NWZjMDRhODBjOTUyZjQ5Y2U0MTg4NjI3YzUzYjBmYmU4YzQ0MDQxYjk1MmQ1OTJhY2QxZGU5OTg2MTQ2NiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODhmYzYzMzY2N2QwMzAwNzMxYmRkODQ0NzJkYzQyNGUxZjljNjQxNzVlYTJiYWRiNjY2NDcyZDkxYWViNGVmYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjI3MzZkN2NiNzFiZDA4ZDA0ZTllNmM3NTRhMmYwMzc3YjFhOGRhNDViN2E3MTEyMWNhZDUwZjM0NTcyOTgzZiJ9"
+        },
+        {
+          "resource": "repo://40-ship/actions/README.md#L100-L106",
+          "version": "repo-lines-v1:sha256:7bd36b64ca8d83ce7b3898388faa1002c19a68d91e9e1ec8b511f0f255f3dc55:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWUwOWNhZjRlZjhhN2M1N2EwZjc5NGFmNzFiZjkzNzZkNTc0ZjM2YWJmZThlZTVjZTA4MzQwZWVjMmNhZTgyMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzBhNTlhZDM2MjlmNjQ0YTZkMmNkZTliZjZjNTM5YWM0ZTZmNmE2MGM0N2E2Y2RlYWQzMGMwZDU1NjYyOGVjZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODNlMGRlZjg3NTUwMGE0Y2RkMmZmMTlmZjg3MThlZjcyMGUxZjdiMTQ5YTE0NGI2YmIxZDdkMjQxNmJmZTM4NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODNlMGRlZjg3NTUwMGE0Y2RkMmZmMTlmZjg3MThlZjcyMGUxZjdiMTQ5YTE0NGI2YmIxZDdkMjQxNmJmZTM4NyJ9"
+        },
+        {
+          "resource": "repo://40-ship/actions/templates/cron-job.yml#L1-L6",
+          "version": "repo-lines-v1:sha256:c49ac2fae8695291b8e835e957fb65734868e2ac3f4fb84efae9dba64de61caf:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGJjYjhhYzZkNmM2ZDdmNTBjMTNkOGY4YzkxOTNjMTQzOTdkNmRjMGExNzU5Y2I4YzRlNjUyZWRiODNmYzI3YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDFiNGY5MWZiMGYxZWMyZmY3NDVkMmQyY2VlMGUxYWYyMTY0NjNmM2YwZTk5ZDgwYTQ3OTQyM2ZkZGYxMDYxMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTk4ZmJhMzMxZjRiYmY1ZjZmNjg2MmQzYzBjOTE2ZGUzMjI2NDc3OTJmYmVjMWNlYzY5MThiZjU3ZjFhYWQ3NiJ9"
+        },
+        {
+          "resource": "repo://40-ship/codespaces/README.md",
+          "version": "repo-file-v1:sha256:50816aed9d403dbfae1c8cb64e86fd5d5dc7b487c29d207c2c15c4abdb66a52a"
+        },
+        {
+          "resource": "repo://40-ship/pages/README.md",
+          "version": "repo-file-v1:sha256:46aa8fc1f25e8a0891e6de9bd8ef8ea67f790cd97387ba9141e0ffa8cd3d4a32"
+        }
+      ]
+    },
+    {
+      "id": "claim_a42cd22f1455460483566ea4ac519c98",
+      "statement": "cron-job.yml 把定时任务的关键约束都显式写出来：cron 用 UTC 并在头注释与行尾双重标注换算、schedule 与 workflow_dispatch 并存、permissions: contents: write（默认只读，缺这行 git push 报 403）、concurrency 取 cancel-in-progress: false 以免打断跑到一半的任务、timeout-minutes: 20 限时。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/actions/templates/cron-job.yml#L8-L26",
+          "version": "repo-lines-v1:sha256:88fab11215f8a3d93194aaacf2a4219339f872b6ae88383499950444ea37c047:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhZmIyNGI1NjJiYzYwMTJjOTE3ZTVjMTIzMDMzNTEyNTNiYzI4M2ZhYWZmNzc3ZjBhZTNhY2M2NzI5ZWY3YTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFiYjRiMjVlNTVkNTNhNTI1NmU0OGMwNjI1YzBhYTdiMTI4YjFjOWRlMzZjMTIyMTgzZmU3NTkwMzcyZDI2YTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNlZjgzYjg1OGM2YjM1Y2FlMmRjNDhlNzQwNDMwNjIxNDkwYTEyMGZkMWEwNTlkNDM5YzA3ODBiOTEzYmJhOTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhmNjFiMzBhM2Y5NGYzYzRlNmIxY2E0ZGVkMjAxOTI2NzczM2ZlZDQ3ZDM4YzIyOTY1YjU3OGVmNTg4ZTExZTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2bc8d7ada96142b9a0a21e723a8c1b2a",
+      "statement": "cron-job.yml 的写回步骤用 bot 身份提交并用 git diff --cached --quiet 判空后跳过，从而不产生空提交；密钥只经 env 从 Secrets 注入，从不在 run 里拼接。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/actions/templates/cron-job.yml#L44-L63",
+          "version": "repo-lines-v1:sha256:3f0394414b0cd98f28db45a5862f507d38d7336c70045f5771d35518a12eebb3:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ5NmYzNGUzYTU1NTBlOTViYmFjYTRhY2E4ZmQ5OTBkODViMGQwYzRhYTg5NjE5NDQyMTNjMWNmMzU2NDFlNWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJmNTU5NzljZTczMDIwMzNlNmIyZmQ3ZDg4ZjUzN2EzYjhlMDkxZWEzMDVjODExZmZhMTI3NGJmNTc2NGVhNWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVmYWM3ODJhNDg0YjA5MjRhMGRhNmMzZjEyNDMwNmJhZjg0Y2FhYjE1NTQwMTc0MGNhNTJjMGQ2ZjFkYzU4NmYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1ca319ccf964434d9dcae823a667b4d0",
+      "statement": "manual-run.yml 演示最小权限与参数化：permissions: contents: read，workflow_dispatch 同时给出 string/boolean/choice 三种 inputs（dry_run 默认 true 即默认演练），产物用 upload-artifact@v4 以 output-${{ github.run_number }} 命名、保留 7 天并用 if-no-files-found: ignore 避免无产物时判红。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/actions/templates/manual-run.yml#L4-L22",
+          "version": "repo-lines-v1:sha256:4466e02a99ebbab9d4dbc5578ad64c56bd9651e154f9d6ef0ba030e9a7010b10:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5NmRjNDgxNDlmNWE4M2QxZWQ2ZGJiMzliYmM3ZTJiOTAyYWEzZDM0ZDZiZDVhZTRiMjkxYjY4ZGYwY2E3OWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ5ZWNlZGMxOGVjYWYxZGFmOWU3YmVmYjlmZDc5ZTJjM2NmMTU1OTllNTNlNzljZGJkOTAxZWU2ZTJjOTc5ZDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhiY2VjZjJhNjBkNWFiMDI3MTgzYWRmMWFmM2M5OWQ3Mzc1NmQxY2M3ZTNiZTk1YjU3MGFmMGM1NDBiNzUzMzQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhkMjc4ZjE5N2ZiZjhmZGI2MTdlMTdhMzJhN2I0MmRlYjdmOGYzZGYzNzY4NjYwZjM4ZjVkOGJlNTM3NGZlYTMifQ"
+        },
+        {
+          "resource": "repo://40-ship/actions/templates/manual-run.yml#L40-L50",
+          "version": "repo-lines-v1:sha256:e03a14a2f4d1893cb695e838589ceac6cb17d259236d42db8b8575c2fb4e6143:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjZThiODJlMzgwNWEzYTE4MDAzZjJmZTQ1ZDRmNWRiYjQ3YWZkZThjMmRkZjU1OWNlZDJiNGZkYzRmNDA2MzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliZjQ1ZDJiYzIxMDg5NWU2N2JkMWQyMGRhYWFjMWI1OTgyYTc2NjQwODI5ZmQxZjFiYjRhNjk5NTUyOTI5NDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlmMWU0NzQ2NDI2MTgyMWUwNjVhMTg1MjZhMzExMTdjYmU1ODkzOWRmOTU1NTlkY2IyNjgwMTY0OWVlYjhmZTkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ca92597b083746679aa8ac5b69168dc5",
+      "statement": "matrix.yml 演示矩阵的两处工程细节：用 fail-fast: false 与 exclude 组合收窄失败面，并在测试命令上用 `|| python -c \"print('TODO: ...')\"` 兜底，使模板在读者接入真实测试前不会直接失败；同时在 os 行注明 macOS 计费 10×。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/actions/templates/matrix.yml#L12-L32",
+          "version": "repo-lines-v1:sha256:c2274d226e2a2ea9fc17cd8924a3f513c8a1d9c4a9baad63be6023e78605f8d7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU5ZDgwMTU0ZWQ0MmZjNWM3NzliMTMzMTU3OGI1OGI4OWM4MDFlYWNlNzRmMjRjZDQ4ZWI0YTIzNTc5NDBhOTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA1NjYxMDg0MThkMjM3NTM4MmEwOWI0NTc5MDJiNmU2YjRhMDA5Mzg3MDRjNzMwZmFiM2EyZjJkYjRlMjA0MDYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjZmMWQ3MGQ3MmJhZDIzMWQ0M2M1NzVhY2VmNjk0NjU4MGU0MzljODc5Nzk0ZWQyZWExZjRhNDAzNDAyNDUxNzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_ae754285d3644c06be26efa771ee301e",
+      "statement": "三个模板合计保留四处 TODO 占位（依赖文件、执行命令、manual-run 的执行行、矩阵的测试命令），它们不是未完成的残留，而是「这里必须改成你的东西」的显式断言与可检索标记。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/actions/templates/cron-job.yml#L38-L51",
+          "version": "repo-lines-v1:sha256:ee2809501902033edf0d7a83d6f0de7b999741bafe8d3df8de071a2a8db0d652:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY2NTBhOGU5OGYxZGE1ZjAwZGE5YmEzZTQxYmQ2NDljY2VmMTFhMjYyZGQ0ZTVjMjcxMDk1MzFkZmQ2OTJlNDUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc4ZjUzMThlZWQxY2E5OTNkNzZkMDNlZGU1ODdiYTRjNGIxNjhmNjFjYzUzNjA5NTllZTFhZTBmNGY3MzYwZDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjNkNTg4OTg1ZDBmMTA3ODVlNTk4Zjk0YWE2OTRmYTU4MTJjYzBlMDQ1Mzc0NjQ1N2M2ZmFiZTM2MmJkY2RlODEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNDViNjgzZTUzM2Q5YTU1ZGE0OGFjYWMxZGRjNWM5N2JiZTU3ZTQzNThlNGUzMWM0YjMwYzUwNTc3NTE2NzYifQ"
+        },
+        {
+          "resource": "repo://40-ship/actions/templates/manual-run.yml#L36-L41",
+          "version": "repo-lines-v1:sha256:35dfda5ade8e937b454d11f4fbaed94ea6c7c0a052c89a2d96ce9d2b8b4e88f6:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjM2NWFjZGM4YWRiNjk3ZWVkNWNkY2MwNTBlMTBlZmZjMThlZThiYTgwNThhN2RjY2M0YTg3ZTQzY2RlYTc1MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjliNDMwYjdjMzE4NjFlMWExZTJjZmNhMjIzYmM2YWU0MDcyYTlmZDkwMzhmYjc4YmJkMjI5MzUzNGJjM2QxMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOGZjNGM2NjFjOTNiMTZhYjFmZTgxZjNkN2I3Mzg4M2M5Yjg1ZDM4MTdkOWU2YTJjNjA5NTQ5ZTE4NTQ5YjRlYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTE1NDAxNDY1OGFiOTE4ZGY4YzQ4OWFiM2Q0ZWFkNzM3NmIyNDQ4NWM5N2M4MWQxMWU2NzY4YzIyNGVkZDNjZiJ9"
+        },
+        {
+          "resource": "repo://40-ship/actions/templates/matrix.yml#L29-L32",
+          "version": "repo-lines-v1:sha256:0890c350ee204c2e69701945eec85972adc2b9e772f87c6ad14f22d219b9e1e1:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjRmMGQ0YzUxOTAzNDY2ODRlNWIyZTM2NjU1MWU1ODljMDc4NmJmNGVkYzQxNzIzODMwMzYwZmM2ZGMyYmJiYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDU2NjEwODQxOGQyMzc1MzgyYTA5YjQ1NzkwMmI2ZTZiNGEwMDkzODcwNGM3MzBmYWIzYTJmMmRiNGUyMDQwNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTI5MGIxYTk2ZWQ5M2QwYzI5ZmRkZTJmYmE1OWU4ZDVmMDMxYTM0NWI4NTQ2MzI4ZDdlODg2NmYwOWI1MzdhYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2a64cfecf78c4c46a26c483d84c12903",
+      "statement": "install-ollama.sh 的行为契约是：模型名取第一个参数（默认 qwen2.5:3b，与章页手工敲的命令同一模型）、识别 Linux/macOS/Windows 并在 Windows 上只打印三步人工安装说明后 exit 0、未识别系统 exit 1、已装 ollama 则跳过安装、pull 之后跑一次真实 ollama run 作为自验证，且安装走 curl | sh 不锁引擎版本。",
+      "evidence": [
+        {
+          "resource": "repo://30-ai/README.md#L19-L39",
+          "version": "repo-lines-v1:sha256:30d3082dacc12f02b3155836657284dd4d3e15408535e5f946582bf375b3fcf8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkYTI0Y2Y4YmQ2YTg4YWNiMzY1NjI1MmI3Y2YyOTI4NTY1OWJmY2ZlZWYxNzE1M2U3OWJjNWYzZjUyMmQ5YWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkN2E1MWEwNzk1OGYzY2JlNWFhZWMxMTYwMDQ2YWE5ZThiZmIxMTc3YzE0YWJkY2NiZTFjZTFkYzg0NWIwMjgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhiMmY3YTAzNWFjNzcxYjcxMTZkNmQ2M2M3ZDQ3NTExNDlmNWY1OTViOTc2ZmZjNTVhM2JiZWVhMzcxY2JhNzYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJiOTExYjZmYjQ5ZDAwM2FiYmE4OTUwZjVhZDE4ZGRhNGQzODVhNWFkYTA1YzJiYjgyMGM1ZTJkOGMxNTgxMzMifQ"
+        },
+        {
+          "resource": "repo://30-ai/install/install-ollama.sh#L4-L39",
+          "version": "repo-lines-v1:sha256:bdccc6dc45fe639ab3db33100472b7ca2c74c7c033f7a7b529449825b26b9cef:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg4ZmM2MzM2NjdkMDMwMDczMWJkZDg0NDcyZGM0MjRlMWY5YzY0MTc1ZWEyYmFkYjY2NjQ3MmQ5MWFlYjRlZmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY4M2Y3NWZlNjk4NmJiNDQxNzY2OGE4NjM0NTM4M2FlMTAzNzA0ODUzYmU2NjAyZDcxZTA3OTRlN2RiOWJkY2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY5ZjhkMjM4OTM1ZjI2M2EzNmQ3ZDE2NDM0NGIzNmVkNTcyZjY4OGI1MDM3MTcwNzgyMWUxNWI2ZDcwZjYxNzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJmYWEwZWNiNjNkNTkwODA0NzdhYjhlYzg5N2NlYWM5Mzc3NGI4MzU4ZTdhZTM0ZDhlZGI0MjJkOTY4OTMzNmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_5de35e7f72b446a0a8a81bef39280cb8",
+      "statement": "安装脚本只装引擎与拉模型，模型权重从不进仓库：根 .gitignore 排除 models/、*.gguf、*.safetensors、*.bin、*.onnx，理由由 30-ai 章页给出（GitHub 单文件上限 100 MB、仓库建议小于 1 GB）。",
+      "evidence": [
+        {
+          "resource": "repo://.gitignore#L6-L11",
+          "version": "repo-lines-v1:sha256:f9087bd68a5cd3d7fd6fa2e45f802ca4c942344ec06f548a1d9ed4bf08767533:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjg3MWIyY2JmZTE3NDNkYzFhZWE3ZWIzMTc0MzIzYzBhYWNmMjBiNGY0Yjg3MjJiM2MxOWZjYTBmZjFiMmM5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzM4ZTkzMjdkZDdlMWNiNzZiOTgxOGJkMWJjNTUwMTcxNTBjZWZkZWFiMWE2YTJmOTAzYjBhNWIyMWQxMGNmNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjJiYzQ3OGZjMGViOTc4MThlOGMyZWZkOWE2YzhmOWRjZTU1NDkwYmRkODA3NGEzZjJiNmI4NjUzYzVjMTJkNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTUxNWYyYTlhNmFhM2ExMWM5ODdjOWYyMWI3NWNhN2U5ZWM0Yzg0YzQ2ZTMyMzg5ZjE0MmVhNGVjYWY3NzA0NiJ9"
+        },
+        {
+          "resource": "repo://30-ai/README.md#L37-L39",
+          "version": "repo-lines-v1:sha256:3b17a923d8618e320b6e54bc3dbf41a6b27bfe40f00d46626427a456ad6c4a94:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWQ0M2RlZWYyMGIyYjNkM2QwYzE0NDk1MDVlNTI3ZTNmNDBhNDYxM2M3M2ZjMDdmNTA5MjgzN2UzMGJkMDA5YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmQ3YTUxYTA3OTU4ZjNjYmU1YWFlYzExNjAwNDZhYTllOGJmYjExNzdjMTRhYmRjY2JlMWNlMWRjODQ1YjAyOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjI4YmJiYWRkZTZiOTI3ZGY2NTc1OTRiZWNmYjE3MGVkYTAwNjExOGYyMTM3YzBiNWVjOGJjODAzODEzMmViMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMmI5MTFiNmZiNDlkMDAzYWJiYTg5NTBmNWFkMThkZGE0ZDM4NWE1YWRhMDVjMmJiODIwYzVlMmQ4YzE1ODEzMyJ9"
+        },
+        {
+          "resource": "repo://30-ai/install/install-ollama.sh#L33-L36",
+          "version": "repo-lines-v1:sha256:95580e2c974791d3fe20673db6fe6ca9c7c2b9d12482fc5508584bee6ca90cb1:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWE2YjkyZGIyNDlkMDdlYjE1ZTA3MTkxY2JiNTk0NjMyYTAyZjg4NTAxM2E0MWQxNjk0NTM3ZTM4YWFkZTgyNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGQyN2Q4OThjNmNjMmZkODYxY2NmN2VhMzIyNmVjMGIyOTU1OWIzNDQxN2NiNWE4MTIyZTQyZGFhMjA5NDNkZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTIxNTgwYjdmZGZhZTk0OWQ2Y2UwNzVlZmQ0ZmM2NTM2NmI5OGU0NDdiNTFiNmVjYWRlYjY1NzU5ZmYxOGQyMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTVmMDRiMjVhMjU5NWYzZTVjY2QxMTdhODU5NTI0NjUxZWZlNTc5ZGYwZDIyOTU3ODliMDM4YzUxNzNjYWQzYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_38da004718514f6684c24bd36b661deb",
+      "statement": "link-check.yml 有双重身份：头注释自述为「本仓库自己的定时任务示例」，骨架与 cron-job.yml 同构（cron + workflow_dispatch + contents: write + bot 提交 + 判空守卫 + push 写回），但 concurrency 取 cancel-in-progress: true；正因同时是可运行 CI 与被引用示例，它的注释刻意解释踩坑点，包括 push.paths 不能写 **/*.md 的自触发死循环与 GITHUB_TOKEN 的速率理由，提交信息再以 [skip ci] 作为第二层防护。",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L1-L29",
+          "version": "repo-lines-v1:sha256:57df03ba412d27a09a5f1ed5f88125e3f22c32d2ab1e0d83f77b899d7ec3e884:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ODk3ZjUxNGU3YmIyMmQ4ZjM3MGUxYjRhMDExN2I5OGE3ODJmOTcxYzY5YzMxZWRjNjg2OWQ1Yjc0NTZjOWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViMmYxNTE1NzU0NGUxNTY2ZjBjYWNmNGY4NmMwMWFiMWNjNzM5ZDM2MTVlMGJlOGI2YTYxNTFkY2Q0NjliNmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE0NDY2OTRlZDBmOWMwM2ZkNzY3OTExYjRkZDQ5NzM2ZjdlZDAxZDc3ZmViMTlmMmNkNzAxZTg5OTFkYjI3MzMifQ"
+        },
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L42-L62",
+          "version": "repo-lines-v1:sha256:d9f9f9d5e05102462079182062c1bc026c03496ecc20ad1a4d114c8957b6880d:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljOWI1NmM2MWNlYzg5ZDc1YmUxM2JlNTE3YWMxMWNhMjFkZmIxYzNkYmM3NmI2OTk2NDk0ZjAwMzY2ZWY0ZWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2OWQzYWQ1ZjYxMGFjYmI3ODZmNTA3NjVmMDRhMDRlYmNkOWRiYzQyMTVkNmUyNzViNTJjZWM2MzBlODgwODAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzOWZhN2QzZjAwMDU0OGM5M2UwYTQwNTM3NzI1ZTY3MDY3OTg2YzFiNDg4NzIzMDRlOTg1MzZlMzVmYjVjNDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk2MWI2MjE1ZWU2OTZmNTEzZGQ0M2FjYTQ3YTgxNDdjNTYyZGU3MTM2YmU3NWZlNjQ4NGI1ZGFmMjdhYTM4MjUifQ"
+        },
+        {
+          "resource": "repo://40-ship/README.md#L20-L20",
+          "version": "repo-lines-v1:sha256:bda56a595a8561a3d52a0b2f236fd134abf7aa7119965a6ae268b290b8d5ed78:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmRhNTZhNTk1YTg1NjFhM2Q1MmEwYjJmMjM2ZmQxMzRhYmY3YWE3MTE5OTY1YTZhZTI2OGIyOTBiOGQ1ZWQ3OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmRhNTZhNTk1YTg1NjFhM2Q1MmEwYjJmMjM2ZmQxMzRhYmY3YWE3MTE5OTY1YTZhZTI2OGIyOTBiOGQ1ZWQ3OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2Q4ODkxZjk0Y2JiZTUwZmM0MDM4MzgwYTQzNmQ2ZjZiYzYxYTNkMTEyYzhmZGQ3NDBmMjExNzNjYWEwYTYxZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzM5YmMyOGUyMWE2ZDIzZWViOWU5OWY2ODI0YTI0YjFjOTdiZTY2MzQ2YzFkZTUzYzJmMmRjNGZiMDA2ZGYyNiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_abfac094e87c478abc3c35e9b395c373",
+      "statement": "改模板后的验证没有现成的语义护栏：仓库没有 package.json 或依赖清单、也没有配置 yamllint/actionlint，而模板不在 .github/workflows 下，因此语法只能由改动人用自备解析器（或 bash -n）本地校验；唯一的自动化检查是 scripts/verify_links.py 把 Markdown 相对链接当站内链接查文件存在，docs/link-check.md 里 templates/*.yml 三行「存在」即由它产出。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/actions/README.md#L100-L106",
+          "version": "repo-lines-v1:sha256:7bd36b64ca8d83ce7b3898388faa1002c19a68d91e9e1ec8b511f0f255f3dc55:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWUwOWNhZjRlZjhhN2M1N2EwZjc5NGFmNzFiZjkzNzZkNTc0ZjM2YWJmZThlZTVjZTA4MzQwZWVjMmNhZTgyMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzBhNTlhZDM2MjlmNjQ0YTZkMmNkZTliZjZjNTM5YWM0ZTZmNmE2MGM0N2E2Y2RlYWQzMGMwZDU1NjYyOGVjZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODNlMGRlZjg3NTUwMGE0Y2RkMmZmMTlmZjg3MThlZjcyMGUxZjdiMTQ5YTE0NGI2YmIxZDdkMjQxNmJmZTM4NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODNlMGRlZjg3NTUwMGE0Y2RkMmZmMTlmZjg3MThlZjcyMGUxZjdiMTQ5YTE0NGI2YmIxZDdkMjQxNmJmZTM4NyJ9"
+        },
+        {
+          "resource": "repo://docs/link-check.md#L229-L236",
+          "version": "repo-lines-v1:sha256:6dbae38f6d5e96d909acc8125cf800b408b8fbf3b98987035b6a8aff4ed3e35d:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzQ1ZjE0ZjkxOGZkZjcwNjk2NzZkMTdjNjg5N2I3YzQ1YjQ2YWMxNDUxNTM1NTI4Y2ZkY2E4NDljZjAwOGViNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmQ0YTgyMjg2OTY4NDAyOWRjYjYwNDA3MDNhYjRiMWQ4ZTQ5M2RjZTkwYmQwNjM5MmVjYWMzMzYzNzYyYTY4MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTY3ODgxMjFjNzQxMzMxMDM5ZDZjMTc2ZmZkMWQyNTlhZGU2NDAyMmIyNjQwNzY4NDUxYmZjOWVmMDZlYWE1ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODMyYmE2ZGY1MzVkMTRhNzVlMzc0YjE3Yzc0ZjY0ZjlkNjA3ZjU3NWE0OGMzZTI4NTNlNzJjMDEyNjk1MmNmYiJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L96-L112",
+          "version": "repo-lines-v1:sha256:049667afaabffdf7a9c2e8c759159daeaa7491bcd0f5ab39bdef0803bf24a9bb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyMGQ0Y2ViMWViMGVjOTIxNzhjODIzZDgyNzFmMjI2NjVkYjg5ZTcyZTQ3N2Q1MWQ2Mzk3NmQyYWMxNzFkYWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3MmJlNTUwOTY2ZDllZDgwMjA4YTJlNjM0Y2FiMWE0ZmViZDBjYjQ5MDE0YjEwMTgxZTkwOTRkNWE2OWQwNjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiMzRiZjcwMTBhNmMzMzI1OGFiZDNhYmEyMDg1OTAwYmY0ZjVjODBlYWE3MjQ2NWJkNjM0Y2E3ODRjZTQ3NzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ1NGM1YmY4MzVkYWYxMmJiYjNlMGM1YTQ5MjgyMmQwY2I0OWI2MmQ3ZDI5MzVlNzQ0NzM1YjI4ZjU4ZTcyM2QifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_28d11a9e0556469cb82cc6acdbcc7936",
+      "statement": "站内链接检查按第一条引用所在目录解析相对路径（check_local 接收 meta[\"refs\"][0]），并且扫描范围是 ROOT.rglob(\"*.md\")，因此 openwiki/ 下的页面也在体检范围内，跨目录引用同一相对路径时报告结论未必对应刚改动的那一处。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L137-L141",
+          "version": "repo-lines-v1:sha256:16b31bfc4dac92ef47e4749b0e27420f2a400b97e0a18d638cd3cdd8a969dce0:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmE2YWZhMGQ4ZDdjZmM4YzkwNjI0ZWEyMjEyNWNmYWNjZGMwM2MzYWFkM2ZlOWExNDU3NzAxY2JkNzAyNTU2NSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMWMwYzliNGM4YzhlNTkwNzkxYzY3ZjU2YjIxYTVkZjJiMGQwYjFlOTVmMjNkMmRlZjY5NjBhMDhiMjYzMDU5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODg1NTU2Y2ZjZWNmMmM5MjBhM2VmNjMyM2VmNTZlNGIyMTE3Yzc3ZTZmYTU0MjE0ZjE2NDM2NDM3ZWJlNmM5NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjhmOWMzYWNmNzBkMjliZWMzZmRjOGQ2ZjdjZjQxNzgwMDk2ZjkwNjdjNmI5NmJhNGZhODdmNTlkZjMxZTc0YSJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L84-L112",
+          "version": "repo-lines-v1:sha256:be43f54316984cf3ca0367d8d025e66955378d4d24f0f1b95573e74f0075e5e3:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3MmJlNTUwOTY2ZDllZDgwMjA4YTJlNjM0Y2FiMWE0ZmViZDBjYjQ5MDE0YjEwMTgxZTkwOTRkNWE2OWQwNjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijg1OWE0N2IwZjI0OWJlYzcyYjBlNDczNmMwMWM3MjEwMTgyMDNkZTZmZjZkOTVjY2M0ZjY5NTgzZjA5MzUwN2UiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ1NGM1YmY4MzVkYWYxMmJiYjNlMGM1YTQ5MjgyMmQwY2I0OWI2MmQ3ZDI5MzVlNzQ0NzM1YjI4ZjU4ZTcyM2QifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_40e2b299eb234b268ae1a217ecd6c061",
+      "statement": "改 templates/*.yml 不会触发 link-check.yml，因为其 push.paths 只列内容目录的 *.md、scripts/verify_links.py 和它自身；模板改动的复核只能等周一 UTC 01:00 的定时运行或手动 dispatch。",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L6-L22",
+          "version": "repo-lines-v1:sha256:f97d7fa99359f75601ac2b1d68b5cf5c0a4a6248166a9d7207cfda560665af54:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVlOGQ2MTUyZmRhZGVmMTk5NmE5ZjNhY2EzZjg1NjczNDczNWMxMzVkMzY5NmI2OTViYWVlZTA0YTRkYjBmZTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0OTlhOTJhMmYyNGU1NjljYmZlM2I2NTAyZDA2ZGM4NzlhNTBmMjRlNmU4NTU2M2QzZDY3MGI2MDZkODkyN2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjVjMjJjOTNhNTQxYTcwNTQxMWIxYTAwMDIzZmI3OWIyZWYxNTc2ZGUzZjEzZDZjZWQ0M2M4Zjc4MWNhY2NjYTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjIzZjkwMjJiZjljNWZjZGRiNTFlZTJhMjI0YzVkNGQ4OTJjYzFhNTJiYWY1NDdmMjg3NDE5YmY2NjM3ZDgzOWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_57189ff237dd4c478a8e05cd0f9b57b9",
+      "statement": "章节页里与模板配套的正文片段是缩略示意而非模板摘录：README 的「改三处」示例用 cron \"0 22 * * *\" 与 python main.py，而模板用 \"0 0 * * *\" 与 python scripts/main.py，因此改模板时无需逐字对齐片段，但必须保住「改三处」的说法、三个文件的名称与用途以及链接仍可解析。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/actions/README.md#L100-L106",
+          "version": "repo-lines-v1:sha256:7bd36b64ca8d83ce7b3898388faa1002c19a68d91e9e1ec8b511f0f255f3dc55:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWUwOWNhZjRlZjhhN2M1N2EwZjc5NGFmNzFiZjkzNzZkNTc0ZjM2YWJmZThlZTVjZTA4MzQwZWVjMmNhZTgyMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzBhNTlhZDM2MjlmNjQ0YTZkMmNkZTliZjZjNTM5YWM0ZTZmNmE2MGM0N2E2Y2RlYWQzMGMwZDU1NjYyOGVjZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODNlMGRlZjg3NTUwMGE0Y2RkMmZmMTlmZjg3MThlZjcyMGUxZjdiMTQ5YTE0NGI2YmIxZDdkMjQxNmJmZTM4NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODNlMGRlZjg3NTUwMGE0Y2RkMmZmMTlmZjg3MThlZjcyMGUxZjdiMTQ5YTE0NGI2YmIxZDdkMjQxNmJmZTM4NyJ9"
+        },
+        {
+          "resource": "repo://40-ship/actions/README.md#L24-L37",
+          "version": "repo-lines-v1:sha256:c84c6100d0d8d5d1dbc7c1e4d0ae6d1e1b4ed38bed30dfdbcd6ff9b7ddcc0964:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjY2E3Mjc5MDQ4NmFhNWFkN2ZjODU2OGYwNmNiYWFhZDFkMzQ4MTE4MTQ5YzZjMGY1M2UxYjdjMTRkMzhiZTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYzU2OGVhZGRjYzQ4NDAyNmYxZTMyYWYyMmM3NWYzODUzNjJjZjJjNWMxZGQ5NjhjMDU5MmY1NzE5NTgzMzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgzZTBkZWY4NzU1MDBhNGNkZDJmZjE5ZmY4NzE4ZWY3MjBlMWY3YjE0OWExNDRiNmJiMWQ3ZDI0MTZiZmUzODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNlZTg1NGVjY2UyN2RkZWNkN2Q2MjdiOTJhMWNkOGE2YWRkNmNhNGRiMDc3MTUyYjJlMTUzYWNlYjU3MjcxOTUifQ"
+        },
+        {
+          "resource": "repo://40-ship/actions/templates/cron-job.yml#L11-L14",
+          "version": "repo-lines-v1:sha256:14a6d977a69bba3cb9463d767d3d318bb74ebfb72b9172f5729574660069a458:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTk2ZGM0ODE0OWY1YTgzZDFlZDZkYmIzOWJiYzdlMmI5MDJhYTNkMzRkNmJkNWFlNGIyOTFiNjhkZjBjYTc5YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTY5YmYyNzNlNGU3ODk1YTVhNTMxYTU2NTY3ZmRmZDdmMTQxYzI4NDk3NGNhYzc4YjQ5NmFhMWUyYTAzZWY4NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzExZWJkZjMzOTE5Y2M1MDQ1ZWMyYTkwZjVhYjYyMDllYTI4YTQyYjAwZmY0NDUwYzhjYjcxMzI3ODFiNjAyMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGUwYjkzNTRiMzg4ZjNkOTlhYTQ5YWFmNmJhNzUyZjkwNmE1YTljMjM5NDJiYTNlOTczZjQzMTU3NzI2ZDk2MyJ9"
+        },
+        {
+          "resource": "repo://40-ship/actions/templates/cron-job.yml#L49-L51",
+          "version": "repo-lines-v1:sha256:1f3c840df194263946150259c9abf23f5b42c99bf90b52f7b361c6065312c933:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWNlOGI4MmUzODA1YTNhMTgwMDNmMmZlNDVkNGY1ZGJiNDdhZmRlOGMyZGRmNTU5Y2VkMmI0ZmRjNGY0MDYzOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzhmNTMxOGVlZDFjYTk5M2Q3NmQwM2VkZTU4N2JhNGM0YjE2OGY2MWNjNTM2MDk1OWVlMWFlMGY0ZjczNjBkMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjQ4MmZiMGUzMGI0YzhhOTNjOTZhNTk4ZDk5OGFiYjAzNjdmOGVhMWIxM2ZlOWY3OGZjNWRhZmZmOWE1NDk4YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGQ0NWI2ODNlNTMzZDlhNTVkYTQ4YWNhYzFkZGM1Yzk3YmJlNTdlNDM1OGU0ZTMxYzRiMzBjNTA1Nzc1MTY3NiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-21T01:55:26.634Z"
+  }
+}

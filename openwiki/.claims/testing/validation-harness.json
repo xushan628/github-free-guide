@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b499f303485bd58eee63bdcd2bb303592c93b80e3a7e2d3e232dc733e3680832",
+  "claims": [
+    {
+      "id": "claim_f8f1caa5f29d4592af1e3b1116cafbe8",
+      "statement": "仓库没有测试框架与构建步骤：CI 在 setup-python 3.12 之后直接运行两条裸脚本命令，没有安装、构建或测试步骤，因此「改动是否安全」只能靠进程退出码、输出字样与产物 diff 手工作证。",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L29-L63",
+          "version": "repo-lines-v1:sha256:ae58ff107cf993d9d7eb650761e6b89aa8f756de71853711dce89d3eb66b1407:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImViMmYxNTE1NzU0NGUxNTY2ZjBjYWNmNGY4NmMwMWFiMWNjNzM5ZDM2MTVlMGJlOGI2YTYxNTFkY2Q0NjliNmQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MWI2MjE1ZWU2OTZmNTEzZGQ0M2FjYTQ3YTgxNDdjNTYyZGU3MTM2YmU3NWZlNjQ4NGI1ZGFmMjdhYTM4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxNjFhMGNhZjliNmIzNGIwOTIzZTY4MWE5M2Y2NzY5ZTNiZDNiMmQwNGY5ZmE3NzAwMjdiNGZkNWRlNDI4MTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0a282c1688894772ab8d4d841a669a7c",
+      "statement": "sync_atlas.py --check 只读不写：内容与本地产物一致时打印「已是最新：N 个数据集，无需改动」并返回 0；有差异时打印「需要更新: <路径列表>（N 个数据集）」并返回 1。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L143-L204",
+          "version": "repo-lines-v1:sha256:265c43f7f903ff1d04e24e6c384d871868eca603eafe0eb4c219eabd42d043d2:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkMjM2OTA1Njg4ODg2MjdiOGJkOGNlNmUyMDhiZjU1ZDQ0MTQ5OTcwYjY5MjExMWJiNmIyMTk0OGQyMGNjMDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzZDQ2NTk3ZjRkMGJiZjNkNjg2MzRiOGNiNWU2YmI4NmU5YzRlYzE4OTVjM2ExMDg3MjJlODMwMWU4MGZlOWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE3Mjc1NTE1ZmY0N2RkMjNiODhjMjM5MmY0MDA3ZGZhM2E4MTM4ZjQ2ZjNlMDNiZDk4ZWVkNjNlOGNhOGFlNTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_87f83e6078c347a29307c2ce0603fd41",
+      "statement": "sync_atlas.py 的写盘是幂等的：datasets.json 先整份比对再决定是否写，README 的生成区表格与 docs/index.html 的区块也只在文本变化时落盘，因此「再跑一次」可以作为改动是否收敛的判据。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L143-L192",
+          "version": "repo-lines-v1:sha256:b5c55f2f92ceadf286de64c659db9836d5d83bb81d89439865166e90acb6c906:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkMjM2OTA1Njg4ODg2MjdiOGJkOGNlNmUyMDhiZjU1ZDQ0MTQ5OTcwYjY5MjExMWJiNmIyMTk0OGQyMGNjMDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5MDc2NjE2OGFhYjk4MmQ0MDkwZmMwOTM2YTY0MzliZDAzMjM1MjkzYmUwMTNhZjhiYjM1MGJiMGExOGQwNGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE3Mjc1NTE1ZmY0N2RkMjNiODhjMjM5MmY0MDA3ZGZhM2E4MTM4ZjQ2ZjNlMDNiZDk4ZWVkNjNlOGNhOGFlNTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ1ODJkODNhNmY3MTk2NzdjMTEzMTI4NjI3ZDcxMDQ4NzM3MGE2ZGRhNGNhOTliMzRhNGNmMzk4Y2JlNWY2MTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7c8b25af38a74512aac8ef9681fa8e9d",
+      "statement": "sync_atlas.py 对两个生成区的标记守卫不对称：datasets/README.md 缺少 BEGIN/END 标记时直接 SystemExit 拒写（整步硬失败），docs/index.html 缺少标记时只打印「跳过站点卡片同步」并继续，退出码通常仍为 0，--check 也不会把该区块算进差异，于是「同步成功」不等于三处一致。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L155-L190",
+          "version": "repo-lines-v1:sha256:045debf2d0a9537a685bcd6f34609ed24c98b9f60d326f704832ff1e641fd266:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmNjVhYTkyNWRhYTBiZjQ4ZDBhYTI5YjE0N2UzODM2NTEyYzgxMWNmYTAzYjJkNjIxZjBiM2I0OTA1ZmUwOWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM0NmI4Zjg4YTY5NzVkZDEwYTU3NDdjYjM5YTQ1ZDliMDk3NjEyMTllYmQ5ODlkY2JjZDk4OTJmNzVmZGUyMWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ2MjQzN2E3YWE4ZjY2MDYyNWIyYTRiMDA2MjI2NTgxOWQ5NjE3NGU5ZGY0OWUxOTljYmUwNzVmYmQ0ODY4OWQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fe74c27c30214679b343e9a2fb8d241d",
+      "statement": "sync_atlas.py --check 并不是离线干跑：sync() 第一步就 fetch_manifest() 请求 api.github.com，断网、连接重置或限流会抛异常/SystemExit，而不是稳定返回 1，所以「1 表示需要更新」这条判据只在网络可用时成立。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L143-L146",
+          "version": "repo-lines-v1:sha256:f993699b12848ada3cd2fb8c3866f2fe55e8cf17f09f061e4711c2c7b890c536:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWQyMzY5MDU2ODg4ODYyN2I4YmQ4Y2U2ZTIwOGJmNTVkNDQxNDk5NzBiNjkyMTExYmI2YjIxOTQ4ZDIwY2MwNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZWQ4ODZmZDdjZDFlNTRkZGJmOGQwZDUwODE0MjUxNTE1MzJhMmE4MDAwZGEzYmY4ZTE0OTYzYmJlMTI5YWY3MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTcyNzU1MTVmZjQ3ZGQyM2I4OGMyMzkyZjQwMDdkZmEzYTgxMzhmNDZmM2UwM2JkOThlZWQ2M2U4Y2E4YWU1NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmM1OThiZTFkYmM3MTg3ZWI3MTA3ZmRmZGU0NTgwMmRhNTU5YjNmZWQ4NjcxZDMzNjFhODhmNjcwNmU1NWM3YSJ9"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L61-L76",
+          "version": "repo-lines-v1:sha256:8fc9a7780240c4c8c38ee39538541fed6cece62e5dfff2c4bb0e22ad6acf54d0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJkMDdhNWEyMDhlNTY1ODI0Y2U1MmY5ZjEzYTQ5NWIxOGM3YzNiMTdhOWI1Y2M3YzhmODYxYTg1ZDQ2ZjRmNzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3ZGQzMTk1NGNkNjgyOTc1MzMwZDllNTlkNjA2MTM3Nzg1N2FjMTkwYTk4YTZiZDgzZWMwZGFjYmU1Y2EyZGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjY0MGNiNTFmNGY1NDQ4NDk4MDdhYmEwY2QwNzg1YzM3NmY3NDJhNjRmMjQ2MTE2Nzk4NmFmODRhODk4YWNjYzgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUwMjUyYTE5MmNlZGMyNmZjMDNkOTU0ZmE4ODRlZDQzODdkZDIxZmM2MGU3OGM5YmZhOWRhZjhiNGViOWFkNjQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_035c3709077e4ff5b6a54be880d3a9e1",
+      "statement": "verify_links.py 的 --strict 只在存在 dead（❌）链接时返回 1；403/429 与超时/连接重置被归类为 unverified（⚠️），因此缺少 GITHUB_TOKEN 时的低配额限流不会让 --strict 失败，会产出「验了一半」的假绿。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L178-L178",
+          "version": "repo-lines-v1:sha256:bb5b9d28338ac80c41078c9a78e6ad70d37a3b258f847ae086601f4e36b88940:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmI1YjlkMjgzMzhhYzgwYzQxMDc4YzlhNzhlNmFkNzBkMzdhM2IyNThmODQ3YWUwODY2MDFmNGUzNmI4ODk0MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmI1YjlkMjgzMzhhYzgwYzQxMDc4YzlhNzhlNmFkNzBkMzdhM2IyNThmODQ3YWUwODY2MDFmNGUzNmI4ODk0MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTc4MjcyNWNjZjU1MTBjNDE1MzZiNTAxZTVkOTdkMjI2MGNlY2Q0MTg4NzQwNjNmOTA1Y2VkNGVmMmQ5OGYyNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTlmN2Y3YWExNjMwNTY3YzFiNWU2NjQ0ZTIxY2JlYzgzYTQzOTMzZGM1YjBkYTBkOTBjZDUzYmE0OGU5MTBkMiJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L60-L85",
+          "version": "repo-lines-v1:sha256:3f88b88f32092392440c37a60ee1fc273018e17fd4cd04e6bc27c655efb6b870:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2NWFmMGY0NTA1Yzg5YmQ5NWNjN2U4OTE2MWEwZDE0MjdlZDMwNGFiMzE5ZWE5NzQ5YmUwMTljNjI3YzcwMzciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE5MDY1NjcyMTgwMDUxNDcxOTM2M2YwYmJhODM5OTAzZTU2MjhjNThmZTRiZTBjNTZhMzgxZmYxNDUyZjRkYjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRmNDZhYzNmMTYwNmNhYTY4NDA2YjM4M2M2YTBiNmFjMTgyMTMzMGFhMDJmZTY1ZDUyYTBmNmI5ZWI4ZGI1ZTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a52d7f0d049e474cbf60fe434d0eddec",
+      "statement": "verify_links.py 的报告永不幂等：文件头写入 UTC 生成时间，每次运行都整份重写 docs/link-check.md，因此 git status / git diff 的有无不能作为体检是否通过的证据。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L146-L175",
+          "version": "repo-lines-v1:sha256:1a129a444c17970baf43fa67fc9b01b369656e6c88d10bdcd4550f5aaae053d9:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjOGNiZGZkOWZlN2ZmZDgyMTgzN2QwNzU2MmU4MzhlZDgxNDEyNmVhMzY3NTFkY2NlNTMxMjhiNTg5ZGI4NTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMzZmQzYTZkNDE5NWExZTY5NjhmNDM3NzkwNTEyYmNlYTRiYTVmM2EyMWU0YTRkMDc0Y2NlZjhhOWY2MzYyNjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdkYjNmM2VkOWJlOGIyOTczODBkMWU1MDk5OGRiMDM1NTZlMjFiZGJkZmRjNWFiMjU0ODliNzE1NzkyMTcwM2MiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNkNDVjNWM4MzNiMzU3Njc1Y2FiMjMxOTYyZDliNTAxNTFmZDYzZTczMGNjYTc3YWNiOTYzYjAyYzQzZDhmYzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_427e88400e2740e385c8b8fff127cdc4",
+      "statement": "verify_links.py 只遍历仓库内 *.md 文件（跳过自己写出的报告），docs/index.html、docs/disclaimer.html、docs/404.html 里的 href 完全不进报告；而 docs/404.html 是站点里唯一使用绝对路径 /github-free-guide/ 的文件，其 HOME 常量、按钮 href 与 canonical 三处硬耦合在仓库改名或换域名后会把访问者送去另一个 404 且无任何自动检查报警。",
+      "evidence": [
+        {
+          "resource": "repo://docs/404.html#L24-L33",
+          "version": "repo-lines-v1:sha256:b1f0247f90fa9676b625f9e1fc4518c088eedf93ab8e8cff654eb8076e79e4f1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3ZTU3ODhkNWQ5ZDczZDI0YTgxZGJjMGE1YTc0YmZhODJjOWMzYjNhZjk5ZTUyYWY3OTZlOTBiNDY4YThhM2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQzNzI4ZmVmNzAyY2Y4YWY3ZDUzZjZjYjNmNmMxMWFmNGE1NDM3ODQ5MGRhYmMwZDUxMDA0ZWYzZDU4YWM0OTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM1YjEzZmVhZDU1YTU3NDllZjc3Mjc4OWE1Yzg4NjJhOTM2MjdmOTgzYTJkNzZiMzdkMDVlN2VkYmE0MDAwNWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBkOTkxMDZjZmUyMmYxZDUwMGYwZDEzZjAzOGM5MTFmODYxYWI1MzYxMzIzYWExYTBhMzcwMmJkNWIyZTJlZmYifQ"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L86-L104",
+          "version": "repo-lines-v1:sha256:eca433a44aa225e19a83153529dc458d0fb547d748042f831c7056e459116094:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzNTJiNzA1OWZhZTE5YzEyNGVlYmJkNjViY2I3YTg5YWIxZTBiMjRiMmZjMDE5Yjk1MzM5ZDFkMTMyOTMzNTIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI0NTgyMjNlZjczZTdlMmE3MzllOTlkMmIwNzYzNDgwZTk4OWU3ODQ3MzFlYzk4OGZjOTdiYjUyYzY4N2NhOTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjUxNGJmYTEyYzIzODRmMGFkZmUzMmJkMmM2YzA2ZDU0MGE2MGQ4NDIyYzNiZDg2OTU0MmFjYWZiOTk5NTU0YTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a84ffce4eb2a4261b032fc5507b661de",
+      "statement": "verify_links.py 的站内链接按目标字符串去重，且 check_local 只用 refs[0] 所在文件的目录解析路径，因此报告里的 ✅ 只证明「至少一处能解析到」，不证明每个引用位置都通。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L136-L142",
+          "version": "repo-lines-v1:sha256:27d4ec7b193aa4246b4a289f2f40652785bb6eb232143167c9fe78f205caa5e3:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzkzNzQ3YzhlNDc1MmFmNzczZGYxMmQ2NTgwN2YzY2E5ZjAwNzlhYjk3NjBiZGM4MzExZThlNTQ1MTkyMTE2NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiN2RiM2YzZWQ5YmU4YjI5NzM4MGQxZTUwOTk4ZGIwMzU1NmUyMWJkYmRmZGM1YWIyNTQ4OWI3MTU3OTIxNzAzYyJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L94-L113",
+          "version": "repo-lines-v1:sha256:596079742df8b239b0fb027441c2db139f9846a2035af187736a1dbd3d7b6356:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjA2NmM2NWU5ZjE0NDkzMDY4NzExNTUxMzQzMDY2OGQzZDc1MjU0YTM1MmZhYzc1OGIwOWNjOWQyNTc5NTI5ZWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ5OWM1ODA5NDBlNGE4M2FkNmVmMzIwNmQ1MGRmZTU2MzkyZTgwY2YzNjRlMWJjNjg4ZjMzY2ExNzlhMWU0ZjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUxZjljNGVkNWY2MGMwMGIxYTM5NGI1MGQyZmQ2ZDQ5ODFkODRmZTUzYzg4MDRjNjExNWYwN2E0YWExODI3NDMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ1ODJkODNhNmY3MTk2NzdjMTEzMTI4NjI3ZDcxMDQ4NzM3MGE2ZGRhNGNhOTliMzRhNGNmMzk4Y2JlNWY2MTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fe1a4cab154a442bac5f92fa1a15705c",
+      "statement": "站内链接检查在大小写上「本机宽、线上严」：check_local 用 Path.exists() 判存在，Windows 文件系统不区分大小写而 GitHub Pages 区分，所以本地报告的 ✅ 不能保证线上返回 200。",
+      "evidence": [
+        {
+          "resource": "repo://40-ship/pages/README.md#L93-L100",
+          "version": "repo-lines-v1:sha256:4466a0ff378044f8f0efd93b11edd4502b7613a086a185ab3e179cf0ecb2353e:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjgzOTgwZjNmYWEyODU4Y2M5MWU5ZDUyYWVhZDE5MjNkMTdiMDBlZWFmOTU0YTFiNTI4OGI5ZjY0MDJmODM1NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDcyZGY3ZmIyODVhYjI0NjM1ODI5NmNmNzA2ZDAzZmExYWQ0OTFlMGJjOTA4YTYxYjIzYTI5ZjVkMzQ4MjYyMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDAxZjJlYzE3NTkzYzEwNTRlYjQ2MzY3ZDg0NTNlZjI0YTE3M2NlOTZiNzExN2Q5MWY5YTY4ZDQ0ZmVmOGIwMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L106-L113",
+          "version": "repo-lines-v1:sha256:6d8a6fbc6df9f2193fd180b8af26c8766213fc97cf47fa22766aa8864e32aaa7:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2YwMTZiYWE3MmZhNmNkNzJlZjc0MjA5MWJhZDM3YzU0MjM4MTQ1N2RkMzVkZDM3ZmZmNDI0NTFjOGE1NDFhYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDk5YzU4MDk0MGU0YTgzYWQ2ZWYzMjA2ZDUwZGZlNTYzOTJlODBjZjM2NGUxYmM2ODhmMzNjYTE3OWExZTRmOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzQzZWM1OTUxNjZmNWI3ODBiN2E3Nzk0YjY5NWQzYzk1N2Q1Zjc1YmQwNjY4NWE5YTg2YzhhZGM3MDVlOGFhNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDU4MmQ4M2E2ZjcxOTY3N2MxMTMxMjg2MjdkNzEwNDg3MzcwYTZkZGE0Y2E5OWIzNGE0Y2YzOThjYmU1ZjYxNiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_357af91bffab4fbeb9e61946361bc359",
+      "statement": "check_site.py 是只读探测，退出码有三态（0 正常 / 1 站点缺失或异常状态 / 2 连不上），其中 1 同时覆盖「GitHub 确实没发站点」与「站点在但返回异常状态」；它先发普通请求再带 Cache-Control: no-cache, no-store 与时间戳参数探测一次，仅当响应体出现 GitHub 的 Site not found 文案才判定为真·站点缺失，以此区分站点故障与本机缓存住的旧 404。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/check_site.py#L25-L86",
+          "version": "repo-lines-v1:sha256:3ec9b32b6b3935fd755bc6387920033fc4dce447243c5b995573e88ec6f1825f:eyJzZWxlY3RlZExpbmVDb3VudCI6NjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2N2VlODEyMzc3ZTQ2NDc0YmYyMjU4YzhkNWZhMjc2ZDc5ZWE3NjFlYjBhMTBkYzIxNjllMTc4YmMzY2E3ZGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiNjRlOTIwMDBhMTljYTM4NTkzYTRlNmEwYmFjNzcwOTZkMWU5ODY5NDlhM2I2MjgyNmI3Y2VhNGY3M2Q5ZTkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNkODZhMTI5MDAyMzQwMGZjZmNmZmNiNjBlZTk5ZTYyYmNiOTZlYTU3NGJjNTJhNjFlYWVmNDAxMGIyMzI2ODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f762500d5bb740f19f4d4279ce6951fc",
+      "statement": "deploy_github.py 的 --dry-run 在 GitHub(resolve_token(args.login)) 之后才分支，resolve_token 默认 required=True，所以干跑同样需要凭据，否则直接 SystemExit；且它只列出前 200 条路径，输出可能被截断。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/deploy_github.py#L143-L152",
+          "version": "repo-lines-v1:sha256:1b6515b806468a97e8441c64c2274085c6339cfb025d586c9b0209b5278f8a93:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlZmRiZDJlN2YyZDhkN2IxNzEwZTEzZWY1YmIxNmRhZTY4OTdkMzgzN2Y1MzU4M2EwNjVkZjEwNDNiNDcwZTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkyZTFkMmNlY2YyMTI3ZjBkODAxZGYzNmZiNTAzMDA1MWVlMjdhMGVjNDFlNDVjNjAxNjk5ZTRkYTE2NTZmMTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE0NDhlYjNmNjQ4MTBjNjYzZWMyNjdlOTMyNmY5MWYyNGY1NDYzZjM2ZGFiM2M4NGMxYzNhNmQ3YThiMWYwMGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImVhMjE2YWJiNTRlNmI0NzIyNGE1NTRlNGJlY2VhNWFjMzQwNDgyYzQzMTVkODFmYTY1OGQxNjQxMGYzYjhhYzMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_93e77beddc21482e98aa93e46d6a8207",
+      "statement": "deploy_github.py 的 iter_files 直接遍历文件系统、只跳过 .git、__pycache__、node_modules、.venv、venv，不读 .gitignore，所以 --dry-run 的输出清单是发布前唯一能发现密钥类文件被一起推送的检查手段。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/deploy_github.py#L74-L84",
+          "version": "repo-lines-v1:sha256:b7e756ad8ddb8f31efc367d26e28b1bcec5ea2e1205a01268191e67b250987b5:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk0NDk3ZGNiZWI1YTViYmY2OTM0MjdkMTg1MDFmMDFiMjhiYzJiOWY4Y2Y3MDU2MTA2N2E2NjFhZDBhOTMxZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzNmE0NzhjYjM2ZTcyZmFjZGI3ZWJiNjdkZjdhY2ZjM2JmYjdkY2ZlYzE0OWI5ODllNjJmYTBjNjk0NTcxMWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU1N2ZiM2RhYzBmZTI5OTk4ODE0NWEyNjc3NTllYjg0YWQ1ZDljNjJkZDM3ZjRlYWZiYWU4N2NlNDhmMWQ3NjQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM4NGE5NTY0YjEwNjRlMTdkYWJiY2VjMmRjODM3NTgxNjk3MDU3MjljY2UzYTlkNDc2NzFiNWJlMjVhMjgwMDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4f65e367812643d3acf88df1412bd58d",
+      "statement": "本仓库唯一的自动验证 link-check.yml 覆盖范围很窄：CI 里跑的是不带 --strict 的 verify_links.py 与不带 --check 的 sync_atlas.py，死链只写进报告不会让 job 变红，写回提交只 git add docs/link-check.md 与 10-resources/datasets/，因此脚本对 docs/index.html 生成区的重写不会进 CI 提交，CI 绿也不代表站点与数据一致。",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L40-L63",
+          "version": "repo-lines-v1:sha256:7124c5e7c8d66dc7375f64e4e65b64d5cce7e48998dec8382bc6676e19a6de00:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcxNmVlNmQyMzY0ODQzODcwNjYyZTBjZjZmNzEyMzZlZTY0OTQ4MjViNzk0ZjE4YjNiZDU5ZWY2YzFiODQyYTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MWI2MjE1ZWU2OTZmNTEzZGQ0M2FjYTQ3YTgxNDdjNTYyZGU3MTM2YmU3NWZlNjQ4NGI1ZGFmMjdhYTM4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImU5ZTNlN2Q3ZGIxZDFkNzA2ZjQ4MGQ3ZTcwZTI2ZDg5MDM3NDljYWRmN2UwNGQzYjhhODczNzY2ZmQ5ZGI4YjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fb363e7c6d93410b953eb7cb9ec8ba15",
+      "statement": "退出码 1 在本仓库是多义的：sync_atlas.py --check 的 1 表示「有差异需要更新」，而同一脚本因 manifest 结构不符或缺少生成区标记走 SystemExit(\"...\") 时退出码也是 1；判据必须配 stdout/stderr 字样（需要更新 / 已是最新 / 已更新 / manifest 结构不符），只看 $? 会把待更新误读成崩溃、把拒写误读成已执行。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L157-L192",
+          "version": "repo-lines-v1:sha256:29dd2c5cdc94c43e03adcf5fd62f26776c6a1b642a66e0dfaf3d62b6ce230da2:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MzI0MWQ1OWU3YjAxYWUyZjVkOTVmNjgwODY1MzA4MTg1ZWMzODcwNjRiMTZiYzZjZTk5ZmJmMjY3Mzg1NTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5MDc2NjE2OGFhYjk4MmQ0MDkwZmMwOTM2YTY0MzliZDAzMjM1MjkzYmUwMTNhZjhiYjM1MGJiMGExOGQwNGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYxYTJmZTMyZTg1MWQyYmJkYTNhYWNhYzlmOTZlNGQ5OTY1MWM5NWFiZGE2YTE5NTBjNGNjMTJmZDgzZWFmZDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ1ODJkODNhNmY3MTk2NzdjMTEzMTI4NjI3ZDcxMDQ4NzM3MGE2ZGRhNGNhOTliMzRhNGNmMzk4Y2JlNWY2MTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_0a0b4d504ebe49f2a8b7cd6be23adee1",
+      "statement": "fetch_assets.py 全量运行时 MANIFEST.json 的 files 列表会被整体重建，只有带 --only 时才按 path 与旧清单合并；因此某个上游文件这次 404 时磁盘上的旧文件仍在而清单记录消失，验证素材改动需要核 total_files 与对应 sha256。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L218-L241",
+          "version": "repo-lines-v1:sha256:3157130faf609bdccd836218366d005b29345abefe191913d2c347aa4e39b0e8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3ODU5NTVmNTI3NTRkMDFiN2JhZmZiNDlhYWY5NTRmYzZlYzZmNDhlZWY3NjBmY2M0NjA1ZjlkMjJjMzI3ZjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQzZDQ2NTk3ZjRkMGJiZjNkNjg2MzRiOGNiNWU2YmI4NmU5YzRlYzE4OTVjM2ExMDg3MjJlODMwMWU4MGZlOWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImRmMGI2MWI5ZDliYTc0MzZkYTRmNGJhNTkzYTU0MWQyNjczZmJmNGE1YzM3ZGZjMDY1ZGNiZDNhZGE4ZTFiZDAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-21T01:55:26.634Z"
+  }
+}

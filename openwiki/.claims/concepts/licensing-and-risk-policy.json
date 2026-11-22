@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b29b74aecc919cc5d002569c9617d31a3a4f849ea9f08fa6ef6b71b0327f924c",
+  "claims": [
+    {
+      "id": "claim_52a45e43fdfd4c868ccbfa7ae2c6787e",
+      "statement": "仓库把许可证事实分成两层：本仓库自有内容（文档、脚本、docs/ 站点）按 MIT 授权，而 10-resources/assets/ 下的素材分别适用各自上游许可证，原文集中存放在该目录的 LICENSES/，逐文件记录在 MANIFEST.json。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/assets/README.md#L12-L19",
+          "version": "repo-lines-v1:sha256:37abf5079c515cd6170467b1b5598c8dbfd766eb5ddd1e19647290ed6bd5a7d9:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTMxOWY0Y2QyN2M3NjY4NDNiNDA2NzZkNGRiMzNjMWE5MGMzN2UwYzY3Njg4NWFlOWY1ZjA4NzMzNTJlMmNjZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjExZTNjNDZjMmY4NjJkZDQ5YjRiN2Y5YTZiZGZiZGJiNjI4MTc3ZTJiNTkwNWJiOTMyNjU3NzgyZjQxNmQ0YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDcxNTBhZTFlMWJlYmE0ODRkYzQ3ZGE0ZmVlMmEyMDgwYTZiOTRkNTI2ODRmNGQ4NTFlYWYyMWVlNTFhM2I4MCJ9"
+        },
+        {
+          "resource": "repo://LICENSE#L1-L3",
+          "version": "repo-lines-v1:sha256:5cde1bab023888d40c84464675a529556fdeab59dd3e03520200c5aeba56834b:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjY3ZjdhMmUxOWRmYTlkZjk5YWY3NzQ1MjA5ODVhMGU1MjE5MjUyOTNlYTViN2U3NjdhYjA2OTY5ZDA2YmY5MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOThjMzlmY2FiY2M1YzAxNjMzNmY5YjEyNzQxNmJiNzEzYzYwMTRkMTUzZTkxNTkxYTc5ZDE0YTMxZDhlOGJhZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjAsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjgyZjllOWZjNDZkNGU0OWU5NTc0YmVkNTgzOWJiMThiY2FkMDRiMDI3YWMyNTZkZWE4ZDllMzdjZGFmNDhjZCJ9"
+        },
+        {
+          "resource": "repo://README.md#L58-L62",
+          "version": "repo-lines-v1:sha256:b6746064bdce88a9176362c164ce919363018f1c8596c68a9712bcfc1b4b10e4:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmRhOTlmZmM1NDY5NWYyNDM4MmQyNzlkOWQ1ZTYwYzZmZjdlMDAyZjdiYzFiN2IzMzUzMTdkOWFmODE4ZjVhNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDE4YTU2ZmEwNWFhOTBmYjk4ODhiYjdmZTQ1MjI3YzI2NmZjMDgyNmQ2MzQ2OGNjOTFkY2U1OTIxMDJhMzE2MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODNlMGRlZjg3NTUwMGE0Y2RkMmZmMTlmZjg3MThlZjcyMGUxZjdiMTQ5YTE0NGI2YmIxZDdkMjQxNmJmZTM4NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjBiOWUwMzk2NDAxZDAwOWY1YmEwN2QyYTEwMjM0YTE3ODI0MzBkOTU3MDU3OWE4NGZhNjFlYzJiNmE2NTA1OCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_72904bfebec54c819a0acbca6d51afb9",
+      "statement": "LICENSE 末尾的第三方素材排除条款把许可原文指向 `01-assets/LICENSES/`，而仓库中实际路径是 `10-resources/assets/LICENSES/`；因此读者能真正读到许可原文的入口是根 README 的「许可证」节与 10-resources/assets/README.md，而不是 LICENSE 末尾那段。",
+      "evidence": [
+        {
+          "resource": "repo://LICENSE#L23-L27",
+          "version": "repo-lines-v1:sha256:86ecea9120cac23ef92579920c4551a44d4924f9bbec04d9877d233d0025a4c1:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjUyZDcxMTEwM2Q1MGE0Mzc4MzBjNmZiY2QwNGZiNGJhYjQ5YTBmODJmNmQyNmQxYzc5MWM2ZTg0ODhkZDA5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDEzYmUxNDljOWU4YjdmMGQyNWQ3ZmYxMDMwYjg1NTc5N2JmODMzMWJkYTRlN2M2MzVhODc4ZmYzOTI1M2U3ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjVlYjFhZTFhYTdjYWNlNjNkNjJmMWQ0OTIyYTc4ODI1N2EyNTFkODdlZGE2YzA5YjlhZGQzMjFlMWIwNWYzNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://MANIFEST.json#L5-L13",
+          "version": "repo-lines-v1:sha256:b81130560b8a8199bc2ff0fea03b2847c870d5564ff2653a637598591ac072ed:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTExNTg5ODk5OGQwYzYwMzg3MmIxYzMyMzVmZDQwMGU5M2ZlMDExMDcyYzg1OTdkOGU2NDI5Zjk5MDRjZGUzYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTg3NGYwNTUyZTg2ZjM3MmNmMjczNGU5ODFhMzRlZTNkZDVlODI1NzdlNzc2ZDc1YmQ3ZDQzYTkzNGU2NDdjZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjkxZDIzM2E3Y2I3N2NhZjJlMzY0MWUyMzdiZTZjMzU3ODA2YWY2N2FiYWNhMzdiMDZhYTM5OGExYzQ5YTExOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGMwOTZiZDJhMWU4NzEyN2UyMjZkM2MyZGY2N2Y0NGUzNDFiZDczMjAzOTdhMDE2MjM1MTc5MzZiZTRhNzI1OSJ9"
+        },
+        {
+          "resource": "repo://README.md#L59-L61",
+          "version": "repo-lines-v1:sha256:28639e29014dbf454691fd61b3122f6377af02ffdb86fe953002e20043263923:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTU3NzY1NDE4NmE2ZjY1ZDc0Y2IyMWZhMjE1MmFkZmQ5NDdjNjBmNTEyMzQwMDQ2YzMzYjg3NzAwMGZkYTRlOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGUyNmE0Yjc4MjZiOTg3NjBhYzg4NDZhYjVhZThkMjY1MGVjYTEzODUwMTk1NTM0ZmVmZGE2MDA1NDZkMjhjNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDJjOGYyZTBiZDRlOTJkNDY2MTc4M2UyNjQ3ZDg0Zjg4NWVjODYyNzkyYTIyNzRjMGY3NGY2OTgwNmRmNGU3NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_65264db0bcbf4f0490c451605f13047f",
+      "statement": "收录白名单由 README 的硬性原则给出：只有 MIT / ISC / Apache-2.0 / OFL / CC0 才「进本仓库」，GPL/AGPL 单独标注；实际被拷进托管层的文件共 206 个（200 图标 + 2 字体 + 4 份上游许可原文），许可证只覆盖 MIT、ISC 与 OFL-1.1。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/assets/README.md#L12-L19",
+          "version": "repo-lines-v1:sha256:37abf5079c515cd6170467b1b5598c8dbfd766eb5ddd1e19647290ed6bd5a7d9:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMTMxOWY0Y2QyN2M3NjY4NDNiNDA2NzZkNGRiMzNjMWE5MGMzN2UwYzY3Njg4NWFlOWY1ZjA4NzMzNTJlMmNjZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjExZTNjNDZjMmY4NjJkZDQ5YjRiN2Y5YTZiZGZiZGJiNjI4MTc3ZTJiNTkwNWJiOTMyNjU3NzgyZjQxNmQ0YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDcxNTBhZTFlMWJlYmE0ODRkYzQ3ZGE0ZmVlMmEyMDgwYTZiOTRkNTI2ODRmNGQ4NTFlYWYyMWVlNTFhM2I4MCJ9"
+        },
+        {
+          "resource": "repo://MANIFEST.json#L1860-L1862",
+          "version": "repo-lines-v1:sha256:3197b9ce029bfa4344e0dc2f52b0de0f2c3950b5a1d2c5bec4383b4775c5bc54:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNGYzNzkwOTBiZTVkMzI4NDE0NDI5YmIyMjQyYzBkM2U2NDJiMmU4YWVkNWU2NWFmYzhmMWVkOGY2OWZkMzYwYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTIyZmFhNTM1YmQyZWEzZDUyZTc0MWVkNDU0NDM1YjdmZTQ5ZTgzNTg2ZTk0M2Q5OGQ4MmJiZmIyNGQxZjVjNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDk2ZWEwNTAwMWI0YjgwYWY3NDE2NDU3OGUwZDM4MTFlNDM0MmE0ZTNjNDdhZTJmMGFlZWJkYWQ5NTBiYzcyOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        },
+        {
+          "resource": "repo://README.md#L48-L52",
+          "version": "repo-lines-v1:sha256:aacbae41a3d50b80d1f2eb06ce3a8440a61404499f375241dfb5759bd072004d:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTk0YjZkZjBjNzQyMmIxYjQ2MGNhYTlkODk4ZGFiOGM2YzIyMDBiMzNhMzFjNjhhMWYyNWRkMGMyMDYxYTA3ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODk5YmQ1YzU1YzcyNmZlOWYzYzEyOWY5ZmViZTEwMzFjZDQxOTE5ZjFiOWFhOWFiMDI2NWNjYTEzODZiZmM0NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODNlMGRlZjg3NTUwMGE0Y2RkMmZmMTlmZjg3MThlZjcyMGUxZjdiMTQ5YTE0NGI2YmIxZDdkMjQxNmJmZTM4NyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjg0YzEyZGYyYmQ3YmE5MDEwYjI2MjVlYmIwNGNmMDQ2MjBhMzNmN2NiMzE2NjI2ZTU3NmFhMzZlYjQzODljMyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_64997cc8585a47d498bb2a796cb76628",
+      "statement": "「只收可商用许可证」这条白名单实际约束的是被拷入仓库的文件层；索引层表格仍收录 GPL-2.0、GPL-3.0、AGPL-3.0、ODbL-1.0、项目自有许可甚至 NOASSERTION 的条目，代价是逐条填准许可证并补义务说明。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/datasets/README.md#L12-L21",
+          "version": "repo-lines-v1:sha256:359b16ba83126dfbd92fc779a6b6c6f6f39cae64933f19b0a57756194d0baa9e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0OTJlZjg0Mzg4NDMyNmUzZmVmMzViMzA0NGE4ZGE2OTEyMzg4ZjU4NzAxNWQyYzhlNjI4N2E3NWZmNDM3N2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkxYTQyZDhiYjVjOTM1ZmZhMjlmNmM4YzBhMjJiNDVmZTFmMDhmOTQxZTg0YWE4NTY4MzIwYzhkMTM2ZWFjZTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5ZWEwNGIxODE0NmQzNzdmNDc1ZjllYTQ1MDFlODNhMTcwYTJhYzEyMzU4YzU3YWU2YjE3MWI3NGRkYTJiZDAifQ"
+        },
+        {
+          "resource": "repo://20-tools/projects.md#L5-L58",
+          "version": "repo-lines-v1:sha256:16ce8d8fce07c5a29966fcd9e775c4d33385e982068161b8194a4ded44a72097:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1MjkxYzgwMTg4ZmVlZjlmNGIxMjkwMzFjOTRhOWEyZGZmYTNiZjE2NjAyNGI2OGRiZTY5MDMzNjdhZGM1MGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUwZDlkOTdmODY4ZTQwNzQ3OTZjMTcxZTAzMjMyOGFlYzgyMzY4NzY2YzBjNDZmODBiYzMxMTUzZTY0YTRmZGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ0YjA2Y2RjN2E3NzY5MTNhYjI1Y2UzNTI3MjA1YmRhM2M2MWE4NGUwNzBjNDhjYzA0ZjY1ZDZjNTNiMTI5NWUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjM3YWExZTNmNDZiNDIzNTkwOTY1ZmVmZjdmODNjZmFkYTE5Mjc3MDA4MjhmZGJlYzhlZjIxN2IwZGE3ZjZhMWUifQ"
+        },
+        {
+          "resource": "repo://30-ai/README.md#L15-L15",
+          "version": "repo-lines-v1:sha256:516f1d1850d8e9330f7e142e3f623aff83d7194061ecd9c64c17a4d868832eaa:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTE2ZjFkMTg1MGQ4ZTkzMzBmN2UxNDJlM2Y2MjNhZmY4M2Q3MTk0MDYxZWNkOWM2NGMxN2E0ZDg2ODgzMmVhYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTE2ZjFkMTg1MGQ4ZTkzMzBmN2UxNDJlM2Y2MjNhZmY4M2Q3MTk0MDYxZWNkOWM2NGMxN2E0ZDg2ODgzMmVhYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDdkYjVmZDJmMTllYWZmYzk1ZjgwMjEyYTYxYTkxOWY5MGFlNmU4ZTQyNmYzMWZhMjEyOWNlMjA3NWZmMDM0MSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGIyZjdhMDM1YWM3NzFiNzExNmQ2ZDYzYzdkNDc1MTE0OWY1ZjU5NWI5NzZmZmM1NWEzYmJlZWEzNzFjYmE3NiJ9"
+        },
+        {
+          "resource": "repo://README.md#L50-L50",
+          "version": "repo-lines-v1:sha256:2c24e345b198574a41e69ab129dd364dc0a4b1ff784c6a4e60cf6b08c1bef78d:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmMyNGUzNDViMTk4NTc0YTQxZTY5YWIxMjlkZDM2NGRjMGE0YjFmZjc4NGM2YTRlNjBjZjZiMDhjMWJlZjc4ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmMyNGUzNDViMTk4NTc0YTQxZTY5YWIxMjlkZDM2NGRjMGE0YjFmZjc4NGM2YTRlNjBjZjZiMDhjMWJlZjc4ZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiY2E0ZDgwZmM2ZmY5Y2RkZGEwZmJlYTI4OTY2MjFiMTZlMGMzNTBlYjUzNzMyODRkZTA0ZmU0NmVhYjBlMTg2NSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGJiNGViMDM5Zjg5NjcyMTg0YTQ1MzZkZWU3NzI1Mjc2MjZmZjAxZDdmNDc4NGJiMjkyM2VmYmI5OTNjYjZiZCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ee1ab596cd2a4017b13a08ef7b177681",
+      "statement": "`license_label()` 把空值或 `NOASSERTION` 渲染成「见上游 LICENSE」、其余原样返回，并且同时供 datasets/README.md 的生成表与 docs/index.html 的 `atlas-datasets` 数据块使用；`render_index_block()` 再把「见上游 LICENSE」缩短为站点卡片上的「见 LICENSE」，因此表格与站点卡片不会给出两个不同的许可证结论。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L158-L158",
+          "version": "repo-lines-v1:sha256:2fedc3c707957338ce20741cf9ead4eb6e083c04d025e9aade0e1e5b92bfad08:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmZlZGMzYzcwNzk1NzMzOGNlMjA3NDFjZjllYWQ0ZWI2ZTA4M2MwNGQwMjVlOWFhZGUwZTFlNWI5MmJmYWQwOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmZlZGMzYzcwNzk1NzMzOGNlMjA3NDFjZjllYWQ0ZWI2ZTA4M2MwNGQwMjVlOWFhZGUwZTFlNWI5MmJmYWQwOCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGE2YWViNzc2NzA3OGM1Nzc5OWU2NjM3NWE1MTUxZDA3NjY2ZWJlMTczZTlhYTllYzgwZWNlM2MwZTIxMGY4YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGRlOWQ1NTBhMGIzZjg2MWEwNWQyYTBmZTIyNzNiZWM3OWFhYTFiZmQ1MDk2MzY0NjEyNWI4Zjc3MDFjYzY2NyJ9"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L112-L141",
+          "version": "repo-lines-v1:sha256:bc1af05768d1d8eaa6ee563ef0dc9b422d65e0aa6f3426752dbf7d1ca5e05027:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwZDRkNTVlNjZmYzIzZGEyMmRjYjQ1MDQ0YzZmMTU3YWY4YjBiYjJlNzE4MmM2OTc5ZDcwM2ViOTA4NDFjYTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjE4NjJhODM5ODQxOTVlZDhhNmY5N2JmZTc1YjM0ZmI0YWU1ZjdiMmRmZjA1MDYyYzc5M2ZjZTg2MjM1ZjM2NTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRjYTExZmQzNDJiYjg3YjU0ODc0M2ZjZDIyNDQ2YWJiZGQ1ZWZlMmRhMGU0MDkxM2RkMjA2NTUxZmVhNTQwOTEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e21f658ae7fc41d1a3f5535690943448",
+      "statement": "`build_catalog()` 要求上游每个数据集都带非空的 `name` / `repo` / `repo_url` / `license`，缺任一字段即 `SystemExit` 且不写任何文件；因此「未知」必须以 `NOASSERTION` 字面量出现（datasets.json 中 exercises 与 words 两项即如此），降级只发生在渲染时。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/datasets/datasets.json#L38-L59",
+          "version": "repo-lines-v1:sha256:326b009b3f19f5ed81b59b05f4bab00cd527a4caf594eeb1c40b96fad56ae4b4:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU4NzRmMDU1MmU4NmYzNzJjZjI3MzRlOTgxYTM0ZWUzZGQ1ZTgyNTc3ZTc3NmQ3NWJkN2Q0M2E5MzRlNjQ3Y2QiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0YjFiZWNmYzE1ZTIwMjQ0OGFiZTY2ZWRmZGVkNWEzMDYyYzBkMjRjMzZlOTZkZWFjODgyYmQwZjM0NzlkZjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUxMmNiMDk2MjMzMGEzNDY0OThkOTA4ZDMyNzlkMDVmZjJhNjJiYjgzOGI3Nzk3OTAyMDkyMjZkY2JmYjg2YzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzYmQwMGIzNjQzZmYzMjYyYjMzNTRjNzVlNzMwM2FmMDM4ODViYWJkZjJlN2ZlNTUxZjBjODNiZjVmZjZkODQifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L73-L100",
+          "version": "repo-lines-v1:sha256:2b8d33be1dfb66741d32b438989d13e505c024a95ee1e54b44f6b02d75afe237:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmM2MwZmFkNmJiMzIwYTIzYWRjMzYxMWQ4M2M1ZjFjMTk0NDFmMThmNTc0ZGM1ZDc5YzI5NjRiNDYwZmMyZWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUxYzFlZjQ5Y2ViYzUyZGVmZDk3NTkzNjg0NTU3ZDllOWRkNzc2ODVmMGQyNGM0YWJhYWQxNmZlOGI5M2ZkMjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzNWQ3ZTkyYjQyZTE3NzUwYTkwZmEyYzIyZGJlZGRlNmZiODBiYmI0Y2FmNmYyYWFkZTY5MDQ1ZDYwYTQwNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdmZWZjYjc1ZjVmNzVhMjg2MzAxODU5NTM3NmUwNGNkOTc2OWNhMTE5MTZhNzI2N2E5YzUzZDQzYjQwYjQ3ZDkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_93cdb829b1f6468585a89e4592957321",
+      "statement": "`fetch_assets.py` 的 `record()` 为每个下载文件记录 `path` / `repo` / `source_path` / `license` / `bytes` / `sha256` / `source_url`，使 MANIFEST.json 成为可审计的逐文件出处账本（能发现上游文件被替换）。",
+      "evidence": [
+        {
+          "resource": "repo://MANIFEST.json#L4-L18",
+          "version": "repo-lines-v1:sha256:714c18935213c30a550807c1384b6d0ac1778894ba0c2752d7a6ff50291b5202:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxODg2MzJlMjcxMjg0MzVjZjhmZTQ3MmMxZWI3ODE1OTViNjcxODc3Y2NiODdlMmU0MjVjNzY4MmQwZjg0OTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU2YTUwMzc2ZDNmYjQ5MWU3NGE3OGY0ZmNjNjljMTE1YjA0MDJhZGY1M2YyYmQxNjY1N2ZlYjA5NzEwMmY2ODEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAzMjJmNzE3NWE0NTQ2Yjg3ZWI2ZThlNGZjYTVlN2M4MjllMWQ1NDg0OTdlMjg5NjdjMGQyMTc0OGU5NDllZjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImU5ZDAwMDA5OWI1YjQzYTZiYjdiY2YxZjAwZmJkMWY1ZjQ5MWYzNWIyNmFkZTE3Y2JjMjNiOWM0OGYwY2UzMDcifQ"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L154-L167",
+          "version": "repo-lines-v1:sha256:a2693b880c34a7dc4f6023f16bcd105c37491903dacadbc738194ad91eba5e63:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmYTcyOTcwZjM0ODVmNmEzMDJiNjc2MDc5MTE1MGE3M2Y5N2JlMjVkY2M0ZjgzZTMwMTA3ODUyYzFmMmZlZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ1MmM1MTNlYmU2NTI1ZWRhNzIxOTIyYTM5ZWFiOTU0NGVjMDczYmYzYmQyNmJmNzc1ZGExYWI2OGYzMjdjYjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMyZjYyOTYyZDNhMzM0NjNjYTc0ODhkYWU5NmQ4NGExOTA5MDc4NmRlZjlhZWM2YzhlMmRhYTlkYTRmMmUxMzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA1ZWE1NmU5MWEyMWY4ZDU4Yzk0ODAwMGI5NDAwZDZiMjY4ZDU3Y2YyOGI3ODg0NjZjODhmMWMxYzY0ODcwMWUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8cd856f2b8154b5ebbe4f59133a72948",
+      "statement": "素材的许可证 id 是脚本里人写死的声明（`FONTS`、`LICENSES` 元组的最后一列），脚本本身不解析许可证文本、也不会发现上游换证；同时 `LICENSES` 列表把四份上游许可原文下载进 10-resources/assets/LICENSES/，让读者不必回上游即可读到条款。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/assets/LICENSES/tabler-MIT.txt",
+          "version": "repo-file-v1:sha256:b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db"
+        },
+        {
+          "resource": "repo://scripts/fetch_assets.py#L63-L73",
+          "version": "repo-lines-v1:sha256:c5400818f453b08dc6908726c23997d98c69b831db34203f8a7598f8b87037ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc1MjZkZTc5YWQ1MmZjYWJhY2UzODdhYWMxODRjZWI3YzdlN2Q5YjQzMWM4YTgyNzZiYmM3NWFjYTgwZTU3NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkM2I2YzViOTQ0MjJhN2MwNGYwMDkzMzgxYmY4ZDE3MDdlNmVjY2E2Zjc4NzMyMWE2Nzk0ZWEzZGYxNjQ1MmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjlkZDEzZWZhMjE4ZDI3ODZhZTA2ZDNiOGEzNzM4MjgyM2JkNWQ3MjAxMTNiYWRkOWYwZmVlOWNkYjY0ZDEyYjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk1OWMzNzJhYzAwZmYzMWM5OWU0MDgzY2JiMmQxOWZkZTA2YWRhODE5NTJhMWZiNTM5YTE2YTg3M2ZiMTIwNmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a8894ed1714c48eaa51b5ea35c1c89f6",
+      "statement": "`--only icons|fonts|licenses` 运行时按 `path` 与既有 MANIFEST.json 合并、保留其他条目；不带 `--only` 的全量运行会整份覆盖清单，手改条目必然丢失。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/fetch_assets.py#L226-L233",
+          "version": "repo-lines-v1:sha256:dc6685ea4cb3a9bcdd7b3600c2103f5f0f4539a8a48bf6367dd043d550af2259:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiY2U1YTEyNDhmY2ExYTlmOTM2MmY1MGU0ZTU0MzYwODViYTM3YmRmZjg0MjY1Y2M2N2NmMjNkN2YzNGJmZDQyNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDRmZDhjNTcyODg2MmFkMDc2ZTNlNmUwMmY0MGY5OWNmMWY3ZTI5MDJmNWRmNGRmOTQzZmM3ZmQ3YTQ1ZGM1NCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTRjOWQ2MzYxZjRlZmU4ZWViY2FiZWYwOTJjMDM0NTMzNjUzZmJhZDE5ZDg0N2NlNjU3MWZjYjRkZTU4MGEwYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzVhZTE5NTljZWRlN2QwNzljOTIzODEyMzYxMzcwYzcyMWQxZWRlNTUxMDI4MWU4Njc5NWI0ZWRkYzA3NDNmNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_69907e1f46624ddea0a9ff778b5c97b4",
+      "statement": "每周 CI（link-check.yml，周一 UTC 01:00）依次运行 verify_links.py 与 sync_atlas.py，但提交时只 `git add docs/link-check.md 10-resources/datasets/`；`sync_atlas.py` 对 docs/index.html 中 `atlas-datasets` 块的改写不随提交进库，所以站点数据集卡片上的许可证可能落后于 datasets.json 与生成表，需要本地运行脚本并一起提交 docs/index.html。",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L38-L63",
+          "version": "repo-lines-v1:sha256:dfbf778c9c8022b6a14e372e01d4b434ba921b10ce068424aa09f24d886a4049:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwNjY4YTdlMWU0ODU2OWRmNjhiOWNiMjA1MzhmMTUyMzY4YTE4NWI3N2NkYzVlOTEzMjhlZTk0ZjIwMTVhY2EiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijk2MWI2MjE1ZWU2OTZmNTEzZGQ0M2FjYTQ3YTgxNDdjNTYyZGU3MTM2YmU3NWZlNjQ4NGI1ZGFmMjdhYTM4MjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQ2NTAwYjc2Mjc5YjVjYjZjOWE5MzkzMWE5ODIxZDEwOTFlNzRhYThkOWYzYjkzNTY4Y2M4Njk1ZWE5YjViNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L171-L185",
+          "version": "repo-lines-v1:sha256:6445ffa56c03e5ccdd1a3b3c33683ebd3a337f520210c0c116308a294974421c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhOTBhNjJkOGZiNDQ5MGU0ZDA1NDliMTE4MzcyYzAwMzFkN2I0Zjc5NTliMTk5OWI5MjBhYzM0NjBiOTI2NWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0OWIxOGIxYWQ0ZjNjM2YyYjBmMWEzYjA3ZTEzNzUyNmViNGIxOWRmZGZmNmU2MmY2ZTI4ZTJmODYxNjk4MzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA4YzA3M2UwOTljMDk4NjQxNmQ5ZjI0ZTRhOGViZDRkODc2YmRhYTQ4MDdkNGM5NzM0ZWI5NDcwOTdjNWMzZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0MDcwMjE5YWU4OWRkMjA1ZWNiMjAwYjFiODJmZjI4NjkxNmFmYjZhMzNlYjZkMzYzYTdlOWE3Y2EwYmNlMzEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dbe8860351fb4bfbb34b551b22108792",
+      "statement": "手写表把 `无 LICENSE` 加粗，并在紧邻的边界小节兑现处置句：OldAlmanac 不能商用、不能二次分发（自己看与打印可以），ChinaTextbook 的教材版权归原出版方、仅供个人学习、别商用或二次分发。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/README.md#L62-L62",
+          "version": "repo-lines-v1:sha256:b997ab70fc750405c2a022f10cd0931eaf602f9a9397ae1d042fdd3e473dc3a0:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjk5N2FiNzBmYzc1MDQwNWMyYTAyMmYxMGNkMDkzMWVhZjYwMmY5YTkzOTdhZTFkMDQyZmRkM2U0NzNkYzNhMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjk5N2FiNzBmYzc1MDQwNWMyYTAyMmYxMGNkMDkzMWVhZjYwMmY5YTkzOTdhZTFkMDQyZmRkM2U0NzNkYzNhMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTM5YWMwMzg1MmUxZTRjZGQyNGQ4YWMxYjI2MTM0Nzg5MDY1ZTIwMzVhNzA4M2I4ZWMwNGEwM2I1ZTVhNTE0NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWRhYTAyNDE2YTdmYzUyM2MzOTYyYzJhMWQ1NWE1OWE3ZTIzNzI5YzNkYjFlZjI3MWE3NzU2NmYzNTM0ZmFiNSJ9"
+        },
+        {
+          "resource": "repo://20-tools/projects.md#L92-L98",
+          "version": "repo-lines-v1:sha256:9e43b50bcbe043c3cdcda84e768014c193476c68f26d6783062fb29d38f9ab8c:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2JkZDRhOTJmY2RiMzE1ODBmYTdiYmVjYjhkMDZkNGJjYjhlNjZiZmZlMWMyZTkwMGIxNmIwMTQ5OGY3ZWE5MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTI4ZDdhZTY3MzBlMDZlZGE3MjQ2ZDQ0YTI4ZTY1YWZkMDEwMTZmN2Y5NDVmNjE4ODI2MDMyYTY2MTA2MjIzNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjk1M2Y2MzI1ZWIwMzdhOTIxNTJiMGNmYWQzN2YxNzI0ZGU5ZmU0OTBiZDIyNzY1YWMzNTBmMGRmMjc5NzlmNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_8cb048202b6c4ef6b426f819becdd3fc",
+      "statement": "`NOASSERTION` 与「无 LICENSE」在对外口径上被并列收紧：站点免责声明要求「请勿再分发或商用」，额度速查表把「无 LICENSE 文件」判为不能商用、不能闭源分发（默认保留所有权利），而数据集页强调这两个标注必须逐个点开上游 LICENSE 看、本仓库不替上游下结论。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/datasets/README.md#L53-L67",
+          "version": "repo-lines-v1:sha256:34b4de7688943e42fdef4f4b61684ffe27f3ee76568af5cade2590ebe71dc895:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViMDUyNmI5YmNkM2FjYTUyMDVlNTM4N2I5YzY4OGJkM2IzYTRhYjc1MWUzMjQyMzBmZDAzMjE5MTYwMDYzNTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjYmJmMDczNGVjMzkxN2JhZDIwMjQ0NmVmZWQwNGQ5Y2ZlNTJmMWZlMzJmYWY5ODgwOWRlOGRmZGM3MGY4MTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgzZTBkZWY4NzU1MDBhNGNkZDJmZjE5ZmY4NzE4ZWY3MjBlMWY3YjE0OWExNDRiNmJiMWQ3ZDI0MTZiZmUzODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzZTBkZWY4NzU1MDBhNGNkZDJmZjE5ZmY4NzE4ZWY3MjBlMWY3YjE0OWExNDRiNmJiMWQ3ZDI0MTZiZmUzODcifQ"
+        },
+        {
+          "resource": "repo://50-benefits/limits/README.md#L78-L96",
+          "version": "repo-lines-v1:sha256:7bd1bdeb227dd51db31587aa2b5934467f1377d3dd822920b4c4ebee5cc4ae8c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI5ZDI0NzA3OGVhMzBkMzg1NGU4MThkYjA4YzFmNzdjZWJjYWUxNjQxYThjNWI3MmI4NTA2NmUzNjgzZDk1M2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjAyYmE3MzU3N2RhOGFkMDgxMjllN2YwNjdiZTc1ZjA4YjljMDY0ZDM5OTBlZTA4N2VkY2E4MjU4ODY1MTJkNjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAwMWYyZWMxNzU5M2MxMDU0ZWI0NjM2N2Q4NDUzZWYyNGExNzNjZTk2YjcxMTdkOTFmOWE2OGQ0NGZlZjhiMDEifQ"
+        },
+        {
+          "resource": "repo://docs/disclaimer.html#L48-L56",
+          "version": "repo-lines-v1:sha256:aa649c0bead67d55d330ebbc8ef370b8dfbdb61f15714ce4b3bd9bfb7dcefde0:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjNmMDdiMzEwNGMwYzIxMmYyMGNkMjJhYWQyYWRhYTAyMzI5N2Q0NDg3ZDJhMzcxMDhhM2U3NTczMWY4NmI0MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTczNDcyZmMwYmZjNWUxNGExZDRlZWNkNjEzZDgwODBiNmNhOWNiMTc2YzgwYWY1NDc4NDg0NmI0MjliNzRmYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGNiODY4YTIwNmY0NDY0YjQxZDA0MWJmMjY1NWVhMzRjMjM2NzE4NGMyNzk5YzlhNDA2NGQyYTY3ODIzYTJlNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_0cc2d751f5ec41eb93a76775ef2fa94a",
+      "statement": "数据集的收录取舍按其许可证义务分层：ODbL-1.0 的传染对象是衍生数据库（整库塞进产品对外提供服务需同许可开放，只做内部分析或输出统计不受影响），且这一层只收目录与元数据（The Well 仅 README/YAML、word-atlas 标 skipped），因此能容纳 BSD-3-Clause、ODbL-1.0 与两个 NOASSERTION。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/datasets/README.md#L12-L21",
+          "version": "repo-lines-v1:sha256:359b16ba83126dfbd92fc779a6b6c6f6f39cae64933f19b0a57756194d0baa9e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0OTJlZjg0Mzg4NDMyNmUzZmVmMzViMzA0NGE4ZGE2OTEyMzg4ZjU4NzAxNWQyYzhlNjI4N2E3NWZmNDM3N2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkxYTQyZDhiYjVjOTM1ZmZhMjlmNmM4YzBhMjJiNDVmZTFmMDhmOTQxZTg0YWE4NTY4MzIwYzhkMTM2ZWFjZTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5ZWEwNGIxODE0NmQzNzdmNDc1ZjllYTQ1MDFlODNhMTcwYTJhYzEyMzU4YzU3YWU2YjE3MWI3NGRkYTJiZDAifQ"
+        },
+        {
+          "resource": "repo://10-resources/datasets/README.md#L53-L67",
+          "version": "repo-lines-v1:sha256:34b4de7688943e42fdef4f4b61684ffe27f3ee76568af5cade2590ebe71dc895:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjViMDUyNmI5YmNkM2FjYTUyMDVlNTM4N2I5YzY4OGJkM2IzYTRhYjc1MWUzMjQyMzBmZDAzMjE5MTYwMDYzNTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVjYmJmMDczNGVjMzkxN2JhZDIwMjQ0NmVmZWQwNGQ5Y2ZlNTJmMWZlMzJmYWY5ODgwOWRlOGRmZGM3MGY4MTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjgzZTBkZWY4NzU1MDBhNGNkZDJmZjE5ZmY4NzE4ZWY3MjBlMWY3YjE0OWExNDRiNmJiMWQ3ZDI0MTZiZmUzODciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjgzZTBkZWY4NzU1MDBhNGNkZDJmZjE5ZmY4NzE4ZWY3MjBlMWY3YjE0OWExNDRiNmJiMWQ3ZDI0MTZiZmUzODcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_eb8758bbf621445ca443b01de73bc124",
+      "statement": "AGPL 条目只标注不回避，唯一加粗的例外是 Concat（定位为剪映平替且可被 AI agent 脚本化驱动），其边界句与 RustDesk、OpenStock 同句式：自建自用没问题，对外提供网络服务或包进产品就要按 AGPL 开源修改。",
+      "evidence": [
+        {
+          "resource": "repo://20-tools/projects.md#L148-L155",
+          "version": "repo-lines-v1:sha256:efadb2e04677dff60d4b57b25442d305d9cede350fef29bf6776035273fc1126:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmFmMmY5NjMxZTc0ZDM4ZWZjOGQwNzljNzNkZjUxNmQ5MGY3MGMxYzk1YTlmNTQ1NjQ5YzgzMGFlMWQ0NjY0MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTdiOGRhNTcxMDY4YzE0OGZlNmU1MzA0Y2VjMDE5NDMzNzM4NjE4Mzk3MzkzODU2ZDc1MGNjZWNhYjYwOGU3NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDdlZjFjNjBmOGNlYjMyOWQyMmI5YzZhYjEzMTc3NzYxNGJhYThkYWFlZGZhZmRkYTBmOTE5ZTk4MzQ0NjY0MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTJmZjFjY2QzNTU3Y2MyZTYyNzE2MTYwNThjZTQ5YzYwZjVjMTliNDdlMzhhYTk0NDI1MDFlMjRmN2ZkOTA5OSJ9"
+        },
+        {
+          "resource": "repo://20-tools/projects.md#L51-L51",
+          "version": "repo-lines-v1:sha256:7470f652ee8ac0571b562438d4727acab0054f3c09944bcb3430c2480460958c:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzQ3MGY2NTJlZThhYzA1NzFiNTYyNDM4ZDQ3MjdhY2FiMDA1NGYzYzA5OTQ0YmNiMzQzMGMyNDgwNDYwOTU4YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzQ3MGY2NTJlZThhYzA1NzFiNTYyNDM4ZDQ3MjdhY2FiMDA1NGYzYzA5OTQ0YmNiMzQzMGMyNDgwNDYwOTU4YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiN2Q5NGMyOTQ4YzZiYzgxNGExZGZiNWZlZTQwYjM1OGIwZDA4YTE1YTRhODg4N2M1NWRhM2Q5OTUyMTYzMDFkNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWM4MDM0ZjczZWQ3NWU1ZjUwNzAyNzJmMzFkZDJlMjJhNmNmMzE2M2E0MDMzOWZlZTM1YTcxNDEzMjY1YmIwZiJ9"
+        },
+        {
+          "resource": "repo://60-others/README.md#L40-L43",
+          "version": "repo-lines-v1:sha256:3d7493e649ab8638905871da0f6970eeb5ca5bd1f9cffbceaeeeb9e029ae2968:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMmFmMmY5NjMxZTc0ZDM4ZWZjOGQwNzljNzNkZjUxNmQ5MGY3MGMxYzk1YTlmNTQ1NjQ5YzgzMGFlMWQ0NjY0MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTA3YTI0ZWUwMjc3NDI1ZjgzNjAyMzU3NmI2YTQwYjRkYzc1NzZlZTNlOWExZjkyYmQzM2JjYzQxZmE1MzkzYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzQ3NDA3ODlkMjQ0NTY4ZmVmNmU1MTViNzA1NDhmZjNhMWNmODg1MzhjYmU5OWJjMWNiMzQ5YmFlMDEwZGViZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjEsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiN2VhOWI1ZTc1MjAwNTAxMjVjZDA3OWUxZGI5OWVkZDlkOGI1MzQ2ZDA4MGI5NTgxYTUxYzQzNzliYTRlMTgxOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_6f21eac131ec40e892658feec0d61e55",
+      "statement": "高风险条目按「是否改动第三方平台状态」分流：只读的 ai-goofish-monitor 留在 20-tools 精选表并在用途列注明「只读，不改平台操作」，而同主题的闲鱼超级管家只进 60-others，并附平台协议、自动过滑块、账号 cookie 托管、AGPL 四行风险表。",
+      "evidence": [
+        {
+          "resource": "repo://20-tools/projects.md#L43-L43",
+          "version": "repo-lines-v1:sha256:d952e05f83d4ad5ca264bfd519a22fd5a81e6cf35e75f9cb0b7e48f6b9d5bcbd:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDk1MmUwNWY4M2Q0YWQ1Y2EyNjRiZmQ1MTlhMjJmZDVhODFlNmNmMzVlNzVmOWNiMGI3ZTQ4ZjZiOWQ1YmNiZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDk1MmUwNWY4M2Q0YWQ1Y2EyNjRiZmQ1MTlhMjJmZDVhODFlNmNmMzVlNzVmOWNiMGI3ZTQ4ZjZiOWQ1YmNiZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTMzOWFmNGM0OTRlOTk2MjAyMzdlMzA1YjlmZjEyMzM3YzNjYzIyMzYzNDdiMjE0YmQyZjA3ODY5NWY3OWRlNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODhmNzg1MDQxMTViYmFlNjI5NTE2MzU5NjkwNGJhODk3OTcwNjBlOWYwYmVhMGU5ODZjODk2NGI2MTRjOTcyMyJ9"
+        },
+        {
+          "resource": "repo://20-tools/projects.md#L70-L74",
+          "version": "repo-lines-v1:sha256:6f832802cf4d66a418249f86ebf3461bf5f479a0e01bf3861d2acc9beb11d8a8:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjU4NmY2YjkwZWFjNzY5MzBjNTRjMzNlNzdlNzA2Y2Y0NGExODY4M2FlMWQ1ODYyOTgzNWE3YjBmNzBmYmQwNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiY2Q2NjNiNGEwMzhiMjhkMmNlNzdmN2YzYzAwMWY5OTE3NDJiMzg5ZDE2NmNmODViMTdkNDRiM2YzNWJjMTBlYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjVhNWI0NDdmYzcxNWEyZjVkOGU2YjhmZjNiMGYyNzUyMjYyOGJkZGE3MGUzZmYwMDRhZWRmNjhmZDYzNzY0OCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGIwNzE0YmZjMjY1YWQ0ZTI2Y2UzMWExYjcxOWI1NTUyNDM5NWY4ODgxOTZiNWNlMzQxZDA5OTkwODg1YWFiZSJ9"
+        },
+        {
+          "resource": "repo://60-others/README.md#L29-L38",
+          "version": "repo-lines-v1:sha256:8783b72961bb5e207e90df0afe2cebb81d495b33b0a115d37f5aac614ee948c4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiZWE2NWI5MzdjNGQ1NDQ4NGM5MThlZTk5N2I3NTIxNTliZDkwMGQwNWM0ODBhM2Y3ZDlhNTNhMTgyMTQ2NGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYzOGM0ZjVhZTAwZTg1M2E0MGQ0MWQ2YzAxOWY5MjY5MDIyNWU5OTU4YTAzMmE5YWNhOTVkNTdhZDFiNTE3MTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY0OTVjYzBlZTJlYjVjYWFhY2E4MmZmZGM3NjM2NTk0OTE5N2M2MzU5NGZjNjI1YmNmZDNkZjc1ZWU5OTVmMWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhlNmZhNTIxODVjMDI1NzFkNTQ2MTVjOTI1YWRhN2IzMjMwODQ1NjAwODM1NTBlMzRlYWI0NDNmMTM5Y2UxZjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_2a1a44102713476aadf0681dfb9c804e",
+      "statement": "当单条目风险大于其价值时，风险升格成专节而不是一行脚注：TVBox 类客户端的内置播放源多为未授权影视聚合源（版权红线）、ung220z-tool 只可用于自有光猫、get_jobs 类自动投递明确违反招聘平台协议且封号是常态。",
+      "evidence": [
+        {
+          "resource": "repo://20-tools/projects.md#L106-L134",
+          "version": "repo-lines-v1:sha256:c7819294a95725c9ac49dd39b951f47c9fca9f2c47d40a03d466b7ee31595af1:eyJzZWxlY3RlZExpbmVDb3VudCI6MjksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImNjNGU3ZDRjYmE0ZjBlZDg4NGFjNWNkMDgzYmFmNjhiZGE2Y2ZjNDM1YzBhODQwOTUxY2MxZjFjNTc5NzcxMWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNjYmM0MTI0ZGQ4MzY0OWYxZWM1NDA5M2YwMzZmMTVhNmJlNDdjZDdmNGE3MjEwYzU3M2Y3ZGZjMTYwNzFkOWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkwMTdhNjY2Mjc0OTQyZTU2OWQ5NzBiZmU1MjQwMmYyZWU4MzVlOTU2N2UyOWEzZDczYWUwYjQ0ZDU0NWE5ZjkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_eeade27623c042feb8b2e1eb31d4ebe4",
+      "statement": "人格权与素材版权被单独警告：Deep-Live-Cam 未授权换脸可能违法、VoiceStudio 克隆他人声音须书面授权、ChatTTS 不要克隆他人音色、Hypit 类复刻工具踩素材版权与平台原创判定灰区、book-to-skill 整本 PDF 对外分发即侵权。",
+      "evidence": [
+        {
+          "resource": "repo://30-ai/projects.md#L85-L119",
+          "version": "repo-lines-v1:sha256:28fc1b9edefd6a23529609ef705f0b11eda1d566446efd273234f3097b58d422:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY1MWNiMTFhZGE5ZTRiY2IwZTU4MmQwYzBkYjM2NTViOGVmMThmY2I3NmM5MDQ2ZDgwMjViODgzMWFiN2E5ZDMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwYTdmY2I1NTE4ZGFiOThhYzcwY2Q1NjBmMTk3MmE1OThiNDY2ZmE3ODIxNTc3M2I2OGYxNGNjODNhZTY2ZDIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYwZWJkZTg4NTZiZGEyODljNjEwYmUzNTUwN2YwY2NjYjdhOWM3MjgyZDFkZTQ4MWE2NzFhM2JhNjE1OWJmYzQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f692b3e2577e48d59959b4f283332987",
+      "statement": "「只做索引、不托管」的立场排除了第三方代码、安装包、镜像与网盘转载，唯一例外是已核验许可并被真正下载进仓库的 10-resources/assets/ 素材，以及只收目录与元数据的数据集条目。",
+      "evidence": [
+        {
+          "resource": "repo://10-resources/datasets/README.md#L12-L21",
+          "version": "repo-lines-v1:sha256:359b16ba83126dfbd92fc779a6b6c6f6f39cae64933f19b0a57756194d0baa9e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0OTJlZjg0Mzg4NDMyNmUzZmVmMzViMzA0NGE4ZGE2OTEyMzg4ZjU4NzAxNWQyYzhlNjI4N2E3NWZmNDM3N2QiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkxYTQyZDhiYjVjOTM1ZmZhMjlmNmM4YzBhMjJiNDVmZTFmMDhmOTQxZTg0YWE4NTY4MzIwYzhkMTM2ZWFjZTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5ZWEwNGIxODE0NmQzNzdmNDc1ZjllYTQ1MDFlODNhMTcwYTJhYzEyMzU4YzU3YWU2YjE3MWI3NGRkYTJiZDAifQ"
+        },
+        {
+          "resource": "repo://docs/disclaimer.html#L40-L47",
+          "version": "repo-lines-v1:sha256:98dbacdb676efd93cbc7dbadae8828aa81ea6d71231648bdd7e2a895a6619c78:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmZhNWVmZTc5NjNlOTkzMjFiZjg0OWY1YmEzZTYxOTQ3YjRjMjVjZDE3OTQ5YWEwNDliYjY5Mjk5YjJhNTA3MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmUxMjY5ZjI1YTg0YTA1ZWM2MmVmZjk4YWM3YmQ0MzFiNzhiOTYyZmExMDg0NWQxYTc2MTkyOTgwMWJkYzhjNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTYzM2RlNWY2NDg1NGQ5MjExMTAyZmY3NzZiYWM4Mjc3OTBjYWQwMjBjOGVkNDE5ZWVkOTE3ODc3YWFkNDM4YiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2820205b1d0f4bdba05ce7f098b82a18",
+      "statement": "下架与免责是收录他人项目的对价：作者在仓库 Issues 说明项目与理由后，核实即 48 小时内移除或修改；内容按现状提供、不构成法律/投资/安全建议，站点只做记录与提示且不为使用后果负责。",
+      "evidence": [
+        {
+          "resource": "repo://docs/disclaimer.html#L57-L80",
+          "version": "repo-lines-v1:sha256:fae550ec4787026db2c3236872ff8b316972e9e76a290113d37c54a3e368403e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhOGFiNWI2Y2ZjODI4NGE4M2Q2OTE0YzQ1ZjRmNzYxZmQ1ZmNjYzM4NDJlYmQ0NTk0YjEyZTk3ZDk3NDQ1NjEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlYjUxNjU4YzRmZjAzNWZlY2RlYjRjMjY5ZWZiMmQzM2E2N2FjOTkyOGEyYTZjMmQyZDlhMTQ2MzBhMGVjMzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkzOGQ5Y2Y1NDdmNTk3YjQ3ZDAxODQzYWM0ZmQxMzhiZDZhMWVjMmQ2NWZlMmVjZmUzY2ZhODE2ZTI5YjU3NzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjAyZWQ1NGVkYzQyZmJiYmMzNjk4OGIyYTE4NGI2N2U0OTU2OGJlNDgwNzgzMjUzOGJhOWI3ZWRkYTUzNzQ0ZDgifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-21T01:55:26.634Z"
+  }
+}

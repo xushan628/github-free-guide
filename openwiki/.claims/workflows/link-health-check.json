@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:456f03e640d46efa3c66d5e10c5b1f8231a207a4d419b9185ef066db87806e39",
+  "claims": [
+    {
+      "id": "claim_9b39378c0c464d23a4fc889e2b0fcd61",
+      "statement": "verify_links.py 的输入范围是仓库根下全部 `*.md`（`ROOT.rglob(\"*.md\")`），唯一排除项是按文件名匹配的自产物 `docs/link-check.md`，因此 `openwiki/`、`skills/` 等子目录的 Markdown 都在范围内，而 `docs/*.html` 里的 href 完全不进体检。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L31-L33",
+          "version": "repo-lines-v1:sha256:81c838e2ff8519faf9f6a222692154d87fefa58e41f57e5ac5b26ce8e50d7238:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjYzOGI1ZWIyYTEwNWY0NjA0ZDBjNWU3Mjg1OWM5MTkwMDg2ZWFmMGYxOGY5YTcxY2NjYzI4MzI3MzVhODFkMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjcwODU4ZjBhYTllZDA5OTU1NjZjZTlmNGNiNmU3YWQ5ODExZGE1NjZhNmJhODZlMThiZjM5ODA3ZjlkMDkzNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiY2ZhZTI1M2JhMGU1OGU1YmI4ZDIzNGZmNjI2ZjkzOTdmZTBjMzI3YTk3Y2UyYjI0ZTY5ZDk3MTlmNGU2ZTc4YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzlhNDkwNDM0NTg0YmU2ZDRjOWU2MzFlZTQ1NTIxMWNkN2ZlOWRmNjA3ZjlkZmFhYzA2MmEzMWRlNTcyZWMzZCJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L88-L91",
+          "version": "repo-lines-v1:sha256:b098b3e049f079e8f5825d95fca742eb40449a027f5ceec2d243173617acbdeb:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNTJlNjlkYzliMDFmYzI3NjA2NTExOWEyZWQwYTI0ZGM0Mzc0YzVkOTMwZjAzNzY5YTc1MDQ4ZjVlMWUxYmU1MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjllN2YxMTdmNjYxMWFmNWZkMmU1Zjk1OThjNWQyMTk2NjFkMTljZDFlNzQ0MmY1YTlkNGFkZTg2NTAzNGRhZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzY4MjY3NTc4MjM5YTNkOTg3ZDdhY2I0NTYwMmFlYzA0MjdlM2I4N2RhMTljNzU3MzY5ZDgyZTgzOGEwMTE0MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMWEwMmY1ZGRlOGEzYjE5MTdkNWNiMTliNjYyNzUyNjg4YjI0MDgxZmIzYjkzNzZhYTVhMTZiZTNiZjU4YWMxZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_e36fec7167f54e3faa4383c9b170988a",
+      "statement": "链接收集有两条来源：Markdown 行内链接正则 `MD_LINK` 与裸 URL 正则 `BARE_URL`；结果以目标字符串为键去重（`setdefault`），行内链接的 refs 记作「文件 → 标签」、裸 URL 只记文件名，`#anchor` 与 `mailto:` 被跳过，裸 URL 用后行断言 `(?<![(\\[])` 排除紧贴 `(` 或 `[` 的匹配以避免与行内链接目标重复计数。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L41-L42",
+          "version": "repo-lines-v1:sha256:85d08eca5093c2a29a8f2387e6b763f1b05c95535269ad6781757e29863cb884:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTY2ZWQzM2Q2ZDJjZDhhZTkwNTUwZjM0YTE1MGE4ZDhkMDg4NDQ4NjlmNTI5YzJhODA1YzI5ZjZlZDgxYzliZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjQ3MGFjZWZjMDY3YWI2NDVjYzIwZGNiYmUyMjM1YTY0MmEwYmI1YzY5OGZjMjA2ZDYxNzBiNWI0ZTA3NjFiYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTdmNjlmYWEzZjFkZWI3YWQ2NDJlMDBlZDBjNWY0NDc4N2EyY2M1ZThjOWU3MGQ2NTE1MGQ2MDdjNDNkYjQ0YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTZkMWM4NTY4YTBjNTRmOTJmZjMxOWY3ZjljODBjNWJmNTY3NTI3ODY0N2JhM2RiYmM4MjRjN2ZlMDZjNzY5MyJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L93-L102",
+          "version": "repo-lines-v1:sha256:7d612ce796c529352da850d4c5058b6d1c4a71107f8087731e33a03e7c888978:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwMjAxODE3ZmRjYjA4YTE4N2ZlNGE3NTRiNTk5ZTllODc4YmRjM2YzMWQ4ZDc0NGJjYTdkMTg5ZGQ4N2ZmNjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiNWE2MWY4OTkyNjJhNmVlMDgyNWE3ZDNmZGJlNmI2ZWE5MTIyMzA2OWVhMjA2MWEyZWU4OTY4ZjA4YWZlMjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdmZTA0OWJiYjE1MWNmM2NiMGU1ZDJjMTczODcyODlmZjA3NTE3NmIwZmZmOWIzNzA3YmVlNjc2ODQ3ZTczZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM0M2VjNTk1MTY2ZjViNzgwYjdhNzc5NGI2OTVkM2M5NTdkNWY3NWJkMDY2ODVhOWE4NmM4YWRjNzA1ZThhYTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9e90af06b60445d1836735949cc9c453",
+      "statement": "收集阶段没有代码块/行内代码感知（正则直接跑在原始文本上），因此 fenced code 与行内代码里的 URL、相对路径同样进入体检；而 `[x](<https://a>)` 这类尖括号写法会被 `MD_LINK` 收成以 `<` 开头的站内目标（判「文件不存在」）同时又被 `BARE_URL` 收成一条外链，产生两条互相矛盾的记录。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L41-L42",
+          "version": "repo-lines-v1:sha256:85d08eca5093c2a29a8f2387e6b763f1b05c95535269ad6781757e29863cb884:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTY2ZWQzM2Q2ZDJjZDhhZTkwNTUwZjM0YTE1MGE4ZDhkMDg4NDQ4NjlmNTI5YzJhODA1YzI5ZjZlZDgxYzliZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjQ3MGFjZWZjMDY3YWI2NDVjYzIwZGNiYmUyMjM1YTY0MmEwYmI1YzY5OGZjMjA2ZDYxNzBiNWI0ZTA3NjFiYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTdmNjlmYWEzZjFkZWI3YWQ2NDJlMDBlZDBjNWY0NDc4N2EyY2M1ZThjOWU3MGQ2NTE1MGQ2MDdjNDNkYjQ0YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTZkMWM4NTY4YTBjNTRmOTJmZjMxOWY3ZjljODBjNWJmNTY3NTI3ODY0N2JhM2RiYmM4MjRjN2ZlMDZjNzY5MyJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L93-L102",
+          "version": "repo-lines-v1:sha256:7d612ce796c529352da850d4c5058b6d1c4a71107f8087731e33a03e7c888978:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwMjAxODE3ZmRjYjA4YTE4N2ZlNGE3NTRiNTk5ZTllODc4YmRjM2YzMWQ4ZDc0NGJjYTdkMTg5ZGQ4N2ZmNjgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNiNWE2MWY4OTkyNjJhNmVlMDgyNWE3ZDNmZGJlNmI2ZWE5MTIyMzA2OWVhMjA2MWEyZWU4OTY4ZjA4YWZlMjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjdmZTA0OWJiYjE1MWNmM2NiMGU1ZDJjMTczODcyODlmZjA3NTE3NmIwZmZmOWIzNzA3YmVlNjc2ODQ3ZTczZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM0M2VjNTk1MTY2ZjViNzgwYjdhNzc5NGI2OTVkM2M5NTdkNWY3NWJkMDY2ODVhOWE4NmM4YWRjNzA1ZThhYTcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c87eb45f9e694f37be3d8296c7e1126f",
+      "statement": "对 github.com 的链接做两种改写：`/blob/<branch>/<path>` 改走 contents API 并附 `?ref=<branch>`（路径上的 `?`/`#` 先被剥掉），仓库根形态改走 `repos` API 并去掉仓库名的 `.git` 后缀；其他子路径（issues、tree、releases 等）不改写而直连 github.com，且 blob 正则的 `<branch>` 不允许含 `/`，分支名带斜杠的链接会被解析错而判为 dead。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L43-L63",
+          "version": "repo-lines-v1:sha256:7174ca0499b68b07b670ac6792a9977bf50cbd237b454e94b233fa2fa629ad20:eyJzZWxlY3RlZExpbmVDb3VudCI6MjEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2N2FiNjFiNzJlNjUyOTBjOTRkNTg4MWRiNTdiMDQ1OWIzNWJmMTVjYjFlZTgzMTRkN2EyOGUyYzUwMTE4MzEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM4MDU5MWZmNmJkNzllYjUxNGZhODQyODFhYzJlOTVkZWUwZjY5ZDc4M2E2MmI0ZWIwMTcxNzU5MGY5OWM2NGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJlMzA0ZDFiNzk5ZTViZGFkYTRiODkzZTFkZmE1MmRkYmFjNTcxMDdhODNiOWMzM2ZhYTU3MjMxZGUwZjJmZTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_35f85b5472674dbebc4482f584c74b6b",
+      "statement": "外链探测是 HEAD→GET 的阶梯：HEAD 上遇 403/405/429 或超时/连接重置/DNS 异常时降级发 GET，HEAD 上其他错误码直接 dead；GET 上 403/429 与网络异常记为 unverified，其他错误码（含 GET 的 405）记为 dead。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L64-L83",
+          "version": "repo-lines-v1:sha256:1da3c3cecd921f16532be4cf152e5eb6482e9df448a05302c21f7bc942016e94:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdiMWU1OWQ3OTE0ZDU0NzVlN2YwNmU2YmRiYzdhMGI4NWVjMzI5MjBlMDQyNGM1ZTBkOTNlNzZkZmQ5MWNlNjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFmMTk2ZmU2MTIwZmYyYjllYTM4OTAxMjc3Mzc3NDljZTA1OGNkMzI5NTUxNTE3NWJlN2JlYzg4OTgyYzZhOTAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwMmYzODIxNTY2YjM4ODk5ZTFjYTYwNDQyMTQ2MzViYzg1Y2ZhNzc1ZmQ3YjdjYzRmYTEwZjdhZjllNGRkYWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY3YjI0NTlkMzFjMTcyODEwMTk2MWFlYTQ3YzBkYTc3MzM1NzI2MjUwOTA4NTMyNjQwYjA5MTA2OTIyNGIyYzEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_dfdf4e80a91841639c0ab781874e3240",
+      "statement": "以 `LOCAL_HOSTS`（`http://localhost`、`http://127.0.0.1` 及其 https 形态）为前缀的目标在发任何请求前即返回 `(\"local\", \"本地服务示例，跳过\")`，在报告里单独计为「跳过」，既不算 ok 也不算 dead。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L143-L146",
+          "version": "repo-lines-v1:sha256:2093172f2e62e0a51fc4524514d3708d833421b2a1d3e04ba93b334656a52c2f:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDVmMmUxZWEzYjM5NDIzODhkYmRkZWQ1YTU2NGE0MDY2M2FkYTBiOTEyZGE2ODY0MzRiMjUxYWZjZWMwYzNlYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWM4Y2JkZmQ5ZmU3ZmZkODIxODM3ZDA3NTYyZTgzOGVkODE0MTI2ZWEzNjc1MWRjY2U1MzEyOGI1ODlkYjg1OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2Y5OTZkNGJlZDg4NWQ0MDg2YmU3YTg4OGQ5MGM2YzFiZGU0NjJkYWU5ZDIyM2Q1MmE5MGFlODE5NzZjMTg0ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODEyNzhjNTU5OGE3N2NhNmIxMWYxZTA3MTMyNjVkZTEyOTNmMDdiY2NmZGM5NjBlOGYwNzNjMmNmODQ2MWNlZCJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L36-L37",
+          "version": "repo-lines-v1:sha256:71e827859f9f0576d901e37db21a8213d6ee6e37920b3c27f02538f4ca9fb872:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmRmODVlMWM5YzU1NmI3NGY5NTZmNzIxNGNjMzllZTU2OGNlYTMyMTgzZDUyZmQ0ODVlY2M3M2RjMTM3NDVhNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzZiNGZjNWEyNTJiYmUwYjhmNGY5NTVjOTE1NGVjMzA3MWMyMWU0OGRlOTU0MzFkNzI5OGU5YWRkOTFiYTA1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzFkMWNmMDE2MWY4YjllMzZlYjg2MDg1NDk0Yjk1MzUyYzYzYWU1ZjA2ODkxNjgwZDdhOTE5NjE3MmQ3OThjZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTdmNjlmYWEzZjFkZWI3YWQ2NDJlMDBlZDBjNWY0NDc4N2EyY2M1ZThjOWU3MGQ2NTE1MGQ2MDdjNDNkYjQ0YyJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L50-L51",
+          "version": "repo-lines-v1:sha256:f71548012fa4583fac1968b7baea1354c4791f5dde0bdd8ef4330fdf82f5bf7c:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWQ3ODU1NjVjMzZlOWJjNDkyMGFjNWU4Y2M2ZjE3NDRlMTBjNzFlODc4ZjI1MzA1MmUxZWQ4MDgwYTgzMmQzOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjVmNTFlMjNhMmJhMTUzOWFjZGViNTQ1ZDFjZjc2Mjc5ZDhlMTZhZGVkMDVjNmM5MDFkZWMwZjQ3MjcyZGQ2MiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiN2VkZGU0ZjQ1M2JkZWY3YTMxZjRlNGU5YmJkMzk0YTkzNjQ2ZDE1NGUwNjE3ZDhkZTVhOTFmNGE2ODBlMWNiMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODI0MTBjYTFjYTc3MWIyZmVhNjI5ZWNhMTBjZGYyY2IxNDA2OGE5YTczNGU5ZTkzMmM1ZDc4OGIwMDVkM2U4OCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c28efba316b94dbfa3809ba7d9e67156",
+      "statement": "站内相对链接由 `check_local` 判定：以该目标首个引用文件（`refs[0]`，用 `split(\" → \")[0]` 取回）所在目录为基准、剥掉 `#` 片段后 `resolve()`，解析结果必须仍能 `relative_to(ROOT.resolve())`，否则直接 dead（detail「越出仓库目录」），因此以 `/` 开头的根绝对路径必然被判 dead。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L106-L114",
+          "version": "repo-lines-v1:sha256:cca5e78575283f332c07d3678852ca9a09cb352d22d2ebdaba45ca407252352c:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2YwMTZiYWE3MmZhNmNkNzJlZjc0MjA5MWJhZDM3YzU0MjM4MTQ1N2RkMzVkZDM3ZmZmNDI0NTFjOGE1NDFhYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzQzZWM1OTUxNjZmNWI3ODBiN2E3Nzk0YjY5NWQzYzk1N2Q1Zjc1YmQwNjY4NWE5YTg2YzhhZGM3MDVlOGFhNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTZmZjc1OWY1ODVkYzQxOWI0NWE0ODJlZjljOGFhMDBlYWY3NjRiODdhMzkxNDMxYTZkNGJjNGJjOGJiZDBmOSJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L140-L140",
+          "version": "repo-lines-v1:sha256:9627e9d842ce7722e81a79d01fbf3522ba29664363d83243ed08a96553ec430d:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTYyN2U5ZDg0MmNlNzcyMmU4MWE3OWQwMWZiZjM1MjJiYTI5NjY0MzYzZDgzMjQzZWQwOGE5NjU1M2VjNDMwZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTYyN2U5ZDg0MmNlNzcyMmU4MWE3OWQwMWZiZjM1MjJiYTI5NjY0MzYzZDgzMjQzZWQwOGE5NjU1M2VjNDMwZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmExMzVmNmIwM2RkNzNmNjMwOTAxNWI5MzRmNzNhYjUxNjkxYWYwNmZmM2RkMjk0NGRiNDQyNTI2NzQzMzM3YyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDIwYjI4Y2I2ZTU5ZmI4MGQyZjRhNGUyMWM2NTgxMjc5MjgxYjhlNmQxZmM5MDczOWQyN2E0YjhmM2E2ZDdkZCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_686cd21dbd5b4b9ca96eec1dc8163ef9",
+      "statement": "外链探测用 `ThreadPoolExecutor(max_workers=8)` 并发、单次请求超时 `TIMEOUT = 12` 秒，且没有重试（每条外链最多两次请求）；token 只在目标以 `https://api.github.com` 开头时附加到 Authorization 头。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L128-L135",
+          "version": "repo-lines-v1:sha256:3bcc38fd75f1b0951ef9661da3185aa8da2b2a14cf01dae60d5504b2a1a5bf07:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmRjM2QwNjBhNzRhOTE1OGVhNjgzNTM3MzkxODdiNGMwYjlhY2U5NWMyZWY0ZmVhYmFjM2E4YmIzMDk0ZDFkOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTNhMzJiYTI1NzM4YjE5YWY4MzVlZjBhOTgyMjIwYTJiZGZiM2UxNzIzNDJkMzFlMGUzYzk2NDg2YWUwM2IyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjliNDE1NTVhYmY2OWU3OTIyYmM3NGUzZjdlZWJiZTk1ZTUzMDRhOWYyNDA2YzBiOTNiMThiOTBmZTgzNTFhNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDBiMmExNjMyYTkyYWQwMDYwZDkzZjE1NTljZmE1MGIyYzgxYjk4MTE3NjIyY2U1N2E5YmI4ODFkZDhhNDFjNyJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L36-L39",
+          "version": "repo-lines-v1:sha256:d53b385f943cb8cbf6a1a8ed92b3110c49478ade463cae50f46da20f96e0cb80:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmRmODVlMWM5YzU1NmI3NGY5NTZmNzIxNGNjMzllZTU2OGNlYTMyMTgzZDUyZmQ0ODVlY2M3M2RjMTM3NDVhNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZGZhMjdhMzI3YTc5NTFjMDIxM2M1NGExNWI1YWNlMTRhOGM0MTliODZiYTJkOTY1NDRjMWUxYzllYjE5YWQ0YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYzFkMWNmMDE2MWY4YjllMzZlYjg2MDg1NDk0Yjk1MzUyYzYzYWU1ZjA2ODkxNjgwZDdhOTE5NjE3MmQ3OThjZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzgwNTkxZmY2YmQ3OWViNTE0ZmE4NDI4MWFjMmU5NWRlZTBmNjlkNzgzYTYyYjRlYjAxNzE3NTkwZjk5YzY0YiJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L64-L70",
+          "version": "repo-lines-v1:sha256:6da29da6379f089af602756694fe907a6aa613ea3901d4cf866bcb037d679fe4:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2IxZTU5ZDc5MTRkNTQ3NWU3ZjA2ZTZiZGJjN2EwYjg1ZWMzMjkyMGUwNDI0YzVlMGQ5M2U3NmRmZDkxY2U2MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTI2N2VkNzEyOWNkZDgxMzg1YzY5NGIzMjE5ZDRmODBhMDc5NDk4M2U2NjNmNGFhNDVmNzBjYTgzOGQyOTk5OCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDAyZjM4MjE1NjZiMzg4OTllMWNhNjA0NDIxNDYzNWJjODVjZmE3NzVmZDdiN2NjNGZhMTBmN2FmOWU0ZGRhYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNmYyZDQ3YmMxNzE5ZTU3MTc4YjljOWI0NWIwZDJkMzI2YWYyNTM2YjlhODhmYTZiY2QxMDYyMGI0NGY0YWQ1OSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_4d7aab58bd6040489d827c00a25b57e4",
+      "statement": "退出码只在严格模式下依赖 dead：`main` 返回 `1 if (args.strict and dead) else 0`，所以 unverified、local 以及「一个链接都没收集到」都返回 0；而 `.github/workflows/link-check.yml` 调用的是不带 `--strict` 的裸命令，死链因此不会让 CI job 变红，门禁只能由本地或外部接入方显式加 `--strict` 才生效。",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L42-L46",
+          "version": "repo-lines-v1:sha256:8e76721d6b7c9d38fd699a8b871883fe35710cdbcb8358ab1e542ef10ea5d1e8:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWM5YjU2YzYxY2VjODlkNzViZTEzYmU1MTdhYzExY2EyMWRmYjFjM2RiYzc2YjY5OTY0OTRmMDAzNjZlZjRlYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGJhMDFlOWQwMjVmODIwMDI0ZDFhNWQwY2VjOTkxNWNhYWI2MTE0MTc4NTFiMDc2OTEyM2Y1NThhMDcxZjZiYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTM5ZmE3ZDNmMDAwNTQ4YzkzZTBhNDA1Mzc3MjVlNjcwNjc5ODZjMWI0ODg3MjMwNGU5ODUzNmUzNWZiNWM0NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOWY5MDc2Y2IwOWUzZTY0Njc2OGExYjI5MTczYjYyMzBmNDQ4NmI4ZWQ0MmNmMDU0Y2FhOWE0ZDAxYTViNTQ5NiJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L178-L178",
+          "version": "repo-lines-v1:sha256:bb5b9d28338ac80c41078c9a78e6ad70d37a3b258f847ae086601f4e36b88940:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYmI1YjlkMjgzMzhhYzgwYzQxMDc4YzlhNzhlNmFkNzBkMzdhM2IyNThmODQ3YWUwODY2MDFmNGUzNmI4ODk0MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYmI1YjlkMjgzMzhhYzgwYzQxMDc4YzlhNzhlNmFkNzBkMzdhM2IyNThmODQ3YWUwODY2MDFmNGUzNmI4ODk0MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTc4MjcyNWNjZjU1MTBjNDE1MzZiNTAxZTVkOTdkMjI2MGNlY2Q0MTg4NzQwNjNmOTA1Y2VkNGVmMmQ5OGYyNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTlmN2Y3YWExNjMwNTY3YzFiNWU2NjQ0ZTIxY2JlYzgzYTQzOTMzZGM1YjBkYTBkOTBjZDUzYmE0OGU5MTBkMiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_c3a7b4d8df2447fa91b16031a4a1b634",
+      "statement": "报告 `docs/link-check.md` 的结构固定为：头部（`生成时间`、`生成脚本`、四态计数、一段「未验证」释义引用块）、仅在存在 dead 时出现的失效表（链接/原因/出现在，出现在为去重排序后的 refs）、仅在存在 unverified 时出现的两列未验证表、以及永远出现的全量结果表；全量表按 `(status != \"ok\", url)` 排序，故 ok 在前、其余三态混排，同一死链会在报告里出现两次。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L148-L172",
+          "version": "repo-lines-v1:sha256:b3b7d845a489cc24a0bad9908ff8637093c555ff9223bff3ea6e4304befbc8c7:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJhNmJmYTExZDg3MTAyMTY3YzRjYzdmNjU2ODAzYTU4MmMxOGU4MGI4MmIxZmVjMzJmOTk5NzU4NTYyMjI4ZmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyMjVkYTA1N2RlOWU2NGFjZjQxNWIwNmQxY2VkZmZiNmVjZDQ1NGUyNmQwY2M3NGFjNDEyZDNkNjRiODMyMWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjljNWEwOWI1NTcyODg3NTEwZjNjMWI4OTIzNzk5M2Q1NWYxNzdlNGQ5YjdlOWExZjdjMDhiZDM5Y2M1MDhiZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjMyNjViNDlhZDg2ZmQ2YWVjODcxNGIxYzdjNzNhZjQ1OGY5NDhkOWRkZTI0ZTI3YTQzY2ZkNTkyYjI4YTgxY2IifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_80fdaaa1166a479abc62ce133c8d4e8c",
+      "statement": "报告是整份覆盖写出的生成物且永不幂等：头部写 UTC 时间戳，每次运行都会改写 `docs/link-check.md`，所以 `git status`/报告 diff 不能用来判断体检是否通过。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L150-L150",
+          "version": "repo-lines-v1:sha256:9b5166942e09184def8bd6bbb5358afb488a65f52999c7e8ac0eafe80b0e219c:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWI1MTY2OTQyZTA5MTg0ZGVmOGJkNmJiYjUzNThhZmI0ODhhNjVmNTI5OTljN2U4YWMwZWFmZTgwYjBlMjE5YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOWI1MTY2OTQyZTA5MTg0ZGVmOGJkNmJiYjUzNThhZmI0ODhhNjVmNTI5OTljN2U4YWMwZWFmZTgwYjBlMjE5YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODEyNzhjNTU5OGE3N2NhNmIxMWYxZTA3MTMyNjVkZTEyOTNmMDdiY2NmZGM5NjBlOGYwNzNjMmNmODQ2MWNlZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDY1ODgyZGI2YTgyYjFkY2E5Yzg1NTljNzcxMmRjNDE5MDUxY2JiM2NkNjBjOTk5MjAwMjM5MDFiNzQxOTNkNCJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L174-L174",
+          "version": "repo-lines-v1:sha256:8f1c213dc3ab0d5e2457291f1fda6014f50e4959c9260e1ce8f56c1ac7212baf:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGYxYzIxM2RjM2FiMGQ1ZTI0NTcyOTFmMWZkYTYwMTRmNTBlNDk1OWM5MjYwZTFjZThmNTZjMWFjNzIxMmJhZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGYxYzIxM2RjM2FiMGQ1ZTI0NTcyOTFmMWZkYTYwMTRmNTBlNDk1OWM5MjYwZTFjZThmNTZjMWFjNzIxMmJhZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTA1MGU2YTNmNDc1ODgxNDQ2N2QzYTc2MTQ2MDM3M2M2YWE2ZDQ2ZmIxZGUzNDBiNDNkOGRmNjg0Yjk0OWZiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTc4MjcyNWNjZjU1MTBjNDE1MzZiNTAxZTVkOTdkMjI2MGNlY2Q0MTg4NzQwNjNmOTA1Y2VkNGVmMmQ5OGYyNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_64885eef48a44c3fb8737fb47ace3a7a",
+      "statement": "增加第五种链接状态是一个跨三处的扩展边界：必须同时改 `http_status` 的返回值、`main` 里的四组计数（dead/unverified/ok/skipped）以及写报告时的 emoji 映射字典，否则未知状态会在写盘之前抛 `KeyError`，报告与总结行都不会产出。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_links.py#L143-L146",
+          "version": "repo-lines-v1:sha256:2093172f2e62e0a51fc4524514d3708d833421b2a1d3e04ba93b334656a52c2f:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDVmMmUxZWEzYjM5NDIzODhkYmRkZWQ1YTU2NGE0MDY2M2FkYTBiOTEyZGE2ODY0MzRiMjUxYWZjZWMwYzNlYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNWM4Y2JkZmQ5ZmU3ZmZkODIxODM3ZDA3NTYyZTgzOGVkODE0MTI2ZWEzNjc1MWRjY2U1MzEyOGI1ODlkYjg1OSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2Y5OTZkNGJlZDg4NWQ0MDg2YmU3YTg4OGQ5MGM2YzFiZGU0NjJkYWU5ZDIyM2Q1MmE5MGFlODE5NzZjMTg0ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODEyNzhjNTU5OGE3N2NhNmIxMWYxZTA3MTMyNjVkZTEyOTNmMDdiY2NmZGM5NjBlOGYwNzNjMmNmODQ2MWNlZCJ9"
+        },
+        {
+          "resource": "repo://scripts/verify_links.py#L168-L174",
+          "version": "repo-lines-v1:sha256:48ff0af141fac31197c0ded6bf2b7892801fe2a3aa2bcccf7c58c90e9ac2899a:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTY2Y2Y5NDRhNWE0NTQ3YjViYjljZmFiZThjMGQzYjAyM2Y4YTRkYzdhNjVhNWU3N2RiNTc0YzZmNGQ4MDkzYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGYxYzIxM2RjM2FiMGQ1ZTI0NTcyOTFmMWZkYTYwMTRmNTBlNDk1OWM5MjYwZTFjZThmNTZjMWFjNzIxMmJhZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDJlMDcxZGQxNDYwMWQwNWViZGYzMjM4YTI2NzNlMTFhZWI3ZmU1MjA4NGE1ZjFiMjA3OTYxNzc2NWUxZWU3MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTc4MjcyNWNjZjU1MTBjNDE1MzZiNTAxZTVkOTdkMjI2MGNlY2Q0MTg4NzQwNjNmOTA1Y2VkNGVmMmQ5OGYyNSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-21T01:55:26.634Z"
+  }
+}

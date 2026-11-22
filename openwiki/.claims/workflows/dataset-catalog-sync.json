@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b6612f6413f2f0597eb84220b78d64550370cb7f35ea8c347837f58a057be28f",
+  "claims": [
+    {
+      "id": "claim_5972a79bd3b848d7a171da4110ad16bd",
+      "statement": "`scripts/sync_atlas.py` 把姊妹仓库 `xushan628/open-data-atlas` 的 `data/manifest.json` 当作唯一输入：`fetch_manifest()` 打 contents API（固定 User-Agent 与 `Accept: application/vnd.github+json`、40 秒超时、无重试），把响应里的 base64 `content` 解码后 `json.loads`；凭据是可选的（`load_token()` 把 `resolve_token(..., required=False)` 包在 `try/except Exception` 里），且取数发生在任何写盘之前。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L1-L19",
+          "version": "repo-lines-v1:sha256:175b40ac16962cd47289ec2f87f26defbd13ded1f0db2f64e50bd80c3669955b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU2OWE0OGYwODY0ZGZmMzNiMGEwOTE1ZGJiZjNhYWY2MmE3MWI3MjFmMGY2N2U4ZTMxNTAxYWZlY2Y1M2ZmMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNkOTZkODJkNmQwYzMyMDY5NTZmYzA1MzkxMTkwMDgyNGE0NDVjMTZlMTFiN2QyYzk3YThhYWNiYTE3MzljNzUifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L52-L70",
+          "version": "repo-lines-v1:sha256:38aaabf104c30eb4ffd5c2c29c663e43585b98977fc34c4afbfdc64cb8b4de11:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliYWM0MGVmNzY5NGMyZjgzZGY2MGVhMjgyMWE1YWNlMWFhOWRhYmVhMzBlMWM3ZWViOGQxMDkyNzNlNDgwNmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRjNjM0ZjBhZjAyNGZhODU2YmE5NjViY2YxZGQxYjllYTAwZmY0MDk5YmRjNGM4NTA3NTNlZmY0MjVjMTRmNjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzNzliMjY0OWM1N2NkNzNiYjQ4Y2VmODA2N2QzNGI2ZTA1NWViYjUyMjc4ODU0ZmQyOGVlODZlZWU4NzNlOGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg5ZTg3Y2FmZDMxOGYwNWM5NTg3NmFlOTc1NGJhMjIzNWMyMzIzYjJlNjExODMwYWM0ZDQ3NDQyMzJjZWM4ZTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f0dce532ef7f4cdc980586669624cc8d",
+      "statement": "`build_catalog()` 在写任何文件之前做硬校验：`manifest[\"datasets\"]` 必须是非空 dict，否则 `SystemExit(\"manifest 结构不符：缺少 datasets 字典，拒绝生成\")`；每个条目必须有非空的 `name` / `repo` / `repo_url` / `license`，否则 `SystemExit` 指出第一个违规 slug 与字段。因此「许可证不明」必须由上游写成字面量 `NOASSERTION`，不能留空。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L73-L86",
+          "version": "repo-lines-v1:sha256:b32fcdf0476849d89cdb621dabb3980681214acad3034ecb172a11ab85bd4fb0:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmM2MwZmFkNmJiMzIwYTIzYWRjMzYxMWQ4M2M1ZjFjMTk0NDFmMThmNTc0ZGM1ZDc5YzI5NjRiNDYwZmMyZWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ3MjBlZGUwZjUwNmJlZTA4YjEyY2E4N2M2MzEyNTMwYTkzMDE3NDc0Y2Q3OWNlZTRiM2VlNDI0OGU2ZDExNTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQzNWQ3ZTkyYjQyZTE3NzUwYTkwZmEyYzIyZGJlZGRlNmZiODBiYmI0Y2FmNmYyYWFkZTY5MDQ1ZDYwYTQwNWYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcyZjkwODVjZDllNzc0NmYzNDM3ODNmNmUxNTQwZjdkZDVhNmRmOTAyOTA4MjFhYTUyODQ1NTc2MzZkZmQxNmUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b5d59e6439754b358c9e372ef457915c",
+      "statement": "catalog 的 `files` 是 `len(ds[\"files\"])`、`bytes` 是逐文件 `bytes` 求和（缺值按 0），条目按 `name` 排序后输出，顶层 `source` / `source_path` 写死而 `generated_at` 直接透传上游 manifest 的值；排序决定 datasets.json、README 表格与站点区块的行序完全一致，上游新增数据集会导致按显示名插入而非追加。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L87-L96",
+          "version": "repo-lines-v1:sha256:f9d4c29fd0450465997ffae2280fab1f859f73cd401d48d4dad059ac18db529b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBhMzZiNTJjOTNlNzgwMjMzYmU0ZWRjOTUxNTc4NzllNzUxMjgwZTAzOTFlOTcwZGQ1YzRkNzU2ODE4ZjhhYjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjOTNjYjEyMjNkYWQ3YjBjNmRiNDA5OTI5YzBiYjU2NzYyZDJlODk4ZjZmMGZhYzQ0ZWMzZjI3ZjRmYTFiYmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQwMzQzMjhjYWMwNTVmZmFmMmUyMDQ3YzRlMGIyZjU0MmI3YThmMjQ3ZGU4MjM3YTlmNjUxOWI2YTExNzM5NjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM3N2ZlYTc1M2U1MTZiZmUzMjI2YjU1M2Q2NDg3NTNlZTlmYTcwYWE2OTRlYmZiNzBkMDU0MTk1NzA1MzM3YzAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_4165d60f2d8f4d7888d2634c7fc1e1a5",
+      "statement": "`PURPOSE` 与 `NOTE` 是按上游 slug 索引、人工维护的模块级字典：它们不随 manifest 变化，上游新增数据集时 `PURPOSE.get` / `NOTE.get` 返回空串使 README「能拿来做什么」列渲染成 `——` 且无旁注，脚本也不校验这些键在上游是否存在，键写错或拼错是静默的。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L118-L126",
+          "version": "repo-lines-v1:sha256:e2a283392320d030d59da30faf08cd8827d93ec0f4ea6162159dae24ae817456:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDcxNjI4OGIyZGFjNzBiZGZkMWU5NGZjYzllM2JkMThjOGRlM2ZmYjhmY2NiYzliNzg0NjNiMzM0YjU5NTYyZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDBjOGE3MTU2NWMwNGQwYmUxNTk3YmY4NGE2MzY0MzE1ZDZjMjgwMGYyMzNmNGJjZGE4ZjlmZGMyM2Y0NDExNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzM1YjFkZjFiMzYzMzg3MjA0MGFlYmNjNTRhOTY3ZWRkYjk5ZTBkZGE0ODEwOWIzZjlmYjY3MzkzNTdhN2I1OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDFhY2Y5MGM0ZjZhNTNkZTNjNDhmZTJjOTJiOWJjZGQ1MDQ3ZTc4M2U0MGFhZjY5YmUxOWZjMjFlMzdjZjJlZCJ9"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L42-L48",
+          "version": "repo-lines-v1:sha256:b5be9c0b3260e38fcc3c368b0443b822628bb387282667ce04999d1a4de6d21e:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTU5NDkzZjFiZjY3OGUzZmFjMzcyZjA2YTc0NzY4M2E0OGQyMTg4NzA2ZDQ3YWNmY2FhYjlhMzk3OGMyYTczNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTk5YmM1NzQ2NDJjZjliYjVmZjgxY2UzYTUxNDA5ZDU0NDIzOGQ2N2Q4ZWE1MTIyYmNmMTI5MWM1Yjg2NDk1ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDE1Yzc5N2FjOGVmNGU1NzRmNzBmZmNkMTNmMjA3ZTYxMzBkYjRlY2NmYTgzOTdiMWJkMzljZTA5ZjMwMzdhMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjM3OWIyNjQ5YzU3Y2Q3M2JiNDhjZWY4MDY3ZDM0YjZlMDU1ZWJiNTIyNzg4NTRmZDI4ZWU4NmVlZTg3M2U4YiJ9"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L99-L103",
+          "version": "repo-lines-v1:sha256:a3d12b8429178297a0c2f732b1ceab285f2b10a3736c9da4812d19c79eae86b8:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODBlYmEyMTZjY2NiNDc3MmFhMzE1YmQ5ODljYjNkNzNlZTJiNTI3Y2Q0YjA3NjQyOTgwMTI4MGVmOTFiZDljMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTIyZmFhNTM1YmQyZWEzZDUyZTc0MWVkNDU0NDM1YjdmZTQ5ZTgzNTg2ZTk0M2Q5OGQ4MmJiZmIyNGQxZjVjNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTliOTMwZmZmNWEzZmQzMjkzMGEzYWViNGU0ZDNjZTQ4NWY5NzdkYzk1ZjYyZmE3NTk5MjQ5YjJkNmJlZTEzNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTllOGNhMTZiODA4ODhjNmM2Y2JlZGYyYWIwZmZhZGEwODFjMzhlNWY5MDhhMGYzZjU4OWU1ZDQwMzAyOTFlNSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_63c956b9fee84bd7b3be6ab76b54ebb0",
+      "statement": "`10-resources/datasets/datasets.json` 由脚本整份重写（`json.dumps(..., ensure_ascii=False, indent=2)` 加末尾换行），只在序列化结果与磁盘旧内容不同时才 `write_text`，文件不存在时先 `mkdir` 父目录。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L143-L153",
+          "version": "repo-lines-v1:sha256:235ce5a2c76b66eb4cb0732c3fabc64c1d7cb45c53309434c59e3dab0b424c92:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkMjM2OTA1Njg4ODg2MjdiOGJkOGNlNmUyMDhiZjU1ZDQ0MTQ5OTcwYjY5MjExMWJiNmIyMTk0OGQyMGNjMDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZlYmRjNjMyYTNhODk5MjBlMTgyODljNDcwOTk4YzQ3NDQ4MDUxODdjZjQyMjkzZTJmZTQ0MjNlNTZlNzNmZDAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE3Mjc1NTE1ZmY0N2RkMjNiODhjMjM5MmY0MDA3ZGZhM2E4MTM4ZjQ2ZjNlMDNiZDk4ZWVkNjNlOGNhOGFlNTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImYxYTJmZTMyZTg1MWQyYmJkYTNhYWNhYzlmOTZlNGQ5OTY1MWM5NWFiZGE2YTE5NTBjNGNjMTJmZDgzZWFmZDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_85e16717950d4356b4996c683976d771",
+      "statement": "`10-resources/datasets/README.md` 的表格用 HTML 注释标记界定：`text.split(BEGIN, 1)` 取 `head`、`rest.split(END, 1)` 取 `tail`，重拼成 `head + BEGIN + 表格 + END + tail`，标记之外的字节保持不变；缺 `BEGIN` 或 `END` 时抛 `SystemExit(\"README.md 缺少生成区标记，拒绝覆盖\")` 让整步失败，而整个文件不存在时只打印「跳过表格同步」并继续。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L155-L168",
+          "version": "repo-lines-v1:sha256:9b7bcde2bd077775af28b2b8f2029e0bb81e2351fa46309da729808781c057ab:eyJzZWxlY3RlZExpbmVDb3VudCI6MTQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlNDZmMzAxMjBjODhkM2QwZGMxMTkwODkxOWU1MmUyYjM1NjUyYzgyYmI4ZTM2MGQ3NGNhNjVjMzNiNjg1NWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjM0NmI4Zjg4YTY5NzVkZDEwYTU3NDdjYjM5YTQ1ZDliMDk3NjEyMTllYmQ5ODlkY2JjZDk4OTJmNzVmZGUyMWQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA5MTk3NGY3ODQ0YjhmYmQyZjAxZmIyMTFmZGQxNDllNGZlOTA0OTFkOTRiNWQ2NmQ4YmNiNjRlMTc4NmU3NjgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_de261ae386754bfa969e38bc54b5683c",
+      "statement": "README 表格的单元格由三个函数决定：`license_label()` 把空串与 `NOASSERTION` 降级成「见上游 LICENSE」，`fmt_mb()` 决定 KB/MB 与小数位，`note` 非空时以 `<br><sub>…</sub>` 拼在加粗数据集名之后以保持五列；五列表头在 `render_table()` 里写死。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L106-L130",
+          "version": "repo-lines-v1:sha256:5f43a5d7df3434f62f5460eebef12d197b7c59b0aa290a4a68beebc638aa8a5e:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFkZDg4YmNmZjM2NzY3ZDQ2ZDcyOTNhZWU3NTNjOTkzMWQ1MjEyYTBkYTQxZmRlNzdkODVlNTE0ZDkwODQ5ZGEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImIzNzliMjY0OWM1N2NkNzNiYjQ4Y2VmODA2N2QzNGI2ZTA1NWViYjUyMjc4ODU0ZmQyOGVlODZlZWU4NzNlOGIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3OTFiMzA3YTg5N2NlYTc4ZDIxZmE1MWMyZTI3ZDU4YmY1N2U5NmFiODNiYWZmOWZiZjU4NWUyYTc2Zjk1OTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_420826c27ef74ca7b2c2699f98f67ac4",
+      "statement": "`docs/index.html` 的 `atlas-items` 区块由 `render_index_block()` 生成，只含 `name` / `license` / `repo_url` 三个字段、`license_label()` 的结果再降级成更短的「见 LICENSE」、序列化时把 `</` 替换成 `<\\/` 防止提前闭合标签；两行标记缺失时脚本只打印「跳过站点卡片同步」并继续（不失败），整个文件不存在时同样跳过。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L132-L140",
+          "version": "repo-lines-v1:sha256:f932a8963b16d19f898c0efb21a033e06c9b416733709b3a90fd2993f6f06ff9:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDY2Mzc5ZTBlYjNlMWJjMTU0NjU3ZjkwMDdkMzc0NGE1NjhiY2FjNzljM2RhOTcyY2VlNjc5MzAzOWQzNmIxOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDY0OWVlMGY5MjgzYjg5MDA1YWViMWY5OWY0NGVkM2VlOTdmZTNhZWY0YTQxYTA5MDljMGY2NjlmYTk3ZGYwMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTdmMjQyNzllN2Y5NmYxMjgzZGU3Y2RlNjlmMzVmNDJiNGNiMGQ2ODcyMGM3NThjOTEyYzg1NDFlNzdjMjU4NiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTliZDU5ZWEyNWU4Nzg5MTNmMTkxYTg1MzdkNjVkZDFiM2E4NWQ0ZmRlY2U4N2UyMTZlYTgxNzJhOWYzM2MyMiJ9"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L170-L185",
+          "version": "repo-lines-v1:sha256:6989498b44c01ec7f1c2f2ef54ad25739609fd501d8bb50e58459a6ba6e5913f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0OWIxOGIxYWQ0ZjNjM2YyYjBmMWEzYjA3ZTEzNzUyNmViNGIxOWRmZGZmNmU2MmY2ZTI4ZTJmODYxNjk4MzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJlYWVlMmE2ZmI2ZDgzYmJiZDY0NWM1NGU2OWI2NWJlZmZmNzdmM2ZhMGM1MTdlOTdlODliOTcwMWY0MGE4ZjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0MDcwMjE5YWU4OWRkMjA1ZWNiMjAwYjFiODJmZjI4NjkxNmFmYjZhMzNlYjZkMzYzYTdlOWE3Y2EwYmNlMzEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_48e24bba51364821a7e41c3f3c7df90d",
+      "statement": "同步的幂等判定是对每处产物「重建全文再与磁盘原文比较」而非时间戳：文本相同就既不写盘也不加入 `changed`；`--check` 只比对不写文件，有差异时打印 `需要更新: …` 并以 1 退出，无差异时打印 `已是最新：N 个数据集，无需改动` 并以 0 退出，而实跑模式无论是否改动都返回 0。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L143-L192",
+          "version": "repo-lines-v1:sha256:b5c55f2f92ceadf286de64c659db9836d5d83bb81d89439865166e90acb6c906:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkMjM2OTA1Njg4ODg2MjdiOGJkOGNlNmUyMDhiZjU1ZDQ0MTQ5OTcwYjY5MjExMWJiNmIyMTk0OGQyMGNjMDciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE5MDc2NjE2OGFhYjk4MmQ0MDkwZmMwOTM2YTY0MzliZDAzMjM1MjkzYmUwMTNhZjhiYjM1MGJiMGExOGQwNGUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE3Mjc1NTE1ZmY0N2RkMjNiODhjMjM5MmY0MDA3ZGZhM2E4MTM4ZjQ2ZjNlMDNiZDk4ZWVkNjNlOGNhOGFlNTQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ1ODJkODNhNmY3MTk2NzdjMTEzMTI4NjI3ZDcxMDQ4NzM3MGE2ZGRhNGNhOTliMzRhNGNmMzk4Y2JlNWY2MTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_16d024f8dd824cc4b6987a482907b27b",
+      "statement": "由于 README 的标记守卫发生在 `datasets.json` 写完之后，标记被误删时会出现「`datasets.json` 已更新、README 表格与 `docs/index.html` 未动」的跨文件中间状态：脚本「绝不写半截文件」只是每个文件内部的保证，不是三处产物之间的原子性。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L148-L160",
+          "version": "repo-lines-v1:sha256:de779fe22aa2c2bbf6e9c0c1d151c05c1a039ee36c14754823c772c2fd44e2f2:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY2OWQ0MzI5NDZjNTljNmU0NGM3NDU1N2EwODkyM2QzMDZjZjVmN2UxODExOTlmNTNjYzUzY2UyZmVkMTc2NGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjUyZWQyZTgzMTBhYWVjNmY2ZTAyNWFlYzQ5ZWYyZGIyMDQ5MWM1ZGNjYmZhMjVmMDM1YTllNmU2ZmUzMTk0ZGEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImI2YWIxMjAzOTQ0OWRmMTRlOTcwMThhNzkzM2M0ZGYxZGM1NzUwZjQ1MmI5Y2VlMTU1ZThkNmY4YWYyY2U2MzAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNkMWVlZTIyNjIxYTM0YzE5YWZmZTU3NDI3YWJiMWI2Yzg4NzY3OWVkN2U3ZWNlMDI2ZmRhNzJjYmE3OGU1MzQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9b88e0cc6b224cf4a28e960b3356ae8a",
+      "statement": "脚本头部记载的取舍是不收录 star 数：star 每周都变，会制造无意义提交，需要看热度请点上游链接；把易变指标挡在生成物之外是「内容没变就不写文件」这条幂等设计能成立的前提。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L11-L14",
+          "version": "repo-lines-v1:sha256:a9460cae1cdce3fd2a4b4294ff9139a1e6009de6f973bda1e4ab2ef7cfe8fa65:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2QzMGQ2NTZiMWZkYThkMWRkODk4YmMzZDFiNmM3NDg0MmM5ZjkxMjdmMDMwMGY1MzEyZGIxZDM2YmEyMmFiMSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGJmNjU5MTI0MGViYzU0MGMyMWNmYmEwZWRhZmMyYzE1OWI5YjJiZDgxODVlNTExNTZiZjFmY2U5OWRhNThiOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzk5MDEzODVkNDY1YmIwZDZmNTg5NTkzOWM2MzJjMTgxODk2NWRhZTkwMmQxY2EyMDAwZmJmNzZjZjE1ZGVkNCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_7deb7bb09a2640ad91e669a5d69d5dcc",
+      "statement": "`generated_at` 来自上游 manifest 而不是本地时钟，因此同一次同步反复运行不会因运行时间产生 diff；但上游重新生成 manifest 时该字段会变，使 `datasets.json` 单独出现一行 diff，而 README 表格与站点区块不读该字段、保持不动。",
+      "evidence": [
+        {
+          "resource": "repo://scripts/sync_atlas.py#L150-L150",
+          "version": "repo-lines-v1:sha256:e2dc089726b9340c6592f8764c2c03d5dc81d2a435bbdbbb71777fc164a0ec13:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTJkYzA4OTcyNmI5MzQwYzY1OTJmODc2NGMyYzAzZDVkYzgxZDJhNDM1YmJkYmJiNzE3NzdmYzE2NGEwZWMxMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTJkYzA4OTcyNmI5MzQwYzY1OTJmODc2NGMyYzAzZDVkYzgxZDJhNDM1YmJkYmJiNzE3NzdmYzE2NGEwZWMxMyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmM1OThiZTFkYmM3MTg3ZWI3MTA3ZmRmZGU0NTgwMmRhNTU5YjNmZWQ4NjcxZDMzNjFhODhmNjcwNmU1NWM3YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGU5YWI3Y2Q4Yjk5NmViNWFmY2ViOTM1OGFkMDI3YjY5Y2M1NzgxOTYyNWU2NjYyYmY3MGU0YWM1MGE0ZGM1NiJ9"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L95-L96",
+          "version": "repo-lines-v1:sha256:432ff9e6c690d8c64584f4d6f59cd0d99ac618124029034496203bc1f641a445:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWU1YmRiNTFjNzRkMjQ2MTc1YTExMGEzOGQ3NzViNGNjNjBmOTI3ZDNiYjY0N2NiMDU4MGM4NmIwOWUyOTgyZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOGM5M2NiMTIyM2RhZDdiMGM2ZGI0MDk5MjljMGJiNTY3NjJkMmU4OThmNmYwZmFjNDRlYzNmMjdmNGZhMWJiZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMjdlYmEyMGRlMzY4OWJlNzBjZjFjYTEwYzQ0ODMxYWY1YjNiMjdjMmUxOGMzMTQ3MDE5OGVlNTg5NjMzOWQ0NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzc3ZmVhNzUzZTUxNmJmZTMyMjZiNTUzZDY0ODc1M2VlOWZhNzBhYTY5NGViZmI3MGQwNTQxOTU3MDUzMzdjMCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_eeec652608404fc8a0aeb5fc3722f4c4",
+      "statement": "`docs/index.html` 的消费端用 `textContent` 取 `script#atlas-datasets` 的文本再 `JSON.parse`，只把 `rows.length` 写进 `stat-datasets`，解析失败或空数组时静默保留 HTML 里硬编码的数字——区块里的其他字段没有任何消费方，加字段必须同时改这个消费端。",
+      "evidence": [
+        {
+          "resource": "repo://docs/index.html#L409-L415",
+          "version": "repo-lines-v1:sha256:7c4f0181fa728de166097a16eb9f2e8644fb45d62b19293965154175d72f31bc:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiODY0Mzc4ZDFhYmZmMTljM2Q5ZGYzNGY1MjFmNDY5M2RmZjA1MmQxMDY2ZTk4ZDUzM2I4MTkxMmVhNWYxYmM2ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMjE1NTkxYjAyYzY2NWYwM2FhMjNjNjYzZjRmMzc2OTA4ODFhZTkzZGQ5ODE4MmU1Y2E1ZGEzZGM5ZTRhMDFkZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGVkZjUyZDM0YjUzODM0YzkxYjM0ZmRjYjg4MWU5ZDQ0NTNhNTliMmQ1NWI2YmYwMmMzNzcxN2M1ZDI5ZDlkOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2QxMjcyMTkzYzU5MzhiODVmMGZkNDU0Y2Y2ZmM1MzQ2MWU5NDE3ZTQ4YTE3MWZmMzQ1OTIwYjQyZGJlNTgxOSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a090b4e9035c42559dc8ba5084ea8828",
+      "statement": "`link-check.yml` 直接运行 `python scripts/sync_atlas.py`（不带 `--check`）后只 `git add docs/link-check.md 10-resources/datasets/`，因此脚本对 `docs/index.html` 的写入留在工作区不进 CI 提交，站内数据集计数会滞后于 `datasets.json` 与 README 表格，直到有人在本地跑同步并一起提交。",
+      "evidence": [
+        {
+          "resource": "repo://.github/workflows/link-check.yml#L48-L62",
+          "version": "repo-lines-v1:sha256:25ee5528811c755d1e0f39a8c9f39afd988f1a33ab6e5e3a654cd668419c0644:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQwNmUwMDk5ZjIyMmMwOWIyMTJlNTUzZDgxZWI1MDdiODMzM2FmYTE4MDA3MTRlYzQ0NTZlZDg0Yzk0ZTFmMGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM2OWQzYWQ1ZjYxMGFjYmI3ODZmNTA3NjVmMDRhMDRlYmNkOWRiYzQyMTVkNmUyNzViNTJjZWM2MzBlODgwODAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImZhOGQxMzhkMGEyNDI3YWE5NDQwNDBiMTNmNjNmOWQxMmQyNmM1M2EzYzJkZmNjODYwYjIwOGM3ZjA4YTE5MDciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijk2MWI2MjE1ZWU2OTZmNTEzZGQ0M2FjYTQ3YTgxNDdjNTYyZGU3MTM2YmU3NWZlNjQ4NGI1ZGFmMjdhYTM4MjUifQ"
+        },
+        {
+          "resource": "repo://scripts/sync_atlas.py#L170-L185",
+          "version": "repo-lines-v1:sha256:6989498b44c01ec7f1c2f2ef54ad25739609fd501d8bb50e58459a6ba6e5913f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0OWIxOGIxYWQ0ZjNjM2YyYjBmMWEzYjA3ZTEzNzUyNmViNGIxOWRmZGZmNmU2MmY2ZTI4ZTJmODYxNjk4MzEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJlYWVlMmE2ZmI2ZDgzYmJiZDY0NWM1NGU2OWI2NWJlZmZmNzdmM2ZhMGM1MTdlOTdlODliOTcwMWY0MGE4ZjYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0MDcwMjE5YWU4OWRkMjA1ZWNiMjAwYjFiODJmZjI4NjkxNmFmYjZhMzNlYjZkMzYzYTdlOWE3Y2EwYmNlMzEifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.9.0",
+    "at": "2026-11-21T01:55:26.634Z"
+  }
+}
