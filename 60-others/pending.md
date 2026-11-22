@@ -28,6 +28,7 @@
 | ad-creative | 内容表现分析与复盘 skill，同名项目多个（superCMO 等），无法确认 | 未知期 | 未定位 |
 | REA | "AI Agent 辅助逆向分析软件与二进制"，一周 +65.7K；搜到的多为 awesome 列表与非同名项目 | 未知期 | 未定位 |
 | Compositor | Mac 上支持 agent 操作图层的图像编辑工具 | 未知期 | 未定位 |
+| filee 格式转换器 | 244 种格式互转、拖放转换、可集成右键菜单；搜到的 `filee-android`（★1）、`filee-web`（★0，"Inspired by Filee"）都是复刻，非原作 | 未知期 | 未定位 |
 | 指间文库 | 轻小说阅读器，手机/平板，UI 干净、支持听书与导入语音包 | 351 期 | 未定位（近似的 `niuhuan/wild` 是另一个文库客户端） |
 
 ## 规则

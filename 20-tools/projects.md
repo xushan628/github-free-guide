@@ -32,6 +32,7 @@
 | **Uptime Kuma** | [louislam/uptime-kuma](https://github.com/louislam/uptime-kuma) | MIT | 自托管网站监控：HTTP、证书、容器全能盯，挂了秒通知 | 抖音 |
 | **get_jobs** | [loks666/get_jobs](https://github.com/loks666/get_jobs) | **NOASSERTION** | AI 找工作助手：全平台自动投简历脚本（BOSS / 前程无忧 / 猎聘 / 智联） | 抖音 |
 | **TVBox Desktop** | [hgtuj5688/tvbox-desktop](https://github.com/hgtuj5688/tvbox-desktop) | MIT | Windows 影视聚合客户端（Electron + React），内置播放源、装完即用 | 抖音 |
+| **LibreTV** | [LibreSpark/LibreTV](https://github.com/LibreSpark/LibreTV) | AGPL-3.0 | 一分钟自建影视站：Docker/Vercel 部署，聚合公开源播放 | 抖音 |
 | **ung220z-tool** | [Hut-hzf/ung220z-tool](https://github.com/Hut-hzf/ung220z-tool) | MIT | 针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取，用于查超管账号、宽带账号与 WiFi 密钥 | 抖音 |
 | **LinkSwift** | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | AGPL-3.0 | 网盘直链获取油猴脚本：把各家网盘链接推给 IDM / Aria2（含 Motrix、AriaNg）等下载器 | 抖音 |
 | **MoeKoeMusic** | [MoeKoeMusic/MoeKoeMusic](https://github.com/MoeKoeMusic/MoeKoeMusic) | GPL-2.0 | 酷狗第三方客户端：Windows/macOS/Linux/Web 四端，账号同步、无社交 | 抖音 |
@@ -157,6 +158,11 @@
 - 用**小号**试，别拿主号；
 - 它们需要屏幕常亮 + 前台权限，笔记本长期跑注意散热；
 - 两款都 GPL-3.0，代码可读，但"开源"不等于"官方允许"。
+
+## LibreTV 与 TVBox 是同一类风险
+
+`LibreTV` 是"自建影视站"方案：一条命令部署，聚合全网公开采集源。**和 TVBox 一样，播放源基本都是未授权影视**——
+在国内，提供或使用这类聚合源存在著作权风险，站点公开可访问时风险更高。仅作技术研究，别公开传播。
 
 ## 用之前要知道的
 

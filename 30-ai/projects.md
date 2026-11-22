@@ -47,6 +47,7 @@
 | **book-to-skill** | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill) | MIT | 把技术书 PDF 转成可复用的 agent skill，让 AI 按书里的体系干活 | 抖音 |
 | **仓颉 cangjie-skill** | [kangarooking/cangjie-skill](https://github.com/kangarooking/cangjie-skill) | MIT | 把书/长视频/播客蒸馏成可执行的 Agent Skills：RIA-TV++ 七阶段流水线，输出多 skill 仓库（含 DIGEST/GLOSSARY/测试用例） | 抖音 |
 | **宝玉技能包 baoyu-skills** | [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills) | MIT | 22 个内容创作 skill 合集，含 `baoyu-xhs-images`（小红书图文卡片）、封面图、信息图、PPT 幻灯、发布到微信/微博/X | 抖音 |
+| **PPT-Master** | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) | MIT | 把文档或一个主题直接生成原生可编辑的 PowerPoint（不是截图拼图） | 抖音 · 009 期 |
 | **jianhao-travel-planner** | [awangwang123/jianhao-travel-planner](https://github.com/awangwang123/jianhao-travel-planner) | MIT | 旅行路书 skill：联网实查 + 多源交叉验证，输出可执行攻略 | 抖音 |
 | **Modern Web Guidance** | [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | Apache-2.0 | Google Chrome 团队：让 coding agent 先查最新的 Web 最佳实践再动手 | 86 |
 | **Chrome DevTools MCP** | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | 把 Chrome DevTools 交给 AI：自己查报错、看性能 | 86 |
