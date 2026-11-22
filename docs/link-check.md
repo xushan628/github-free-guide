@@ -1,10 +1,16 @@
 # 外链体检报告
 
-- 生成时间：2026-11-22T13:59:05+00:00
+- 生成时间：2026-11-22T14:03:51+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **235** 个链接：✅ 正常 235 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）0
+- 总计 **239** 个链接：✅ 正常 238 ／ ❌ 失效 0 ／ ⚠️ 未验证 1 ／ ⏭️ 跳过（本地服务）0
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
+
+## ⚠️ 未验证
+
+| 链接 | 原因 |
+|---|---|
+| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
 
 ## ✅ 全部结果
 
@@ -33,7 +39,6 @@
 | ✅ | codespaces/README.md | 存在 |
 | ✅ | datasets.json | 存在 |
 | ✅ | datasets/README.md | 存在 |
-| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
 | ✅ | https://concat.standalones.org | 200 |
 | ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
@@ -56,7 +61,9 @@
 | ✅ | https://github.com/D4Vinci/Scrapling | 200 |
 | ✅ | https://github.com/DeanChensj/jiangshan-map | 200 |
 | ✅ | https://github.com/Donchitos/Claude-Code-Game-Studios | 200 |
+| ✅ | https://github.com/Droid-Deck/DroidDeck | 200 |
 | ✅ | https://github.com/Fei2411/DS-Bot | 200 |
+| ✅ | https://github.com/Gathin23/cleanyourtv | 200 |
 | ✅ | https://github.com/GoogleChrome/modern-web-guidance | 200 |
 | ✅ | https://github.com/GopeedLab/gopeed | 200 |
 | ✅ | https://github.com/HKUDS/DeepTutor | 200 |
@@ -75,6 +82,7 @@
 | ✅ | https://github.com/PolymathicAI/the_well | 200 |
 | ✅ | https://github.com/RSSNext/Folo | 200 |
 | ✅ | https://github.com/Renhuai123/ziwei-doushu | 200 |
+| ✅ | https://github.com/RoutineMiku/apkstart | 200 |
 | ✅ | https://github.com/Stirling-Tools/Stirling-PDF | 200 |
 | ✅ | https://github.com/THU-MAIC/OpenMAIC | 200 |
 | ✅ | https://github.com/TNTcraftHIM/Piik | 200 |
@@ -104,6 +112,7 @@
 | ✅ | https://github.com/career-ops-hq/career-ops | 200 |
 | ✅ | https://github.com/cathrynlavery/diagram-design | 200 |
 | ✅ | https://github.com/cdyforever/how-to-live-better | 200 |
+| ✅ | https://github.com/chadyi/StudyOnTV | 200 |
 | ✅ | https://github.com/cheaper-inference/OmniRoute | 200 |
 | ✅ | https://github.com/chidiwilliams/buzz | 200 |
 | ✅ | https://github.com/chinese-poetry/chinese-poetry | 200 |
@@ -245,3 +254,4 @@
 | ✅ | templates/cron-job.yml | 存在 |
 | ✅ | templates/manual-run.yml | 存在 |
 | ✅ | templates/matrix.yml | 存在 |
+| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |

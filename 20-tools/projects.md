@@ -37,6 +37,10 @@
 | **LinkSwift** | [hmjz100/LinkSwift](https://github.com/hmjz100/LinkSwift) | AGPL-3.0 | 网盘直链获取油猴脚本：把各家网盘链接推给 IDM / Aria2（含 Motrix、AriaNg）等下载器 | 抖音 |
 | **MoeKoeMusic** | [MoeKoeMusic/MoeKoeMusic](https://github.com/MoeKoeMusic/MoeKoeMusic) | GPL-2.0 | 酷狗第三方客户端：Windows/macOS/Linux/Web 四端，账号同步、无社交 | 抖音 |
 | **Piik** | [TNTcraftHIM/Piik](https://github.com/TNTcraftHIM/Piik) | MIT | 屏幕共享：对方装浏览器就能看，P2P 优先，可自建服务端 | 抖音 |
+| **CleanYourTV** | [Gathin23/cleanyourtv](https://github.com/Gathin23/cleanyourtv) | **NOASSERTION** | 免刷机免 root 给 Android / Google TV 瘦身：删预装、去开机与弹窗广告、跳过片头片尾、换极简桌面，走 Wi-Fi ADB | 抖音 · 006 期 |
+| **ApkStart** | [RoutineMiku/apkstart](https://github.com/RoutineMiku/apkstart) | MIT | Windows 上的安卓应用运行器：双击 APK 即装，独立窗口 + 桌面图标，自带 QEMU 运行时 | 抖音 · 015 期 |
+| **StudyOnTV** | [chadyi/StudyOnTV](https://github.com/chadyi/StudyOnTV) | **NOASSERTION** | Android TV 答题解锁：孩子先做几道题，才能开电视 | 抖音 · 014 期 |
+| **DroidDeck** | [Droid-Deck/DroidDeck](https://github.com/Droid-Deck/DroidDeck) | GPL-3.0 | 把 SteamOS 那套掌机体验搬到安卓手机上，装好直接进 Steam 库 | 抖音 · 012 期 |
 | **BetterGI** | [babalae/better-genshin-impact](https://github.com/babalae/better-genshin-impact) | GPL-3.0 | 《原神》自动化助手：自动拾取、自动剧情、全自动钓鱼（AI）、七圣召唤、自动伐木 | 抖音 |
 | **March7thAssistant** | [moesnow/March7thAssistant](https://github.com/moesnow/March7thAssistant) | GPL-3.0 | 《崩坏：星穹铁道》自动化助手：日常清体力、模拟宇宙、周本，一键挂机 | 抖音 |
 | **ZTools** | [ZToolsCenter/ZTools](https://github.com/ZToolsCenter/ZTools) | MIT | uTools 的开源实现：首字母启动应用、剪贴板历史、插件系统 | 抖音 |
@@ -163,6 +167,12 @@
 
 `LibreTV` 是"自建影视站"方案：一条命令部署，聚合全网公开采集源。**和 TVBox 一样，播放源基本都是未授权影视**——
 在国内，提供或使用这类聚合源存在著作权风险，站点公开可访问时风险更高。仅作技术研究，别公开传播。
+
+## 电视瘦身（CleanYourTV）注意
+
+- **要开 ADB 调试并从电脑装**，等于把电视的控制权交给命令行；操作前记下原包名清单，删错可能进不去系统；
+- 卸载预装组件**可能影响厂商保修**，部分电视升级后会被推回；
+- 它不 root，所以是"可逆"的，但**恢复要靠你自己记的清单**。
 
 ## 用之前要知道的
 
