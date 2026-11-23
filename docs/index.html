@@ -67,7 +67,8 @@
   .card ul.ds a:hover{color:var(--accent)}
   .card ul.ds .lic{color:var(--fg2); font-size:11px; white-space:nowrap}
   .card ul.ds .cn{color:var(--fg2); font-size:11px; margin-left:6px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-  .card ul.ds .rt{display:flex; align-items:baseline; gap:8px; white-space:nowrap}
+  .card ul.ds .rt{display:flex; align-items:baseline; gap:8px; white-space:nowrap; flex-wrap:nowrap}
+  .card ul.ds .use{font-size:10px; padding:1px 5px; border-radius:6px; border:1px solid var(--line); color:var(--fg2); white-space:nowrap}
   .card ul.ds a.dl{color:var(--accent); font-size:12px; text-decoration:none; opacity:.85; margin-left:2px}
   .card ul.ds a.dl:hover{color:var(--accent); opacity:1}
   footer .fine{color:var(--fg2); font-size:11.5px; margin:6px 0 0}
@@ -150,6 +151,7 @@
       <a href="https://github.com/xushan628/github-free-guide/blob/main/docs/link-check.md">外链体检报告</a> ·
       <a href="./disclaimer.html">免责声明与版权说明</a>
     </p>
+    <p class="fine">用法标注：<b>可商用·保留署名</b>（MIT/Apache/BSD）· <b>可商用·需开源</b>（GPL/AGPL）· <b>商用请先联系作者</b>（无 LICENSE / 条款不明）——拿不准就一律先问作者。</p>
     <p class="fine">本站仅做索引：不托管、不镜像、不代下任何第三方代码；<b>「⬇︎」直接跳到各项目官方 Releases</b>，版权归原作者。</p>
   </div>
 </footer>
@@ -168,16 +170,16 @@
       desc:"不知道装什么的时候，先从这几张单子里挑。",
       tags:["10 个"],
       items:[
-        {name:"GitHub 中文排行榜", license:"GPL-3.0", repo_url:"https://github.com/ChHsiching/GitHub-Chinese-Top-Charts", dl:"https://github.com/ChHsiching/GitHub-Chinese-Top-Charts/releases", cn:"榜单"},
-        {name:"HelloGitHub", license:"无 LICENSE", repo_url:"https://github.com/521xueweihan/HelloGitHub", dl:"https://github.com/521xueweihan/HelloGitHub/releases", cn:"开源月刊"},
-        {name:"public-apis", license:"MIT", repo_url:"https://github.com/public-apis/public-apis", dl:"https://github.com/public-apis/public-apis/releases", cn:"免费 API 清单"},
-        {name:"everything", license:"MIT", repo_url:"https://github.com/HeyPuter/everything", dl:"https://github.com/HeyPuter/everything/releases", cn:"付费软件开源替代"},
-        {name:"Astryx", license:"MIT", repo_url:"https://github.com/meta/astryx", dl:"https://github.com/meta/astryx/releases", cn:"Meta 设计系统"},
-        {name:"AI 赚钱手册", license:"Apache-2.0", repo_url:"https://github.com/XiaomingX/ai-money-maker-handbook", dl:"https://github.com/XiaomingX/ai-money-maker-handbook/releases", cn:"副业手册"},
-        {name:"高性价比人生指南（官方）", license:"CC-BY-4.0", repo_url:"https://github.com/eternity4719/HowToLiveBetter", dl:"https://github.com/eternity4719/HowToLiveBetter/releases", cn:"循证生活指南"},
-        {name:"awesome-dsh-plugin", license:"CC0-1.0", repo_url:"https://github.com/awesome-dsh-plugin/awesome-dsh-plugin", dl:"https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/releases", cn:"DSH 插件列表"},
-        {name:"anthropics/skills", license:"NOASSERTION", repo_url:"https://github.com/anthropics/skills", dl:"https://github.com/anthropics/skills/releases", cn:"官方 Agent 技能"},
-        {name:"Matt Pocock 技能包", license:"MIT", repo_url:"https://github.com/mattpocock/skills", dl:"https://github.com/mattpocock/skills/releases", cn:"工程技能集"}
+        {name:"GitHub 中文排行榜", license:"GPL-3.0", repo_url:"https://github.com/ChHsiching/GitHub-Chinese-Top-Charts", dl:"https://github.com/ChHsiching/GitHub-Chinese-Top-Charts/releases", use:"可商用·需开源", cn:"榜单"},
+        {name:"HelloGitHub", license:"无 LICENSE", repo_url:"https://github.com/521xueweihan/HelloGitHub", dl:"https://github.com/521xueweihan/HelloGitHub/releases", use:"商用请先联系作者", cn:"开源月刊"},
+        {name:"public-apis", license:"MIT", repo_url:"https://github.com/public-apis/public-apis", dl:"https://github.com/public-apis/public-apis/releases", use:"可商用·保留署名", cn:"免费 API 清单"},
+        {name:"everything", license:"MIT", repo_url:"https://github.com/HeyPuter/everything", dl:"https://github.com/HeyPuter/everything/releases", use:"可商用·保留署名", cn:"付费软件开源替代"},
+        {name:"Astryx", license:"MIT", repo_url:"https://github.com/meta/astryx", dl:"https://github.com/meta/astryx/releases", use:"可商用·保留署名", cn:"Meta 设计系统"},
+        {name:"AI 赚钱手册", license:"Apache-2.0", repo_url:"https://github.com/XiaomingX/ai-money-maker-handbook", dl:"https://github.com/XiaomingX/ai-money-maker-handbook/releases", use:"可商用·保留署名", cn:"副业手册"},
+        {name:"高性价比人生指南（官方）", license:"CC-BY-4.0", repo_url:"https://github.com/eternity4719/HowToLiveBetter", dl:"https://github.com/eternity4719/HowToLiveBetter/releases", use:"可商用·保留署名", cn:"循证生活指南"},
+        {name:"awesome-dsh-plugin", license:"CC0-1.0", repo_url:"https://github.com/awesome-dsh-plugin/awesome-dsh-plugin", dl:"https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/releases", use:"可商用·保留署名", cn:"DSH 插件列表"},
+        {name:"anthropics/skills", license:"NOASSERTION", repo_url:"https://github.com/anthropics/skills", dl:"https://github.com/anthropics/skills/releases", use:"商用请先联系作者", cn:"官方 Agent 技能"},
+        {name:"Matt Pocock 技能包", license:"MIT", repo_url:"https://github.com/mattpocock/skills", dl:"https://github.com/mattpocock/skills/releases", use:"可商用·保留署名", cn:"工程技能集"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -185,16 +187,16 @@
       desc:"从零学 AI、找教材、背古诗、刷考公、刷网课。",
       tags:["10 个"],
       items:[
-        {name:"microsoft/AI-For-Beginners", license:"MIT", repo_url:"https://github.com/microsoft/AI-For-Beginners", dl:"https://github.com/microsoft/AI-For-Beginners/releases", cn:"微软 AI 课程"},
-        {name:"ChinaTextbook", license:"无 LICENSE", repo_url:"https://github.com/TapXWorld/ChinaTextbook", dl:"https://github.com/TapXWorld/ChinaTextbook/releases", cn:"教材 PDF 合集"},
-        {name:"cn-math-taxonomy", license:"NOASSERTION", repo_url:"https://github.com/xiaoyang111222/cn-math-taxonomy", dl:"https://github.com/xiaoyang111222/cn-math-taxonomy/releases", cn:"中小学知识图谱"},
-        {name:"DeepTutor", license:"Apache-2.0", repo_url:"https://github.com/HKUDS/DeepTutor", dl:"https://github.com/HKUDS/DeepTutor/releases", cn:"AI 家教"},
-        {name:"scientific-agent-skills", license:"MIT", repo_url:"https://github.com/K-Dense-AI/scientific-agent-skills", dl:"https://github.com/K-Dense-AI/scientific-agent-skills/releases", cn:"科研技能包"},
-        {name:"minimind", license:"Apache-2.0", repo_url:"https://github.com/jingyaogong/minimind", dl:"https://github.com/jingyaogong/minimind/releases", cn:"从零训小模型"},
-        {name:"江山时序", license:"GPL-3.0", repo_url:"https://github.com/DeanChensj/jiangshan-map", dl:"https://github.com/DeanChensj/jiangshan-map/releases", cn:"历史地图时间轴"},
-        {name:"诗泉 chinese-poetry-api", license:"GPL-3.0", repo_url:"https://github.com/palemoky/chinese-poetry-api", dl:"https://github.com/palemoky/chinese-poetry-api/releases", cn:"40 万首诗词 API"},
-        {name:"gongkao-zhenti-knowledge", license:"MIT", repo_url:"https://github.com/36hxqw/gongkao-zhenti-knowledge", dl:"https://github.com/36hxqw/gongkao-zhenti-knowledge/releases", cn:"公考真题题库"},
-        {name:"OCS 网课助手", license:"MIT", repo_url:"https://github.com/ocsjs/ocsjs", dl:"https://github.com/ocsjs/ocsjs/releases", cn:"网课自动播放"}
+        {name:"microsoft/AI-For-Beginners", license:"MIT", repo_url:"https://github.com/microsoft/AI-For-Beginners", dl:"https://github.com/microsoft/AI-For-Beginners/releases", use:"可商用·保留署名", cn:"微软 AI 课程"},
+        {name:"ChinaTextbook", license:"无 LICENSE", repo_url:"https://github.com/TapXWorld/ChinaTextbook", dl:"https://github.com/TapXWorld/ChinaTextbook/releases", use:"商用请先联系作者", cn:"教材 PDF 合集"},
+        {name:"cn-math-taxonomy", license:"NOASSERTION", repo_url:"https://github.com/xiaoyang111222/cn-math-taxonomy", dl:"https://github.com/xiaoyang111222/cn-math-taxonomy/releases", use:"商用请先联系作者", cn:"中小学知识图谱"},
+        {name:"DeepTutor", license:"Apache-2.0", repo_url:"https://github.com/HKUDS/DeepTutor", dl:"https://github.com/HKUDS/DeepTutor/releases", use:"可商用·保留署名", cn:"AI 家教"},
+        {name:"scientific-agent-skills", license:"MIT", repo_url:"https://github.com/K-Dense-AI/scientific-agent-skills", dl:"https://github.com/K-Dense-AI/scientific-agent-skills/releases", use:"可商用·保留署名", cn:"科研技能包"},
+        {name:"minimind", license:"Apache-2.0", repo_url:"https://github.com/jingyaogong/minimind", dl:"https://github.com/jingyaogong/minimind/releases", use:"可商用·保留署名", cn:"从零训小模型"},
+        {name:"江山时序", license:"GPL-3.0", repo_url:"https://github.com/DeanChensj/jiangshan-map", dl:"https://github.com/DeanChensj/jiangshan-map/releases", use:"可商用·需开源", cn:"历史地图时间轴"},
+        {name:"诗泉 chinese-poetry-api", license:"GPL-3.0", repo_url:"https://github.com/palemoky/chinese-poetry-api", dl:"https://github.com/palemoky/chinese-poetry-api/releases", use:"可商用·需开源", cn:"40 万首诗词 API"},
+        {name:"gongkao-zhenti-knowledge", license:"MIT", repo_url:"https://github.com/36hxqw/gongkao-zhenti-knowledge", dl:"https://github.com/36hxqw/gongkao-zhenti-knowledge/releases", use:"可商用·保留署名", cn:"公考真题题库"},
+        {name:"OCS 网课助手", license:"MIT", repo_url:"https://github.com/ocsjs/ocsjs", dl:"https://github.com/ocsjs/ocsjs/releases", use:"可商用·保留署名", cn:"网课自动播放"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -202,16 +204,16 @@
       desc:"扒素材、传手机、远程控制，全部不经过第三方服务器。",
       tags:["10 个"],
       items:[
-        {name:"yt-dlp", license:"Unlicense", repo_url:"https://github.com/yt-dlp/yt-dlp", dl:"https://github.com/yt-dlp/yt-dlp/releases", cn:"视频下载器"},
-        {name:"Gopeed", license:"GPL-3.0", repo_url:"https://github.com/GopeedLab/gopeed", dl:"https://github.com/GopeedLab/gopeed/releases", cn:"下载器"},
-        {name:"Motrix", license:"NOASSERTION", repo_url:"https://github.com/agalwood/Motrix", dl:"https://github.com/agalwood/Motrix/releases", cn:"下载器"},
-        {name:"Ghost-Downloader-3", license:"GPL-3.0", repo_url:"https://github.com/XiaoYouChR/Ghost-Downloader-3", dl:"https://github.com/XiaoYouChR/Ghost-Downloader-3/releases", cn:"全协议下载器"},
-        {name:"LocalSend", license:"Apache-2.0", repo_url:"https://github.com/localsend/localsend", dl:"https://github.com/localsend/localsend/releases", cn:"局域网传文件"},
-        {name:"Oink", license:"GPL-3.0", repo_url:"https://github.com/oinkvm/oink", dl:"https://github.com/oinkvm/oink/releases", cn:"键鼠共享"},
-        {name:"RustDesk", license:"AGPL-3.0", repo_url:"https://github.com/rustdesk/rustdesk", dl:"https://github.com/rustdesk/rustdesk/releases", cn:"远程桌面"},
-        {name:"SingleFile", license:"AGPL-3.0", repo_url:"https://github.com/gildas-lormeau/SingleFile", dl:"https://github.com/gildas-lormeau/SingleFile/releases", cn:"网页存单文件"},
-        {name:"LinkSwift", license:"AGPL-3.0", repo_url:"https://github.com/hmjz100/LinkSwift", dl:"https://github.com/hmjz100/LinkSwift/releases", cn:"网盘直链脚本"},
-        {name:"Cap", license:"NOASSERTION", repo_url:"https://github.com/CapSoftware/Cap", dl:"https://github.com/CapSoftware/Cap/releases", cn:"开源录屏"}
+        {name:"yt-dlp", license:"Unlicense", repo_url:"https://github.com/yt-dlp/yt-dlp", dl:"https://github.com/yt-dlp/yt-dlp/releases", use:"可商用·保留署名", cn:"视频下载器"},
+        {name:"Gopeed", license:"GPL-3.0", repo_url:"https://github.com/GopeedLab/gopeed", dl:"https://github.com/GopeedLab/gopeed/releases", use:"可商用·需开源", cn:"下载器"},
+        {name:"Motrix", license:"NOASSERTION", repo_url:"https://github.com/agalwood/Motrix", dl:"https://github.com/agalwood/Motrix/releases", use:"商用请先联系作者", cn:"下载器"},
+        {name:"Ghost-Downloader-3", license:"GPL-3.0", repo_url:"https://github.com/XiaoYouChR/Ghost-Downloader-3", dl:"https://github.com/XiaoYouChR/Ghost-Downloader-3/releases", use:"可商用·需开源", cn:"全协议下载器"},
+        {name:"LocalSend", license:"Apache-2.0", repo_url:"https://github.com/localsend/localsend", dl:"https://github.com/localsend/localsend/releases", use:"可商用·保留署名", cn:"局域网传文件"},
+        {name:"Oink", license:"GPL-3.0", repo_url:"https://github.com/oinkvm/oink", dl:"https://github.com/oinkvm/oink/releases", use:"可商用·需开源", cn:"键鼠共享"},
+        {name:"RustDesk", license:"AGPL-3.0", repo_url:"https://github.com/rustdesk/rustdesk", dl:"https://github.com/rustdesk/rustdesk/releases", use:"可商用·需开源", cn:"远程桌面"},
+        {name:"SingleFile", license:"AGPL-3.0", repo_url:"https://github.com/gildas-lormeau/SingleFile", dl:"https://github.com/gildas-lormeau/SingleFile/releases", use:"可商用·需开源", cn:"网页存单文件"},
+        {name:"LinkSwift", license:"AGPL-3.0", repo_url:"https://github.com/hmjz100/LinkSwift", dl:"https://github.com/hmjz100/LinkSwift/releases", use:"可商用·需开源", cn:"网盘直链脚本"},
+        {name:"Cap", license:"NOASSERTION", repo_url:"https://github.com/CapSoftware/Cap", dl:"https://github.com/CapSoftware/Cap/releases", use:"商用请先联系作者", cn:"开源录屏"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -219,16 +221,16 @@
       desc:"PDF、表格、数据库、OCR：文件不出本机就能处理完。",
       tags:["10 个"],
       items:[
-        {name:"OfficeCLI", license:"Apache-2.0", repo_url:"https://github.com/iOfficeAI/OfficeCLI", dl:"https://github.com/iOfficeAI/OfficeCLI/releases", cn:"AI 读写 Office"},
-        {name:"IT-Tools", license:"GPL-3.0", repo_url:"https://github.com/CorentinTh/it-tools", dl:"https://github.com/CorentinTh/it-tools/releases", cn:"前端小工具集"},
-        {name:"CyberChef", license:"Apache-2.0", repo_url:"https://github.com/gchq/CyberChef", dl:"https://github.com/gchq/CyberChef/releases", cn:"数据处理工具"},
-        {name:"Stirling-PDF", license:"MIT", repo_url:"https://github.com/Stirling-Tools/Stirling-PDF", dl:"https://github.com/Stirling-Tools/Stirling-PDF/releases", cn:"自托管 PDF"},
-        {name:"Univer", license:"Apache-2.0", repo_url:"https://github.com/dream-num/univer", dl:"https://github.com/dream-num/univer/releases", cn:"AI 办公套件"},
-        {name:"Beekeeper Studio", license:"NOASSERTION", repo_url:"https://github.com/beekeeper-studio/beekeeper-studio", dl:"https://github.com/beekeeper-studio/beekeeper-studio/releases", cn:"数据库客户端"},
-        {name:"pdf-inspector", license:"MIT", repo_url:"https://github.com/firecrawl/pdf-inspector", dl:"https://github.com/firecrawl/pdf-inspector/releases", cn:"PDF 转 Markdown"},
-        {name:"Umi-OCR", license:"MIT", repo_url:"https://github.com/hiroi-sora/Umi-OCR", dl:"https://github.com/hiroi-sora/Umi-OCR/releases", cn:"离线 OCR"},
-        {name:"markmap", license:"MIT", repo_url:"https://github.com/markmap/markmap", dl:"https://github.com/markmap/markmap/releases", cn:"Markdown 转导图"},
-        {name:"Buzz", license:"MIT", repo_url:"https://github.com/chidiwilliams/buzz", dl:"https://github.com/chidiwilliams/buzz/releases", cn:"离线语音转写"}
+        {name:"OfficeCLI", license:"Apache-2.0", repo_url:"https://github.com/iOfficeAI/OfficeCLI", dl:"https://github.com/iOfficeAI/OfficeCLI/releases", use:"可商用·保留署名", cn:"AI 读写 Office"},
+        {name:"IT-Tools", license:"GPL-3.0", repo_url:"https://github.com/CorentinTh/it-tools", dl:"https://github.com/CorentinTh/it-tools/releases", use:"可商用·需开源", cn:"前端小工具集"},
+        {name:"CyberChef", license:"Apache-2.0", repo_url:"https://github.com/gchq/CyberChef", dl:"https://github.com/gchq/CyberChef/releases", use:"可商用·保留署名", cn:"数据处理工具"},
+        {name:"Stirling-PDF", license:"MIT", repo_url:"https://github.com/Stirling-Tools/Stirling-PDF", dl:"https://github.com/Stirling-Tools/Stirling-PDF/releases", use:"可商用·保留署名", cn:"自托管 PDF"},
+        {name:"Univer", license:"Apache-2.0", repo_url:"https://github.com/dream-num/univer", dl:"https://github.com/dream-num/univer/releases", use:"可商用·保留署名", cn:"AI 办公套件"},
+        {name:"Beekeeper Studio", license:"NOASSERTION", repo_url:"https://github.com/beekeeper-studio/beekeeper-studio", dl:"https://github.com/beekeeper-studio/beekeeper-studio/releases", use:"商用请先联系作者", cn:"数据库客户端"},
+        {name:"pdf-inspector", license:"MIT", repo_url:"https://github.com/firecrawl/pdf-inspector", dl:"https://github.com/firecrawl/pdf-inspector/releases", use:"可商用·保留署名", cn:"PDF 转 Markdown"},
+        {name:"Umi-OCR", license:"MIT", repo_url:"https://github.com/hiroi-sora/Umi-OCR", dl:"https://github.com/hiroi-sora/Umi-OCR/releases", use:"可商用·保留署名", cn:"离线 OCR"},
+        {name:"markmap", license:"MIT", repo_url:"https://github.com/markmap/markmap", dl:"https://github.com/markmap/markmap/releases", use:"可商用·保留署名", cn:"Markdown 转导图"},
+        {name:"Buzz", license:"MIT", repo_url:"https://github.com/chidiwilliams/buzz", dl:"https://github.com/chidiwilliams/buzz/releases", use:"可商用·保留署名", cn:"离线语音转写"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -236,16 +238,16 @@
       desc:"修图、放大、抠图、做架构图，还有自托管相册。",
       tags:["10 个"],
       items:[
-        {name:"Immich", license:"AGPL-3.0", repo_url:"https://github.com/immich-app/immich", dl:"https://github.com/immich-app/immich/releases", cn:"自托管相册"},
-        {name:"Upscayl", license:"AGPL-3.0", repo_url:"https://github.com/upscayl/upscayl", dl:"https://github.com/upscayl/upscayl/releases", cn:"图片放大"},
-        {name:"Segment Anything", license:"Apache-2.0", repo_url:"https://github.com/facebookresearch/segment-anything", dl:"https://github.com/facebookresearch/segment-anything/releases", cn:"点一下就抠图"},
-        {name:"Disc Image Studio", license:"GPL-3.0", repo_url:"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio", dl:"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio/releases", cn:"光盘刻图案"},
-        {name:"diagram-design", license:"MIT", repo_url:"https://github.com/cathrynlavery/diagram-design", dl:"https://github.com/cathrynlavery/diagram-design/releases", cn:"架构图生成"},
-        {name:"ArtCraft", license:"Apache-2.0", repo_url:"https://github.com/storytold/artcraft", dl:"https://github.com/storytold/artcraft/releases", cn:"AI 图像视频创作"},
-        {name:"Deep-Live-Cam", license:"AGPL-3.0", repo_url:"https://github.com/hacksider/Deep-Live-Cam", dl:"https://github.com/hacksider/Deep-Live-Cam/releases", cn:"实时换脸"},
-        {name:"see-through", license:"Apache-2.0", repo_url:"https://github.com/shitagaki-lab/see-through", dl:"https://github.com/shitagaki-lab/see-through/releases", cn:"图像分层拆解"},
-        {name:"OpenMAIC", license:"MIT", repo_url:"https://github.com/THU-MAIC/OpenMAIC", dl:"https://github.com/THU-MAIC/OpenMAIC/releases", cn:"多智能体课堂"},
-        {name:"Archify", license:"Apache-2.0", repo_url:"https://github.com/tt-a1i/archify", dl:"https://github.com/tt-a1i/archify/releases", cn:"代码转架构图"}
+        {name:"Immich", license:"AGPL-3.0", repo_url:"https://github.com/immich-app/immich", dl:"https://github.com/immich-app/immich/releases", use:"可商用·需开源", cn:"自托管相册"},
+        {name:"Upscayl", license:"AGPL-3.0", repo_url:"https://github.com/upscayl/upscayl", dl:"https://github.com/upscayl/upscayl/releases", use:"可商用·需开源", cn:"图片放大"},
+        {name:"Segment Anything", license:"Apache-2.0", repo_url:"https://github.com/facebookresearch/segment-anything", dl:"https://github.com/facebookresearch/segment-anything/releases", use:"可商用·保留署名", cn:"点一下就抠图"},
+        {name:"Disc Image Studio", license:"GPL-3.0", repo_url:"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio", dl:"https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio/releases", use:"可商用·需开源", cn:"光盘刻图案"},
+        {name:"diagram-design", license:"MIT", repo_url:"https://github.com/cathrynlavery/diagram-design", dl:"https://github.com/cathrynlavery/diagram-design/releases", use:"可商用·保留署名", cn:"架构图生成"},
+        {name:"ArtCraft", license:"Apache-2.0", repo_url:"https://github.com/storytold/artcraft", dl:"https://github.com/storytold/artcraft/releases", use:"可商用·保留署名", cn:"AI 图像视频创作"},
+        {name:"Deep-Live-Cam", license:"AGPL-3.0", repo_url:"https://github.com/hacksider/Deep-Live-Cam", dl:"https://github.com/hacksider/Deep-Live-Cam/releases", use:"可商用·需开源", cn:"实时换脸"},
+        {name:"see-through", license:"Apache-2.0", repo_url:"https://github.com/shitagaki-lab/see-through", dl:"https://github.com/shitagaki-lab/see-through/releases", use:"可商用·保留署名", cn:"图像分层拆解"},
+        {name:"OpenMAIC", license:"MIT", repo_url:"https://github.com/THU-MAIC/OpenMAIC", dl:"https://github.com/THU-MAIC/OpenMAIC/releases", use:"可商用·保留署名", cn:"多智能体课堂"},
+        {name:"Archify", license:"Apache-2.0", repo_url:"https://github.com/tt-a1i/archify", dl:"https://github.com/tt-a1i/archify/releases", use:"可商用·保留署名", cn:"代码转架构图"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -253,15 +255,15 @@
       desc:"录屏、无损剪、自动合成短视频、球路追踪。",
       tags:["9 个"],
       items:[
-        {name:"OBS Studio", license:"GPL-2.0", repo_url:"https://github.com/obsproject/obs-studio", dl:"https://github.com/obsproject/obs-studio/releases", cn:"录屏直播"},
-        {name:"LosslessCut", license:"GPL-2.0", repo_url:"https://github.com/mifi/lossless-cut", dl:"https://github.com/mifi/lossless-cut/releases", cn:"无损剪切"},
-        {name:"Concat", license:"AGPL-3.0", repo_url:"https://github.com/jub0t/Concat", dl:"https://github.com/jub0t/Concat/releases", cn:"剪映平替"},
-        {name:"MoneyPrinterTurbo", license:"MIT", repo_url:"https://github.com/harry0703/MoneyPrinterTurbo", dl:"https://github.com/harry0703/MoneyPrinterTurbo/releases", cn:"一键生成短视频"},
-        {name:"HyperFrames", license:"Apache-2.0", repo_url:"https://github.com/heygen-com/hyperframes", dl:"https://github.com/heygen-com/hyperframes/releases", cn:"HTML 转视频"},
-        {name:"video-use", license:"MIT", repo_url:"https://github.com/browser-use/video-use", dl:"https://github.com/browser-use/video-use/releases", cn:"agent 剪视频"},
-        {name:"Hypit", license:"NOASSERTION", repo_url:"https://github.com/hypit-ai/hypit", dl:"https://github.com/hypit-ai/hypit/releases", cn:"爆款视频复刻"},
-        {name:"ffmpeg-skill", license:"MIT", repo_url:"https://github.com/kajisho5/ffmpeg-skill", dl:"https://github.com/kajisho5/ffmpeg-skill/releases", cn:"剪辑技能"},
-        {name:"TrackNetV3", license:"NOASSERTION", repo_url:"https://github.com/qaz812345/TrackNetV3", dl:"https://github.com/qaz812345/TrackNetV3/releases", cn:"羽毛球鹰眼"}
+        {name:"OBS Studio", license:"GPL-2.0", repo_url:"https://github.com/obsproject/obs-studio", dl:"https://github.com/obsproject/obs-studio/releases", use:"可商用·需开源", cn:"录屏直播"},
+        {name:"LosslessCut", license:"GPL-2.0", repo_url:"https://github.com/mifi/lossless-cut", dl:"https://github.com/mifi/lossless-cut/releases", use:"可商用·需开源", cn:"无损剪切"},
+        {name:"Concat", license:"AGPL-3.0", repo_url:"https://github.com/jub0t/Concat", dl:"https://github.com/jub0t/Concat/releases", use:"可商用·需开源", cn:"剪映平替"},
+        {name:"MoneyPrinterTurbo", license:"MIT", repo_url:"https://github.com/harry0703/MoneyPrinterTurbo", dl:"https://github.com/harry0703/MoneyPrinterTurbo/releases", use:"可商用·保留署名", cn:"一键生成短视频"},
+        {name:"HyperFrames", license:"Apache-2.0", repo_url:"https://github.com/heygen-com/hyperframes", dl:"https://github.com/heygen-com/hyperframes/releases", use:"可商用·保留署名", cn:"HTML 转视频"},
+        {name:"video-use", license:"MIT", repo_url:"https://github.com/browser-use/video-use", dl:"https://github.com/browser-use/video-use/releases", use:"可商用·保留署名", cn:"agent 剪视频"},
+        {name:"Hypit", license:"NOASSERTION", repo_url:"https://github.com/hypit-ai/hypit", dl:"https://github.com/hypit-ai/hypit/releases", use:"商用请先联系作者", cn:"爆款视频复刻"},
+        {name:"ffmpeg-skill", license:"MIT", repo_url:"https://github.com/kajisho5/ffmpeg-skill", dl:"https://github.com/kajisho5/ffmpeg-skill/releases", use:"可商用·保留署名", cn:"剪辑技能"},
+        {name:"TrackNetV3", license:"NOASSERTION", repo_url:"https://github.com/qaz812345/TrackNetV3", dl:"https://github.com/qaz812345/TrackNetV3/releases", use:"商用请先联系作者", cn:"羽毛球鹰眼"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -269,16 +271,16 @@
       desc:"输入法、剪贴板、系统精简、系统级小工具。",
       tags:["10 个"],
       items:[
-        {name:"WinUtil", license:"MIT", repo_url:"https://github.com/ChrisTitusTech/winutil", dl:"https://github.com/ChrisTitusTech/winutil/releases", cn:"Windows 一键精简"},
-        {name:"Hyprland", license:"BSD-3-Clause", repo_url:"https://github.com/hyprwm/Hyprland", dl:"https://github.com/hyprwm/Hyprland/releases", cn:"平铺式桌面"},
-        {name:"Worktrunk", license:"Apache-2.0", repo_url:"https://github.com/max-sixty/worktrunk", dl:"https://github.com/max-sixty/worktrunk/releases", cn:"Git 多工作区"},
-        {name:"Mole", license:"GPL-3.0", repo_url:"https://github.com/tw93/Mole", dl:"https://github.com/tw93/Mole/releases", cn:"系统清理"},
-        {name:"CopyQ", license:"GPL-3.0", repo_url:"https://github.com/hluk/CopyQ", dl:"https://github.com/hluk/CopyQ/releases", cn:"剪贴板历史"},
-        {name:"TypeWords", license:"GPL-3.0", repo_url:"https://github.com/zyronon/TypeWords", dl:"https://github.com/zyronon/TypeWords/releases", cn:"背单词"},
-        {name:"青简 Qingjian", license:"GPL-3.0", repo_url:"https://github.com/qingjian-team/qingjian", dl:"https://github.com/qingjian-team/qingjian/releases", cn:"学外语输入法"},
-        {name:"rime-ice 雾凇拼音", license:"GPL-3.0", repo_url:"https://github.com/iDvel/rime-ice", dl:"https://github.com/iDvel/rime-ice/releases", cn:"拼音输入法配置"},
-        {name:"ZTools", license:"MIT", repo_url:"https://github.com/ZToolsCenter/ZTools", dl:"https://github.com/ZToolsCenter/ZTools/releases", cn:"效率启动器"},
-        {name:"Piik", license:"MIT", repo_url:"https://github.com/TNTcraftHIM/Piik", dl:"https://github.com/TNTcraftHIM/Piik/releases", cn:"屏幕共享"}
+        {name:"WinUtil", license:"MIT", repo_url:"https://github.com/ChrisTitusTech/winutil", dl:"https://github.com/ChrisTitusTech/winutil/releases", use:"可商用·保留署名", cn:"Windows 一键精简"},
+        {name:"Hyprland", license:"BSD-3-Clause", repo_url:"https://github.com/hyprwm/Hyprland", dl:"https://github.com/hyprwm/Hyprland/releases", use:"可商用·保留署名", cn:"平铺式桌面"},
+        {name:"Worktrunk", license:"Apache-2.0", repo_url:"https://github.com/max-sixty/worktrunk", dl:"https://github.com/max-sixty/worktrunk/releases", use:"可商用·保留署名", cn:"Git 多工作区"},
+        {name:"Mole", license:"GPL-3.0", repo_url:"https://github.com/tw93/Mole", dl:"https://github.com/tw93/Mole/releases", use:"可商用·需开源", cn:"系统清理"},
+        {name:"CopyQ", license:"GPL-3.0", repo_url:"https://github.com/hluk/CopyQ", dl:"https://github.com/hluk/CopyQ/releases", use:"可商用·需开源", cn:"剪贴板历史"},
+        {name:"TypeWords", license:"GPL-3.0", repo_url:"https://github.com/zyronon/TypeWords", dl:"https://github.com/zyronon/TypeWords/releases", use:"可商用·需开源", cn:"背单词"},
+        {name:"青简 Qingjian", license:"GPL-3.0", repo_url:"https://github.com/qingjian-team/qingjian", dl:"https://github.com/qingjian-team/qingjian/releases", use:"可商用·需开源", cn:"学外语输入法"},
+        {name:"rime-ice 雾凇拼音", license:"GPL-3.0", repo_url:"https://github.com/iDvel/rime-ice", dl:"https://github.com/iDvel/rime-ice/releases", use:"可商用·需开源", cn:"拼音输入法配置"},
+        {name:"ZTools", license:"MIT", repo_url:"https://github.com/ZToolsCenter/ZTools", dl:"https://github.com/ZToolsCenter/ZTools/releases", use:"可商用·保留署名", cn:"效率启动器"},
+        {name:"Piik", license:"MIT", repo_url:"https://github.com/TNTcraftHIM/Piik", dl:"https://github.com/TNTcraftHIM/Piik/releases", use:"可商用·保留署名", cn:"屏幕共享"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -286,15 +288,15 @@
       desc:"手机上跑 agent、去广告、电视瘦身、安卓跑 Windows 应用。",
       tags:["9 个"],
       items:[
-        {name:"Mika", license:"Apache-2.0", repo_url:"https://github.com/wangzan101/Mika", dl:"https://github.com/wangzan101/Mika/releases", cn:"手机 AI 助手"},
-        {name:"Cactus", license:"Apache-2.0", repo_url:"https://github.com/cactus-compute/cactus", dl:"https://github.com/cactus-compute/cactus/releases", cn:"端侧小模型"},
-        {name:"Andee", license:"NOASSERTION", repo_url:"https://github.com/kuafuai/andee", dl:"https://github.com/kuafuai/andee/releases", cn:"手机/Mac 代操作"},
-        {name:"CleanYourTV", license:"NOASSERTION", repo_url:"https://github.com/Gathin23/cleanyourtv", dl:"https://github.com/Gathin23/cleanyourtv/releases", cn:"电视去广告"},
-        {name:"ApkStart", license:"MIT", repo_url:"https://github.com/RoutineMiku/apkstart", dl:"https://github.com/RoutineMiku/apkstart/releases", cn:"Windows 跑安卓"},
-        {name:"StudyOnTV", license:"NOASSERTION", repo_url:"https://github.com/chadyi/StudyOnTV", dl:"https://github.com/chadyi/StudyOnTV/releases", cn:"答题才能看电视"},
-        {name:"android-ad-cleaner", license:"MIT", repo_url:"https://github.com/rddmwmddr/android-ad-cleaner", dl:"https://github.com/rddmwmddr/android-ad-cleaner/releases", cn:"安卓去广告"},
-        {name:"TVBox Desktop", license:"MIT", repo_url:"https://github.com/hgtuj5688/tvbox-desktop", dl:"https://github.com/hgtuj5688/tvbox-desktop/releases", cn:"影视聚合客户端"},
-        {name:"ung220z-tool", license:"MIT", repo_url:"https://github.com/Hut-hzf/ung220z-tool", dl:"https://github.com/Hut-hzf/ung220z-tool/releases", cn:"光猫凭据提取"}
+        {name:"Mika", license:"Apache-2.0", repo_url:"https://github.com/wangzan101/Mika", dl:"https://github.com/wangzan101/Mika/releases", use:"可商用·保留署名", cn:"手机 AI 助手"},
+        {name:"Cactus", license:"Apache-2.0", repo_url:"https://github.com/cactus-compute/cactus", dl:"https://github.com/cactus-compute/cactus/releases", use:"可商用·保留署名", cn:"端侧小模型"},
+        {name:"Andee", license:"NOASSERTION", repo_url:"https://github.com/kuafuai/andee", dl:"https://github.com/kuafuai/andee/releases", use:"商用请先联系作者", cn:"手机/Mac 代操作"},
+        {name:"CleanYourTV", license:"NOASSERTION", repo_url:"https://github.com/Gathin23/cleanyourtv", dl:"https://github.com/Gathin23/cleanyourtv/releases", use:"商用请先联系作者", cn:"电视去广告"},
+        {name:"ApkStart", license:"MIT", repo_url:"https://github.com/RoutineMiku/apkstart", dl:"https://github.com/RoutineMiku/apkstart/releases", use:"可商用·保留署名", cn:"Windows 跑安卓"},
+        {name:"StudyOnTV", license:"NOASSERTION", repo_url:"https://github.com/chadyi/StudyOnTV", dl:"https://github.com/chadyi/StudyOnTV/releases", use:"商用请先联系作者", cn:"答题才能看电视"},
+        {name:"android-ad-cleaner", license:"MIT", repo_url:"https://github.com/rddmwmddr/android-ad-cleaner", dl:"https://github.com/rddmwmddr/android-ad-cleaner/releases", use:"可商用·保留署名", cn:"安卓去广告"},
+        {name:"TVBox Desktop", license:"MIT", repo_url:"https://github.com/hgtuj5688/tvbox-desktop", dl:"https://github.com/hgtuj5688/tvbox-desktop/releases", use:"可商用·保留署名", cn:"影视聚合客户端"},
+        {name:"ung220z-tool", license:"MIT", repo_url:"https://github.com/Hut-hzf/ung220z-tool", dl:"https://github.com/Hut-hzf/ung220z-tool/releases", use:"可商用·保留署名", cn:"光猫凭据提取"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -302,13 +304,13 @@
       desc:"爬数据、投简历、盯订阅源 —— 注意平台条款。",
       tags:["7 个"],
       items:[
-        {name:"MediaCrawler", license:"NOASSERTION", repo_url:"https://github.com/NanmiCoder/MediaCrawler", dl:"https://github.com/NanmiCoder/MediaCrawler/releases", cn:"多平台采集"},
-        {name:"Crawl4AI", license:"Apache-2.0", repo_url:"https://github.com/unclecode/crawl4ai", dl:"https://github.com/unclecode/crawl4ai/releases", cn:"LLM 爬虫"},
-        {name:"Scrapling", license:"BSD-3-Clause", repo_url:"https://github.com/D4Vinci/Scrapling", dl:"https://github.com/D4Vinci/Scrapling/releases", cn:"爬虫框架"},
-        {name:"ai-goofish-monitor", license:"MIT", repo_url:"https://github.com/Usagi-org/ai-goofish-monitor", dl:"https://github.com/Usagi-org/ai-goofish-monitor/releases", cn:"闲鱼监控"},
-        {name:"get_jobs", license:"NOASSERTION", repo_url:"https://github.com/loks666/get_jobs", dl:"https://github.com/loks666/get_jobs/releases", cn:"自动投简历"},
-        {name:"career-ops", license:"MIT", repo_url:"https://github.com/career-ops-hq/career-ops", dl:"https://github.com/career-ops-hq/career-ops/releases", cn:"AI 求职助手"},
-        {name:"Folo", license:"AGPL-3.0", repo_url:"https://github.com/RSSNext/Folo", dl:"https://github.com/RSSNext/Folo/releases", cn:"AI RSS 阅读器"}
+        {name:"MediaCrawler", license:"NOASSERTION", repo_url:"https://github.com/NanmiCoder/MediaCrawler", dl:"https://github.com/NanmiCoder/MediaCrawler/releases", use:"商用请先联系作者", cn:"多平台采集"},
+        {name:"Crawl4AI", license:"Apache-2.0", repo_url:"https://github.com/unclecode/crawl4ai", dl:"https://github.com/unclecode/crawl4ai/releases", use:"可商用·保留署名", cn:"LLM 爬虫"},
+        {name:"Scrapling", license:"BSD-3-Clause", repo_url:"https://github.com/D4Vinci/Scrapling", dl:"https://github.com/D4Vinci/Scrapling/releases", use:"可商用·保留署名", cn:"爬虫框架"},
+        {name:"ai-goofish-monitor", license:"MIT", repo_url:"https://github.com/Usagi-org/ai-goofish-monitor", dl:"https://github.com/Usagi-org/ai-goofish-monitor/releases", use:"可商用·保留署名", cn:"闲鱼监控"},
+        {name:"get_jobs", license:"NOASSERTION", repo_url:"https://github.com/loks666/get_jobs", dl:"https://github.com/loks666/get_jobs/releases", use:"商用请先联系作者", cn:"自动投简历"},
+        {name:"career-ops", license:"MIT", repo_url:"https://github.com/career-ops-hq/career-ops", dl:"https://github.com/career-ops-hq/career-ops/releases", use:"可商用·保留署名", cn:"AI 求职助手"},
+        {name:"Folo", license:"AGPL-3.0", repo_url:"https://github.com/RSSNext/Folo", dl:"https://github.com/RSSNext/Folo/releases", use:"可商用·需开源", cn:"AI RSS 阅读器"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -316,16 +318,16 @@
       desc:"让 agent 真正干活的底座：工作台、多 agent 编排、记忆。",
       tags:["10 个"],
       items:[
-        {name:"DeepSeek Harness", license:"MIT", repo_url:"https://github.com/deepseek-ai/deepseek-harness", dl:"https://github.com/deepseek-ai/deepseek-harness/releases", cn:"Agent 框架"},
-        {name:"DS Bot", license:"Apache-2.0", repo_url:"https://github.com/Fei2411/DS-Bot", dl:"https://github.com/Fei2411/DS-Bot/releases", cn:"多 bot 团队"},
-        {name:"Orca", license:"MIT", repo_url:"https://github.com/stablyai/orca", dl:"https://github.com/stablyai/orca/releases", cn:"多 agent 并行"},
-        {name:"Agent-Reach", license:"MIT", repo_url:"https://github.com/Panniantong/Agent-Reach", dl:"https://github.com/Panniantong/Agent-Reach/releases", cn:"全网搜索"},
-        {name:"Claude Code Game Studios", license:"MIT", repo_url:"https://github.com/Donchitos/Claude-Code-Game-Studios", dl:"https://github.com/Donchitos/Claude-Code-Game-Studios/releases", cn:"49 agent 做游戏"},
-        {name:"dsh-superagent-prototype", license:"MIT", repo_url:"https://github.com/deepseek-ai/dsh-superagent-prototype", dl:"https://github.com/deepseek-ai/dsh-superagent-prototype/releases", cn:"自主 agent 原型"},
-        {name:"OpenMausBot", license:"Apache-2.0", repo_url:"https://github.com/milind-soni/OpenMausBot", dl:"https://github.com/milind-soni/OpenMausBot/releases", cn:"多平台机器人"},
-        {name:"T3 Code", license:"MIT", repo_url:"https://github.com/pingdotgg/t3code", dl:"https://github.com/pingdotgg/t3code/releases", cn:"远程控制 Claude"},
-        {name:"Cloudflare computer", license:"MIT", repo_url:"https://github.com/cloudflare/computer", dl:"https://github.com/cloudflare/computer/releases", cn:"Agent 云电脑"},
-        {name:"WeSight", license:"MIT", repo_url:"https://github.com/freestylefly/wesight", dl:"https://github.com/freestylefly/wesight/releases", cn:"微信群聊日报"}
+        {name:"DeepSeek Harness", license:"MIT", repo_url:"https://github.com/deepseek-ai/deepseek-harness", dl:"https://github.com/deepseek-ai/deepseek-harness/releases", use:"可商用·保留署名", cn:"Agent 框架"},
+        {name:"DS Bot", license:"Apache-2.0", repo_url:"https://github.com/Fei2411/DS-Bot", dl:"https://github.com/Fei2411/DS-Bot/releases", use:"可商用·保留署名", cn:"多 bot 团队"},
+        {name:"Orca", license:"MIT", repo_url:"https://github.com/stablyai/orca", dl:"https://github.com/stablyai/orca/releases", use:"可商用·保留署名", cn:"多 agent 并行"},
+        {name:"Agent-Reach", license:"MIT", repo_url:"https://github.com/Panniantong/Agent-Reach", dl:"https://github.com/Panniantong/Agent-Reach/releases", use:"可商用·保留署名", cn:"全网搜索"},
+        {name:"Claude Code Game Studios", license:"MIT", repo_url:"https://github.com/Donchitos/Claude-Code-Game-Studios", dl:"https://github.com/Donchitos/Claude-Code-Game-Studios/releases", use:"可商用·保留署名", cn:"49 agent 做游戏"},
+        {name:"dsh-superagent-prototype", license:"MIT", repo_url:"https://github.com/deepseek-ai/dsh-superagent-prototype", dl:"https://github.com/deepseek-ai/dsh-superagent-prototype/releases", use:"可商用·保留署名", cn:"自主 agent 原型"},
+        {name:"OpenMausBot", license:"Apache-2.0", repo_url:"https://github.com/milind-soni/OpenMausBot", dl:"https://github.com/milind-soni/OpenMausBot/releases", use:"可商用·保留署名", cn:"多平台机器人"},
+        {name:"T3 Code", license:"MIT", repo_url:"https://github.com/pingdotgg/t3code", dl:"https://github.com/pingdotgg/t3code/releases", use:"可商用·保留署名", cn:"远程控制 Claude"},
+        {name:"Cloudflare computer", license:"MIT", repo_url:"https://github.com/cloudflare/computer", dl:"https://github.com/cloudflare/computer/releases", use:"可商用·保留署名", cn:"Agent 云电脑"},
+        {name:"WeSight", license:"MIT", repo_url:"https://github.com/freestylefly/wesight", dl:"https://github.com/freestylefly/wesight/releases", use:"可商用·保留署名", cn:"微信群聊日报"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -333,16 +335,16 @@
       desc:"写小说、做小红书、生成封面卡片、去 AI 味。",
       tags:["10 个"],
       items:[
-        {name:"oh-story-claudecode", license:"MIT", repo_url:"https://github.com/zenstory-ai/oh-story-claudecode", dl:"https://github.com/zenstory-ai/oh-story-claudecode/releases", cn:"网文写作技能包"},
-        {name:"webnovel-writer", license:"GPL-3.0", repo_url:"https://github.com/lingfengQAQ/webnovel-writer", dl:"https://github.com/lingfengQAQ/webnovel-writer/releases", cn:"长篇网文写作"},
-        {name:"Auto-Redbook-Skills", license:"无 LICENSE", repo_url:"https://github.com/comeonzhj/Auto-Redbook-Skills", dl:"https://github.com/comeonzhj/Auto-Redbook-Skills/releases", cn:"小红书自动发布"},
-        {name:"guizang-social-card-skill", license:"AGPL-3.0", repo_url:"https://github.com/op7418/guizang-social-card-skill", dl:"https://github.com/op7418/guizang-social-card-skill/releases", cn:"小红书卡片"},
-        {name:"Pexo Skills", license:"MIT", repo_url:"https://github.com/pexoai/pexo-skills", dl:"https://github.com/pexoai/pexo-skills/releases", cn:"短视频创作技能"},
-        {name:"AiToEarn", license:"MIT", repo_url:"https://github.com/yikart/AiToEarn", dl:"https://github.com/yikart/AiToEarn/releases", cn:"自媒体工作台"},
-        {name:"狗头军师", license:"MIT", repo_url:"https://github.com/shengjidaguai-china/goutoujunshi", dl:"https://github.com/shengjidaguai-china/goutoujunshi/releases", cn:"恋爱决策军师"},
-        {name:"jev-chat-jarvis", license:"MIT", repo_url:"https://github.com/jev-chat/jev-chat-jarvis", dl:"https://github.com/jev-chat/jev-chat-jarvis/releases", cn:"聊天决策助手"},
-        {name:"Plannotator", license:"Apache-2.0", repo_url:"https://github.com/backnotprop/plannotator", dl:"https://github.com/backnotprop/plannotator/releases", cn:"批注 AI 计划"},
-        {name:"Humanizer", license:"MIT", repo_url:"https://github.com/blader/humanizer", dl:"https://github.com/blader/humanizer/releases", cn:"去 AI 腔"}
+        {name:"oh-story-claudecode", license:"MIT", repo_url:"https://github.com/zenstory-ai/oh-story-claudecode", dl:"https://github.com/zenstory-ai/oh-story-claudecode/releases", use:"可商用·保留署名", cn:"网文写作技能包"},
+        {name:"webnovel-writer", license:"GPL-3.0", repo_url:"https://github.com/lingfengQAQ/webnovel-writer", dl:"https://github.com/lingfengQAQ/webnovel-writer/releases", use:"可商用·需开源", cn:"长篇网文写作"},
+        {name:"Auto-Redbook-Skills", license:"无 LICENSE", repo_url:"https://github.com/comeonzhj/Auto-Redbook-Skills", dl:"https://github.com/comeonzhj/Auto-Redbook-Skills/releases", use:"商用请先联系作者", cn:"小红书自动发布"},
+        {name:"guizang-social-card-skill", license:"AGPL-3.0", repo_url:"https://github.com/op7418/guizang-social-card-skill", dl:"https://github.com/op7418/guizang-social-card-skill/releases", use:"可商用·需开源", cn:"小红书卡片"},
+        {name:"Pexo Skills", license:"MIT", repo_url:"https://github.com/pexoai/pexo-skills", dl:"https://github.com/pexoai/pexo-skills/releases", use:"可商用·保留署名", cn:"短视频创作技能"},
+        {name:"AiToEarn", license:"MIT", repo_url:"https://github.com/yikart/AiToEarn", dl:"https://github.com/yikart/AiToEarn/releases", use:"可商用·保留署名", cn:"自媒体工作台"},
+        {name:"狗头军师", license:"MIT", repo_url:"https://github.com/shengjidaguai-china/goutoujunshi", dl:"https://github.com/shengjidaguai-china/goutoujunshi/releases", use:"可商用·保留署名", cn:"恋爱决策军师"},
+        {name:"jev-chat-jarvis", license:"MIT", repo_url:"https://github.com/jev-chat/jev-chat-jarvis", dl:"https://github.com/jev-chat/jev-chat-jarvis/releases", use:"可商用·保留署名", cn:"聊天决策助手"},
+        {name:"Plannotator", license:"Apache-2.0", repo_url:"https://github.com/backnotprop/plannotator", dl:"https://github.com/backnotprop/plannotator/releases", use:"可商用·保留署名", cn:"批注 AI 计划"},
+        {name:"Humanizer", license:"MIT", repo_url:"https://github.com/blader/humanizer", dl:"https://github.com/blader/humanizer/releases", use:"可商用·保留署名", cn:"去 AI 腔"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -350,16 +352,16 @@
       desc:"免费额度聚合、本地训练、官方技能库、上下文压缩。",
       tags:["10 个"],
       items:[
-        {name:"FreeLLMAPI", license:"MIT", repo_url:"https://github.com/tashfeenahmed/freellmapi", dl:"https://github.com/tashfeenahmed/freellmapi/releases", cn:"87 家免费模型"},
-        {name:"Headroom", license:"Apache-2.0", repo_url:"https://github.com/headroomlabs-ai/headroom", dl:"https://github.com/headroomlabs-ai/headroom/releases", cn:"上下文压缩省 token"},
-        {name:"OmniRoute", license:"MIT", repo_url:"https://github.com/cheaper-inference/OmniRoute", dl:"https://github.com/cheaper-inference/OmniRoute/releases", cn:"AI 网关"},
-        {name:"Unsloth", license:"Apache-2.0", repo_url:"https://github.com/unslothai/unsloth", dl:"https://github.com/unslothai/unsloth/releases", cn:"本地模型训练"},
-        {name:"TencentDB Agent Memory", license:"NOASSERTION", repo_url:"https://github.com/TencentCloud/TencentDB-Agent-Memory", dl:"https://github.com/TencentCloud/TencentDB-Agent-Memory/releases", cn:"Agent 记忆中心"},
-        {name:"elephant-goldfish-model", license:"Apache-2.0", repo_url:"https://github.com/google/elephant-goldfish-model", dl:"https://github.com/google/elephant-goldfish-model/releases", cn:"设计评审插件"},
-        {name:"Cloudflare Skills", license:"Apache-2.0", repo_url:"https://github.com/cloudflare/skills", dl:"https://github.com/cloudflare/skills/releases", cn:"官方技能库"},
-        {name:"Modern Web Guidance", license:"Apache-2.0", repo_url:"https://github.com/GoogleChrome/modern-web-guidance", dl:"https://github.com/GoogleChrome/modern-web-guidance/releases", cn:"前端最佳实践"},
-        {name:"Chrome DevTools MCP", license:"Apache-2.0", repo_url:"https://github.com/ChromeDevTools/chrome-devtools-mcp", dl:"https://github.com/ChromeDevTools/chrome-devtools-mcp/releases", cn:"浏览器调试 MCP"},
-        {name:"Open Code Review", license:"Apache-2.0", repo_url:"https://github.com/alibaba/open-code-review", dl:"https://github.com/alibaba/open-code-review/releases", cn:"代码审查"}
+        {name:"FreeLLMAPI", license:"MIT", repo_url:"https://github.com/tashfeenahmed/freellmapi", dl:"https://github.com/tashfeenahmed/freellmapi/releases", use:"可商用·保留署名", cn:"87 家免费模型"},
+        {name:"Headroom", license:"Apache-2.0", repo_url:"https://github.com/headroomlabs-ai/headroom", dl:"https://github.com/headroomlabs-ai/headroom/releases", use:"可商用·保留署名", cn:"上下文压缩省 token"},
+        {name:"OmniRoute", license:"MIT", repo_url:"https://github.com/cheaper-inference/OmniRoute", dl:"https://github.com/cheaper-inference/OmniRoute/releases", use:"可商用·保留署名", cn:"AI 网关"},
+        {name:"Unsloth", license:"Apache-2.0", repo_url:"https://github.com/unslothai/unsloth", dl:"https://github.com/unslothai/unsloth/releases", use:"可商用·保留署名", cn:"本地模型训练"},
+        {name:"TencentDB Agent Memory", license:"NOASSERTION", repo_url:"https://github.com/TencentCloud/TencentDB-Agent-Memory", dl:"https://github.com/TencentCloud/TencentDB-Agent-Memory/releases", use:"商用请先联系作者", cn:"Agent 记忆中心"},
+        {name:"elephant-goldfish-model", license:"Apache-2.0", repo_url:"https://github.com/google/elephant-goldfish-model", dl:"https://github.com/google/elephant-goldfish-model/releases", use:"可商用·保留署名", cn:"设计评审插件"},
+        {name:"Cloudflare Skills", license:"Apache-2.0", repo_url:"https://github.com/cloudflare/skills", dl:"https://github.com/cloudflare/skills/releases", use:"可商用·保留署名", cn:"官方技能库"},
+        {name:"Modern Web Guidance", license:"Apache-2.0", repo_url:"https://github.com/GoogleChrome/modern-web-guidance", dl:"https://github.com/GoogleChrome/modern-web-guidance/releases", use:"可商用·保留署名", cn:"前端最佳实践"},
+        {name:"Chrome DevTools MCP", license:"Apache-2.0", repo_url:"https://github.com/ChromeDevTools/chrome-devtools-mcp", dl:"https://github.com/ChromeDevTools/chrome-devtools-mcp/releases", use:"可商用·保留署名", cn:"浏览器调试 MCP"},
+        {name:"Open Code Review", license:"Apache-2.0", repo_url:"https://github.com/alibaba/open-code-review", dl:"https://github.com/alibaba/open-code-review/releases", use:"可商用·保留署名", cn:"代码审查"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -367,12 +369,12 @@
       desc:"让 agent 像人一样点网页、操作桌面。",
       tags:["6 个"],
       items:[
-        {name:"UI-TARS Desktop", license:"Apache-2.0", repo_url:"https://github.com/bytedance/UI-TARS-desktop", dl:"https://github.com/bytedance/UI-TARS-desktop/releases", cn:"一句话接管电脑"},
-        {name:"moli", license:"Apache-2.0", repo_url:"https://github.com/lexmount/moli", dl:"https://github.com/lexmount/moli/releases", cn:"Agent 浏览器"},
-        {name:"agent-browser", license:"Apache-2.0", repo_url:"https://github.com/vercel-labs/agent-browser", dl:"https://github.com/vercel-labs/agent-browser/releases", cn:"AI 浏览器"},
-        {name:"agent-desktop", license:"Apache-2.0", repo_url:"https://github.com/vercel-labs/agent-desktop", dl:"https://github.com/vercel-labs/agent-desktop/releases", cn:"AI 操作桌面"},
-        {name:"PageAgent", license:"MIT", repo_url:"https://github.com/alibaba/page-agent", dl:"https://github.com/alibaba/page-agent/releases", cn:"一行代码让网页变 AI"},
-        {name:"WechatVibe", license:"Apache-2.0", repo_url:"https://github.com/tswawa/WechatVibe", dl:"https://github.com/tswawa/WechatVibe/releases", cn:"微信聊天性格分析"}
+        {name:"UI-TARS Desktop", license:"Apache-2.0", repo_url:"https://github.com/bytedance/UI-TARS-desktop", dl:"https://github.com/bytedance/UI-TARS-desktop/releases", use:"可商用·保留署名", cn:"一句话接管电脑"},
+        {name:"moli", license:"Apache-2.0", repo_url:"https://github.com/lexmount/moli", dl:"https://github.com/lexmount/moli/releases", use:"可商用·保留署名", cn:"Agent 浏览器"},
+        {name:"agent-browser", license:"Apache-2.0", repo_url:"https://github.com/vercel-labs/agent-browser", dl:"https://github.com/vercel-labs/agent-browser/releases", use:"可商用·保留署名", cn:"AI 浏览器"},
+        {name:"agent-desktop", license:"Apache-2.0", repo_url:"https://github.com/vercel-labs/agent-desktop", dl:"https://github.com/vercel-labs/agent-desktop/releases", use:"可商用·保留署名", cn:"AI 操作桌面"},
+        {name:"PageAgent", license:"MIT", repo_url:"https://github.com/alibaba/page-agent", dl:"https://github.com/alibaba/page-agent/releases", use:"可商用·保留署名", cn:"一行代码让网页变 AI"},
+        {name:"WechatVibe", license:"Apache-2.0", repo_url:"https://github.com/tswawa/WechatVibe", dl:"https://github.com/tswawa/WechatVibe/releases", use:"可商用·保留署名", cn:"微信聊天性格分析"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -380,16 +382,16 @@
       desc:"一时归不了类的：影视站、ERP、股票、命盘、闲鱼自动化。",
       tags:["10 个"],
       items:[
-        {name:"LibreTV", license:"AGPL-3.0", repo_url:"https://github.com/LibreSpark/LibreTV", dl:"https://github.com/LibreSpark/LibreTV/releases", cn:"自建影视站"},
-        {name:"ERPNext", license:"GPL-3.0", repo_url:"https://github.com/frappe/erpnext", dl:"https://github.com/frappe/erpnext/releases", cn:"开源 ERP"},
-        {name:"Odoo", license:"NOASSERTION", repo_url:"https://github.com/odoo/odoo", dl:"https://github.com/odoo/odoo/releases", cn:"开源 ERP"},
-        {name:"Octop", license:"MIT", repo_url:"https://github.com/TencentCloud/Octop", dl:"https://github.com/TencentCloud/Octop/releases", cn:"自托管 AI 助手"},
-        {name:"OpenStock", license:"AGPL-3.0", repo_url:"https://github.com/Open-Dev-Society/OpenStock", dl:"https://github.com/Open-Dev-Society/OpenStock/releases", cn:"股票看板"},
-        {name:"ziwei-doushu", license:"MIT", repo_url:"https://github.com/Renhuai123/ziwei-doushu", dl:"https://github.com/Renhuai123/ziwei-doushu/releases", cn:"紫微斗数排盘"},
-        {name:"daily_stock_analysis", license:"MIT", repo_url:"https://github.com/ZhuLinsen/daily_stock_analysis", dl:"https://github.com/ZhuLinsen/daily_stock_analysis/releases", cn:"股票智能分析"},
-        {name:"闲鱼超级管家", license:"AGPL-3.0", repo_url:"https://github.com/23Star/xianyu-super-butler", dl:"https://github.com/23Star/xianyu-super-butler/releases", cn:"闲鱼自动化"},
-        {name:"Sure", license:"AGPL-3.0", repo_url:"https://github.com/we-promise/sure", dl:"https://github.com/we-promise/sure/releases", cn:"记账理财"},
-        {name:"Semantica", license:"MIT", repo_url:"https://github.com/semantica-agi/semantica", dl:"https://github.com/semantica-agi/semantica/releases", cn:"决策溯源"}
+        {name:"LibreTV", license:"AGPL-3.0", repo_url:"https://github.com/LibreSpark/LibreTV", dl:"https://github.com/LibreSpark/LibreTV/releases", use:"可商用·需开源", cn:"自建影视站"},
+        {name:"ERPNext", license:"GPL-3.0", repo_url:"https://github.com/frappe/erpnext", dl:"https://github.com/frappe/erpnext/releases", use:"可商用·需开源", cn:"开源 ERP"},
+        {name:"Odoo", license:"NOASSERTION", repo_url:"https://github.com/odoo/odoo", dl:"https://github.com/odoo/odoo/releases", use:"商用请先联系作者", cn:"开源 ERP"},
+        {name:"Octop", license:"MIT", repo_url:"https://github.com/TencentCloud/Octop", dl:"https://github.com/TencentCloud/Octop/releases", use:"可商用·保留署名", cn:"自托管 AI 助手"},
+        {name:"OpenStock", license:"AGPL-3.0", repo_url:"https://github.com/Open-Dev-Society/OpenStock", dl:"https://github.com/Open-Dev-Society/OpenStock/releases", use:"可商用·需开源", cn:"股票看板"},
+        {name:"ziwei-doushu", license:"MIT", repo_url:"https://github.com/Renhuai123/ziwei-doushu", dl:"https://github.com/Renhuai123/ziwei-doushu/releases", use:"可商用·保留署名", cn:"紫微斗数排盘"},
+        {name:"daily_stock_analysis", license:"MIT", repo_url:"https://github.com/ZhuLinsen/daily_stock_analysis", dl:"https://github.com/ZhuLinsen/daily_stock_analysis/releases", use:"可商用·保留署名", cn:"股票智能分析"},
+        {name:"闲鱼超级管家", license:"AGPL-3.0", repo_url:"https://github.com/23Star/xianyu-super-butler", dl:"https://github.com/23Star/xianyu-super-butler/releases", use:"可商用·需开源", cn:"闲鱼自动化"},
+        {name:"Sure", license:"AGPL-3.0", repo_url:"https://github.com/we-promise/sure", dl:"https://github.com/we-promise/sure/releases", use:"可商用·需开源", cn:"记账理财"},
+        {name:"Semantica", license:"MIT", repo_url:"https://github.com/semantica-agi/semantica", dl:"https://github.com/semantica-agi/semantica/releases", use:"可商用·保留署名", cn:"决策溯源"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -397,13 +399,13 @@
       desc:"把内容蒸馏成 skill，或直接用打包好的技能合集。",
       tags:["7 个"],
       items:[
-        {name:"PPT-Master", license:"MIT", repo_url:"https://github.com/hugohe3/ppt-master", dl:"https://github.com/hugohe3/ppt-master/releases", cn:"AI 生成 PPT"},
-        {name:"宝玉技能包 baoyu-skills", license:"MIT", repo_url:"https://github.com/JimLiu/baoyu-skills", dl:"https://github.com/JimLiu/baoyu-skills/releases", cn:"22 个创作技能"},
-        {name:"仓颉 cangjie-skill", license:"MIT", repo_url:"https://github.com/kangarooking/cangjie-skill", dl:"https://github.com/kangarooking/cangjie-skill/releases", cn:"书转 skill"},
-        {name:"book-to-skill", license:"MIT", repo_url:"https://github.com/virgiliojr94/book-to-skill", dl:"https://github.com/virgiliojr94/book-to-skill/releases", cn:"书转 skill"},
-        {name:"Addy Osmani 技能包", license:"MIT", repo_url:"https://github.com/addyosmani/agent-skills", dl:"https://github.com/addyosmani/agent-skills/releases", cn:"前端工程技能"},
-        {name:"design-taste", license:"MIT", repo_url:"https://github.com/madebymustafa/design-taste", dl:"https://github.com/madebymustafa/design-taste/releases", cn:"设计师审美技能"},
-        {name:"民法典 Skill", license:"MIT", repo_url:"https://github.com/xtgmf/minfadian", dl:"https://github.com/xtgmf/minfadian/releases", cn:"民法典问答"}
+        {name:"PPT-Master", license:"MIT", repo_url:"https://github.com/hugohe3/ppt-master", dl:"https://github.com/hugohe3/ppt-master/releases", use:"可商用·保留署名", cn:"AI 生成 PPT"},
+        {name:"宝玉技能包 baoyu-skills", license:"MIT", repo_url:"https://github.com/JimLiu/baoyu-skills", dl:"https://github.com/JimLiu/baoyu-skills/releases", use:"可商用·保留署名", cn:"22 个创作技能"},
+        {name:"仓颉 cangjie-skill", license:"MIT", repo_url:"https://github.com/kangarooking/cangjie-skill", dl:"https://github.com/kangarooking/cangjie-skill/releases", use:"可商用·保留署名", cn:"书转 skill"},
+        {name:"book-to-skill", license:"MIT", repo_url:"https://github.com/virgiliojr94/book-to-skill", dl:"https://github.com/virgiliojr94/book-to-skill/releases", use:"可商用·保留署名", cn:"书转 skill"},
+        {name:"Addy Osmani 技能包", license:"MIT", repo_url:"https://github.com/addyosmani/agent-skills", dl:"https://github.com/addyosmani/agent-skills/releases", use:"可商用·保留署名", cn:"前端工程技能"},
+        {name:"design-taste", license:"MIT", repo_url:"https://github.com/madebymustafa/design-taste", dl:"https://github.com/madebymustafa/design-taste/releases", use:"可商用·保留署名", cn:"设计师审美技能"},
+        {name:"民法典 Skill", license:"MIT", repo_url:"https://github.com/xtgmf/minfadian", dl:"https://github.com/xtgmf/minfadian/releases", use:"可商用·保留署名", cn:"民法典问答"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -411,12 +413,12 @@
       desc:"识别、转写、配音、克隆音色 —— 全在本地跑，不上传。",
       tags:["6 个"],
       items:[
-        {name:"pyvideotrans", license:"GPL-3.0", repo_url:"https://github.com/jianchang512/pyvideotrans", dl:"https://github.com/jianchang512/pyvideotrans/releases", cn:"视频翻译配音"},
-        {name:"OmniVoice", license:"Apache-2.0", repo_url:"https://github.com/k2-fsa/OmniVoice", dl:"https://github.com/k2-fsa/OmniVoice/releases", cn:"600 语种声音克隆"},
-        {name:"whisper", license:"MIT", repo_url:"https://github.com/openai/whisper", dl:"https://github.com/openai/whisper/releases", cn:"语音识别"},
-        {name:"ChatTTS", license:"AGPL-3.0", repo_url:"https://github.com/2noise/ChatTTS", dl:"https://github.com/2noise/ChatTTS/releases", cn:"语音合成"},
-        {name:"voicebox", license:"MIT", repo_url:"https://github.com/jamiepine/voicebox", dl:"https://github.com/jamiepine/voicebox/releases", cn:"本地语音工作室"},
-        {name:"VoiceStudio", license:"AGPL-3.0", repo_url:"https://github.com/debpalash/VoiceStudio", dl:"https://github.com/debpalash/VoiceStudio/releases", cn:"声音克隆"}
+        {name:"pyvideotrans", license:"GPL-3.0", repo_url:"https://github.com/jianchang512/pyvideotrans", dl:"https://github.com/jianchang512/pyvideotrans/releases", use:"可商用·需开源", cn:"视频翻译配音"},
+        {name:"OmniVoice", license:"Apache-2.0", repo_url:"https://github.com/k2-fsa/OmniVoice", dl:"https://github.com/k2-fsa/OmniVoice/releases", use:"可商用·保留署名", cn:"600 语种声音克隆"},
+        {name:"whisper", license:"MIT", repo_url:"https://github.com/openai/whisper", dl:"https://github.com/openai/whisper/releases", use:"可商用·保留署名", cn:"语音识别"},
+        {name:"ChatTTS", license:"AGPL-3.0", repo_url:"https://github.com/2noise/ChatTTS", dl:"https://github.com/2noise/ChatTTS/releases", use:"可商用·需开源", cn:"语音合成"},
+        {name:"voicebox", license:"MIT", repo_url:"https://github.com/jamiepine/voicebox", dl:"https://github.com/jamiepine/voicebox/releases", use:"可商用·保留署名", cn:"本地语音工作室"},
+        {name:"VoiceStudio", license:"AGPL-3.0", repo_url:"https://github.com/debpalash/VoiceStudio", dl:"https://github.com/debpalash/VoiceStudio/releases", use:"可商用·需开源", cn:"声音克隆"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -424,10 +426,10 @@
       desc:"原神、崩铁挂机，安卓跑 Steam，像素特效 —— 先说清楚：会封号。",
       tags:["4 个"],
       items:[
-        {name:"DroidDeck", license:"GPL-3.0", repo_url:"https://github.com/Droid-Deck/DroidDeck", dl:"https://github.com/Droid-Deck/DroidDeck/releases", cn:"安卓跑 Steam"},
-        {name:"BetterGI", license:"GPL-3.0", repo_url:"https://github.com/babalae/better-genshin-impact", dl:"https://github.com/babalae/better-genshin-impact/releases", cn:"原神自动化"},
-        {name:"March7thAssistant", license:"GPL-3.0", repo_url:"https://github.com/moesnow/March7thAssistant", dl:"https://github.com/moesnow/March7thAssistant/releases", cn:"崩铁日常自动化"},
-        {name:"PixelFX", license:"MIT", repo_url:"https://github.com/patch-gg/pixelfx", dl:"https://github.com/patch-gg/pixelfx/releases", cn:"像素特效"}
+        {name:"DroidDeck", license:"GPL-3.0", repo_url:"https://github.com/Droid-Deck/DroidDeck", dl:"https://github.com/Droid-Deck/DroidDeck/releases", use:"可商用·需开源", cn:"安卓跑 Steam"},
+        {name:"BetterGI", license:"GPL-3.0", repo_url:"https://github.com/babalae/better-genshin-impact", dl:"https://github.com/babalae/better-genshin-impact/releases", use:"可商用·需开源", cn:"原神自动化"},
+        {name:"March7thAssistant", license:"GPL-3.0", repo_url:"https://github.com/moesnow/March7thAssistant", dl:"https://github.com/moesnow/March7thAssistant/releases", use:"可商用·需开源", cn:"崩铁日常自动化"},
+        {name:"PixelFX", license:"MIT", repo_url:"https://github.com/patch-gg/pixelfx", dl:"https://github.com/patch-gg/pixelfx/releases", use:"可商用·保留署名", cn:"像素特效"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -435,12 +437,12 @@
       desc:"查用户名、逆向、扫技能漏洞、隐写水印 —— 仅限授权场景。",
       tags:["6 个"],
       items:[
-        {name:"sherlock", license:"MIT", repo_url:"https://github.com/sherlock-project/sherlock", dl:"https://github.com/sherlock-project/sherlock/releases", cn:"用户名全网检索"},
-        {name:"reverse-skill", license:"MIT", repo_url:"https://github.com/zhaoxuya520/reverse-skill", dl:"https://github.com/zhaoxuya520/reverse-skill/releases", cn:"逆向工具箱"},
-        {name:"SkillSpector", license:"Apache-2.0", repo_url:"https://github.com/NVIDIA/SkillSpector", dl:"https://github.com/NVIDIA/SkillSpector/releases", cn:"技能安全扫描"},
-        {name:"Codex Security", license:"Apache-2.0", repo_url:"https://github.com/openai/codex-security", dl:"https://github.com/openai/codex-security/releases", cn:"安全扫描 CLI"},
-        {name:"promptfoo", license:"MIT", repo_url:"https://github.com/promptfoo/promptfoo", dl:"https://github.com/promptfoo/promptfoo/releases", cn:"提示词测试"},
-        {name:"zero-width-watermark", license:"无 LICENSE", repo_url:"https://github.com/redshoga/zero-width-watermark", dl:"https://github.com/redshoga/zero-width-watermark/releases", cn:"零宽隐写水印"}
+        {name:"sherlock", license:"MIT", repo_url:"https://github.com/sherlock-project/sherlock", dl:"https://github.com/sherlock-project/sherlock/releases", use:"可商用·保留署名", cn:"用户名全网检索"},
+        {name:"reverse-skill", license:"MIT", repo_url:"https://github.com/zhaoxuya520/reverse-skill", dl:"https://github.com/zhaoxuya520/reverse-skill/releases", use:"可商用·保留署名", cn:"逆向工具箱"},
+        {name:"SkillSpector", license:"Apache-2.0", repo_url:"https://github.com/NVIDIA/SkillSpector", dl:"https://github.com/NVIDIA/SkillSpector/releases", use:"可商用·保留署名", cn:"技能安全扫描"},
+        {name:"Codex Security", license:"Apache-2.0", repo_url:"https://github.com/openai/codex-security", dl:"https://github.com/openai/codex-security/releases", use:"可商用·保留署名", cn:"安全扫描 CLI"},
+        {name:"promptfoo", license:"MIT", repo_url:"https://github.com/promptfoo/promptfoo", dl:"https://github.com/promptfoo/promptfoo/releases", use:"可商用·保留署名", cn:"提示词测试"},
+        {name:"zero-width-watermark", license:"无 LICENSE", repo_url:"https://github.com/redshoga/zero-width-watermark", dl:"https://github.com/redshoga/zero-width-watermark/releases", use:"商用请先联系作者", cn:"零宽隐写水印"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] },
 
@@ -448,17 +450,17 @@
       desc:"前面 18 类装不下的，都在这里。",
       tags:["10 个"],
       items:[
-        {name:"gods-eye-view", license:"NOASSERTION", repo_url:"https://github.com/bilawalsidhu/gods-eye-view", dl:"https://github.com/bilawalsidhu/gods-eye-view/releases", cn:"3D 地球观测"},
-        {name:"Uptime Kuma", license:"MIT", repo_url:"https://github.com/louislam/uptime-kuma", dl:"https://github.com/louislam/uptime-kuma/releases", cn:"网站监控"},
-        {name:"MoeKoeMusic", license:"GPL-2.0", repo_url:"https://github.com/MoeKoeMusic/MoeKoeMusic", dl:"https://github.com/MoeKoeMusic/MoeKoeMusic/releases", cn:"酷狗第三方客户端"},
-        {name:"DiPlay", license:"GPL-3.0", repo_url:"https://github.com/shihabal3amri/DiPlay", dl:"https://github.com/shihabal3amri/DiPlay/releases", cn:"车机投屏"},
-        {name:"claude-seo", license:"MIT", repo_url:"https://github.com/AgriciDaniel/claude-seo", dl:"https://github.com/AgriciDaniel/claude-seo/releases", cn:"SEO 助手"},
-        {name:"Paperclip", license:"MIT", repo_url:"https://github.com/paperclipai/paperclip", dl:"https://github.com/paperclipai/paperclip/releases", cn:"agent 团队工作台"},
-        {name:"i-have-adhd", license:"MIT", repo_url:"https://github.com/ayghri/i-have-adhd", dl:"https://github.com/ayghri/i-have-adhd/releases", cn:"让 AI 少废话"},
-        {name:"DBX", license:"Apache-2.0", repo_url:"https://github.com/t8y2/dbx", dl:"https://github.com/t8y2/dbx/releases", cn:"数据库客户端"},
-        {name:"OldAlmanac（电子老黄历）", license:"无 LICENSE", repo_url:"https://github.com/jingguanzhang/OldAlmanac", dl:"https://github.com/jingguanzhang/OldAlmanac/releases", cn:"电子黄历"},
-        {name:"jianhao-travel-planner", license:"MIT", repo_url:"https://github.com/awangwang123/jianhao-travel-planner", dl:"https://github.com/awangwang123/jianhao-travel-planner/releases", cn:"旅行路书"},
-        {name:"一饭封神 WhatToEat", license:"无 LICENSE", repo_url:"https://github.com/liu-ziting/what-to-eat", cn:"AI 菜谱生成"}
+        {name:"gods-eye-view", license:"NOASSERTION", repo_url:"https://github.com/bilawalsidhu/gods-eye-view", dl:"https://github.com/bilawalsidhu/gods-eye-view/releases", use:"商用请先联系作者", cn:"3D 地球观测"},
+        {name:"Uptime Kuma", license:"MIT", repo_url:"https://github.com/louislam/uptime-kuma", dl:"https://github.com/louislam/uptime-kuma/releases", use:"可商用·保留署名", cn:"网站监控"},
+        {name:"MoeKoeMusic", license:"GPL-2.0", repo_url:"https://github.com/MoeKoeMusic/MoeKoeMusic", dl:"https://github.com/MoeKoeMusic/MoeKoeMusic/releases", use:"可商用·需开源", cn:"酷狗第三方客户端"},
+        {name:"DiPlay", license:"GPL-3.0", repo_url:"https://github.com/shihabal3amri/DiPlay", dl:"https://github.com/shihabal3amri/DiPlay/releases", use:"可商用·需开源", cn:"车机投屏"},
+        {name:"claude-seo", license:"MIT", repo_url:"https://github.com/AgriciDaniel/claude-seo", dl:"https://github.com/AgriciDaniel/claude-seo/releases", use:"可商用·保留署名", cn:"SEO 助手"},
+        {name:"Paperclip", license:"MIT", repo_url:"https://github.com/paperclipai/paperclip", dl:"https://github.com/paperclipai/paperclip/releases", use:"可商用·保留署名", cn:"agent 团队工作台"},
+        {name:"i-have-adhd", license:"MIT", repo_url:"https://github.com/ayghri/i-have-adhd", dl:"https://github.com/ayghri/i-have-adhd/releases", use:"可商用·保留署名", cn:"让 AI 少废话"},
+        {name:"DBX", license:"Apache-2.0", repo_url:"https://github.com/t8y2/dbx", dl:"https://github.com/t8y2/dbx/releases", use:"可商用·保留署名", cn:"数据库客户端"},
+        {name:"OldAlmanac（电子老黄历）", license:"无 LICENSE", repo_url:"https://github.com/jingguanzhang/OldAlmanac", dl:"https://github.com/jingguanzhang/OldAlmanac/releases", use:"商用请先联系作者", cn:"电子黄历"},
+        {name:"jianhao-travel-planner", license:"MIT", repo_url:"https://github.com/awangwang123/jianhao-travel-planner", dl:"https://github.com/awangwang123/jianhao-travel-planner/releases", use:"可商用·保留署名", cn:"旅行路书"},
+        {name:"一饭封神 WhatToEat", license:"无 LICENSE", repo_url:"https://github.com/liu-ziting/what-to-eat", use:"商用请先联系作者", cn:"AI 菜谱生成"}
       ],
       links:[["仓库根目录", REPO+"/tree/main"]] }
   ];
@@ -508,7 +510,7 @@
         <h3>${d.icon} ${esc(d.title)}</h3>
         <p>${esc(d.desc)}</p>
         <div class="tags">${d.tags.map(t => `<span class="tag${/MIT|ISC|OFL|免|0 元|已下载/.test(t) ? " free" : ""}">${esc(t)}</span>`).join("")}</div>
-        ${Array.isArray(d.items) && d.items.length ? `<ul class="ds">${d.items.map(it => `<li><a href="${esc(it.repo_url)}" target="_blank" rel="noopener">${esc(it.name)}</a>${it.cn?`<span class="cn">${esc(it.cn)}</span>`:""}<span class="rt"><a class="dl" href="${esc(it.dl||it.repo_url+'/releases')}" target="_blank" rel="noopener" title="${it.ver?('下载 '+esc(it.ver)):'去 Releases 页'}">下载</a><span class="lic">${esc(it.license)}</span></span></li>`).join("")}</ul>` : ""}
+        ${Array.isArray(d.items) && d.items.length ? `<ul class="ds">${d.items.map(it => `<li><a href="${esc(it.repo_url)}" target="_blank" rel="noopener">${esc(it.name)}</a>${it.cn?`<span class="cn">${esc(it.cn)}</span>`:""}<span class="rt"><a class="dl" href="${esc(it.dl||it.repo_url+'/releases')}" target="_blank" rel="noopener" title="${it.ver?('下载 '+esc(it.ver)):'去 Releases 页'}">下载</a><span class="lic">${esc(it.license)}</span>${it.use?`<span class="use">${esc(it.use)}</span>`:""}</span></li>`).join("")}</ul>` : ""}
         <div class="links">${d.links.map(([t,u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join("")}</div>
       </article>`).join("");
   }
