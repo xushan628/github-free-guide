@@ -54,6 +54,7 @@
 | **仓颉 cangjie-skill** | [kangarooking/cangjie-skill](https://github.com/kangarooking/cangjie-skill) | MIT | 把书/长视频/播客蒸馏成可执行的 Agent Skills：RIA-TV++ 七阶段流水线，输出多 skill 仓库（含 DIGEST/GLOSSARY/测试用例） | 抖音 |
 | **宝玉技能包 baoyu-skills** | [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills) | MIT | 22 个内容创作 skill 合集，含 `baoyu-xhs-images`（小红书图文卡片）、封面图、信息图、PPT 幻灯、发布到微信/微博/X | 抖音 |
 | **PPT-Master** | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) | MIT | 把文档或一个主题直接生成原生可编辑的 PowerPoint（不是截图拼图） | 抖音 · 009 期 |
+| **一饭封神 WhatToEat** | [liu-ziting/what-to-eat](https://github.com/liu-ziting/what-to-eat) | **无 LICENSE** | AI 菜谱生成：八大菜系 + 国际料理，营养分析、酒水推荐、效果图生成，在线演示 eat.lz-t.top | 用户提供 |
 | **design-taste** | [madebymustafa/design-taste](https://github.com/madebymustafa/design-taste) | MIT | 24 个"把审美变成指令"的 agent skills，让 AI 生成的界面不再千篇一律 | 抖音 |
 | **民法典 Skill** | [xtgmf/minfadian](https://github.com/xtgmf/minfadian) | MIT | 把《民法典》做成 Skill，让 AI 直接按法条回答（★ 很低，谨慎使用） | 抖音 |
 | **jianhao-travel-planner** | [awangwang123/jianhao-travel-planner](https://github.com/awangwang123/jianhao-travel-planner) | MIT | 旅行路书 skill：联网实查 + 多源交叉验证，输出可执行攻略 | 抖音 |
