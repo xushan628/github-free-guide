@@ -57,6 +57,7 @@
 | **一饭封神 WhatToEat** | [liu-ziting/what-to-eat](https://github.com/liu-ziting/what-to-eat) | **无 LICENSE** | AI 菜谱生成：八大菜系 + 国际料理，营养分析、酒水推荐、效果图生成，在线演示 eat.lz-t.top | 用户提供 |
 | **design-taste** | [madebymustafa/design-taste](https://github.com/madebymustafa/design-taste) | MIT | 24 个"把审美变成指令"的 agent skills，让 AI 生成的界面不再千篇一律 | 抖音 |
 | **民法典 Skill** | [xtgmf/minfadian](https://github.com/xtgmf/minfadian) | MIT | 把《民法典》做成 Skill，让 AI 直接按法条回答（★ 很低，谨慎使用） | 抖音 |
+| **大麦哥知识库 Skill** | [qwer3021/douyin-Michael-DaMaiGe-skill](https://github.com/qwer3021/douyin-Michael-DaMaiGe-skill) | **无 LICENSE** | 抖音博主视频知识库 Skill：内置「Michael大麦哥」语录库，问答标注出自哪期视频；也可换任意抖音博主链接 | 抖音 · 372 期 |
 | **jianhao-travel-planner** | [awangwang123/jianhao-travel-planner](https://github.com/awangwang123/jianhao-travel-planner) | MIT | 旅行路书 skill：联网实查 + 多源交叉验证，输出可执行攻略 | 抖音 |
 | **Modern Web Guidance** | [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | Apache-2.0 | Google Chrome 团队：让 coding agent 先查最新的 Web 最佳实践再动手 | 86 |
 | **Chrome DevTools MCP** | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | 把 Chrome DevTools 交给 AI：自己查报错、看性能 | 86 |
@@ -147,6 +148,15 @@
 | `review` | 审核一致性 / 逻辑 / 断章 |
 
 它用**文件系统当记忆**（追踪数据在 `追踪/_tracking-state.json`），所以长篇不容易"忘设定"；适配 Claude Code、Codex CLI、OpenCode 等 7 款 agent。
+
+## 博主知识库类 Skill 的版权边界
+
+`大麦哥知识库 Skill` 这类项目，本质是把某位博主/作者的内容蒸馏成问答库：
+
+- **内容版权归原作者**：自己学没问题，**转载、商用、二次分发要先拿到授权**；
+- **它支持「输入任意抖音博主链接」= 会去抓抖音内容**，批量抓取可能违反平台条款；
+- **不是官方项目**：社区作品，与博主本人无隶属关系；
+- 许可证也缺失，代码同样按「保留所有权利」处理。
 
 ## 用之前要知道的
 
