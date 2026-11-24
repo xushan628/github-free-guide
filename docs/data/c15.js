@@ -1,0 +1,27 @@
+window.__D = window.__D || [];
+window.__D.push({ no:"15", cat:"技能包", icon:"⚗️", title:"技能包 / 内容蒸馏 / 设计",
+      desc:"把内容蒸馏成 skill，或直接用打包好的技能合集。",
+      tags:["20 个"],
+      items:[
+        {name:"宝玉技能包 baoyu-skills", license:"MIT", repo_url:"https://github.com/JimLiu/baoyu-skills", dl:"https://github.com/JimLiu/baoyu-skills/releases", use:"可商用·保留署名", cn:"22 个创作技能"},
+        {name:"仓颉 cangjie-skill", license:"MIT", repo_url:"https://github.com/kangarooking/cangjie-skill", dl:"https://github.com/kangarooking/cangjie-skill/releases", use:"可商用·保留署名", cn:"书转 skill"},
+        {name:"book-to-skill", license:"MIT", repo_url:"https://github.com/virgiliojr94/book-to-skill", dl:"https://github.com/virgiliojr94/book-to-skill/releases", use:"可商用·保留署名", cn:"书转 skill"},
+        {name:"Addy Osmani 技能包", license:"MIT", repo_url:"https://github.com/addyosmani/agent-skills", dl:"https://github.com/addyosmani/agent-skills/releases", use:"可商用·保留署名", cn:"前端工程技能"},
+        {name:"design-taste", license:"MIT", repo_url:"https://github.com/madebymustafa/design-taste", dl:"https://github.com/madebymustafa/design-taste/releases", use:"可商用·保留署名", cn:"设计师审美技能"},
+        {name:"民法典 Skill", license:"MIT", repo_url:"https://github.com/xtgmf/minfadian", dl:"https://github.com/xtgmf/minfadian/releases", use:"可商用·保留署名", cn:"民法典问答"},
+        {name:"i-have-adhd", license:"MIT", repo_url:"https://github.com/ayghri/i-have-adhd", dl:"https://github.com/ayghri/i-have-adhd/releases", use:"可商用·保留署名", cn:"让 AI 少废话"},
+        {name:"Plannotator", license:"Apache-2.0", repo_url:"https://github.com/backnotprop/plannotator", dl:"https://github.com/backnotprop/plannotator/releases", use:"可商用·保留署名", cn:"批注 AI 计划"},
+        {name:"大麦哥知识库 Skill", license:"无 LICENSE", repo_url:"https://github.com/qwer3021/douyin-Michael-DaMaiGe-skill", use:"商用请先联系作者", cn:"大麦哥语录问答"},
+        {name:"benjitaylor/skills", license:"无 LICENSE", repo_url:"https://github.com/benjitaylor/skills", dl:"https://github.com/benjitaylor/skills/releases", use:"商用请先联系作者", cn:"面向 AI 编码 Agent 的技能"},
+        {name:"sybil-solutions/skill-distill", license:"MIT", repo_url:"https://github.com/sybil-solutions/skill-distill", dl:"https://github.com/sybil-solutions/skill-distill/releases", use:"可商用·保留署名", cn:"把一次优秀的 Claude Code"},
+        {name:"elvarofficial/teardown", license:"MIT", repo_url:"https://github.com/elvarofficial/teardown", dl:"https://github.com/elvarofficial/teardown/releases", use:"可商用·保留署名", cn:"Claude Code skill"},
+        {name:"famao-learning/textbook-animation-skill", license:"无 LICENSE", repo_url:"https://github.com/famao-learning/textbook-animation-skill", dl:"https://github.com/famao-learning/textbook-animation-skill/releases", use:"商用请先联系作者", cn:"课本动画 Skill"},
+        {name:"heydamir/unslop", license:"CC-BY-4.0", repo_url:"https://github.com/heydamir/unslop", dl:"https://github.com/heydamir/unslop/releases", use:"可商用·保留署名", cn:"Claude skill"},
+        {name:"janestreet/agent_skills", license:"MIT", repo_url:"https://github.com/janestreet/agent_skills", dl:"https://github.com/janestreet/agent_skills/releases", use:"可商用·保留署名", cn:"Jane Street 出品的 Ag"},
+        {name:"nextlevelbuilder/ui-ux-pro-max-skill", license:"MIT", repo_url:"https://github.com/nextlevelbuilder/ui-ux-pro-max-skill", dl:"https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/releases", use:"可商用·保留署名", cn:"跨平台 UI/UX 设计智能技能"},
+        {name:"garrytan/gstack", license:"MIT", repo_url:"https://github.com/garrytan/gstack", dl:"https://github.com/garrytan/gstack/releases", use:"可商用·保留署名", cn:"Garry Tan 的 Claude"},
+        {name:"Leonxlnx/taste-skill", license:"MIT", repo_url:"https://github.com/Leonxlnx/taste-skill", dl:"https://github.com/Leonxlnx/taste-skill/releases", use:"可商用·保留署名", cn:"给编码 Agent 注入审美"},
+        {name:"pbakaus/impeccable", license:"Apache-2.0", repo_url:"https://github.com/pbakaus/impeccable", dl:"https://github.com/pbakaus/impeccable/releases", use:"可商用·保留署名", cn:"编码 Agent 的设计词汇表"},
+        {name:"xikhar/papercraft", license:"MIT", repo_url:"https://github.com/xikhar/papercraft", dl:"https://github.com/xikhar/papercraft/releases", use:"可商用·保留署名", cn:"Agent skill"}
+      ],
+      links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
