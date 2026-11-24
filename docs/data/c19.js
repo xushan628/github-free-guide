@@ -1,0 +1,27 @@
+window.__D = window.__D || [];
+window.__D.push({ no:"19", cat:"收口", icon:"📦", title:"剩余收口",
+      desc:"前面 18 类装不下的，都在这里。",
+      tags:["20 个"],
+      items:[
+        {name:"gods-eye-view", license:"NOASSERTION", repo_url:"https://github.com/bilawalsidhu/gods-eye-view", dl:"https://github.com/bilawalsidhu/gods-eye-view/releases", use:"商用请先联系作者", cn:"3D 地球观测"},
+        {name:"Uptime Kuma", license:"MIT", repo_url:"https://github.com/louislam/uptime-kuma", dl:"https://github.com/louislam/uptime-kuma/releases", use:"可商用·保留署名", cn:"网站监控"},
+        {name:"MoeKoeMusic", license:"GPL-2.0", repo_url:"https://github.com/MoeKoeMusic/MoeKoeMusic", dl:"https://github.com/MoeKoeMusic/MoeKoeMusic/releases", use:"可商用·需开源", cn:"酷狗第三方客户端"},
+        {name:"DiPlay", license:"GPL-3.0", repo_url:"https://github.com/shihabal3amri/DiPlay", dl:"https://github.com/shihabal3amri/DiPlay/releases", use:"可商用·需开源", cn:"车机投屏"},
+        {name:"claude-seo", license:"MIT", repo_url:"https://github.com/AgriciDaniel/claude-seo", dl:"https://github.com/AgriciDaniel/claude-seo/releases", use:"可商用·保留署名", cn:"SEO 助手"},
+        {name:"Paperclip", license:"MIT", repo_url:"https://github.com/paperclipai/paperclip", dl:"https://github.com/paperclipai/paperclip/releases", use:"可商用·保留署名", cn:"agent 团队工作台"},
+        {name:"DBX", license:"Apache-2.0", repo_url:"https://github.com/t8y2/dbx", dl:"https://github.com/t8y2/dbx/releases", use:"可商用·保留署名", cn:"数据库客户端"},
+        {name:"OldAlmanac（电子老黄历）", license:"无 LICENSE", repo_url:"https://github.com/jingguanzhang/OldAlmanac", dl:"https://github.com/jingguanzhang/OldAlmanac/releases", use:"商用请先联系作者", cn:"电子黄历"},
+        {name:"jianhao-travel-planner", license:"MIT", repo_url:"https://github.com/awangwang123/jianhao-travel-planner", dl:"https://github.com/awangwang123/jianhao-travel-planner/releases", use:"可商用·保留署名", cn:"旅行路书"},
+        {name:"一饭封神 WhatToEat", license:"无 LICENSE", repo_url:"https://github.com/liu-ziting/what-to-eat", use:"商用请先联系作者", cn:"AI 菜谱生成"},
+        {name:"storytold/craft-anything", license:"Apache-2.0", repo_url:"https://github.com/storytold/craft-anything", dl:"https://github.com/storytold/craft-anything/releases", use:"可商用·保留署名", cn:"理解任意软件的工作原理"},
+        {name:"erkamyaman/rust-anything", license:"MIT", repo_url:"https://github.com/erkamyaman/rust-anything", dl:"https://github.com/erkamyaman/rust-anything/releases", use:"可商用·保留署名", cn:"逐步把整个应用重写为 Rust"},
+        {name:"EL4CTEO/fast-anything", license:"MIT", repo_url:"https://github.com/EL4CTEO/fast-anything", dl:"https://github.com/EL4CTEO/fast-anything/releases", use:"可商用·保留署名", cn:"别全量重写 Rust"},
+        {name:"BryceYuuu/RUN", license:"CC-BY-SA-4.0", repo_url:"https://github.com/BryceYuuu/RUN", dl:"https://github.com/BryceYuuu/RUN/releases", use:"可商用·需开源", cn:"RUN · 润"},
+        {name:"havenicec/google-qr-sms-helper", license:"MIT", repo_url:"https://github.com/havenicec/google-qr-sms-helper", dl:"https://github.com/havenicec/google-qr-sms-helper/releases", use:"可商用·保留署名", cn:"Chrome MV3 扩展"},
+        {name:"Minireel/HGhub", license:"NOASSERTION", repo_url:"https://github.com/Minireel/HGhub", dl:"https://github.com/Minireel/HGhub/releases", use:"商用请先联系作者", cn:"插件式媒体播放器"},
+        {name:"apex-compute/ANR", license:"无 LICENSE", repo_url:"https://github.com/apex-compute/ANR", dl:"https://github.com/apex-compute/ANR/releases", use:"商用请先联系作者", cn:"Apex Neural Render"},
+        {name:"Noniv/abyssal-garden", license:"MIT", repo_url:"https://github.com/Noniv/abyssal-garden", dl:"https://github.com/Noniv/abyssal-garden/releases", use:"可商用·保留署名", cn:"浏览器里可畅游的梦幻水下世界"},
+        {name:"os6/nospeaker", license:"MIT", repo_url:"https://github.com/os6/nospeaker", dl:"https://github.com/os6/nospeaker/releases", use:"可商用·保留署名", cn:"让 MacBook 的触控板用线性马"},
+        {name:"sshkeda/minecraft-server-on-orange-cloud", license:"MIT", repo_url:"https://github.com/sshkeda/minecraft-server-on-orange-cloud", dl:"https://github.com/sshkeda/minecraft-server-on-orange-cloud/releases", use:"可商用·保留署名", cn:"把整个 Minecraft Java"}
+      ],
+      links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
