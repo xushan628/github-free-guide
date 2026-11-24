@@ -55,6 +55,7 @@
 | **Mole** | [tw93/Mole](https://github.com/tw93/Mole) | GPL-3.0 | 开源 Mac/PC 清理工具，命令行删缓存、找大文件 | 小白神器 |
 | **WinDirStat** | [windirstat/windirstat](https://github.com/windirstat/windirstat) | GPL-3.0 | 磁盘占用可视化：方块图一眼看出谁吃满硬盘，可清理与定位大文件 | 抖音 · 248 期 |
 | **BleachBit** | [bleachbit/bleachbit](https://github.com/bleachbit/bleachbit) | GPL-3.0 | 开源系统清理：清临时文件、缓存与隐私痕迹，Windows/Linux（CCleaner 的开源替代） | 抖音 · 248 期 |
+| **开机慢卡顿电脑清理（ql）** | [feiyuaq/ql](https://github.com/feiyuaq/ql) | **无 LICENSE** | 吾爱原创 PowerShell 清理工具（1750 行）：菜单/扫描/修复/垃圾/回滚/跑分六种模式，操作前自动备份可回滚，全部文件不到 200KB | 用户提供 |
 | **WinUtil** | [ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil) | MIT | Windows 一键部署/精简：装软件、去预装组件、改系统设置，Office 同样可选组件 | 抖音 |
 | **TrackNetV3** | [qaz812345/TrackNetV3](https://github.com/qaz812345/TrackNetV3) | NOASSERTION | 羽毛球鹰眼：追踪球路与落点，本地可跑 | 抖音 |
 | **Motrix** | [agalwood/Motrix](https://github.com/agalwood/Motrix) | NOASSERTION | 全能下载器（HTTP/BT/磁力），替代迅雷 | 小白神器 |

@@ -1,10 +1,16 @@
 # 外链体检报告
 
-- 生成时间：2026-11-24T05:45:34+00:00
+- 生成时间：2026-11-24T05:50:01+00:00
 - 生成脚本：`scripts/verify_links.py`（本仓库的 `.github/workflows/link-check.yml` 每周自动跑一次）
-- 总计 **255** 个链接：✅ 正常 255 ／ ❌ 失效 0 ／ ⚠️ 未验证 0 ／ ⏭️ 跳过（本地服务）0
+- 总计 **256** 个链接：✅ 正常 255 ／ ❌ 失效 0 ／ ⚠️ 未验证 1 ／ ⏭️ 跳过（本地服务）0
 
 > ⚠️「未验证」= 本机网络无法直连（例如 `github.com` 页面在部分网络环境会被重置）。脚本对 `github.com/<owner>/<repo>` 会自动改走 `api.github.com`，所以仓库类链接的结论是可信的；`docs.github.com` 等文档页若显示未验证，属于网络环境限制，不代表链接失效。
+
+## ⚠️ 未验证
+
+| 链接 | 原因 |
+|---|---|
+| https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
 
 ## ✅ 全部结果
 
@@ -33,7 +39,6 @@
 | ✅ | codespaces/README.md | 存在 |
 | ✅ | datasets.json | 存在 |
 | ✅ | datasets/README.md | 存在 |
-| ✅ | https://arxiv.org/abs/2604.26962 | 200 |
 | ✅ | https://concat.standalones.org | 200 |
 | ✅ | https://deeptutor.info | 200 |
 | ✅ | https://docs.github.com/billing/managing-billing-for-your-products/about-billing-for-github-actions | 200 |
@@ -133,6 +138,7 @@
 | ✅ | https://github.com/facebookresearch/segment-anything | 200 |
 | ✅ | https://github.com/feathericons/feather | 200 |
 | ✅ | https://github.com/feder-cr/Jobs_Applier_AI_Agent | 200 |
+| ✅ | https://github.com/feiyuaq/ql | 200 |
 | ✅ | https://github.com/firecrawl/pdf-inspector | 200 |
 | ✅ | https://github.com/frappe/erpnext | 200 |
 | ✅ | https://github.com/freestylefly/wesight | 200 |
@@ -265,3 +271,4 @@
 | ✅ | templates/cron-job.yml | 存在 |
 | ✅ | templates/manual-run.yml | 存在 |
 | ✅ | templates/matrix.yml | 存在 |
+| ⚠️ | https://arxiv.org/abs/2604.26962 | URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate  |
