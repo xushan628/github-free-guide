@@ -15,6 +15,7 @@
 | **Worktrunk** | [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) | Apache-2.0 | Git worktree 管理 CLI：给每个编码任务一个独立工作目录，几路代码并行互不干扰 | 抖音 |
 | **PixelFX** | [patch-gg/pixelfx](https://github.com/patch-gg/pixelfx) | MIT | 244 种像素特效：火焰/爆炸/攻击动画可预览调色，导出精灵表接进游戏 | 抖音 |
 | **OfficeCLI** | [iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) | Apache-2.0 | 给 AI agent 用的 Office 套件：读写 Word/Excel/PPT 并渲染回看结果 | 抖音 |
+| **Harness Anything** | [yb2460/harness-anything](https://github.com/yb2460/harness-anything) | MIT | AI agent 控制中枢：接管 WPS、MS Office、Zotero，一句话生成 PPT/PDF/图表 | 抖音 · 323 期 |
 | **青简 Qingjian** | [qingjian-team/qingjian](https://github.com/qingjian-team/qingjian) | GPL-3.0 | Rust 写的拼音输入法：候选词旁显示正在学的外语译词，词库与模型全本地 | 抖音 |
 | **Oink** | [oinkvm/oink](https://github.com/oinkvm/oink) | GPL-3.0 | 跨平台键鼠共享 + 拖拽传文件，去中心化无主机单点，支持音频 | 抖音 |
 | **Umi-OCR** | [hiroi-sora/Umi-OCR](https://github.com/hiroi-sora/Umi-OCR) | MIT | 离线 OCR：截图识字、批量识别、PDF、公式 LaTeX、多语种，自带 HTTP 接口 | 抖音 |

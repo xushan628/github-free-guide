@@ -30,6 +30,7 @@
 | **Segment Anything** | [facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything) | Apache-2.0 | Meta 的图像分割模型：点一下就把任意物体圈出来，小目标和拥挤场景也稳 | 抖音 |
 | **TencentDB Agent Memory** | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | **NOASSERTION** | 团队级 Agent 记忆中心：沉淀对话、文档与代码图谱 | 抖音 |
 | **reverse-skill** | [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) | MIT | 面向安全学习与**授权**测试的 AI 逆向工具箱 | 抖音 |
+| **REA** | [morluto/rea](https://github.com/morluto/rea) | MIT | 用 agent 逆向分析任意软件与二进制，从行为到实现（★47.6 万，星标异常高，请自行复核） | 抖音 |
 | **Mika** | [wangzan101/Mika](https://github.com/wangzan101/Mika) | Apache-2.0 | Android 上的端侧 AI agent：在后台操作 App、读群聊、整理信息 | 抖音 |
 | **Cactus** | [cactus-compute/cactus](https://github.com/cactus-compute/cactus) | Apache-2.0 | 手机/穿戴/机器人用的端侧模型：选函数、填参数、吐 JSON | 抖音 |
 | **Andee** | [kuafuai/andee](https://github.com/kuafuai/andee) | **NOASSERTION** | 住在手机或 Mac 上的个人 AI：像你一样操作任意 App | 抖音 |
@@ -51,9 +52,11 @@
 | **gongkao-zhenti-knowledge** | [36hxqw/gongkao-zhenti-knowledge](https://github.com/36hxqw/gongkao-zhenti-knowledge) | MIT | 公考真题知识库 skill：行测 11,393 题 + 申论 419 题，每题带考点编码、原解析与来源文件，可按考点检索 | 抖音 · 考公脑库 |
 | **jev-chat-jarvis** | [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | MIT | 聊天决策助手：回复前先读出对方意图与风险，给 3 条候选回复 | 抖音 |
 | **book-to-skill** | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill) | MIT | 把技术书 PDF 转成可复用的 agent skill，让 AI 按书里的体系干活 | 抖音 |
+| **livebook 活页课本** | [derekfuture/livebook](https://github.com/derekfuture/livebook) | **无 LICENSE** | 3D 交互式活页课本：在书页上直接操作课本里的物理/化学/地理实验 | 抖音 |
 | **仓颉 cangjie-skill** | [kangarooking/cangjie-skill](https://github.com/kangarooking/cangjie-skill) | MIT | 把书/长视频/播客蒸馏成可执行的 Agent Skills：RIA-TV++ 七阶段流水线，输出多 skill 仓库（含 DIGEST/GLOSSARY/测试用例） | 抖音 |
 | **宝玉技能包 baoyu-skills** | [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills) | MIT | 22 个内容创作 skill 合集，含 `baoyu-xhs-images`（小红书图文卡片）、封面图、信息图、PPT 幻灯、发布到微信/微博/X | 抖音 |
 | **PPT-Master** | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) | MIT | 把文档或一个主题直接生成原生可编辑的 PowerPoint（不是截图拼图） | 抖音 · 009 期 |
+| **guizang-ppt-skill** | [op7418/guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill) | **无 LICENSE** | 生成精致 HTML 幻灯片/PPT 的 agent skill，国内教程里体量最大的一个 | 抖音 |
 | **一饭封神 WhatToEat** | [liu-ziting/what-to-eat](https://github.com/liu-ziting/what-to-eat) | **无 LICENSE** | AI 菜谱生成：八大菜系 + 国际料理，营养分析、酒水推荐、效果图生成，在线演示 eat.lz-t.top | 用户提供 |
 | **design-taste** | [madebymustafa/design-taste](https://github.com/madebymustafa/design-taste) | MIT | 24 个"把审美变成指令"的 agent skills，让 AI 生成的界面不再千篇一律 | 抖音 |
 | **民法典 Skill** | [xtgmf/minfadian](https://github.com/xtgmf/minfadian) | MIT | 把《民法典》做成 Skill，让 AI 直接按法条回答（★ 很低，谨慎使用） | 抖音 |
@@ -68,6 +71,7 @@
 | **Addy Osmani 技能包** | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | 25 个资深工程师技能，直接喂给 coding agent | 86 |
 | **Plannotator** | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | Apache-2.0 | 像批改作业一样批注 AI 的执行计划，再让它动手 | 86 |
 | **Humanizer** | [blader/humanizer](https://github.com/blader/humanizer) | MIT | 去 AI 腔：识别 26 种 AI 写作特征并改写 | 86 |
+| **sepia** | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | MIT | 去 AI 味的写作 skill：改掉"值得注意的是/首先其次"这类防御性套话，兼容主流 agent | 抖音 |
 | **ffmpeg-skill** | [kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | MIT | 给编程 agent 配一个剪辑师：42 个 FFmpeg 工具 | 86 |
 | **Matt Pocock 技能包** | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT | 实打实的工程技能集（含 grill-me 先拷问需求） | 78 |
 | **Cloudflare Skills** | [cloudflare/skills](https://github.com/cloudflare/skills) | Apache-2.0 | Cloudflare 官方技能库：教 agent 在 Cloudflare 上建东西、做安全审计 | 78 |
