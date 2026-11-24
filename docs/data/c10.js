@@ -1,0 +1,27 @@
+window.__D = window.__D || [];
+window.__D.push({ no:"10", cat:"Agent", icon:"🤖", title:"Agent 框架 / 插件",
+      desc:"让 agent 真正干活的底座：工作台、多 agent 编排、记忆。",
+      tags:["20 个"],
+      items:[
+        {name:"DeepSeek Harness", license:"MIT", repo_url:"https://github.com/deepseek-ai/deepseek-harness", dl:"https://github.com/deepseek-ai/deepseek-harness/releases", use:"可商用·保留署名", cn:"Agent 框架"},
+        {name:"DS Bot", license:"Apache-2.0", repo_url:"https://github.com/Fei2411/DS-Bot", dl:"https://github.com/Fei2411/DS-Bot/releases", use:"可商用·保留署名", cn:"多 bot 团队"},
+        {name:"Orca", license:"MIT", repo_url:"https://github.com/stablyai/orca", dl:"https://github.com/stablyai/orca/releases", use:"可商用·保留署名", cn:"多 agent 并行"},
+        {name:"Agent-Reach", license:"MIT", repo_url:"https://github.com/Panniantong/Agent-Reach", dl:"https://github.com/Panniantong/Agent-Reach/releases", use:"可商用·保留署名", cn:"全网搜索"},
+        {name:"Claude Code Game Studios", license:"MIT", repo_url:"https://github.com/Donchitos/Claude-Code-Game-Studios", dl:"https://github.com/Donchitos/Claude-Code-Game-Studios", use:"可商用·保留署名", cn:"49 agent 做游戏"},
+        {name:"dsh-superagent-prototype", license:"MIT", repo_url:"https://github.com/deepseek-ai/dsh-superagent-prototype", dl:"https://github.com/deepseek-ai/dsh-superagent-prototype/releases", use:"可商用·保留署名", cn:"自主 agent 原型"},
+        {name:"OpenMausBot", license:"Apache-2.0", repo_url:"https://github.com/milind-soni/OpenMausBot", dl:"https://github.com/milind-soni/OpenMausBot/releases", use:"可商用·保留署名", cn:"多平台机器人"},
+        {name:"T3 Code", license:"MIT", repo_url:"https://github.com/pingdotgg/t3code", dl:"https://github.com/pingdotgg/t3code/releases", use:"可商用·保留署名", cn:"远程控制 Claude"},
+        {name:"Cloudflare computer", license:"MIT", repo_url:"https://github.com/cloudflare/computer", dl:"https://github.com/cloudflare/computer/releases", use:"可商用·保留署名", cn:"Agent 云电脑"},
+        {name:"WeSight", license:"MIT", repo_url:"https://github.com/freestylefly/wesight", dl:"https://github.com/freestylefly/wesight/releases", use:"可商用·保留署名", cn:"微信群聊日报"},
+        {name:"mdiri-ai/SoduWork", license:"MIT", repo_url:"https://github.com/mdiri-ai/SoduWork", dl:"https://github.com/mdiri-ai/SoduWork/releases", use:"可商用·保留署名", cn:"团队与 Agent 的 AI 原生引"},
+        {name:"KKKKhazix/agent-autoloop", license:"MIT", repo_url:"https://github.com/KKKKhazix/agent-autoloop", dl:"https://github.com/KKKKhazix/agent-autoloop/releases", use:"可商用·保留署名", cn:"命令行 Agent 在后台自动接活、"},
+        {name:"simplexai-labs/linger", license:"NOASSERTION", repo_url:"https://github.com/simplexai-labs/linger", dl:"https://github.com/simplexai-labs/linger/releases", use:"商用请先联系作者", cn:"完全跑在本机的开源个人 Agent"},
+        {name:"w01fb0ss/PiBot", license:"Apache-2.0", repo_url:"https://github.com/w01fb0ss/PiBot", dl:"https://github.com/w01fb0ss/PiBot/releases", use:"可商用·保留署名", cn:"本地优先的桌面 AI Agent 团"},
+        {name:"modelflare-ai/AnyModelBot", license:"MIT", repo_url:"https://github.com/modelflare-ai/AnyModelBot", dl:"https://github.com/modelflare-ai/AnyModelBot/releases", use:"可商用·保留署名", cn:"本地优先、任意模型自建 AI Bot"},
+        {name:"NousResearch/hermes-agent", license:"MIT", repo_url:"https://github.com/NousResearch/hermes-agent", dl:"https://github.com/NousResearch/hermes-agent/releases", use:"可商用·保留署名", cn:"与你共同成长的个人 Agent"},
+        {name:"openclaw/openclaw", license:"MIT", repo_url:"https://github.com/openclaw/openclaw", dl:"https://github.com/openclaw/openclaw/releases", use:"可商用·保留署名", cn:"跨操作系统、跨平台、真正能落地干活的"},
+        {name:"anomalyco/opencode", license:"MIT", repo_url:"https://github.com/anomalyco/opencode", dl:"https://github.com/anomalyco/opencode/releases", use:"可商用·保留署名", cn:"开源终端编码 Agent"},
+        {name:"farion1231/cc-switch", license:"MIT", repo_url:"https://github.com/farion1231/cc-switch", dl:"https://github.com/farion1231/cc-switch/releases", use:"可商用·保留署名", cn:"跨平台一体化助手"},
+        {name:"earendil-works/pi", license:"MIT", repo_url:"https://github.com/earendil-works/pi", dl:"https://github.com/earendil-works/pi/releases", use:"可商用·保留署名", cn:"AI Agent 工具包"}
+      ],
+      links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
