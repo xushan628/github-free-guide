@@ -1,7 +1,7 @@
 window.__D = window.__D || [];
 window.__D.push({ no:"6", cat:"视听", icon:"🎬", title:"视频剪辑 / 录屏 / 合成",
       desc:"录屏、无损剪、自动合成短视频、球路追踪。",
-      tags:["16 个"],
+      tags:["18 个"],
       items:[
         {name:"OBS Studio", license:"GPL-2.0", repo_url:"https://github.com/obsproject/obs-studio", dl:"https://github.com/obsproject/obs-studio/releases", use:"可商用·需开源", cn:"录屏直播"},
         {name:"LosslessCut", license:"GPL-2.0", repo_url:"https://github.com/mifi/lossless-cut", dl:"https://github.com/mifi/lossless-cut/releases", use:"可商用·需开源", cn:"无损剪切"},
@@ -19,5 +19,7 @@ window.__D.push({ no:"6", cat:"视听", icon:"🎬", title:"视频剪辑 / 录�
         {name:"mromidev/claude-animated-shorts", license:"MIT", repo_url:"https://github.com/mromidev/claude-animated-shorts", dl:"https://github.com/mromidev/claude-animated-shorts/releases", use:"可商用·保留署名", cn:"免费 Claude skill"},
         {name:"JuneYaooo/rea-video", license:"Apache-2.0", repo_url:"https://github.com/JuneYaooo/rea-video", dl:"https://github.com/JuneYaooo/rea-video/releases", use:"可商用·保留署名", cn:"逐镜头逆向拆解视频"},
         {name:"zhouxiaoka/autoclip", license:"未标注", repo_url:"https://github.com/zhouxiaoka/autoclip", use:"商用请先联系作者", cn:"长视频一键切片成短视频"},
+        {name:"FlashML-org/FreeVideo", license:"Apache-2.0", repo_url:"https://github.com/FlashML-org/FreeVideo", use:"可商用·保留署名", cn:"低配电脑本地生成视频"},
+        {name:"samuelgursky/davinci-resolve-mcp", license:"MIT", repo_url:"https://github.com/samuelgursky/davinci-resolve-mcp", use:"可商用·保留署名", cn:"达芬奇剪辑 MCP 接入"},
       ],
       links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
