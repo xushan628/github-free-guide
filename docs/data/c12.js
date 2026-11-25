@@ -1,7 +1,7 @@
 window.__D = window.__D || [];
 window.__D.push({ no:"12", cat:"模型", icon:"⚙️", title:"模型 / 网关 / 上下文",
       desc:"免费额度聚合、本地训练、官方技能库、上下文压缩。",
-      tags:["15 个"],
+      tags:["16 个"],
       items:[
         {name:"FreeLLMAPI", license:"MIT", repo_url:"https://github.com/tashfeenahmed/freellmapi", dl:"https://github.com/tashfeenahmed/freellmapi/releases", use:"可商用·保留署名", cn:"87 家免费模型"},
         {name:"Headroom", license:"Apache-2.0", repo_url:"https://github.com/headroomlabs-ai/headroom", dl:"https://github.com/headroomlabs-ai/headroom/releases", use:"可商用·保留署名", cn:"上下文压缩省 token"},
@@ -18,5 +18,6 @@ window.__D.push({ no:"12", cat:"模型", icon:"⚙️", title:"模型 / 网关 /
         {name:"JuliusBrussee/caveman", license:"Apache-2.0", repo_url:"https://github.com/JuliusBrussee/caveman", dl:"https://github.com/JuliusBrussee/caveman/releases", use:"可商用·保留署名", cn:"编码 Agent 的技能 + 本地代"},
         {name:"thedotmack/claude-mem", license:"Apache-2.0", repo_url:"https://github.com/thedotmack/claude-mem", dl:"https://github.com/thedotmack/claude-mem/releases", use:"可商用·保留署名", cn:"为每个 Agent 提供跨会话持久上"},
         {name:"openvinotoolkit/openvino", license:"Apache-2.0", repo_url:"https://github.com/openvinotoolkit/openvino", use:"可商用·保留署名", cn:"AI 推理优化部署工具包"},
+        {name:"gastownhall/beads", license:"MIT", repo_url:"https://github.com/gastownhall/beads", use:"可商用·保留署名", cn:"编码 Agent 记忆升级"},
       ],
       links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
