@@ -1,0 +1,22 @@
+window.__D = window.__D || [];
+window.__D.push({ no:"4", cat:"文档", icon:"📄", title:"文档 / 办公 / 数据",
+      desc:"PDF、表格、数据库、OCR：文件不出本机就能处理完。",
+      tags:["15 个"],
+      items:[
+        {name:"OfficeCLI", license:"Apache-2.0", repo_url:"https://github.com/iOfficeAI/OfficeCLI", dl:"https://github.com/iOfficeAI/OfficeCLI/releases", use:"可商用·保留署名", cn:"AI 读写 Office"},
+        {name:"IT-Tools", license:"GPL-3.0", repo_url:"https://github.com/CorentinTh/it-tools", dl:"https://github.com/CorentinTh/it-tools/releases", use:"可商用·需开源", cn:"前端小工具集"},
+        {name:"CyberChef", license:"Apache-2.0", repo_url:"https://github.com/gchq/CyberChef", dl:"https://github.com/gchq/CyberChef/releases", use:"可商用·保留署名", cn:"数据处理工具"},
+        {name:"Stirling-PDF", license:"MIT", repo_url:"https://github.com/Stirling-Tools/Stirling-PDF", dl:"https://github.com/Stirling-Tools/Stirling-PDF/releases", use:"可商用·保留署名", cn:"自托管 PDF"},
+        {name:"Univer", license:"Apache-2.0", repo_url:"https://github.com/dream-num/univer", dl:"https://github.com/dream-num/univer/releases", use:"可商用·保留署名", cn:"AI 办公套件"},
+        {name:"Beekeeper Studio", license:"NOASSERTION", repo_url:"https://github.com/beekeeper-studio/beekeeper-studio", dl:"https://github.com/beekeeper-studio/beekeeper-studio/releases", use:"商用请先联系作者", cn:"数据库客户端"},
+        {name:"pdf-inspector", license:"MIT", repo_url:"https://github.com/firecrawl/pdf-inspector", dl:"https://github.com/firecrawl/pdf-inspector/releases", use:"可商用·保留署名", cn:"PDF 转 Markdown"},
+        {name:"Umi-OCR", license:"MIT", repo_url:"https://github.com/hiroi-sora/Umi-OCR", dl:"https://github.com/hiroi-sora/Umi-OCR/releases", use:"可商用·保留署名", cn:"离线 OCR"},
+        {name:"markmap", license:"MIT", repo_url:"https://github.com/markmap/markmap", dl:"https://github.com/markmap/markmap/releases", use:"可商用·保留署名", cn:"Markdown 转导图"},
+        {name:"Buzz", license:"MIT", repo_url:"https://github.com/chidiwilliams/buzz", dl:"https://github.com/chidiwilliams/buzz/releases", use:"可商用·保留署名", cn:"离线语音转写"},
+        {name:"XinaTian/MROffice", license:"AGPL-3.0", repo_url:"https://github.com/XinaTian/MROffice", dl:"https://github.com/XinaTian/MROffice/releases", use:"可商用·需开源", cn:"最接近 Microsoft Offi"},
+        {name:"s1dashu/quiet-md", license:"MIT", repo_url:"https://github.com/s1dashu/quiet-md", dl:"https://github.com/s1dashu/quiet-md/releases", use:"可商用·保留署名", cn:"Rust + GPUI 原生极速笔记"},
+        {name:"FrigadeHQ/yogurt", license:"MIT", repo_url:"https://github.com/FrigadeHQ/yogurt", dl:"https://github.com/FrigadeHQ/yogurt/releases", use:"可商用·保留署名", cn:"私有 AI 会议纪要"},
+        {name:"shanselman/gputaskman", license:"MIT", repo_url:"https://github.com/shanselman/gputaskman", dl:"https://github.com/shanselman/gputaskman/releases", use:"可商用·保留署名", cn:"GPU 任务管理器"},
+        {name:"haydenschmitty/floorplan", license:"MIT", repo_url:"https://github.com/haydenschmitty/floorplan", dl:"https://github.com/haydenschmitty/floorplan/releases", use:"可商用·保留署名", cn:"用纯自然语言生成代码库的交互式英文地"}
+      ],
+      links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
