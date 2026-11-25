@@ -1,7 +1,7 @@
 window.__D = window.__D || [];
 window.__D.push({ no:"10", cat:"Agent", icon:"🤖", title:"Agent 框架 / 插件",
       desc:"让 agent 真正干活的底座：工作台、多 agent 编排、记忆。",
-      tags:["24 个"],
+      tags:["28 个"],
       items:[
         {name:"DeepSeek Harness", license:"MIT", repo_url:"https://github.com/deepseek-ai/deepseek-harness", dl:"https://github.com/deepseek-ai/deepseek-harness/releases", use:"可商用·保留署名", cn:"Agent 框架"},
         {name:"DS Bot", license:"Apache-2.0", repo_url:"https://github.com/Fei2411/DS-Bot", dl:"https://github.com/Fei2411/DS-Bot/releases", use:"可商用·保留署名", cn:"多 bot 团队"},
@@ -27,5 +27,9 @@ window.__D.push({ no:"10", cat:"Agent", icon:"🤖", title:"Agent 框架 / 插�
         {name:"HKUDS/CLI-Anything", license:"未标注", repo_url:"https://github.com/HKUDS/CLI-Anything", use:"商用请先联系作者", cn:"把软件变成 Agent 原生 CLI"},
         {name:"cursor/plugins", license:"未标注", repo_url:"https://github.com/cursor/plugins", use:"商用请先联系作者", cn:"Cursor 插件规范与官方插件"},
         {name:"Tracer-Cloud/opensre", license:"未标注", repo_url:"https://github.com/Tracer-Cloud/opensre", use:"商用请先联系作者", cn:"CI/CD 可靠性运维 Agent"},
+        {name:"ag-ui-protocol/ag-ui", license:"MIT", repo_url:"https://github.com/ag-ui-protocol/ag-ui", use:"可商用·保留署名", cn:"Agent 前端交互协议"},
+        {name:"github/spec-kit", license:"MIT", repo_url:"https://github.com/github/spec-kit", use:"可商用·保留署名", cn:"规范驱动开发工具包"},
+        {name:"agentscope-ai/agentscope", license:"Apache-2.0", repo_url:"https://github.com/agentscope-ai/agentscope", use:"可商用·保留署名", cn:"可视化可信 Agent 框架"},
+        {name:"multica-ai/multica", license:"未标注", repo_url:"https://github.com/multica-ai/multica", use:"商用请先联系作者", cn:"人与 Agent 团队协作"},
       ],
       links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
