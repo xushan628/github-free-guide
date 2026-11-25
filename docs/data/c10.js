@@ -1,13 +1,13 @@
 window.__D = window.__D || [];
 window.__D.push({ no:"10", cat:"Agent", icon:"🤖", title:"Agent 框架 / 插件",
       desc:"让 agent 真正干活的底座：工作台、多 agent 编排、记忆。",
-      tags:["20 个"],
+      tags:["24 个"],
       items:[
         {name:"DeepSeek Harness", license:"MIT", repo_url:"https://github.com/deepseek-ai/deepseek-harness", dl:"https://github.com/deepseek-ai/deepseek-harness/releases", use:"可商用·保留署名", cn:"Agent 框架"},
         {name:"DS Bot", license:"Apache-2.0", repo_url:"https://github.com/Fei2411/DS-Bot", dl:"https://github.com/Fei2411/DS-Bot/releases", use:"可商用·保留署名", cn:"多 bot 团队"},
         {name:"Orca", license:"MIT", repo_url:"https://github.com/stablyai/orca", dl:"https://github.com/stablyai/orca/releases", use:"可商用·保留署名", cn:"多 agent 并行"},
         {name:"Agent-Reach", license:"MIT", repo_url:"https://github.com/Panniantong/Agent-Reach", dl:"https://github.com/Panniantong/Agent-Reach/releases", use:"可商用·保留署名", cn:"全网搜索"},
-        {name:"Claude Code Game Studios", license:"MIT", repo_url:"https://github.com/Donchitos/Claude-Code-Game-Studios", dl:"https://github.com/Donchitos/Claude-Code-Game-Studios", use:"可商用·保留署名", cn:"49 agent 做游戏"},
+        {name:"Claude Code Game Studios", license:"MIT", repo_url:"https://github.com/Donchitos/Claude-Code-Game-Studios", dl:"https://github.com/Donchitos/Claude-Code-Game-Studios/releases", use:"可商用·保留署名", cn:"49 agent 做游戏"},
         {name:"dsh-superagent-prototype", license:"MIT", repo_url:"https://github.com/deepseek-ai/dsh-superagent-prototype", dl:"https://github.com/deepseek-ai/dsh-superagent-prototype/releases", use:"可商用·保留署名", cn:"自主 agent 原型"},
         {name:"OpenMausBot", license:"Apache-2.0", repo_url:"https://github.com/milind-soni/OpenMausBot", dl:"https://github.com/milind-soni/OpenMausBot/releases", use:"可商用·保留署名", cn:"多平台机器人"},
         {name:"T3 Code", license:"MIT", repo_url:"https://github.com/pingdotgg/t3code", dl:"https://github.com/pingdotgg/t3code/releases", use:"可商用·保留署名", cn:"远程控制 Claude"},
@@ -22,6 +22,10 @@ window.__D.push({ no:"10", cat:"Agent", icon:"🤖", title:"Agent 框架 / 插�
         {name:"openclaw/openclaw", license:"MIT", repo_url:"https://github.com/openclaw/openclaw", dl:"https://github.com/openclaw/openclaw/releases", use:"可商用·保留署名", cn:"跨操作系统、跨平台、真正能落地干活的"},
         {name:"anomalyco/opencode", license:"MIT", repo_url:"https://github.com/anomalyco/opencode", dl:"https://github.com/anomalyco/opencode/releases", use:"可商用·保留署名", cn:"开源终端编码 Agent"},
         {name:"farion1231/cc-switch", license:"MIT", repo_url:"https://github.com/farion1231/cc-switch", dl:"https://github.com/farion1231/cc-switch/releases", use:"可商用·保留署名", cn:"跨平台一体化助手"},
-        {name:"earendil-works/pi", license:"MIT", repo_url:"https://github.com/earendil-works/pi", dl:"https://github.com/earendil-works/pi/releases", use:"可商用·保留署名", cn:"AI Agent 工具包"}
+        {name:"earendil-works/pi", license:"MIT", repo_url:"https://github.com/earendil-works/pi", dl:"https://github.com/earendil-works/pi/releases", use:"可商用·保留署名", cn:"AI Agent 工具包"},
+        {name:"obra/superpowers", license:"MIT", repo_url:"https://github.com/obra/superpowers", use:"可商用·保留署名", cn:"Agent 技能框架与开发方法论"},
+        {name:"HKUDS/CLI-Anything", license:"未标注", repo_url:"https://github.com/HKUDS/CLI-Anything", use:"商用请先联系作者", cn:"把软件变成 Agent 原生 CLI"},
+        {name:"cursor/plugins", license:"未标注", repo_url:"https://github.com/cursor/plugins", use:"商用请先联系作者", cn:"Cursor 插件规范与官方插件"},
+        {name:"Tracer-Cloud/opensre", license:"未标注", repo_url:"https://github.com/Tracer-Cloud/opensre", use:"商用请先联系作者", cn:"CI/CD 可靠性运维 Agent"},
       ],
       links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
