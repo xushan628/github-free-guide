@@ -1,7 +1,7 @@
 window.__D = window.__D || [];
 window.__D.push({ no:"8", cat:"手机", icon:"📱", title:"手机 / 安卓 / 电视端",
       desc:"手机上跑 agent、去广告、电视瘦身、安卓跑 Windows 应用。",
-      tags:["17 个"],
+      tags:["18 个"],
       items:[
         {name:"Mika", license:"Apache-2.0", repo_url:"https://github.com/wangzan101/Mika", dl:"https://github.com/wangzan101/Mika/releases", use:"可商用·保留署名", cn:"手机 AI 助手"},
         {name:"Cactus", license:"Apache-2.0", repo_url:"https://github.com/cactus-compute/cactus", dl:"https://github.com/cactus-compute/cactus/releases", use:"可商用·保留署名", cn:"端侧小模型"},
@@ -19,6 +19,7 @@ window.__D.push({ no:"8", cat:"手机", icon:"📱", title:"手机 / 安卓 / �
         {name:"huami1314/GestaltX", license:"GPL-3.0", repo_url:"https://github.com/huami1314/GestaltX", dl:"https://github.com/huami1314/GestaltX/releases", use:"可商用·需开源", cn:"iOS 27.x MobileGes"},
         {name:"ersinkoc/phonebox", license:"MIT", repo_url:"https://github.com/ersinkoc/phonebox", dl:"https://github.com/ersinkoc/phonebox/releases", use:"可商用·保留署名", cn:"把旧安卓机改造成可自定义的桌面控制面"},
         {name:"imxieyi/Kernarium", license:"GPL-2.0", repo_url:"https://github.com/imxieyi/Kernarium", dl:"https://github.com/imxieyi/Kernarium/releases", use:"可商用·需开源", cn:"把真实 Linux 内核原生跑在 i"},
-        {name:"Kianuni/Erosion-CN", license:"GPL-3.0", repo_url:"https://github.com/Kianuni/Erosion-CN", dl:"https://github.com/Kianuni/Erosion-CN/releases", use:"可商用·需开源", cn:"iOS / iPadOS 国行 Ap"}
+        {name:"Kianuni/Erosion-CN", license:"GPL-3.0", repo_url:"https://github.com/Kianuni/Erosion-CN", dl:"https://github.com/Kianuni/Erosion-CN/releases", use:"可商用·需开源", cn:"iOS / iPadOS 国行 Ap"},
+        {name:"phone-harness/phone-harness", license:"MIT", repo_url:"https://github.com/phone-harness/phone-harness", use:"可商用·保留署名", cn:"让 Agent 操控手机"},
       ],
       links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
