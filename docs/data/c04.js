@@ -1,7 +1,7 @@
 window.__D = window.__D || [];
 window.__D.push({ no:"4", cat:"文档", icon:"📄", title:"文档 / 办公 / 数据",
       desc:"PDF、表格、数据库、OCR：文件不出本机就能处理完。",
-      tags:["15 个"],
+      tags:["16 个"],
       items:[
         {name:"OfficeCLI", license:"Apache-2.0", repo_url:"https://github.com/iOfficeAI/OfficeCLI", dl:"https://github.com/iOfficeAI/OfficeCLI/releases", use:"可商用·保留署名", cn:"AI 读写 Office"},
         {name:"IT-Tools", license:"GPL-3.0", repo_url:"https://github.com/CorentinTh/it-tools", dl:"https://github.com/CorentinTh/it-tools/releases", use:"可商用·需开源", cn:"前端小工具集"},
@@ -17,6 +17,7 @@ window.__D.push({ no:"4", cat:"文档", icon:"📄", title:"文档 / 办公 / �
         {name:"s1dashu/quiet-md", license:"MIT", repo_url:"https://github.com/s1dashu/quiet-md", dl:"https://github.com/s1dashu/quiet-md/releases", use:"可商用·保留署名", cn:"Rust + GPUI 原生极速笔记"},
         {name:"FrigadeHQ/yogurt", license:"MIT", repo_url:"https://github.com/FrigadeHQ/yogurt", dl:"https://github.com/FrigadeHQ/yogurt/releases", use:"可商用·保留署名", cn:"私有 AI 会议纪要"},
         {name:"shanselman/gputaskman", license:"MIT", repo_url:"https://github.com/shanselman/gputaskman", dl:"https://github.com/shanselman/gputaskman/releases", use:"可商用·保留署名", cn:"GPU 任务管理器"},
-        {name:"haydenschmitty/floorplan", license:"MIT", repo_url:"https://github.com/haydenschmitty/floorplan", dl:"https://github.com/haydenschmitty/floorplan/releases", use:"可商用·保留署名", cn:"用纯自然语言生成代码库的交互式英文地"}
+        {name:"haydenschmitty/floorplan", license:"MIT", repo_url:"https://github.com/haydenschmitty/floorplan", dl:"https://github.com/haydenschmitty/floorplan/releases", use:"可商用·保留署名", cn:"用纯自然语言生成代码库的交互式英文地"},
+        {name:"toeverything/AFFiNE", license:"未标注", repo_url:"https://github.com/toeverything/AFFiNE", use:"商用请先联系作者", cn:"开源知识库 Notion/Miro 替代"},
       ],
       links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
