@@ -1,7 +1,7 @@
 window.__D = window.__D || [];
 window.__D.push({ no:"15", cat:"技能包", icon:"⚗️", title:"技能包 / 内容蒸馏 / 设计",
       desc:"把内容蒸馏成 skill，或直接用打包好的技能合集。",
-      tags:["25 个"],
+      tags:["26 个"],
       items:[
         {name:"宝玉技能包 baoyu-skills", license:"MIT", repo_url:"https://github.com/JimLiu/baoyu-skills", dl:"https://github.com/JimLiu/baoyu-skills/releases", use:"可商用·保留署名", cn:"22 个创作技能"},
         {name:"仓颉 cangjie-skill", license:"MIT", repo_url:"https://github.com/kangarooking/cangjie-skill", dl:"https://github.com/kangarooking/cangjie-skill/releases", use:"可商用·保留署名", cn:"书转 skill"},
@@ -23,10 +23,14 @@ window.__D.push({ no:"15", cat:"技能包", icon:"⚗️", title:"技能包 / �
         {name:"Leonxlnx/taste-skill", license:"MIT", repo_url:"https://github.com/Leonxlnx/taste-skill", dl:"https://github.com/Leonxlnx/taste-skill/releases", use:"可商用·保留署名", cn:"给编码 Agent 注入审美"},
         {name:"pbakaus/impeccable", license:"Apache-2.0", repo_url:"https://github.com/pbakaus/impeccable", dl:"https://github.com/pbakaus/impeccable/releases", use:"可商用·保留署名", cn:"编码 Agent 的设计词汇表"},
         {name:"xikhar/papercraft", license:"MIT", repo_url:"https://github.com/xikhar/papercraft", dl:"https://github.com/xikhar/papercraft/releases", use:"可商用·保留署名", cn:"Agent skill"},
+
         {name:"mvanhorn/last30days-skill", license:"未标注", repo_url:"https://github.com/mvanhorn/last30days-skill", use:"商用请先联系作者", cn:"跨平台话题调研技能"},
         {name:"google-labs-code/stitch-skills", license:"未标注", repo_url:"https://github.com/google-labs-code/stitch-skills", use:"商用请先联系作者", cn:"Stitch MCP 配套技能库"},
         {name:"mjmirza/app-store-compliance", license:"未标注", repo_url:"https://github.com/mjmirza/app-store-compliance", use:"商用请先联系作者", cn:"应用上架合规技能包"},
+
         {name:"wshobson/agents", license:"MIT", repo_url:"https://github.com/wshobson/agents", use:"可商用·保留署名", cn:"跨工具 Agent 技能合集"},
         {name:"Imbad0202/academic-research-skills", license:"未标注", repo_url:"https://github.com/Imbad0202/academic-research-skills", use:"商用请先联系作者", cn:"学术研究写作评审技能"},
+
+        {name:"obsidianmd/obsidian-skills", license:"MIT", repo_url:"https://github.com/obsidianmd/obsidian-skills", use:"可商用·保留署名", cn:"让 Agent 用 Obsidian 笔记"},
       ],
       links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
