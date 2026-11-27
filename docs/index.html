@@ -215,7 +215,7 @@
     pills.appendChild(b);
   });
 
-  function esc(s){ return String(s).replace(/[&<>\"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m])); }
+  function esc(s){ return String(s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m])); }
 
   function render(){
     const kw = q.value.trim().toLowerCase();
