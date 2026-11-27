@@ -1,7 +1,7 @@
 window.__D = window.__D || [];
 window.__D.push({ no:"14", cat:"自托管", icon:"🏠", title:"其他项目 / 自托管",
       desc:"一时归不了类的：影视站、ERP、股票、命盘、闲鱼自动化。",
-      tags:["15 个"],
+      tags:["16 个"],
       items:[
         {name:"LibreTV", license:"AGPL-3.0", repo_url:"https://github.com/LibreSpark/LibreTV", dl:"https://github.com/LibreSpark/LibreTV/releases", use:"可商用·需开源", cn:"自建影视站"},
         {name:"ERPNext", license:"GPL-3.0", repo_url:"https://github.com/frappe/erpnext", dl:"https://github.com/frappe/erpnext/releases", use:"可商用·需开源", cn:"开源 ERP"},
@@ -19,5 +19,6 @@ window.__D.push({ no:"14", cat:"自托管", icon:"🏠", title:"其他项目 / �
 
         {name:"iib0011/omni-tools", license:"MIT", repo_url:"https://github.com/iib0011/omni-tools", use:"可商用·保留署名", cn:"自托管网页工具箱"},
         {name:"hieunc229/mailflare", license:"AGPL-3.0", repo_url:"https://github.com/hieunc229/mailflare", use:"可商用·需开源", cn:"Cloudflare Workers 团队邮件"},
+        {name:"croffasia/itsaplan", license:"AGPL-3.0", repo_url:"https://github.com/croffasia/itsaplan", use:"可商用·需开源", cn:"自托管项目管理看板"},
       ],
       links:[["仓库根目录", "https://github.com/xushan628/github-free-guide/tree/main"]] });
