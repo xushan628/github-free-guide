@@ -107,7 +107,7 @@
       <span class="stat"><b>21</b> 组分类</span>
       <span class="stat"><b>200</b> 个图标已入库</span>
       <span class="stat"><b id="stat-datasets">5</b> 个开源数据集</span>
-      <span class="stat"><b>295</b> 个精选项目</span>
+      <span class="stat"><b>297</b> 个精选项目</span>
     </div>
   </div>
 </header>
@@ -215,7 +215,7 @@
     pills.appendChild(b);
   });
 
-  function esc(s){ return String(s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m])); }
+  function esc(s){ return String(s).replace(/[&<>\"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m])); }
 
   function render(){
     const kw = q.value.trim().toLowerCase();
